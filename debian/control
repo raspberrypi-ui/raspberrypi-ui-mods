@@ -3,7 +3,7 @@ Section: unknown
 Priority: extra
 Maintainer: Serge Schneider <serge@raspberrypi.org>
 Build-Depends: debhelper (>= 8.0.0)
-Standards-Version: 3.9.2
+Standards-Version: 3.9.4
 
 Package: raspberrypi-ui-mods
 Architecture: all

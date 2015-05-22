@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.1-4) unstable; urgency=low
+
+  * Remove lxinput menu override
+
+ -- Serge Schneider <serge@raspberrypi.org>  Fri, 22 May 2015 15:11:47 +0100
+
 raspberrypi-ui-mods (1.1-3) stable; urgency=low
 
   * Fix typo in startlxde-pi script
