@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=IDLE (using Python-2.7)
+Comment=Integrated Development Environment for Python (using Python-2.7)
+Exec=/usr/bin/idle-python2.7
+Icon=/usr/share/pixmaps/python2.7.xpm
+Terminal=false
+Type=Application
+Categories=Application;Development;
+StartupNotify=true
+NoDisplay=true

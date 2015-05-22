@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Python Games
+Comment=Examples of games written in Python
+TryExec=/home/pi/python_games/launcher.sh
+Exec=sh -c $HOME/python_games/launcher.sh
+Icon=/usr/share/pixmaps/python.xpm
+Terminal=false
+Type=Application
+Categories=Application;Game;
+StartupNotify=true

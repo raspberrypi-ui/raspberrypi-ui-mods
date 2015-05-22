@@ -1,0 +1,46 @@
+#!/bin/sh
+
+set -e
+
+case "${1}" in
+  configure)
+    update-alternatives --install /usr/bin/x-session-manager \
+      x-session-manager /usr/bin/startlxde-pi 90 \
+      --slave /usr/share/man/man1/x-session-manager.1.gz \
+      x-session-manager.1.gz /usr/share/man/man1/startlxde.1.gz
+	
+      if dpkg --compare-versions "${2}" lt "1.1-2"; then
+        echo "Backing up old config files..."
+        for file in \
+            gtk-3.0/gtk.css \
+            Trolltech.conf \
+            pcmanfm/LXDE-pi \
+            openbox/lxde-pi-rc.xml \
+            lxsession/LXDE-pi \
+            lxpanel/LXDE-pi; do
+          if [ -e /home/pi/.config/$file ]; then
+            echo $file
+            mkdir -p `dirname /home/pi/oldconffiles/$file`
+            if [ -e /home/pi/oldconffiles/$file ]; then
+              rm -rf /home/pi/oldconffiles/$file
+            fi
+            mv -f /home/pi/.config/$file /home/pi/oldconffiles/$file
+          fi
+          if [ -d /home/pi/oldconffiles ]; then
+            chown -R pi:pi /home/pi/oldconffiles
+          fi
+        done
+      fi
+    ;;
+
+  abort-upgrade|abort-remove|abort-deconfigure)
+
+    ;;
+
+  *)
+    echo "postinst called with unknown argument \`${1}'" >&2
+    exit 1
+    ;;
+esac
+
+#DEBHELPER#
