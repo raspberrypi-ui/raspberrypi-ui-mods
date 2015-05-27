@@ -2,11 +2,11 @@ Source: raspberrypi-ui-mods
 Section: unknown
 Priority: extra
 Maintainer: Serge Schneider <serge@raspberrypi.org>
-Build-Depends: debhelper (>= 8.0.0)
-Standards-Version: 3.9.4
+Build-Depends: debhelper (>= 8.1.0~)
+Standards-Version: 3.9.6
 
 Package: raspberrypi-ui-mods
 Architecture: all
-Depends: ${misc:Depends}, lxpanel (>=0.7.1), pcmanfm (>=1.2.3), openbox, x11-xserver-utils, fonts-roboto, zenity,
- pimixer, pipanel, lxinput
+Depends: ${misc:Depends}, lxpanel (=0.7.2-1+rpi2), pcmanfm (=1.2.3-1+rpi2), openbox, x11-xserver-utils, fonts-roboto, zenity,
+ pimixer, pipanel, lxinput (=0.3.4-1+rpi1), pango1.0 (=1.36.8-3+rpi1)
 Description: Config to customise the LXDE UI for the Raspberry Pi
