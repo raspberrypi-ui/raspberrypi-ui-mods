@@ -1,9 +1,14 @@
-raspberrypi-ui-mods (1.20150527) jessie; urgency=low
+raspberrypi-ui-mods (1.20150601) jessie; urgency=low
 
   * Specify exact dependency versions to avoid unpatched upstream updates
+  * Add gtk2-engines and raspberrypi-artwork to dependencies
   * Change version format
+  * Toolbar icons set to same size as menu icons
+  * Changes for Jessie lxsession config
+  * New Adwaita theme from GTK+3.0 3.14 added
+  * Initial changes to theme to bring into line with PiX for GTK+2.0
 
- -- Serge Schneider <serge@raspberrypi.org>  Tue, 26 May 2015 18:19:20 +0100
+ -- Serge Schneider <serge@raspberrypi.org>  Sun, 31 May 2015 06:53:14 +0100
 
 raspberrypi-ui-mods (1.1-4) unstable; urgency=low
 

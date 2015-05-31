@@ -7,6 +7,6 @@ Standards-Version: 3.9.6
 
 Package: raspberrypi-ui-mods
 Architecture: all
-Depends: ${misc:Depends}, lxpanel (=0.7.2-1+rpi2), pcmanfm (=1.2.3-1+rpi2), openbox, x11-xserver-utils, fonts-roboto, zenity,
- pimixer, pipanel, lxinput (=0.3.4-1+rpi1), pango1.0 (=1.36.8-3+rpi1)
+Depends: ${misc:Depends}, lxpanel (=0.7.2-1+rpi2), pcmanfm (=1.2.3-1.1+rpi1), openbox, x11-xserver-utils, fonts-roboto, zenity,
+ pimixer, pipanel, lxinput (=0.3.4-1+rpi1), libpango-1.0-0 (=1.36.8-3+rpi1), gtk2-engines, raspberrypi-artwork
 Description: Config to customise the LXDE UI for the Raspberry Pi
