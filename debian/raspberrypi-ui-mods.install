@@ -6,10 +6,11 @@ lxde-pi-applications.menu /etc/xdg/menus
 bin/* /usr/bin
 pcmanfm.conf /etc/xdg/pcmanfm/LXDE-pi
 desktop-items-0.conf /etc/xdg/pcmanfm/LXDE-pi
-rc.xml /etc/xdg/openbox/LXDE-pi
+lxde-pi-rc.xml /etc/xdg/openbox/
 lxpanel/launchtaskbar.cfg /etc/xdg/lxpanel
 lxpanel/config /etc/xdg/lxpanel/profile/LXDE-pi
 lxpanel/panel /etc/xdg/lxpanel/profile/LXDE-pi/panels
 lxsession/autostart /etc/xdg/lxsession/LXDE-pi
 lxsession/desktop.conf /etc/xdg/lxsession/LXDE-pi
+lxsession/autokey.sh /etc/xdg/lxsession/LXDE-pi
 themes/PiX /usr/share/themes

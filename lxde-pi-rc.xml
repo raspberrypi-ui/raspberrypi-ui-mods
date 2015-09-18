@@ -279,13 +279,13 @@
         <command>pcmanfm</command>
       </action>
     </keybind>
-    <!--keybindings for LXPanel -->
-    <keybind key="Super_L">
+    <keybind key="Print">
       <action name="Execute">
-        <command>lxpanelctl menu</command>
+        <command>scrot</command>
       </action>
     </keybind>
-    <keybind key="F13">
+    <!--keybindings for LXPanel -->
+    <keybind key="Super_L">
       <action name="Execute">
         <command>lxpanelctl menu</command>
       </action>

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Lxkeymap
+Comment=Lxkeymap application
+Categories=Settings;
+Exec=lxkeymap
+Icon=/usr/share/lxkeymap/media/icon.png
+Terminal=false
+Type=Application
+NoDisplay=true

@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20150908) jessie; urgency=low
+
+  * Built from e652862f48bba5c5b7d5281e836974d32dc01ddd
+
+ -- Serge Schneider <serge@raspberrypi.org>  Fri, 18 Sep 2015 14:43:00 +0100
+
 raspberrypi-ui-mods (1.20150604) jessie; urgency=low
 
   * Specify exact dependency versions to avoid unpatched upstream updates

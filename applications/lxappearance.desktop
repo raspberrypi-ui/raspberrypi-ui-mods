@@ -140,4 +140,4 @@ Exec=lxappearance
 NotShowIn=GNOME;XFCE;
 StartupNotify=true
 Categories=Settings;DesktopSettings;GTK;X-LXDE-Settings;
-Hidden=true
+NoDisplay=true

@@ -134,6 +134,20 @@
 		</Include>
 	</Menu>	 <!-- End System Tools -->
 
+	<!-- Other -->
+	<Menu>
+		<Name>Other</Name>
+		<Directory>lxde-other.directory</Directory>
+		<OnlyUnallocated/>
+		<Include>
+			<And>
+				<Not><Category>Core</Category></Not>
+				<Not><Category>Settings</Category></Not>
+				<Not><Category>Screensaver</Category></Not>
+			</And>
+		</Include>
+		</Menu> <!-- End Other -->
+
 	<!-- Help -->
 	<Menu>
 		<Name>Help</Name>
@@ -165,8 +179,10 @@
 
 	<Layout>
 		<Menuname>Development</Menuname>
+		<Menuname>Office</Menuname>
 		<Menuname>Internet</Menuname>
 		<Menuname>Games</Menuname>
+		<Menuname>Other</Menuname>
 		<Menuname>Accessories</Menuname>
 		<Merge type="files"/>
 		<Merge type="menus"/>

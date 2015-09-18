@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=Python 3
+Name=Python 3 (IDLE)
 Comment=Integrated development environment for Python 3
 TryExec=/usr/bin/idle3
 Exec=/usr/bin/idle3

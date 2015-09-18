@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Raspberry Pi Resources
-Exec=sensible-browser http://www.raspberrypi.org/resources/
+Exec=xdg-open http://www.raspberrypi.org/resources/
 Icon=/usr/share/raspberrypi-artwork/raspitr.png
 Terminal=false
 Type=Application

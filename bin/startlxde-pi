@@ -1,6 +1,6 @@
 #!/bin/sh
 
-export XDG_DATA_DIRS="/usr/local/share/:/usr/share/raspi-ui-overrides/:/usr/share/:/usr/share/gdm/:/var/lib/menu-xdg/"
+export XDG_DATA_DIRS="/usr/local/share:/usr/share/raspi-ui-overrides:/usr/share:/usr/share/gdm:/var/lib/menu-xdg"
 
 if [ -z "$XDG_CONFIG_HOME" ]; then
   export XDG_CONFIG_HOME="$HOME/.config"
@@ -20,14 +20,14 @@ fi
 OPENBOX_CONF_DIR="$XDG_CONFIG_HOME/openbox"
 if [ ! -f "$OPENBOX_CONF_DIR/lxde-pi-rc.xml" ]; then
   mkdir -p "$OPENBOX_CONF_DIR"
-  cp /etc/xdg/openbox/LXDE-pi/rc.xml "$OPENBOX_CONF_DIR/lxde-pi-rc.xml"
+  cp /etc/xdg/openbox/lxde-pi-rc.xml "$OPENBOX_CONF_DIR/lxde-pi-rc.xml"
 fi
 
 # Ensure the existance of lxsession files
 LXSESSION_CONF_DIR="$XDG_CONFIG_HOME/lxsession/LXDE-pi"
-if [ ! -f "$LXSESSION_CONF_DIR/desktop.conf" ]; then
+if [ ! -d "$LXSESSION_CONF_DIR" ]; then
   mkdir -p "$LXSESSION_CONF_DIR"
-  cp /etc/xdg/lxsession/LXDE-pi/desktop.conf "$LXSESSION_CONF_DIR/desktop.conf"
+  cp /etc/xdg/lxsession/LXDE-pi/* "$LXSESSION_CONF_DIR"
 fi
 
 # Copy PiX theme into home directory

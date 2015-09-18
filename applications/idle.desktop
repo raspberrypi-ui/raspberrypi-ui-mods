@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=Python 2
+Name=Python 2 (IDLE)
 Comment=Integrated development environment for Python 2
 TryExec=/usr/bin/idle
 Exec=/usr/bin/idle
