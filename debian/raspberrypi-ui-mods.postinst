@@ -8,42 +8,48 @@ case "${1}" in
       x-session-manager /usr/bin/startlxde-pi 90 \
       --slave /usr/share/man/man1/x-session-manager.1.gz \
       x-session-manager.1.gz /usr/share/man/man1/startlxde.1.gz
-      if [ -d /home/pi ]; then
-        if dpkg --compare-versions "${2}" lt "1.20150908"; then
-          echo "Backing up old config files..."
-          for file in \
-              gtk-3.0/gtk.css \
-              Trolltech.conf \
-              pcmanfm/LXDE-pi \
-              openbox/lxde-pi-rc.xml \
-              lxsession/LXDE-pi \
-              lxpanel/LXDE-pi; do
-            if [ -e /home/pi/.config/$file ]; then
-              CHANGED=1
-              echo $file
-              mkdir -p `dirname /home/pi/oldconffiles/$file`
-              if [ -e /home/pi/oldconffiles/$file ]; then
-                rm -rf /home/pi/oldconffiles/$file
-              fi
-              mv -f /home/pi/.config/$file /home/pi/oldconffiles/$file
-            fi
-            if [ -d /home/pi/oldconffiles ]; then
-              chown -R pi:pi /home/pi/oldconffiles
-            fi
-          done
-          if [ -n "$CHANGED" ]; then
-            cat << EOF >> /home/pi/.config/autostart/pi-conf-backup.desktop
+    HOME_DIR=/home/pi
+    BACKUP_DIR=${HOME_DIR}/oldconffiles
+    CONF_DIR=${HOME_DIR}/.config
+    THEME_DIR=${HOME_DIR}/.themes
+    if [ ! -d $HOME_DIR ]; then
+      return 0;
+    fi
+    if dpkg --compare-versions "${2}" lt "1.20150908"; then
+      CHANGED_FILES="${CHANGED_FILES} \
+                     ${CONF_DIR}/gtk-3.0/gtk.css \
+                     ${CONF_DIR}/Trolltech.conf \
+                     ${CONF_DIR}/pcmanfm/LXDE-pi \
+                     ${CONF_DIR}/openbox/lxde-pi-rc.xml \
+                     ${CONF_DIR}/lxsession/LXDE-pi/desktop.conf \
+                     ${CONF_DIR}/lxpanel/LXDE-pi"
+    fi
+    if dpkg --compare-versions "${2}" lt "1.20151021"; then
+      CHANGED_FILES="${CHANGED_FILES} \
+                     ${THEME_DIR}/PiX"
+    fi
+    if [ -n $CHANGED_FILES ]; then
+      echo "Backing up old config files..."
+      rm -rf {BACKUP_DIR}
+      for file in $CHANGED_FILES; do
+        if [ -e $file ]; then
+          NEWLOC=${BACKUP_DIR}/`dirname $file | cut -d / -f 4-`
+          echo $file
+          mkdir -p $NEWLOC
+          mv $file $NEWLOC
+        fi
+      done
+      chown -R pi:pi /home/pi/oldconffiles
+      mkdir -p /home/pi/.config/autostart
+      cat << EOF >> /home/pi/.config/autostart/pi-conf-backup.desktop
 [Desktop Entry]
 Exec=sh -c 'zenity --info --text="Your Raspbian system has been upgraded to the latest version.\n\nTo ensure compatibility with the new version, some configuration files have been overwritten -\nif you had customised your system, some of your changes may have been lost.\n\nYour original configuration files have been backed up and put in the directory /home/pi/oldconffiles\n" && rm ~/.config/autostart/pi-conf-backup.desktop'
 Type=Application
 EOF
-            mkdir -p /home/pi/.config/autostart/
-            chown pi:pi /home/pi/.config
-            chown pi:pi /home/pi/.config/autostart
-            chown pi:pi /home/pi/.config/autostart/pi-conf-backup.desktop
-          fi
-        fi
-      fi
+      chown pi:pi /home/pi/.config
+      chown pi:pi /home/pi/.config/autostart
+      chown pi:pi /home/pi/.config/autostart/pi-conf-backup.desktop
+    fi
     ;;
 
   abort-upgrade|abort-remove|abort-deconfigure)

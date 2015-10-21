@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=lxkeymap
+Comment=Load international keyboard settings
+NoDisplay=true
+Exec=sh /etc/xdg/lxsession/LXDE-pi/autokey.sh
+NotShowIn=GNOME;KDE;XFCE;

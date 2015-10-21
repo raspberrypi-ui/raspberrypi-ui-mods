@@ -1,5 +1,5 @@
 #!/bin/sh
-if [ -e /home/pi/.config/lxkeymap.cfg ]; then
+if [ -e ${HOME}/.config/lxkeymap.cfg ]; then
   echo "lxkeymap found"
   lxkeymap --autostart
 else

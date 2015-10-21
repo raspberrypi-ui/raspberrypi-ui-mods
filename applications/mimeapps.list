@@ -1,0 +1,21 @@
+[Added Associations]
+text/html=epiphany-browser.desktop;
+text/x-python=idle.desktop;
+text/plain=leafpad.desktop;
+image/gif=gpicview.desktop;
+image/png=gpicview.desktop;
+image/jpeg=gpicview.desktop;
+image/svg+xml=gpicview.desktop;
+application/x-xz-compressed-tar=xarchiver.desktop;
+application/x-compressed-tar=xarchiver.desktop;
+
+[Default Applications]
+text/html=epiphany-browser.desktop
+text/x-python=idle.desktop
+text/plain=leafpad.desktop
+image/gif=gpicview.desktop
+image/png=gpicview.desktop
+image/jpeg=gpicview.desktop
+image/svg+xml=gpicview.desktop
+application/x-xz-compressed-tar=xarchiver.desktop
+application/x-compressed-tar=xarchiver.desktop

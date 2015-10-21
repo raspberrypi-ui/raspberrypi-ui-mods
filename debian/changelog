@@ -1,3 +1,17 @@
+raspberrypi-ui-mods (1.20151021) jessie; urgency=low
+
+  * Built from a7977fe639b85ba6279aa4165c58916a90ac13e2
+  * GTK 3 theme speed-up from Collabora
+  * Fix themes backup
+  * Rework postinst script
+  * Ensure autostart directory exists
+  * Add mimeapps.list to fix default associations
+  * Add raspberrypi-sys-mods dependency
+  * Add pi user to polkit Local Authority admins
+  * Add a .desktop file to autostart autokey.sh
+
+ -- Serge Schneider <serge@raspberrypi.org>  Wed, 21 Oct 2015 10:56:15 +0100
+
 raspberrypi-ui-mods (1.20150908) jessie; urgency=low
 
   * Built from e652862f48bba5c5b7d5281e836974d32dc01ddd

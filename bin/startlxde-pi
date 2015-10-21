@@ -23,11 +23,11 @@ if [ ! -f "$OPENBOX_CONF_DIR/lxde-pi-rc.xml" ]; then
   cp /etc/xdg/openbox/lxde-pi-rc.xml "$OPENBOX_CONF_DIR/lxde-pi-rc.xml"
 fi
 
-# Ensure the existance of lxsession files
+# Ensure the existance of desktop.conf
 LXSESSION_CONF_DIR="$XDG_CONFIG_HOME/lxsession/LXDE-pi"
 if [ ! -d "$LXSESSION_CONF_DIR" ]; then
   mkdir -p "$LXSESSION_CONF_DIR"
-  cp /etc/xdg/lxsession/LXDE-pi/* "$LXSESSION_CONF_DIR"
+  cp /etc/xdg/lxsession/LXDE-pi/desktop.conf "$LXSESSION_CONF_DIR"
 fi
 
 # Copy PiX theme into home directory
