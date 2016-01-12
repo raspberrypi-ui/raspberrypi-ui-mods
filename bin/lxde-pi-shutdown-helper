@@ -18,9 +18,9 @@ echo $SOUND
 if [ "$ACTION" = "Shutdown" ]; then
   sudo shutdown -h now
 elif [ "$ACTION" = "Reboot" ]; then
-  sudo reboot 
+  sudo reboot
 elif [ "$ACTION" = "$LIGHTDM" ]; then
-  pkill lxsession
+  kill $_LXSESSION_PID
 else
    echo "cancel"
 fi

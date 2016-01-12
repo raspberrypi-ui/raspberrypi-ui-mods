@@ -28,27 +28,30 @@ case "${1}" in
       CHANGED_FILES="${CHANGED_FILES} \
                      ${THEME_DIR}/PiX"
     fi
-    if [ -n $CHANGED_FILES ]; then
+    if [ -n "${CHANGED_FILES}" ]; then
       echo "Backing up old config files..."
       rm -rf {BACKUP_DIR}
       for file in $CHANGED_FILES; do
         if [ -e $file ]; then
+          CHANGED=1
           NEWLOC=${BACKUP_DIR}/`dirname $file | cut -d / -f 4-`
           echo $file
           mkdir -p $NEWLOC
           mv $file $NEWLOC
         fi
       done
-      chown -R pi:pi /home/pi/oldconffiles
-      mkdir -p /home/pi/.config/autostart
-      cat << EOF >> /home/pi/.config/autostart/pi-conf-backup.desktop
+      if [ "$CHANGED" = "1"]; then
+        chown -R pi:pi $BACKUP_DIR
+        mkdir -p /home/pi/.config/autostart
+        cat << EOF >> /home/pi/.config/autostart/pi-conf-backup.desktop
 [Desktop Entry]
 Exec=sh -c 'zenity --info --text="Your Raspbian system has been upgraded to the latest version.\n\nTo ensure compatibility with the new version, some configuration files have been overwritten -\nif you had customised your system, some of your changes may have been lost.\n\nYour original configuration files have been backed up and put in the directory /home/pi/oldconffiles\n" && rm ~/.config/autostart/pi-conf-backup.desktop'
 Type=Application
 EOF
-      chown pi:pi /home/pi/.config
-      chown pi:pi /home/pi/.config/autostart
-      chown pi:pi /home/pi/.config/autostart/pi-conf-backup.desktop
+        chown pi:pi /home/pi/.config
+        chown pi:pi /home/pi/.config/autostart
+        chown pi:pi /home/pi/.config/autostart/pi-conf-backup.desktop
+      fi
     fi
     ;;
 

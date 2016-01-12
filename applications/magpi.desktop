@@ -6,4 +6,4 @@ Comment=Link to downloads of The Magpi magazine
 Exec=xdg-open http://www.raspberrypi.org/magpi
 Icon=/usr/share/raspberrypi-artwork/magpi.png
 Terminal=false
-Categories=Help;
+Categories=Network;
