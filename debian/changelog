@@ -1,3 +1,10 @@
+raspberrypi-ui-mods (1.20160125) jessie; urgency=medium
+
+  * Client side decoration of window border removed from GTK 3 theme to
+    avoid black edge on GTK 3 pop-up menus.
+
+ -- Serge Schneider <serge@raspberrypi.org>  Mon, 25 Jan 2016 13:13:08 +0000
+
 raspberrypi-ui-mods (1.20160112) jessie; urgency=medium
 
   * Change Magpi menu entry category to Network

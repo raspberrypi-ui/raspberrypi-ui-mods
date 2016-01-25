@@ -24,13 +24,14 @@ case "${1}" in
                      ${CONF_DIR}/lxsession/LXDE-pi/desktop.conf \
                      ${CONF_DIR}/lxpanel/LXDE-pi"
     fi
-    if dpkg --compare-versions "${2}" lt "1.20151021"; then
+    if dpkg --compare-versions "${2}" lt "1.20160125"; then
       CHANGED_FILES="${CHANGED_FILES} \
                      ${THEME_DIR}/PiX"
     fi
+
     if [ -n "${CHANGED_FILES}" ]; then
       echo "Backing up old config files..."
-      rm -rf {BACKUP_DIR}
+      rm -rf ${BACKUP_DIR}
       for file in $CHANGED_FILES; do
         if [ -e $file ]; then
           CHANGED=1
@@ -40,7 +41,7 @@ case "${1}" in
           mv $file $NEWLOC
         fi
       done
-      if [ "$CHANGED" = "1"]; then
+      if [ "$CHANGED" = "1" ]; then
         chown -R pi:pi $BACKUP_DIR
         mkdir -p /home/pi/.config/autostart
         cat << EOF >> /home/pi/.config/autostart/pi-conf-backup.desktop
