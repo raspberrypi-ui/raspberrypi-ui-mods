@@ -23,6 +23,7 @@ Icon=libreoffice-math
 Type=Application
 Categories=Office;Spreadsheet;Science;Math;
 Exec=libreoffice --math %U
+TryExec=libreoffice
 MimeType=application/vnd.oasis.opendocument.formula;application/vnd.sun.xml.math;application/vnd.oasis.opendocument.formula-template;text/mathml;application/mathml+xml;
 Name=LibreOffice Math
 GenericName=Formula Editor

@@ -1,3 +1,10 @@
+raspberrypi-ui-mods (1.20160201) jessie; urgency=medium
+
+  * Modified .desktop files
+  * Added lightdm dependency
+
+ -- Serge Schneider <serge@raspberrypi.org>  Mon, 01 Feb 2016 12:13:23 +0000
+
 raspberrypi-ui-mods (1.20160125) jessie; urgency=medium
 
   * Client side decoration of window border removed from GTK 3 theme to

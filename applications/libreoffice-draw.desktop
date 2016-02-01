@@ -22,6 +22,7 @@ Icon=libreoffice-draw
 Type=Application
 Categories=Office;FlowChart;2DGraphics;VectorGraphics;
 Exec=libreoffice --draw %U
+TryExec=libreoffice
 MimeType=application/vnd.oasis.opendocument.graphics;application/vnd.oasis.opendocument.graphics-flat-xml;application/vnd.oasis.opendocument.graphics-template;application/vnd.sun.xml.draw;application/vnd.sun.xml.draw.template;application/vnd.visio;application/x-wpg;application/vnd.corel-draw;application/vnd.ms-publisher;image/x-freehand;application/clarisworks;
 Name=LibreOffice Draw
 GenericName=Drawing Program
