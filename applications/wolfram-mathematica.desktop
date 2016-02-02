@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+Version=1.0
+Name=Mathematica
+Comment=Technical Computing System
+Icon=wolfram-mathematica
+Exec=mathematica %F
+TryExec=mathematica
+Terminal=False
+MimeType=application/mathematica;application/vnd.wolfram.cdf;application/mathematicaplayer
+Categories=Application;Development;
+StartupNotify=true

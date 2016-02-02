@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20160202) jessie; urgency=medium
+
+  * Restore Wolfram .desktop files
+
+ -- Serge Schneider <serge@raspberrypi.org>  Tue, 02 Feb 2016 11:43:54 +0000
+
 raspberrypi-ui-mods (1.20160201) jessie; urgency=medium
 
   * Modified .desktop files
