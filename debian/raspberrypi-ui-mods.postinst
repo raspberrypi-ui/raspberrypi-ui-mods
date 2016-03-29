@@ -24,7 +24,7 @@ case "${1}" in
                      ${CONF_DIR}/lxsession/LXDE-pi/desktop.conf \
                      ${CONF_DIR}/lxpanel/LXDE-pi"
     fi
-    if dpkg --compare-versions "${2}" lt "1.20160125"; then
+    if dpkg --compare-versions "${2}" lt "1.20160329"; then
       CHANGED_FILES="${CHANGED_FILES} \
                      ${THEME_DIR}/PiX"
     fi
