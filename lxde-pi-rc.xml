@@ -284,6 +284,11 @@
         <command>scrot</command>
       </action>
     </keybind>
+    <keybind key="C-A-T">
+      <action name="Execute">
+         <command>x-terminal-emulator</command>
+      </action>
+    </keybind>
     <!--keybindings for LXPanel -->
     <keybind key="Super_L">
       <action name="Execute">
