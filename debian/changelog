@@ -1,3 +1,11 @@
+raspberrypi-ui-mods (1.20160329) jessie; urgency=medium
+
+  * PiX gtk2 theme updates
+  * Add Ctrl-Alt-T shortcut to launch lxterminal
+  * Replace lxde-pi-shutdown-helper with pishutdown
+
+ -- Serge Schneider <serge@raspberrypi.org>  Tue, 29 Mar 2016 11:51:16 +0100
+
 raspberrypi-ui-mods (1.20160202) jessie; urgency=medium
 
   * Restore Wolfram .desktop files
