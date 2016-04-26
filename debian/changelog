@@ -6,6 +6,7 @@ raspberrypi-ui-mods (1.20160426) jessie; urgency=medium
   * Change leafpad icon
   * Fix MagPi capitalisation
   * Theme fix for chromium
+  * Hide links in menu if no browser is installed
 
  -- Serge Schneider <serge@raspberrypi.org>  Tue, 26 Apr 2016 10:50:06 +0100
 
