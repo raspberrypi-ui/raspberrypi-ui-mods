@@ -62,7 +62,7 @@ Plugin {
   type=launchbar
   Config {
     Button {
-      id=/usr/share/raspi-ui-overrides/applications/epiphany-browser.desktop
+      id=/usr/share/applications/lxde-x-www-browser.desktop
     }
     Button {
       id=/usr/share/raspi-ui-overrides/applications/pcmanfm.desktop
@@ -71,10 +71,10 @@ Plugin {
       id=/usr/share/raspi-ui-overrides/applications/lxterminal.desktop
     }
     Button {
-      id=/usr/share/raspi-ui-overrides/applications/wolfram-mathematica.desktop
+      id=/usr/share/applications/wolfram-mathematica.desktop
     }
     Button {
-      id=/usr/share/raspi-ui-overrides/applications/wolfram-language.desktop
+      id=/usr/share/applications/wolfram-language.desktop
     }
   }
 }
@@ -111,9 +111,9 @@ Plugin {
   }
 }
 Plugin {
-	type=dhcpcdui
-	Config {
-	}
+  type=bluetooth
+  Config {
+  }
 }
 Plugin {
   type=space
@@ -122,9 +122,20 @@ Plugin {
   }
 }
 Plugin {
-	type=volumealsa
-	Config {
-	}
+  type=dhcpcdui
+  Config {
+  }
+}
+Plugin {
+  type=space
+  Config {
+    Size=2
+  }
+}
+Plugin {
+  type=volumealsa
+  Config {
+  }
 }
 Plugin {
   type=space

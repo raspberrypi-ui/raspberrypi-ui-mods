@@ -20,17 +20,19 @@ case "${1}" in
                      ${CONF_DIR}/gtk-3.0/gtk.css \
                      ${CONF_DIR}/Trolltech.conf \
                      ${CONF_DIR}/pcmanfm/LXDE-pi \
-                     ${CONF_DIR}/openbox/lxde-pi-rc.xml \
-                     ${CONF_DIR}/lxsession/LXDE-pi/desktop.conf \
-                     ${CONF_DIR}/lxpanel/LXDE-pi"
+                     ${CONF_DIR}/lxsession/LXDE-pi/desktop.conf"
     fi
-    if dpkg --compare-versions "${2}" lt "1.20160329"; then
+    if dpkg --compare-versions "${2}" lt "1.20160426"; then
       CHANGED_FILES="${CHANGED_FILES} \
                      ${THEME_DIR}/PiX"
     fi
     if dpkg --compare-versions "${2}" lt "1.20160329"; then
       CHANGED_FILES="${CHANGED_FILES} \
                      ${CONF_DIR}/openbox/lxde-pi-rc.xml"
+    fi
+    if dpkg --compare-versions "${2}" lt "1.20160426"; then
+      CHANGED_FILES="${CHANGED_FILES} \
+                     ${CONF_DIR}/lxpanel/LXDE-pi"
     fi
 
     if [ -n "${CHANGED_FILES}" ]; then

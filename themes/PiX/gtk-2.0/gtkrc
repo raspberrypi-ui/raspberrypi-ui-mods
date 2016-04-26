@@ -485,7 +485,6 @@ style "menu_item"
 	xthickness	= 2
 	ythickness	= 3
 
-	bg[SELECTED]	= @selected_fg_color
 	bg[PRELIGHT]	= @selected_bg_color
 	fg[PRELIGHT]	= @selected_fg_color
 	text[PRELIGHT]	= @selected_fg_color

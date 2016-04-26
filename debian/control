@@ -7,7 +7,9 @@ Standards-Version: 3.9.6
 
 Package: raspberrypi-ui-mods
 Architecture: all
-Depends: ${misc:Depends}, lxpanel, pcmanfm, openbox, x11-xserver-utils,  fonts-roboto,
- zenity, pimixer, pipanel, lxinput, raspberrypi-artwork, gtk2-engines-pixbuf,
- gtk2-engines-clearlookspix, scrot, raspberrypi-sys-mods, lightdm, pishutdown
+Depends: ${misc:Depends}, lxpanel, pcmanfm, openbox, x11-xserver-utils,
+ fonts-roboto, pimixer, pipanel, lxinput, raspberrypi-artwork,
+ gtk2-engines-pixbuf, gtk2-engines-clearlookspix, scrot, raspberrypi-sys-mods,
+ lightdm, pishutdown, gnome-icon-theme, xserver-xorg-video-fbturbo,
+ xserver-xorg, policykit-1
 Description: Config to customise the LXDE UI for the Raspberry Pi
