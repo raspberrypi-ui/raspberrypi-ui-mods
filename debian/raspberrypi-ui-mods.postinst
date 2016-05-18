@@ -13,7 +13,7 @@ case "${1}" in
     CONF_DIR=${HOME_DIR}/.config
     THEME_DIR=${HOME_DIR}/.themes
     if [ ! -d $HOME_DIR ]; then
-      return 0;
+      exit 0;
     fi
     if dpkg --compare-versions "${2}" lt "1.20150908"; then
       CHANGED_FILES="${CHANGED_FILES} \
