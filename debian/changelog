@@ -1,3 +1,10 @@
+raspberrypi-ui-mods (1.20160527) jessie; urgency=medium
+
+  [ Simon Long ]
+  * Make tooltips look slightly less Gothic
+
+ -- Serge Schneider <serge@raspberrypi.org>  Fri, 27 May 2016 11:14:38 +0100
+
 raspberrypi-ui-mods (1.20160426) jessie; urgency=medium
 
   * Add bluetooth plugin to default panel

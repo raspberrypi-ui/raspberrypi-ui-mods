@@ -22,7 +22,7 @@ case "${1}" in
                      ${CONF_DIR}/pcmanfm/LXDE-pi \
                      ${CONF_DIR}/lxsession/LXDE-pi/desktop.conf"
     fi
-    if dpkg --compare-versions "${2}" lt "1.20160426"; then
+    if dpkg --compare-versions "${2}" lt "1.20160527"; then
       CHANGED_FILES="${CHANGED_FILES} \
                      ${THEME_DIR}/PiX"
     fi

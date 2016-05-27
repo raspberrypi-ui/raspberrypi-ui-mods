@@ -1,7 +1,7 @@
 # PiX gtk+-2.0 theme. Based on Adwaita and Clearlooks - modified by Simon Long (simon@raspberypi.org)
 
 # Colour scheme
-gtk-color-scheme = "base_color:#FFFFFF\nfg_color:#2E3436\nbg_color:#EDEDED\ntext_color:#313739\nselected_fg_color:#FFFFFF\nselected_bg_color:#4A90D9\ninsensitive_bg_color:#F4F4F2\ntooltip_fg_color:#FFFFFF\ntooltip_bg_color:#343434"
+gtk-color-scheme = "base_color:#FFFFFF\nfg_color:#2E3436\nbg_color:#EDEDED\ntext_color:#313739\nselected_fg_color:#FFFFFF\nselected_bg_color:#4A90D9\ninsensitive_bg_color:#F4F4F2\ntooltip_fg_color:#FFFFFF\ntooltip_bg_color:#A0A0A0"
 
 # Enable auto-mnemonics
 gtk-auto-mnemonics = 1
@@ -20,7 +20,7 @@ style "default"
 
 	GtkWidget::focus-line-width                 = 1
 	GtkWidget::tooltip-radius		            = 3
-	GtkWidget::tooltip-alpha		            = 235
+	GtkWidget::tooltip-alpha		            = 224
 	GtkWidget::new-tooltip-style	            = 1
 
 	GtkMenuBar::window-dragging                 = 1
@@ -1071,8 +1071,8 @@ style "frame"
 
 style "tooltips"
 {
-	xthickness	= 8
-	ythickness	= 4
+	xthickness	= 10
+	ythickness	= 10
 
 	bg[NORMAL]	  = @tooltip_bg_color
 	fg[NORMAL]	  = @tooltip_fg_color
