@@ -1,3 +1,14 @@
+raspberrypi-ui-mods (1.20161018) jessie; urgency=medium
+
+  * Move xserver-xorg-video-fbturbo to recommends
+  * Re-organise package structure
+  * Add Xsession.d/75source-profile
+  * Add 55-storage.pkla
+  * Fix maintscript
+  * Add zenity as a dependency
+
+ -- Serge Schneider <serge@raspberrypi.org>  Tue, 18 Oct 2016 12:03:11 +0100
+
 raspberrypi-ui-mods (1.20160718) jessie; urgency=medium
 
   [ Simon Long ]

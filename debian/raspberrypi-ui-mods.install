@@ -1,20 +1,3 @@
-applications/*.desktop /usr/share/raspi-ui-overrides/applications
-applications/mimeapps.list /usr/share/raspi-ui-overrides/applications
-desktop-directories/* /usr/share/raspi-ui-overrides/desktop-directories
-gtk-3.0/gtk.css /usr/share/raspi-ui-overrides
-Trolltech.conf /usr/share/raspi-ui-overrides 
-lxde-pi-applications.menu /etc/xdg/menus
-bin/* /usr/bin
-pcmanfm.conf /etc/xdg/pcmanfm/LXDE-pi
-desktop-items-0.conf /etc/xdg/pcmanfm/LXDE-pi
-lxde-pi-rc.xml /etc/xdg/openbox/
-lxpanel/launchtaskbar.cfg /etc/xdg/lxpanel
-lxpanel/config /etc/xdg/lxpanel/profile/LXDE-pi
-lxpanel/panel /etc/xdg/lxpanel/profile/LXDE-pi/panels
-lxsession/autostart /etc/xdg/lxsession/LXDE-pi
-lxsession/desktop.conf /etc/xdg/lxsession/LXDE-pi
-lxsession/autokey.sh /etc/xdg/lxsession/LXDE-pi
-themes/PiX /usr/share/themes
-polkit/60-desktop-policy.conf /etc/polkit-1/localauthority.conf.d
-autostart/*.desktop /etc/xdg/autostart
-launch.png /usr/share/raspberrypi-artwork
+usr
+etc
+var
