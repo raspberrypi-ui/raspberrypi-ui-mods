@@ -5,6 +5,6 @@ Name=Raspberry Pi Help
 Comment=Link to help pages
 TryExec=/usr/bin/x-www-browser
 Exec=x-www-browser http://www.raspberrypi.org/help
-Icon=/usr/share/raspberrypi-artwork/raspitr.png
+Icon=rpi
 Terminal=false
 Categories=Help;

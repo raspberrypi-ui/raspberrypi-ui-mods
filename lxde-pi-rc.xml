@@ -38,7 +38,7 @@
   </placement>
   <theme>
     <name>PiX</name>
-    <titleLayout>NLIMC</titleLayout>
+    <titleLayout>LIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
       N: window icon
@@ -50,6 +50,8 @@
       D: omnipresent (on all desktops).
   -->
     <keepBorder>yes</keepBorder>
+    <roundCorners>yes</roundCorners>
+    <invisibleHandles>yes</invisibleHandles>
     <animateIconify>yes</animateIconify>
     <font place="ActiveWindow">
       <name>Roboto Light</name>

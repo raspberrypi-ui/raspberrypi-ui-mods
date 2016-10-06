@@ -2,7 +2,7 @@
 Name=Raspberry Pi Resources
 TryExec=/usr/bin/x-www-browser
 Exec=x-www-browser http://www.raspberrypi.org/resources/
-Icon=/usr/share/raspberrypi-artwork/raspitr.png
+Icon=rpi
 Terminal=false
 Type=Application
 Categories=Application;Network;

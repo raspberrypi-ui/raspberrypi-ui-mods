@@ -1,5 +1,5 @@
 Source: raspberrypi-ui-mods
-Section: unknown
+Section: x11
 Priority: extra
 Maintainer: Serge Schneider <serge@raspberrypi.org>
 Build-Depends: debhelper (>= 8.1.0~)
@@ -11,5 +11,7 @@ Depends: ${misc:Depends}, lxpanel, pcmanfm, openbox, x11-xserver-utils,
  fonts-roboto, pimixer, pipanel, lxinput, raspberrypi-artwork,
  gtk2-engines-pixbuf, gtk2-engines-clearlookspix, scrot, raspberrypi-sys-mods,
  lightdm, pishutdown, gnome-icon-theme, xserver-xorg-video-fbturbo,
- xserver-xorg, policykit-1
+ xserver-xorg, policykit-1, pix-icons, pi-greeter, fonts-droid,
+ pix-plym-splash, pixel-wallpaper, fontconfig-infinality, point-rpi
 Description: Config to customise the LXDE UI for the Raspberry Pi
+ Customised theme and configuration for LXDE desktop on Raspberry Pi.

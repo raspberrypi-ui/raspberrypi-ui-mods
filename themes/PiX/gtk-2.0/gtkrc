@@ -1,7 +1,7 @@
 # PiX gtk+-2.0 theme. Based on Adwaita and Clearlooks - modified by Simon Long (simon@raspberypi.org)
 
 # Colour scheme
-gtk-color-scheme = "base_color:#FFFFFF\nfg_color:#2E3436\nbg_color:#EDEDED\ntext_color:#313739\nselected_fg_color:#FFFFFF\nselected_bg_color:#4A90D9\ninsensitive_bg_color:#F4F4F2\ntooltip_fg_color:#FFFFFF\ntooltip_bg_color:#A0A0A0"
+gtk-color-scheme = "base_color:#FFFFFF\nfg_color:#2E3436\nbg_color:#EDEDED\ntext_color:#313739\nselected_fg_color:#FFFFFF\nselected_bg_color:#4D98F5\ninsensitive_bg_color:#F4F4F2\ntooltip_fg_color:#FFFFFF\ntooltip_bg_color:#A0A0A0"
 
 # Enable auto-mnemonics
 gtk-auto-mnemonics = 1
@@ -20,7 +20,7 @@ style "default"
 
 	GtkWidget::focus-line-width                 = 1
 	GtkWidget::tooltip-radius		            = 3
-	GtkWidget::tooltip-alpha		            = 224
+	GtkWidget::tooltip-alpha		            = 255
 	GtkWidget::new-tooltip-style	            = 1
 
 	GtkMenuBar::window-dragging                 = 1
@@ -80,7 +80,7 @@ style "default"
 	GtkTreeView::expander-size		            = 11
 	GtkTreeView::vertical-separator		        = 4
 	GtkTreeView::horizontal-separator	        = 4
-	GtkTreeView::allow-rules		            = 1
+	GtkTreeView::allow-rules		            = 0
 
 	GtkExpander::expander-size				    = 11
 
@@ -690,8 +690,8 @@ style "menubar"
 
 style "menu"
 {
-	xthickness	= 0
-	ythickness	= 0
+	xthickness	= 1
+	ythickness	= 1
 
 	bg[NORMAL]		= shade (1.08, @bg_color)
 	bg[INSENSITIVE] = @base_color
@@ -699,15 +699,8 @@ style "menu"
 
 	GtkMenuItem::arrow-scaling	= 0.4
 
-	engine "pixmap"
+	engine "clearlookspix"
 	{
-		image
-		{
-			function				= HLINE
-			file					= "Lines/menu_line_h.png"
-			border					= { 0, 0, 0, 0 }
-			stretch					= TRUE
-		}
 	}
 }
 
@@ -1206,6 +1199,16 @@ style "panel_scale" {
 
 widget "volals*whitewd*" style "panel_window"
 widget "volals*whitewd*volscale*" style "panel_scale"
+
+# Chromium
+
+style "chrome-gtk-frame"
+{
+    ChromeGtkFrame::frame-color = @bg_color
+    ChromeGtkFrame::inactive-frame-color = @bg_color
+}
+
+class "ChromeGtkFrame" style "chrome-gtk-frame"
 
 
 

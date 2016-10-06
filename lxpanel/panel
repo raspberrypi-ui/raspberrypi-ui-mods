@@ -26,28 +26,27 @@ Global {
 Plugin {
   type=space
   Config {
-    Size=2
+    Size=4
   }
 }
 Plugin {
   type=menu
   Config {
-    name=Menu
-    image=/usr/share/raspberrypi-artwork/raspitr.png
+    image=/usr/share/raspberrypi-artwork/launch.png
     system {
     }
     separator {
     }
     item {
       name=Run...
-      image=gnome-run
+      image=system-run
       command=run
     }
     separator {
     }
     item {
       name=Shutdown...
-      image=gnome-logout
+      image=system-shutdown
       command=logout
     }
   }
@@ -62,19 +61,19 @@ Plugin {
   type=launchbar
   Config {
     Button {
-      id=/usr/share/applications/lxde-x-www-browser.desktop
+      id=lxde-x-www-browser.desktop
     }
     Button {
-      id=/usr/share/raspi-ui-overrides/applications/pcmanfm.desktop
+      id=pcmanfm.desktop
     }
     Button {
-      id=/usr/share/raspi-ui-overrides/applications/lxterminal.desktop
+      id=lxterminal.desktop
     }
     Button {
-      id=/usr/share/applications/wolfram-mathematica.desktop
+      id=wolfram-mathematica.desktop
     }
     Button {
-      id=/usr/share/applications/wolfram-language.desktop
+      id=wolfram-language.desktop
     }
   }
 }

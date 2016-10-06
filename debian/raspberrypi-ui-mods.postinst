@@ -34,6 +34,15 @@ case "${1}" in
       CHANGED_FILES="${CHANGED_FILES} \
                      ${CONF_DIR}/lxpanel/LXDE-pi"
     fi
+    if dpkg --compare-versions "${2}" lt "1.20160718"; then
+      CHANGED_FILES="${CHANGED_FILES} \
+                     ${THEME_DIR}/PiX \
+                     ${CONF_DIR}/lxsession/LXDE-pi/desktop.conf \
+                     ${CONF_DIR}/lxsession/LXDE-pi/autostart \
+                     ${CONF_DIR}/openbox/lxde-pi-rc.xml \
+                     ${CONF_DIR}/pcmanfm/LXDE-pi \
+                     ${CONF_DIR}/lxpanel/LXDE-pi"
+    fi
 
     if [ -n "${CHANGED_FILES}" ]; then
       echo "Backing up old config files..."

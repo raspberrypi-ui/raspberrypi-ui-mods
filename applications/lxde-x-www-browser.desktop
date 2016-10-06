@@ -10,5 +10,5 @@ Exec=/usr/bin/x-www-browser %u
 Terminal=false
 Type=Application
 Categories=GTK;WebBrowser;Network
-Icon=web-browser
+Icon=applications-internet
 NoDisplay=true

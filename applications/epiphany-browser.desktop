@@ -430,3 +430,4 @@ X-GNOME-Bugzilla-Version=3.8.2
 X-GNOME-UsesNotifications=true
 Categories=Network;GNOME;GTK;WebBrowser;
 MimeType=text/html;text/xml;application/xhtml+xml;
+NoDisplay=true

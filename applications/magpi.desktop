@@ -5,6 +5,6 @@ Name=The MagPi
 Comment=Link to downloads of The MagPi magazine
 TryExec=/usr/bin/x-www-browser
 Exec=x-www-browser http://www.raspberrypi.org/magpi
-Icon=/usr/share/raspberrypi-artwork/magpi.png
+Icon=magpi
 Terminal=false
 Categories=Network;

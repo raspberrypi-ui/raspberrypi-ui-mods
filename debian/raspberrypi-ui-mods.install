@@ -17,3 +17,4 @@ lxsession/autokey.sh /etc/xdg/lxsession/LXDE-pi
 themes/PiX /usr/share/themes
 polkit/60-desktop-policy.conf /etc/polkit-1/localauthority.conf.d
 autostart/*.desktop /etc/xdg/autostart
+launch.png /usr/share/raspberrypi-artwork
