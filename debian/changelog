@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20161019) jessie; urgency=medium
+
+  * Updated Wolfram desktop file
+
+ -- Serge Schneider <serge@raspberrypi.org>  Wed, 19 Oct 2016 13:55:55 +0100
+
 raspberrypi-ui-mods (1.20161018) jessie; urgency=medium
 
   * Move xserver-xorg-video-fbturbo to recommends
