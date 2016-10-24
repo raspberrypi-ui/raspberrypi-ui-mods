@@ -13,8 +13,8 @@ case "${1}" in
     CONF_DIR=${HOME_DIR}/.config
     THEME_DIR=${HOME_DIR}/.themes
     if [ -z "${2}" ]; then
-      update-alternatives --set libgksu-gconf-defaults /usr/share/libgksu/debian/gconf-defaults.libgksu-sudo
-      update-gconf-defaults
+      update-alternatives --set libgksu-gconf-defaults /usr/share/libgksu/debian/gconf-defaults.libgksu-sudo || true
+      update-gconf-defaults || true
     fi
     if [ ! -d $HOME_DIR ]; then
       exit 0;
