@@ -13,6 +13,6 @@ Depends: ${misc:Depends}, lxpanel, pcmanfm, openbox, x11-xserver-utils,
  lightdm, pishutdown, gnome-icon-theme, xserver-xorg, policykit-1, pix-icons,
  pi-greeter, fonts-droid, pix-plym-splash, pixel-wallpaper, zenity,
  fontconfig-infinality, point-rpi
-Recommends: xserver-xorg-video-fbturbo
+Recommends: xserver-xorg-video-fbturbo, libgksu2-0
 Description: Config to customise the LXDE UI for the Raspberry Pi
  Customised theme and configuration for LXDE desktop on Raspberry Pi.
