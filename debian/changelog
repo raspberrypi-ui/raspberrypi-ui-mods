@@ -1,3 +1,10 @@
+raspberrypi-ui-mods (1.20161027) jessie; urgency=medium
+
+  * Add libgksu2-0 to recommends
+  * Don't fail if libgksu is not installed
+
+ -- Serge Schneider <serge@raspberrypi.org>  Thu, 27 Oct 2016 14:42:55 +0100
+
 raspberrypi-ui-mods (1.20161019) jessie; urgency=medium
 
   * Updated Wolfram desktop file
