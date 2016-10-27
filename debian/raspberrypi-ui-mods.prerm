@@ -5,8 +5,8 @@ set -e
 case "${1}" in
   remove|deconfigure)
     update-alternatives --remove x-session-manager /usr/bin/startlxde-pi
-    update-alternatives --auto libgksu-gconf-defaults
-    update-gconf-defaults
+    update-alternatives --auto libgksu-gconf-defaults || true
+    update-gconf-defaults || true 
     ;;
 
   upgrade|failed-upgrade)
