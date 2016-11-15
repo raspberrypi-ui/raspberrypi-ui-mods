@@ -21,33 +21,36 @@ case "${1}" in
     fi
     if dpkg --compare-versions "${2}" lt "1.20150908"; then
       CHANGED_FILES="${CHANGED_FILES} \
-                     ${CONF_DIR}/gtk-3.0/gtk.css \
-                     ${CONF_DIR}/Trolltech.conf \
-                     ${CONF_DIR}/pcmanfm/LXDE-pi \
-                     ${CONF_DIR}/lxsession/LXDE-pi/desktop.conf"
-    fi
-    if dpkg --compare-versions "${2}" lt "1.20160527"; then
-      CHANGED_FILES="${CHANGED_FILES} \
-                     ${THEME_DIR}/PiX"
-    fi
-    if dpkg --compare-versions "${2}" lt "1.20160329"; then
-      CHANGED_FILES="${CHANGED_FILES} \
-                     ${CONF_DIR}/openbox/lxde-pi-rc.xml"
-    fi
-    if dpkg --compare-versions "${2}" lt "1.20160426"; then
-      CHANGED_FILES="${CHANGED_FILES} \
-                     ${CONF_DIR}/lxpanel/LXDE-pi"
+                     ${CONF_DIR}/Trolltech.conf"
     fi
     if dpkg --compare-versions "${2}" lt "1.20160718"; then
       CHANGED_FILES="${CHANGED_FILES} \
-                     ${THEME_DIR}/PiX \
-                     ${CONF_DIR}/lxsession/LXDE-pi/desktop.conf \
-                     ${CONF_DIR}/lxsession/LXDE-pi/autostart \
-                     ${CONF_DIR}/openbox/lxde-pi-rc.xml \
-                     ${CONF_DIR}/pcmanfm/LXDE-pi \
+                     ${THEME_DIR}/PiX"
+    fi
+    if dpkg --compare-versions "${2}" lt "1.20160718"; then
+      CHANGED_FILES="${CHANGED_FILES} \
+                    ${CONF_DIR}/lxsession/LXDE-pi/desktop.conf"
+    fi
+    if dpkg --compare-versions "${2}" lt "1.20160718"; then
+      CHANGED_FILES="${CHANGED_FILES} \
+                     ${CONF_DIR}/lxsession/LXDE-pi/autostart"
+    fi
+    if dpkg --compare-versions "${2}" lt "1.20160718"; then
+      CHANGED_FILES="${CHANGED_FILES} \
+                     ${CONF_DIR}/openbox/lxde-pi-rc.xml"
+    fi
+    if dpkg --compare-versions "${2}" lt "1.20160718"; then
+      CHANGED_FILES="${CHANGED_FILES} \
+                     ${CONF_DIR}/pcmanfm/LXDE-pi"
+    fi
+    if dpkg --compare-versions "${2}" lt "1.20160718"; then
+      CHANGED_FILES="${CHANGED_FILES} \
                      ${CONF_DIR}/lxpanel/LXDE-pi"
     fi
-
+    if dpkg --compare-versions "${2}" lt "1.20161115"; then
+      CHANGED_FILES="${CHANGED_FILES} \
+                     ${CONF_DIR}/gtk-3.0/gtk.css"
+    fi
     if [ -n "${CHANGED_FILES}" ]; then
       echo "Backing up old config files..."
       rm -rf ${BACKUP_DIR}

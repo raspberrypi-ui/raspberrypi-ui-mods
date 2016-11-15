@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20161115) jessie; urgency=medium
+
+  * Set GTK+3 highlight colour correctly
+
+ -- Simon Long <simon@raspberrypi.org>  Tue, 15 Nov 2016 15:36:10 +0000
+
 raspberrypi-ui-mods (1.20161027) jessie; urgency=medium
 
   * Add libgksu2-0 to recommends
