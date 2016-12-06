@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20161206) jessie; urgency=medium
+
+  * Add stepper buttons to scrollbars; remove scrollbar warp; set pipanel as desktop prefs
+
+ -- Simon Long <simon@raspberrypi.org>  Tue, 06 Dec 2016 14:55:42 +0000
+
 raspberrypi-ui-mods (1.20161115) jessie; urgency=medium
 
   * Set GTK+3 highlight colour correctly

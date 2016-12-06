@@ -13,6 +13,7 @@ if [ ! -f "$PCMANFM_CONF_DIR/pcmanfm.conf" ]; then
   cp /etc/xdg/pcmanfm/LXDE-pi/pcmanfm.conf "$PCMANFM_CONF_DIR/pcmanfm.conf"
 fi
 if [ ! -f "$PCMANFM_CONF_DIR/desktop-items-0.conf" ]; then
+  mkdir -p "$PCMANFM_CONF_DIR"
   cp /etc/xdg/pcmanfm/LXDE-pi/desktop-items-0.conf "$PCMANFM_CONF_DIR/desktop-items-0.conf"
 fi
 
@@ -23,13 +24,6 @@ if [ ! -f "$OPENBOX_CONF_DIR/lxde-pi-rc.xml" ]; then
   cp /etc/xdg/openbox/lxde-pi-rc.xml "$OPENBOX_CONF_DIR/lxde-pi-rc.xml"
 fi
 
-# Ensure the existance of desktop.conf
-LXSESSION_CONF_DIR="$XDG_CONFIG_HOME/lxsession/LXDE-pi"
-if [ ! -d "$LXSESSION_CONF_DIR" ]; then
-  mkdir -p "$LXSESSION_CONF_DIR"
-  cp /etc/xdg/lxsession/LXDE-pi/desktop.conf "$LXSESSION_CONF_DIR"
-fi
-
 # Copy PiX theme into home directory
 THEME_DIR="$HOME/.themes"
 if [ ! -d "$THEME_DIR/PiX" ]; then
@@ -37,10 +31,14 @@ if [ ! -d "$THEME_DIR/PiX" ]; then
   cp /usr/share/themes/PiX $HOME/.themes/ -a
 fi
 
-# Copy gtk.css (required for GTK3 themes to work correctly)
+# Copy gtk.css and settings.ini (required for GTK3 themes to work correctly)
 if [ ! -f "$XDG_CONFIG_HOME/gtk-3.0/gtk.css" ]; then
   mkdir -p "$XDG_CONFIG_HOME/gtk-3.0"
   cp /usr/share/raspi-ui-overrides/gtk.css "$XDG_CONFIG_HOME/gtk-3.0/"
+fi
+if [ ! -f "$XDG_CONFIG_HOME/gtk-3.0/settings.ini" ]; then
+  mkdir -p "$XDG_CONFIG_HOME/gtk-3.0"
+  cp /usr/share/raspi-ui-overrides/settings.ini "$XDG_CONFIG_HOME/gtk-3.0/"
 fi
 
 # Ensure Qt themes are consistent with GTK themes

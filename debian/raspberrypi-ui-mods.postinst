@@ -16,14 +16,14 @@ case "${1}" in
       update-alternatives --set libgksu-gconf-defaults /usr/share/libgksu/debian/gconf-defaults.libgksu-sudo || true
       update-gconf-defaults || true
     fi
-    if [ ! -d $HOME_DIR ]; then
+    if [ ! -d $HOME_DIR ] || ! id -u pi > /dev/null 2>&1 ; then
       exit 0;
     fi
     if dpkg --compare-versions "${2}" lt "1.20150908"; then
       CHANGED_FILES="${CHANGED_FILES} \
                      ${CONF_DIR}/Trolltech.conf"
     fi
-    if dpkg --compare-versions "${2}" lt "1.20160718"; then
+    if dpkg --compare-versions "${2}" lt "1.20161206"; then
       CHANGED_FILES="${CHANGED_FILES} \
                      ${THEME_DIR}/PiX"
     fi
@@ -35,11 +35,15 @@ case "${1}" in
       CHANGED_FILES="${CHANGED_FILES} \
                      ${CONF_DIR}/lxsession/LXDE-pi/autostart"
     fi
+    if dpkg --compare-versions "${2}" lt "1.20161206"; then
+      CHANGED_FILES="${CHANGED_FILES} \
+                     ${CONF_DIR}/lxsession/LXDE-pi/autokey.sh"
+    fi
     if dpkg --compare-versions "${2}" lt "1.20160718"; then
       CHANGED_FILES="${CHANGED_FILES} \
                      ${CONF_DIR}/openbox/lxde-pi-rc.xml"
     fi
-    if dpkg --compare-versions "${2}" lt "1.20160718"; then
+    if dpkg --compare-versions "${2}" lt "1.20161206"; then
       CHANGED_FILES="${CHANGED_FILES} \
                      ${CONF_DIR}/pcmanfm/LXDE-pi"
     fi
@@ -47,9 +51,13 @@ case "${1}" in
       CHANGED_FILES="${CHANGED_FILES} \
                      ${CONF_DIR}/lxpanel/LXDE-pi"
     fi
-    if dpkg --compare-versions "${2}" lt "1.20161115"; then
+    if dpkg --compare-versions "${2}" lt "1.20161206"; then
       CHANGED_FILES="${CHANGED_FILES} \
                      ${CONF_DIR}/gtk-3.0/gtk.css"
+    fi
+    if dpkg --compare-versions "${2}" lt "1.20161206"; then
+      CHANGED_FILES="${CHANGED_FILES} \
+                     ${CONF_DIR}/gtk-3.0/settings.ini"
     fi
     if [ -n "${CHANGED_FILES}" ]; then
       echo "Backing up old config files..."

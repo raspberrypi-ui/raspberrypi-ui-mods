@@ -8,3 +8,8 @@
 * {
 	font:	Roboto Light 12;
 }
+
+.scrollbar {
+	-GtkScrollbar-has-forward-stepper: true;
+	-GtkScrollbar-has-backward-stepper: true;
+}

@@ -7,7 +7,7 @@ gtk-color-scheme = "base_color:#FFFFFF\nfg_color:#2E3436\nbg_color:#EDEDED\ntext
 gtk-auto-mnemonics = 1
 
 # Enable click in scrollbar to move to clicked location
-gtk-primary-button-warps-slider = 1
+gtk-primary-button-warps-slider = 0
 
 # Default widget style
 
@@ -43,12 +43,12 @@ style "default"
 
 	GtkRange::trough-border		                = 0
 	GtkRange::slider-width		                = 13
-	GtkRange::stepper-size		                = 0
+	GtkRange::stepper-size		                = 13
 
 	GtkScrollbar::trough-border                 = 0
 	GtkScrollbar::activate-slider				= 1
-	GtkScrollbar::has-backward-stepper		    = 0
-	GtkScrollbar::has-forward-stepper		    = 0
+	GtkScrollbar::has-backward-stepper		    = 1
+	GtkScrollbar::has-forward-stepper		    = 1
 	GtkScrollbar::min-slider-length				= 42
 
 	GtkScrolledWindow::scrollbar-spacing		= 0
@@ -476,6 +476,126 @@ style "scrollbar"
 			border					= { 5, 5, 7, 7 }
 			stretch					= TRUE
 			orientation				= VERTICAL
+		}
+		image
+		{
+			function				= STEPPER
+			state					= NORMAL
+			file					= "Shadows/frame.png"
+			border					= { 1, 1, 1, 1 }
+			overlay_file			= "Arrows/arrow-up.png"
+			overlay_stretch			= FALSE
+			arrow_direction			= UP
+		}
+		image
+		{
+			function				= STEPPER
+			state					= PRELIGHT
+			file					= "Shadows/frame.png"
+			border					= { 1, 1, 1, 1 }
+			overlay_file			= "Arrows/arrow-up-prelight.png"
+			overlay_stretch			= FALSE
+			arrow_direction			= UP
+		}
+		image
+		{
+			function				= STEPPER
+			state					= INSENSITIVE
+			file					= "Shadows/frame.png"
+			border					= { 1, 1, 1, 1 }
+			overlay_file			= "Arrows/arrow-up-insens.png"
+			overlay_stretch			= FALSE
+			arrow_direction			= UP
+		}
+		image
+		{
+			function				= STEPPER
+			state					= NORMAL
+			file					= "Shadows/frame.png"
+			border					= { 1, 1, 1, 1 }
+			overlay_file			= "Arrows/arrow-down.png"
+			overlay_stretch			= FALSE
+			arrow_direction			= DOWN
+		}
+		image
+		{
+			function				= STEPPER
+			state					= PRELIGHT
+			file					= "Shadows/frame.png"
+			border					= { 1, 1, 1, 1 }
+			overlay_file			= "Arrows/arrow-down-prelight.png"
+			overlay_stretch			= FALSE
+			arrow_direction			= DOWN
+		}
+		image
+		{
+			function				= STEPPER
+			state					= INSENSITIVE
+			file					= "Shadows/frame.png"
+			border					= { 1, 1, 1, 1 }
+			overlay_file			= "Arrows/arrow-down-insens.png"
+			overlay_stretch			= FALSE
+			arrow_direction			= DOWN
+		}
+		image
+		{
+			function				= STEPPER
+			state					= NORMAL
+			file					= "Shadows/frame.png"
+			border					= { 1, 1, 1, 1 }
+			overlay_file			= "Arrows/arrow-left.png"
+			overlay_stretch			= FALSE
+			arrow_direction			= LEFT
+		}
+		image
+		{
+			function				= STEPPER
+			state					= PRELIGHT
+			file					= "Shadows/frame.png"
+			border					= { 1, 1, 1, 1 }
+			overlay_file			= "Arrows/arrow-left-prelight.png"
+			overlay_stretch			= FALSE
+			arrow_direction			= LEFT
+		}
+		image
+		{
+			function				= STEPPER
+			state					= INSENSITIVE
+			file					= "Shadows/frame.png"
+			border					= { 1, 1, 1, 1 }
+			overlay_file			= "Arrows/arrow-left-insens.png"
+			overlay_stretch			= FALSE
+			arrow_direction			= LEFT
+		}
+		image
+		{
+			function				= STEPPER
+			state					= NORMAL
+			file					= "Shadows/frame.png"
+			border					= { 1, 1, 1, 1 }
+			overlay_file			= "Arrows/arrow-right.png"
+			overlay_stretch			= FALSE
+			arrow_direction			= RIGHT
+		}
+		image
+		{
+			function				= STEPPER
+			state					= PRELIGHT
+			file					= "Shadows/frame.png"
+			border					= { 1, 1, 1, 1 }
+			overlay_file			= "Arrows/arrow-right-prelight.png"
+			overlay_stretch			= FALSE
+			arrow_direction			= RIGHT
+		}
+		image
+		{
+			function				= STEPPER
+			state					= INSENSITIVE
+			file					= "Shadows/frame.png"
+			border					= { 1, 1, 1, 1 }
+			overlay_file			= "Arrows/arrow-right-insens.png"
+			overlay_stretch			= FALSE
+			arrow_direction			= RIGHT
 		}
 	}
 }
