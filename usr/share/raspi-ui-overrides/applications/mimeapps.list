@@ -12,6 +12,7 @@ application/x-compressed-tar=xarchiver.desktop;
 application/x-gz-compressed-tar=xarchiver.desktop
 application/x-gz=xarchiver.desktop
 application/gzip=xarchiver.desktop
+application/zip=xarchiver.desktop
 
 [Default Applications]
 text/html=chromium-browser.desktop
@@ -27,3 +28,4 @@ application/x-compressed-tar=xarchiver.desktop
 application/x-gz-compressed-tar=xarchiver.desktop
 application/x-gz=xarchiver.desktop
 application/gzip=xarchiver.desktop
+application/zip=xarchiver.desktop

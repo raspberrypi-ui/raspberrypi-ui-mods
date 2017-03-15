@@ -1,3 +1,15 @@
+raspberrypi-ui-mods (1.20170315) jessie; urgency=medium
+
+  * Added association between ZIP archives and xarchiver
+
+ -- Simon Long <simon@raspberrypi.org>  Wed, 15 Mar 2017 13:06:08 +0000
+
+raspberrypi-ui-mods (1.20170301) jessie; urgency=medium
+
+  * MIME type updates for Python, HTML and some archive files
+
+ -- Simon Long <simon@raspberrypi.org>  Wed, 01 Mar 2017 17:19:07 +0000
+
 raspberrypi-ui-mods (1.20161206) jessie; urgency=medium
 
   * Add stepper buttons to scrollbars; remove scrollbar warp; set pipanel as desktop prefs
