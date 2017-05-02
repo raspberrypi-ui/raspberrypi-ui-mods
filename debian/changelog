@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20170503) jessie; urgency=medium
+
+  * Version bump
+
+ -- Simon Long <simon@raspberrypi.org>  Tue, 02 May 2017 08:37:52 +0100
+
 raspberrypi-ui-mods (1.20170502) jessie; urgency=medium
 
   * Merge in PR to add volume control key bindings
