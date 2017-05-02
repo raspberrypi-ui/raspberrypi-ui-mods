@@ -39,7 +39,7 @@ case "${1}" in
       CHANGED_FILES="${CHANGED_FILES} \
                      ${CONF_DIR}/lxsession/LXDE-pi/autokey.sh"
     fi
-    if dpkg --compare-versions "${2}" lt "1.20160718"; then
+    if dpkg --compare-versions "${2}" lt "1.20170502"; then
       CHANGED_FILES="${CHANGED_FILES} \
                      ${CONF_DIR}/openbox/lxde-pi-rc.xml"
     fi

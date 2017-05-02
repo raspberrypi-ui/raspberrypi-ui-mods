@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20170502) jessie; urgency=medium
+
+  * Merge in PR to add volume control key bindings
+
+ -- Simon Long <simon@raspberrypi.org>  Tue, 02 May 2017 07:51:21 +0100
+
 raspberrypi-ui-mods (1.20170315) jessie; urgency=medium
 
   * Added association between ZIP archives and xarchiver
