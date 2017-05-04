@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20170504) jessie; urgency=medium
+
+  * Package names updated
+
+ -- Simon Long <simon@raspberrypi.org>  Thu, 04 May 2017 15:09:11 +0100
+
 raspberrypi-ui-mods (1.20170503) jessie; urgency=medium
 
   * Version bump

@@ -45,7 +45,11 @@ case "${1}" in
     fi
     if dpkg --compare-versions "${2}" lt "1.20161206"; then
       CHANGED_FILES="${CHANGED_FILES} \
-                     ${CONF_DIR}/pcmanfm/LXDE-pi"
+                     ${CONF_DIR}/pcmanfm/LXDE-pi/pcmanfm.conf"
+    fi
+    if dpkg --compare-versions "${2}" lt "1.20170504"; then
+      CHANGED_FILES="${CHANGED_FILES} \
+                     ${CONF_DIR}/pcmanfm/LXDE-pi/desktop-items-0.conf"
     fi
     if dpkg --compare-versions "${2}" lt "1.20160718"; then
       CHANGED_FILES="${CHANGED_FILES} \

@@ -10,8 +10,8 @@ Architecture: all
 Depends: ${misc:Depends}, lxpanel, pcmanfm, openbox, x11-xserver-utils,
  fonts-roboto, pimixer, pipanel, lxinput, raspberrypi-artwork,
  gtk2-engines-pixbuf, gtk2-engines-clearlookspix, scrot, raspberrypi-sys-mods,
- lightdm, pishutdown, gnome-icon-theme, xserver-xorg, policykit-1, pix-icons,
- pi-greeter, fonts-droid, pix-plym-splash, pixel-wallpaper, zenity,
+ lightdm, pishutdown, gnome-icon-theme, xserver-xorg, policykit-1, rpd-icons,
+ pi-greeter, fonts-droid, rpd-plym-splash, rpd-wallpaper, zenity,
  fontconfig-infinality, point-rpi
 Recommends: xserver-xorg-video-fbturbo, libgksu2-0
 Description: Config to customise the LXDE UI for the Raspberry Pi
