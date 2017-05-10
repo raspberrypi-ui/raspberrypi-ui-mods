@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20170510) jessie; urgency=medium
+
+  * Add key mappings to maximise, minimise and move windows
+
+ -- Simon Long <simon@raspberrypi.org>  Wed, 10 May 2017 11:03:17 +0100
+
 raspberrypi-ui-mods (1.20170504) jessie; urgency=medium
 
   * Package names updated
