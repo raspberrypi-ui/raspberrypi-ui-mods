@@ -1,6 +1,6 @@
 [Added Associations]
 text/html=chromium-browser.desktop;
-text/x-python=idle3.desktop;
+text/x-python=Thonny.desktop;
 text/plain=leafpad.desktop;
 image/gif=gpicview.desktop;
 image/png=gpicview.desktop;
@@ -16,7 +16,7 @@ application/zip=xarchiver.desktop
 
 [Default Applications]
 text/html=chromium-browser.desktop
-text/x-python=idle3.desktop
+text/x-python=Thonny.desktop
 text/plain=leafpad.desktop
 image/gif=gpicview.desktop
 image/png=gpicview.desktop
