@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20170516) jessie; urgency=medium
+
+  * Set Thonny as default application for Python files
+
+ -- Simon Long <simon@raspberrypi.org>  Tue, 16 May 2017 08:56:35 +0100
+
 raspberrypi-ui-mods (1.20170510) jessie; urgency=medium
 
   * Add key mappings to maximise, minimise and move windows
