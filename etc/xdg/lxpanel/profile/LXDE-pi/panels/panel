@@ -132,7 +132,7 @@ Plugin {
   }
 }
 Plugin {
-  type=volumealsa
+  type=volumealsabt
   Config {
   }
 }

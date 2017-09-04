@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=IDLE (using Python-3.5)
+Comment=Integrated Development Environment for Python (using Python-3.5)
+Exec=/usr/bin/idle-python3.5
+Icon=/usr/share/pixmaps/python3.5.xpm
+Terminal=false
+Type=Application
+Categories=Application;Development;
+StartupNotify=true
+NoDisplay=true

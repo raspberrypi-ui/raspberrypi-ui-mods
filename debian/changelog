@@ -1,32 +1,68 @@
-raspberrypi-ui-mods (1.20170516) jessie; urgency=medium
+raspberrypi-ui-mods (1.20170725) stretch; urgency=medium
 
-  * Set Thonny as default application for Python files
+  * Radio and check buttons synced between GTK2 and 3
 
- -- Simon Long <simon@raspberrypi.org>  Tue, 16 May 2017 08:56:35 +0100
+ -- Simon Long <simon@raspberrypi.org>  Tue, 25 Jul 2017 14:32:46 +0100
 
-raspberrypi-ui-mods (1.20170510) jessie; urgency=medium
+raspberrypi-ui-mods (1.20170719) stretch; urgency=medium
 
-  * Add key mappings to maximise, minimise and move windows
+  * Add override for lxhotkey menu item
 
- -- Simon Long <simon@raspberrypi.org>  Wed, 10 May 2017 11:03:17 +0100
+ -- Simon Long <simon@raspberrypi.org>  Wed, 19 Jul 2017 14:17:45 +0100
 
-raspberrypi-ui-mods (1.20170504) jessie; urgency=medium
+raspberrypi-ui-mods (1.20170707) stretch; urgency=medium
 
-  * Package names updated
+  * Make settings for all users, not just pi user
 
- -- Simon Long <simon@raspberrypi.org>  Thu, 04 May 2017 15:09:11 +0100
+ -- Simon Long <simon@raspberrypi.org>  Fri, 07 Jul 2017 14:06:32 +0100
 
-raspberrypi-ui-mods (1.20170503) jessie; urgency=medium
+raspberrypi-ui-mods (1.20170620) stretch; urgency=medium
 
-  * Version bump
+  * Fix postinstall date bugs.
 
- -- Simon Long <simon@raspberrypi.org>  Tue, 02 May 2017 08:37:52 +0100
+ -- Simon Long <simon@raspberrypi.org>  Tue, 20 Jun 2017 11:42:38 +0100
 
-raspberrypi-ui-mods (1.20170502) jessie; urgency=medium
+raspberrypi-ui-mods (1.20170619) stretch; urgency=medium
 
-  * Merge in PR to add volume control key bindings
+  * Add workaround for Stretch Zenity bug in warning message
 
- -- Simon Long <simon@raspberrypi.org>  Tue, 02 May 2017 07:51:21 +0100
+ -- Simon Long <simon@raspberrypi.org>  Mon, 19 Jun 2017 13:24:17 +0100
+
+raspberrypi-ui-mods (1.20170616) stretch; urgency=medium
+
+  * Fix duplicate tag in Openbox XML file
+
+ -- Simon Long <simon@raspberrypi.org>  Fri, 16 Jun 2017 15:03:38 +0100
+
+raspberrypi-ui-mods (1.20170615) stretch; urgency=medium
+
+  * Add plugins as recommends
+
+ -- Simon Long <simon@raspberrypi.org>  Thu, 15 Jun 2017 09:15:03 +0100
+
+raspberrypi-ui-mods (1.20170614) stretch; urgency=medium
+
+  * Use Piboto font instead of Roboto throughout
+
+ -- Simon Long <simon@raspberrypi.org>  Wed, 14 Jun 2017 09:47:24 +0100
+
+raspberrypi-ui-mods (1.20170613) stretch; urgency=medium
+
+  * Add postinst commands to disable lock on screensaver
+
+ -- Simon Long <simon@raspberrypi.org>  Tue, 13 Jun 2017 13:12:10 +0100
+
+raspberrypi-ui-mods (1.20170502) stretch; urgency=medium
+
+  * Merge in volume control keymap
+
+ -- Simon Long <simon@raspberrypi.org>  Tue, 02 May 2017 09:17:42 +0100
+
+raspberrypi-ui-mods (1.20170324) stretch; urgency=medium
+
+  * Theme etc modified for stretch
+
+ -- Simon Long <simon@raspberrypi.org>  Fri, 24 Mar 2017 14:21:21 +0000
 
 raspberrypi-ui-mods (1.20170315) jessie; urgency=medium
 

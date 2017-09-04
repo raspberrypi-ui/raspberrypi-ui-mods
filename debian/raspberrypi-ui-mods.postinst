@@ -8,86 +8,96 @@ case "${1}" in
       x-session-manager /usr/bin/startlxde-pi 90 \
       --slave /usr/share/man/man1/x-session-manager.1.gz \
       x-session-manager.1.gz /usr/share/man/man1/startlxde.1.gz
-    HOME_DIR=/home/pi
-    BACKUP_DIR=${HOME_DIR}/oldconffiles
-    CONF_DIR=${HOME_DIR}/.config
-    THEME_DIR=${HOME_DIR}/.themes
-    if [ -z "${2}" ]; then
-      update-alternatives --set libgksu-gconf-defaults /usr/share/libgksu/debian/gconf-defaults.libgksu-sudo || true
-      update-gconf-defaults || true
-    fi
-    if [ ! -d $HOME_DIR ] || ! id -u pi > /dev/null 2>&1 ; then
-      exit 0;
-    fi
-    if dpkg --compare-versions "${2}" lt "1.20150908"; then
-      CHANGED_FILES="${CHANGED_FILES} \
-                     ${CONF_DIR}/Trolltech.conf"
-    fi
-    if dpkg --compare-versions "${2}" lt "1.20161206"; then
-      CHANGED_FILES="${CHANGED_FILES} \
-                     ${THEME_DIR}/PiX"
-    fi
-    if dpkg --compare-versions "${2}" lt "1.20160718"; then
-      CHANGED_FILES="${CHANGED_FILES} \
-                    ${CONF_DIR}/lxsession/LXDE-pi/desktop.conf"
-    fi
-    if dpkg --compare-versions "${2}" lt "1.20160718"; then
-      CHANGED_FILES="${CHANGED_FILES} \
-                     ${CONF_DIR}/lxsession/LXDE-pi/autostart"
-    fi
-    if dpkg --compare-versions "${2}" lt "1.20161206"; then
-      CHANGED_FILES="${CHANGED_FILES} \
-                     ${CONF_DIR}/lxsession/LXDE-pi/autokey.sh"
-    fi
-    if dpkg --compare-versions "${2}" lt "1.20170510"; then
-      CHANGED_FILES="${CHANGED_FILES} \
-                     ${CONF_DIR}/openbox/lxde-pi-rc.xml"
-    fi
-    if dpkg --compare-versions "${2}" lt "1.20161206"; then
-      CHANGED_FILES="${CHANGED_FILES} \
-                     ${CONF_DIR}/pcmanfm/LXDE-pi/pcmanfm.conf"
-    fi
-    if dpkg --compare-versions "${2}" lt "1.20170504"; then
-      CHANGED_FILES="${CHANGED_FILES} \
-                     ${CONF_DIR}/pcmanfm/LXDE-pi/desktop-items-0.conf"
-    fi
-    if dpkg --compare-versions "${2}" lt "1.20160718"; then
-      CHANGED_FILES="${CHANGED_FILES} \
-                     ${CONF_DIR}/lxpanel/LXDE-pi"
-    fi
-    if dpkg --compare-versions "${2}" lt "1.20161206"; then
-      CHANGED_FILES="${CHANGED_FILES} \
-                     ${CONF_DIR}/gtk-3.0/gtk.css"
-    fi
-    if dpkg --compare-versions "${2}" lt "1.20161206"; then
-      CHANGED_FILES="${CHANGED_FILES} \
-                     ${CONF_DIR}/gtk-3.0/settings.ini"
-    fi
-    if [ -n "${CHANGED_FILES}" ]; then
-      echo "Backing up old config files..."
-      rm -rf ${BACKUP_DIR}
-      for file in $CHANGED_FILES; do
-        if [ -e $file ]; then
-          CHANGED=1
-          NEWLOC=${BACKUP_DIR}/`dirname $file | cut -d / -f 4-`
-          echo $file
-          mkdir -p $NEWLOC
-          mv $file $NEWLOC
-        fi
-      done
-      if [ "$CHANGED" = "1" ]; then
-        chown -R pi:pi $BACKUP_DIR
-        mkdir -p /home/pi/.config/autostart
-        cat << EOF >> /home/pi/.config/autostart/pi-conf-backup.desktop
+    getent passwd | while read line; do
+        USHELL=$(echo $line | cut -d: -f7)
+        if grep -q $USHELL /etc/shells ; then
+          USER=$(echo $line | cut -d: -f1)
+          HOME_DIR=$(echo $line | cut -d: -f6)/
+          GROUP=$(getent group $USER | cut -d: -f1)
+          BACKUP_DIR=${HOME_DIR}oldconffiles
+          CONF_DIR=${HOME_DIR}.config
+          THEME_DIR=${HOME_DIR}.themes
+          OWNER=$USER:$GROUP
+          if [ -z "${2}" ]; then
+            update-alternatives --set libgksu-gconf-defaults /usr/share/libgksu/debian/gconf-defaults.libgksu-sudo || true
+            update-gconf-defaults || true
+          fi
+          if dpkg --compare-versions "${2}" lt "1.20170614"; then
+            CHANGED_FILES="${CHANGED_FILES} \
+                           ${CONF_DIR}/Trolltech.conf"
+          fi
+          if dpkg --compare-versions "${2}" lt "1.20170613"; then
+            CHANGED_FILES="${CHANGED_FILES} \
+                           ${THEME_DIR}/PiX"
+          fi
+          if dpkg --compare-versions "${2}" lt "1.20170614"; then
+            CHANGED_FILES="${CHANGED_FILES} \
+                           ${CONF_DIR}/lxsession/LXDE-pi/desktop.conf"
+          fi
+          if dpkg --compare-versions "${2}" lt "1.20160718"; then
+            CHANGED_FILES="${CHANGED_FILES} \
+                           ${CONF_DIR}/lxsession/LXDE-pi/autostart"
+          fi
+          if dpkg --compare-versions "${2}" lt "1.20161206"; then
+            CHANGED_FILES="${CHANGED_FILES} \
+                           ${CONF_DIR}/lxsession/LXDE-pi/autokey.sh"
+          fi
+          if dpkg --compare-versions "${2}" lt "1.20170619"; then
+            CHANGED_FILES="${CHANGED_FILES} \
+                           ${CONF_DIR}/openbox/lxde-pi-rc.xml"
+          fi
+          if dpkg --compare-versions "${2}" lt "1.20161206"; then
+            CHANGED_FILES="${CHANGED_FILES} \
+                           ${CONF_DIR}/pcmanfm/LXDE-pi/pcmanfm.conf"
+          fi
+          if dpkg --compare-versions "${2}" lt "1.20170707"; then
+            CHANGED_FILES="${CHANGED_FILES} \
+                           ${CONF_DIR}/pcmanfm/LXDE-pi/desktop-items-0.conf"
+          fi
+          if dpkg --compare-versions "${2}" lt "1.20170613"; then
+            CHANGED_FILES="${CHANGED_FILES} \
+                           ${CONF_DIR}/lxpanel/LXDE-pi"
+          fi
+          if dpkg --compare-versions "${2}" lt "1.20170614"; then
+            CHANGED_FILES="${CHANGED_FILES} \
+                           ${CONF_DIR}/gtk-3.0/gtk.css"
+          fi
+          if dpkg --compare-versions "${2}" lt "1.20161206"; then
+            CHANGED_FILES="${CHANGED_FILES} \
+                           ${CONF_DIR}/gtk-3.0/settings.ini"
+          fi
+          if [ -n "${CHANGED_FILES}" ]; then
+            echo "Backing up old config files..."
+            rm -rf ${BACKUP_DIR}
+            for file in $CHANGED_FILES; do
+              if [ -e $file ]; then
+                CHANGED=1
+                NEWLOC=${BACKUP_DIR}/`dirname $file | cut -d / -f 4-`
+                echo $file
+                mkdir -p $NEWLOC
+                mv $file $NEWLOC
+              fi
+            done
+            if [ "$CHANGED" = "1" ]; then
+              chown -R ${OWNER} $BACKUP_DIR
+              mkdir -p ${CONF_DIR}/autostart
+              cat << EOF >> ${CONF_DIR}/autostart/pi-conf-backup.desktop
 [Desktop Entry]
-Exec=sh -c 'zenity --info --text="Your Raspbian system has been upgraded to the latest version.\n\nTo ensure compatibility with the new version, some configuration files have been overwritten -\nif you had customised your system, some of your changes may have been lost.\n\nYour original configuration files have been backed up and put in the directory /home/pi/oldconffiles\n" && rm ~/.config/autostart/pi-conf-backup.desktop'
+Exec=sh -c 'zenity --info --no-wrap --text="Your Raspbian system has been upgraded to the latest version.\n\nTo ensure compatibility with the new version, some configuration files have been overwritten -\nif you had customised your system, some of your changes may have been lost.\n\nYour original configuration files have been backed up and put in the directory ~/oldconffiles\n" && rm ~/.config/autostart/pi-conf-backup.desktop'
 Type=Application
 EOF
-        chown pi:pi /home/pi/.config
-        chown pi:pi /home/pi/.config/autostart
-        chown pi:pi /home/pi/.config/autostart/pi-conf-backup.desktop
-      fi
-    fi
+              chown ${OWNER} ${CONF_DIR}
+              chown ${OWNER} ${CONF_DIR}/autostart
+              chown ${OWNER} ${CONF_DIR}/autostart/pi-conf-backup.desktop
+            fi
+          fi
+        fi
+    done
+    gsettings set org.gnome.desktop.screensaver lock-enabled false || true
+    gsettings set org.gnome.desktop.screensaver lock-delay 4294967295 || true
+    gsettings set apps.light-locker late-locking false || true
+    gsettings set apps.light-locker lock-after-screensaver 0 || true
+    gsettings set apps.light-locker lock-on-suspend false || true
     ;;
 
   abort-upgrade|abort-remove|abort-deconfigure)

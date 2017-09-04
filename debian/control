@@ -7,12 +7,14 @@ Standards-Version: 3.9.6
 
 Package: raspberrypi-ui-mods
 Architecture: all
-Depends: ${misc:Depends}, lxpanel, pcmanfm, openbox, x11-xserver-utils,
- fonts-roboto, pimixer, pipanel, lxinput, raspberrypi-artwork,
- gtk2-engines-pixbuf, gtk2-engines-clearlookspix, scrot, raspberrypi-sys-mods,
- lightdm, pishutdown, gnome-icon-theme, xserver-xorg, policykit-1, rpd-icons,
- pi-greeter, fonts-droid, rpd-plym-splash, rpd-wallpaper, zenity,
- fontconfig-infinality, point-rpi
-Recommends: xserver-xorg-video-fbturbo, libgksu2-0
+Depends: ${misc:Depends}, lxpanel, pcmanfm, openbox, xserver-xorg,
+ x11-xserver-utils, policykit-1, lightdm, raspberrypi-sys-mods, 
+ zenity, libglib2.0-bin
+Recommends: xserver-xorg-video-fbturbo, libgksu2-0,
+ fonts-piboto, pimixer, pipanel, lxinput, raspberrypi-artwork, 
+ pi-greeter, rpd-plym-splash, rpd-wallpaper, pishutdown, scrot,
+ fontconfig-infinality, point-rpi, gtk2-engines-pixbuf, 
+ gtk2-engines-clearlookspix, gnome-icon-theme, rpd-icons,
+ lxplug-volume, lxplug-network, lxplug-bluetooth, lxplug-ejecter
 Description: Config to customise the LXDE UI for the Raspberry Pi
  Customised theme and configuration for LXDE desktop on Raspberry Pi.

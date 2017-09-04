@@ -6,7 +6,10 @@
 @define-color theme_selected_fg_color #ffffff;
 
 * {
-	font:	Roboto Light 12;
+	font-family:	Piboto Light;
+	font-size:	12pt;
+	font-weight:	Normal;
+	font-style:	Normal;
 }
 
 .scrollbar {
