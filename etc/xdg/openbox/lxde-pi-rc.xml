@@ -335,6 +335,27 @@
         <command>amixer set PCM toggle</command>
       </action>
     </keybind>
+    <!-- Keybindings for pitop -->
+    <keybind key="0xC6">
+      <action name="Execute">
+        <command>brightness decrease</command>
+      </action>
+    </keybind>
+    <keybind key="0xC7">
+      <action name="Execute">
+        <command>brightness increase</command>
+      </action>
+    </keybind>
+    <keybind key="0xC8">
+      <action name="Execute">
+        <command>pcmanfm</command>
+      </action>
+    </keybind>
+    <keybind key="0xC9">
+      <action name="Execute">
+        <command>lxterminal</command>
+      </action>
+    </keybind>
   </keyboard>
   <mouse>
     <dragThreshold>8</dragThreshold>

@@ -167,6 +167,11 @@ Plugin {
   }
 }
 Plugin {
+  type=ptbatt
+  Config {
+  }
+}
+Plugin {
   type=ejecter
   Config {
   }
