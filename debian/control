@@ -15,6 +15,7 @@ Recommends: xserver-xorg-video-fbturbo, libgksu2-0,
  pi-greeter, rpd-plym-splash, rpd-wallpaper, pishutdown, scrot,
  fontconfig-infinality, point-rpi, gtk2-engines-pixbuf, 
  gtk2-engines-clearlookspix, gnome-icon-theme, rpd-icons,
- lxplug-volume, lxplug-network, lxplug-bluetooth, lxplug-ejecter
+ lxplug-volume, lxplug-network, lxplug-bluetooth, lxplug-ejecter,
+ lxplug-ptbatt
 Description: Config to customise the LXDE UI for the Raspberry Pi
  Customised theme and configuration for LXDE desktop on Raspberry Pi.
