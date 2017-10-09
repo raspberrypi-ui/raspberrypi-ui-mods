@@ -157,7 +157,7 @@ Plugin {
     TooltipFmt=%A %x
     BoldFont=0
     IconOnly=0
-    CenterText=0
+    CenterText=1
   }
 }
 Plugin {
