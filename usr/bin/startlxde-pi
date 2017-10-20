@@ -61,15 +61,22 @@ if [ ! -f "$XDG_CONFIG_HOME/Trolltech.conf" ]; then
   cp /usr/share/raspi-ui-overrides/Trolltech.conf "$XDG_CONFIG_HOME/"
 fi
 
-# Ensure the existance of lxpanel config files
+# Ensure the existence of lxpanel config files
 LXPANEL_CONF_DIR="$XDG_CONFIG_HOME/lxpanel"
-if [ ! -e "$LXPANEL_CONF_DIR/LXDE-pi" ]; then
+if [ ! -f "$LXPANEL_CONF_DIR/launchtaskbar.cfg" ]; then
   mkdir -p "$LXPANEL_CONF_DIR"
   cp /etc/xdg/lxpanel/launchtaskbar.cfg "$LXPANEL_CONF_DIR"
-  cp -r /etc/xdg/lxpanel/profile/LXDE-pi "$LXPANEL_CONF_DIR"
+fi
+if [ ! -f "$LXPANEL_CONF_DIR/LXDE-pi/config" ]; then
+  mkdir -p "$LXPANEL_CONF_DIR/LXDE-pi"
+  cp /etc/xdg/lxpanel/profile/LXDE-pi/config "$LXPANEL_CONF_DIR/LXDE-pi"
+fi
+if [ ! -f "$LXPANEL_CONF_DIR/LXDE-pi/panels/panel" ]; then
+  mkdir -p "$LXPANEL_CONF_DIR/LXDE-pi/panels"
+  cp /etc/xdg/lxpanel/profile/LXDE-pi/panels/panel "$LXPANEL_CONF_DIR/LXDE-pi/panels"
 fi
 
-# Ensure the existance of the 'Desktop' folder
+# Ensure the existence of the 'Desktop' folder
 if [ -e "$XDG_CONFIG_HOME/user-dirs.dirs" ]; then
   . "$XDG_CONFIG_HOME/user-dirs.dirs"
 else
