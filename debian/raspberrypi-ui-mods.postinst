@@ -54,6 +54,10 @@ case "${1}" in
             CHANGED_FILES="${CHANGED_FILES} \
                            ${CONF_DIR}/pcmanfm/LXDE-pi/desktop-items-0.conf"
           fi
+          if dpkg --compare-versions "${2}" lt "1.20171027"; then
+            CHANGED_FILES="${CHANGED_FILES} \
+                           ${CONF_DIR}/libfm/libfm.conf"
+          fi
           if dpkg --compare-versions "${2}" lt "1.20161018"; then
             CHANGED_FILES="${CHANGED_FILES} \
                            ${CONF_DIR}/lxpanel/launchtaskbar.cfg"

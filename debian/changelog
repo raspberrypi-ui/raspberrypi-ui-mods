@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20171027) stretch; urgency=medium
+
+  * Enable cutdown UI mode for pcmanfm
+
+ -- Simon Long <simon@raspberrypi.org>  Fri, 27 Oct 2017 10:19:20 +0100
+
 raspberrypi-ui-mods (1.20171006) stretch; urgency=medium
 
   * Battery monitor and pitop key bindings added
