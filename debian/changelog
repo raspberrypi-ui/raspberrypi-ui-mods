@@ -1,6 +1,6 @@
 raspberrypi-ui-mods (1.20171027) stretch; urgency=medium
 
-  * Enable cutdown UI mode for pcmanfm
+  * Darken side pane in file manager
 
  -- Simon Long <simon@raspberrypi.org>  Fri, 27 Oct 2017 10:19:20 +0100
 

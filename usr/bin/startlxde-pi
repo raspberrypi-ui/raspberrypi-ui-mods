@@ -17,13 +17,6 @@ if [ ! -f "$PCMANFM_CONF_DIR/desktop-items-0.conf" ]; then
   cp /etc/xdg/pcmanfm/LXDE-pi/desktop-items-0.conf "$PCMANFM_CONF_DIR/desktop-items-0.conf"
 fi
 
-# Ensure the existence of libfm config file
-LIBFM_CONF_DIR="$XDG_CONFIG_HOME/libfm"
-if [ ! -f "$LIBFM_CONF_DIR/libfm.conf" ]; then
-  mkdir -p "$LIBFM_CONF_DIR"
-  cp /etc/xdg/libfm/libfm.conf "$LIBFM_CONF_DIR/libfm.conf"
-fi
-
 # Ensure the existence of openbox config file
 OPENBOX_CONF_DIR="$XDG_CONFIG_HOME/openbox"
 if [ ! -f "$OPENBOX_CONF_DIR/lxde-pi-rc.xml" ]; then
