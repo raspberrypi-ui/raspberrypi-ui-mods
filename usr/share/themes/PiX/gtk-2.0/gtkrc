@@ -1330,6 +1330,14 @@ style "chrome-gtk-frame"
 
 class "ChromeGtkFrame" style "chrome-gtk-frame"
 
+# File manager
+
+style "treeview"
+{
+	base[NORMAL] = shade (0.965, @base_color)
+}
+
+class "FmDirTreeView"                           style "treeview"
 
 
 
