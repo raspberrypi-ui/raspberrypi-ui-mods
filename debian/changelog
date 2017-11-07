@@ -1,8 +1,8 @@
-raspberrypi-ui-mods (1.20171027) stretch; urgency=medium
+raspberrypi-ui-mods (1.20171107) stretch; urgency=medium
 
-  * Darken side pane in file manager
+  * Add desktop file to hide mpv menu entry for x86 install
 
- -- Simon Long <simon@raspberrypi.org>  Fri, 27 Oct 2017 10:19:20 +0100
+ -- Simon Long <simon@raspberrypi.org>  Tue, 07 Nov 2017 08:03:19 +0000
 
 raspberrypi-ui-mods (1.20171006) stretch; urgency=medium
 
