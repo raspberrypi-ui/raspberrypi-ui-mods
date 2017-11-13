@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20171113) stretch; urgency=medium
+
+  * Use correct theming for radio buttons on toolbar
+
+ -- Simon Long <simon@raspberrypi.org>  Mon, 13 Nov 2017 13:52:26 +0000
+
 raspberrypi-ui-mods (1.20171107) stretch; urgency=medium
 
   * Add desktop file to hide mpv menu entry for x86 install
