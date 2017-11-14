@@ -101,11 +101,6 @@ EOF
           fi
         fi
     done
-    gsettings set org.gnome.desktop.screensaver lock-enabled false || true
-    gsettings set org.gnome.desktop.screensaver lock-delay 4294967295 || true
-    gsettings set apps.light-locker late-locking false || true
-    gsettings set apps.light-locker lock-after-screensaver 0 || true
-    gsettings set apps.light-locker lock-on-suspend false || true
     ;;
 
   abort-upgrade|abort-remove|abort-deconfigure)

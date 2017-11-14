@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20171114) stretch; urgency=medium
+
+  * Remove postinst gsettings changes
+
+ -- Serge Schneider <serge@raspberrypi.org>  Tue, 14 Nov 2017 13:32:51 +0000
+
 raspberrypi-ui-mods (1.20171113) stretch; urgency=medium
 
   * Use correct theming for radio buttons on toolbar
