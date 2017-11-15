@@ -46,7 +46,7 @@ case "${1}" in
             CHANGED_FILES="${CHANGED_FILES} \
                            ${CONF_DIR}/openbox/lxde-pi-rc.xml"
           fi
-          if dpkg --compare-versions "${2}" lt "1.20161206"; then
+          if dpkg --compare-versions "${2}" lt "1.20171115"; then
             CHANGED_FILES="${CHANGED_FILES} \
                            ${CONF_DIR}/pcmanfm/LXDE-pi/pcmanfm.conf"
           fi
