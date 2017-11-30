@@ -84,6 +84,8 @@ style "default"
 
 	GtkExpander::expander-size				    = 11
 
+	GtkHButtonBox::child-min-height             = 0
+
 	# Colours
 
 	bg[NORMAL]			= @bg_color
