@@ -26,7 +26,7 @@ case "${1}" in
             CHANGED_FILES="${CHANGED_FILES} \
                            ${CONF_DIR}/Trolltech.conf"
           fi
-          if dpkg --compare-versions "${2}" lt "1.20171113"; then
+          if dpkg --compare-versions "${2}" lt "1.20171201"; then
             CHANGED_FILES="${CHANGED_FILES} \
                            ${THEME_DIR}/PiX"
           fi

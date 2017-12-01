@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20171201) stretch; urgency=medium
+
+  * Remove minimum height for button boxes
+
+ -- Simon Long <simon@raspberrypi.org>  Fri, 01 Dec 2017 08:07:53 +0000
+
 raspberrypi-ui-mods (1.20171115) stretch; urgency=medium
 
   * Update pcmanfm defaults to match latest version
