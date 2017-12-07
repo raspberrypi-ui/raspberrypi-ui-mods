@@ -171,7 +171,7 @@ spinner {
  ****************/
 spinbutton:not(.vertical),
 entry {
-  min-height: 32px;
+  min-height: 24px;
   padding-left: 8px;
   padding-right: 8px;
   border: 1px solid;
@@ -413,7 +413,7 @@ treeview entry.flat, treeview entry {
     background-image: -gtk-gradient(radial, center center, 0, center center, 0.5, to(@theme_selected_bg_color), to(transparent)); } }
 notebook > header > tabs > arrow, button.titlebutton,
 button {
-  min-height: 24px;
+  min-height: 16px;
   min-width: 16px;
   padding: 4px 8px;
   border: 1px solid;
