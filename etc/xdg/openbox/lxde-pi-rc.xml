@@ -338,12 +338,12 @@
     <!-- Keybindings for pitop -->
     <keybind key="0xC6">
       <action name="Execute">
-        <command>brightness decrease</command>
+        <command>sh -c "if test -e /usr/bin/pt-brightness; then /usr/bin/pt-brightness -d; fi"</command>
       </action>
     </keybind>
     <keybind key="0xC7">
       <action name="Execute">
-        <command>brightness increase</command>
+        <command>sh -c "if test -e /usr/bin/pt-brightness; then /usr/bin/pt-brightness -i; fi"</command>
       </action>
     </keybind>
     <keybind key="0xC8">
