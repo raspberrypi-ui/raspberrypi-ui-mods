@@ -2599,7 +2599,7 @@ scrollbar {
     scrollbar slider:hover {
       background-color: #535859; }
     scrollbar slider:hover:active {
-      background-color: #2a76c6; }
+      background-color: @theme_selected_bg_color; }
     scrollbar slider:backdrop {
       background-color: #c3c4c4; }
     scrollbar slider:disabled {
@@ -2676,7 +2676,7 @@ scrollbar {
       box-shadow: inset 0 1px rgba(255, 255, 255, 0);
       text-shadow: none;
       -gtk-icon-shadow: none;
-      color: #2a76c6; }
+      color: @theme_selected_bg_color; }
     scrollbar button:disabled {
       border-color: transparent;
       background-color: transparent;
