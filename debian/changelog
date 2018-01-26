@@ -6,6 +6,7 @@ raspberrypi-ui-mods (1.20180125) stretch; urgency=medium
   * Add larger size icons for Openbox title bars
   * Harmonise scrollbars between GTK+2 and GTK+3
   * Use launch icon for main menu rather than fixed graphic
+  * Use an icon file for all Python applications
 
  -- Simon Long <simon@raspberrypi.org>  Thu, 25 Jan 2018 08:07:53 +0000
 
