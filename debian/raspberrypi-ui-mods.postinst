@@ -26,7 +26,7 @@ case "${1}" in
             CHANGED_FILES="${CHANGED_FILES} \
                            ${CONF_DIR}/Trolltech.conf"
           fi
-          if dpkg --compare-versions "${2}" lt "1.20171201"; then
+          if dpkg --compare-versions "${2}" lt "1.20180125"; then
             CHANGED_FILES="${CHANGED_FILES} \
                            ${THEME_DIR}/PiX"
           fi
@@ -42,7 +42,7 @@ case "${1}" in
             CHANGED_FILES="${CHANGED_FILES} \
                            ${CONF_DIR}/lxsession/LXDE-pi/autokey.sh"
           fi
-          if dpkg --compare-versions "${2}" lt "1.20171201"; then
+          if dpkg --compare-versions "${2}" lt "1.20180125"; then
             CHANGED_FILES="${CHANGED_FILES} \
                            ${CONF_DIR}/openbox/lxde-pi-rc.xml"
           fi
@@ -62,7 +62,7 @@ case "${1}" in
             CHANGED_FILES="${CHANGED_FILES} \
                            ${CONF_DIR}/lxpanel/LXDE-pi/config"
           fi
-          if dpkg --compare-versions "${2}" lt "1.20171201"; then
+          if dpkg --compare-versions "${2}" lt "1.20180125"; then
             CHANGED_FILES="${CHANGED_FILES} \
                            ${CONF_DIR}/lxpanel/LXDE-pi/panels/panel"
           fi

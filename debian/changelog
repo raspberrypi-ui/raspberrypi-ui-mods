@@ -1,8 +1,13 @@
-raspberrypi-ui-mods (1.20171201) stretch; urgency=medium
+raspberrypi-ui-mods (1.20180125) stretch; urgency=medium
 
   * Remove minimum height for button boxes
+  * Reduce minimum height for various buttons and combo boxes
+  * Set keymap to check for PiTop brightness control before calling
+  * Add larger size icons for Openbox title bars
+  * Harmonise scrollbars between GTK+2 and GTK+3
+  * Use launch icon for main menu rather than fixed graphic
 
- -- Simon Long <simon@raspberrypi.org>  Fri, 01 Dec 2017 08:07:53 +0000
+ -- Simon Long <simon@raspberrypi.org>  Thu, 25 Jan 2018 08:07:53 +0000
 
 raspberrypi-ui-mods (1.20171115) stretch; urgency=medium
 
