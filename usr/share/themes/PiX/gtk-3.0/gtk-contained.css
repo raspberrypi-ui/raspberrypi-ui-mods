@@ -2617,7 +2617,7 @@ scrollbar {
   scrollbar button {
     min-width: 7px;
     min-height: 7px;
-    border-style: 1px solid;
+    border-style: solid;
     border-radius: 2px;
     border-color: #B0B0B0;
     background-color: white;
