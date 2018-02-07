@@ -13,7 +13,7 @@ case "${1}" in
         if grep -q $USHELL /etc/shells ; then
           USER=$(echo $line | cut -d: -f1)
           HOME_DIR=$(echo $line | cut -d: -f6)/
-          GROUP=$(getent group $USER | cut -d: -f1)
+          GROUP=$(getent group $(getent passwd $USER | cut -d: -f4) | cut -d: -f1)
           BACKUP_DIR=${HOME_DIR}oldconffiles
           CONF_DIR=${HOME_DIR}.config
           THEME_DIR=${HOME_DIR}.themes
@@ -77,6 +77,7 @@ case "${1}" in
           if [ -n "${CHANGED_FILES}" ]; then
             echo "Backing up old config files..."
             rm -rf ${BACKUP_DIR}
+            CHANGED=0
             for file in $CHANGED_FILES; do
               if [ -e $file ]; then
                 CHANGED=1
