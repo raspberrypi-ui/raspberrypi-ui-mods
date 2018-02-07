@@ -88,7 +88,9 @@ case "${1}" in
               fi
             done
             if [ "$CHANGED" = "1" ]; then
-              chown -R ${OWNER} $BACKUP_DIR
+              if [ -e $BACKUP_DIR ]; then
+                chown -R ${OWNER} $BACKUP_DIR
+              fi
               mkdir -p ${CONF_DIR}/autostart
               cat << EOF >> ${CONF_DIR}/autostart/pi-conf-backup.desktop
 [Desktop Entry]

@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20180207) stretch; urgency=medium
+
+  * Fix a couple of minor bugs in postinst script
+
+ -- Simon Long <simon@raspberrypi.org>  Wed, 07 Feb 2018 11:59:37 +0000
+
 raspberrypi-ui-mods (1.20180125) stretch; urgency=medium
 
   * Remove minimum height for button boxes
