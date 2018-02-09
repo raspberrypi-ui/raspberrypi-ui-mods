@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20180209) stretch; urgency=medium
+
+  * Fix warning from  GTK+3 theme
+
+ -- Simon Long <simon@raspberrypi.org>  Fri, 09 Feb 2018 10:29:34 +0000
+
 raspberrypi-ui-mods (1.20180207) stretch; urgency=medium
 
   * Fix a couple of minor bugs in postinst script
