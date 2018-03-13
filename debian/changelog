@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20180307) stretch; urgency=medium
+
+  * Hide obconf menu entry
+
+ -- Serge Schneider <serge@raspberrypi.org>  Wed, 07 Mar 2018 15:10:56 +0000
+
 raspberrypi-ui-mods (1.20180209) stretch; urgency=medium
 
   * Fix warning from  GTK+3 theme
