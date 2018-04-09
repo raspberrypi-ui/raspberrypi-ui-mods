@@ -1,3 +1,10 @@
+raspberrypi-ui-mods (1.20180328) stretch; urgency=medium
+
+  * Install qtc5t configuration file to theme Qt applications
+  * Use PibotoLt instead of Piboto Light for applications which ignore font weight
+
+ -- Simon Long <simon@raspberrypi.org>  Wed, 28 Mar 2018 13:07:50 +0100
+
 raspberrypi-ui-mods (1.20180307) stretch; urgency=medium
 
   * Hide obconf menu entry

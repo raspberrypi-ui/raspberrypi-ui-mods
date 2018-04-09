@@ -60,6 +60,10 @@ fi
 if [ ! -f "$XDG_CONFIG_HOME/Trolltech.conf" ]; then
   cp /usr/share/raspi-ui-overrides/Trolltech.conf "$XDG_CONFIG_HOME/"
 fi
+if [ ! -f "$XDG_CONFIG_HOME/qt5ct/qt5ct.conf" ]; then
+  mkdir -p "$XDG_CONFIG_HOME/qt5ct"
+  cp /usr/share/raspi-ui-overrides/qt5ct.conf "$XDG_CONFIG_HOME/qt5ct/"
+fi
 
 # Ensure the existence of lxpanel config files
 LXPANEL_CONF_DIR="$XDG_CONFIG_HOME/lxpanel"

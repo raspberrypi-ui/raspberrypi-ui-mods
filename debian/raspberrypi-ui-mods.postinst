@@ -22,7 +22,7 @@ case "${1}" in
             update-alternatives --set libgksu-gconf-defaults /usr/share/libgksu/debian/gconf-defaults.libgksu-sudo || true
             update-gconf-defaults || true
           fi
-          if dpkg --compare-versions "${2}" lt "1.20170614"; then
+          if dpkg --compare-versions "${2}" lt "1.20180328"; then
             CHANGED_FILES="${CHANGED_FILES} \
                            ${CONF_DIR}/Trolltech.conf"
           fi
@@ -30,7 +30,7 @@ case "${1}" in
             CHANGED_FILES="${CHANGED_FILES} \
                            ${THEME_DIR}/PiX"
           fi
-          if dpkg --compare-versions "${2}" lt "1.20170614"; then
+          if dpkg --compare-versions "${2}" lt "1.20180328"; then
             CHANGED_FILES="${CHANGED_FILES} \
                            ${CONF_DIR}/lxsession/LXDE-pi/desktop.conf"
           fi
@@ -42,7 +42,7 @@ case "${1}" in
             CHANGED_FILES="${CHANGED_FILES} \
                            ${CONF_DIR}/lxsession/LXDE-pi/autokey.sh"
           fi
-          if dpkg --compare-versions "${2}" lt "1.20180125"; then
+          if dpkg --compare-versions "${2}" lt "1.20180328"; then
             CHANGED_FILES="${CHANGED_FILES} \
                            ${CONF_DIR}/openbox/lxde-pi-rc.xml"
           fi
@@ -50,7 +50,7 @@ case "${1}" in
             CHANGED_FILES="${CHANGED_FILES} \
                            ${CONF_DIR}/pcmanfm/LXDE-pi/pcmanfm.conf"
           fi
-          if dpkg --compare-versions "${2}" lt "1.20170707"; then
+          if dpkg --compare-versions "${2}" lt "1.20180328"; then
             CHANGED_FILES="${CHANGED_FILES} \
                            ${CONF_DIR}/pcmanfm/LXDE-pi/desktop-items-0.conf"
           fi
@@ -66,13 +66,17 @@ case "${1}" in
             CHANGED_FILES="${CHANGED_FILES} \
                            ${CONF_DIR}/lxpanel/LXDE-pi/panels/panel"
           fi
-          if dpkg --compare-versions "${2}" lt "1.20170614"; then
+          if dpkg --compare-versions "${2}" lt "1.20180328"; then
             CHANGED_FILES="${CHANGED_FILES} \
                            ${CONF_DIR}/gtk-3.0/gtk.css"
           fi
           if dpkg --compare-versions "${2}" lt "1.20161206"; then
             CHANGED_FILES="${CHANGED_FILES} \
                            ${CONF_DIR}/gtk-3.0/settings.ini"
+          fi
+          if dpkg --compare-versions "${2}" lt "1.20180328"; then
+            CHANGED_FILES="${CHANGED_FILES} \
+                           ${CONF_DIR}/qt5ct/qt5ct.conf"
           fi
           if [ -n "${CHANGED_FILES}" ]; then
             echo "Backing up old config files..."
