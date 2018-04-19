@@ -2,6 +2,7 @@ raspberrypi-ui-mods (1.20180328) stretch; urgency=medium
 
   * Install qtc5t configuration file to theme Qt applications
   * Use PibotoLt instead of Piboto Light for applications which ignore font weight
+  * Use rc_gui and /etc/default/keyboard instead of lxkeymap to manage key layouts
 
  -- Simon Long <simon@raspberrypi.org>  Wed, 28 Mar 2018 13:07:50 +0100
 

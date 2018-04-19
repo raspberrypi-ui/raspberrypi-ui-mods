@@ -78,6 +78,18 @@ case "${1}" in
             CHANGED_FILES="${CHANGED_FILES} \
                            ${CONF_DIR}/qt5ct/qt5ct.conf"
           fi
+          if dpkg --compare-versions "${2}" lt "1.20180328"; then
+            LXCONF=${CONF_DIR}/lxkeymap.cfg
+            KEYCONF=/etc/default/keyboard
+            if [ -e $LXCONF ] ; then
+              LAYOUT=$(grep layout $LXCONF | cut -d = -f 2 | tr -d ' ')
+              VARIANT=$(grep variant $LXCONF | cut -d = -f 2 | tr -d ' ')
+              OPTION=$(grep option $LXCONF | cut -d = -f 2 | tr -d ' ')
+              grep -q XKBLAYOUT $KEYCONF 2>/dev/null && sed -i "s/XKBLAYOUT=.*/XKBLAYOUT=$LAYOUT/" $KEYCONF || echo XKBLAYOUT=$LAYOUT >> $KEYCONF
+              grep -q XKBVARIANT $KEYCONF 2>/dev/null && sed -i "s/XKBVARIANT=.*/XKBVARIANT=$VARIANT/" $KEYCONF || echo XKBVARIANT=$VARIANT >> $KEYCONF
+              grep -q XKBOPTION $KEYCONF 2>/dev/null && sed -i "s/XKBOPTION=.*/XKBOPTION=$OPTION/" $KEYCONF || echo XKBOPTION=$OPTION >> $KEYCONF
+            fi
+          fi
           if [ -n "${CHANGED_FILES}" ]; then
             echo "Backing up old config files..."
             rm -rf ${BACKUP_DIR}
