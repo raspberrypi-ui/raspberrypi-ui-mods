@@ -1,3 +1,12 @@
+raspberrypi-ui-mods (1.20180517) stretch; urgency=medium
+
+  * Use lxplug-volume control messages for volume control keys
+  * Remove desktop add/remove options from openbox menu
+  * Add taskbar default colours to theme file
+  * Set default toolbar icon size correctly
+
+ -- Simon Long <simon@raspberrypi.org>  Thu, 17 May 2018 15:03:49 +0100
+
 raspberrypi-ui-mods (1.20180328) stretch; urgency=medium
 
   * Install qtc5t configuration file to theme Qt applications
