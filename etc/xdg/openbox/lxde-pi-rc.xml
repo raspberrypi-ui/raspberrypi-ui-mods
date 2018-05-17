@@ -322,17 +322,17 @@
     <!-- Keybindings for audio volume media keys -->
     <keybind key="XF86AudioRaiseVolume">
       <action name="Execute">
-        <command>amixer set PCM 250+ unmute</command>
+        <command>lxpanelctl command volumealsabt volu</command>
       </action>
     </keybind>
     <keybind key="XF86AudioLowerVolume">
       <action name="Execute">
-        <command>amixer set PCM 250- unmute</command>
+        <command>lxpanelctl command volumealsabt vold</command>
       </action>
     </keybind>
     <keybind key="XF86AudioMute">
       <action name="Execute">
-        <command>amixer set PCM toggle</command>
+        <command>lxpanelctl command volumealsabt mute</command>
       </action>
     </keybind>
     <!-- Keybindings for pitop -->
