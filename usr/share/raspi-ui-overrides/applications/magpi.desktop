@@ -7,4 +7,4 @@ TryExec=/usr/bin/x-www-browser
 Exec=x-www-browser http://www.raspberrypi.org/magpi
 Icon=magpi
 Terminal=false
-Categories=Network;
+Categories=Help;

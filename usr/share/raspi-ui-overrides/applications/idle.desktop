@@ -9,3 +9,4 @@ MultipleArgs=false
 Type=Application
 Categories=Application;Development;
 StartupNotify=true
+NoDisplay=true

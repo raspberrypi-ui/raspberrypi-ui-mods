@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20180530) stretch; urgency=medium
+
+  * Updates to some desktop files to rejig menu slightly
+
+ -- Simon Long <simon@raspberrypi.org>  Wed, 30 May 2018 14:50:29 +0100
+
 raspberrypi-ui-mods (1.20180517) stretch; urgency=medium
 
   * Use lxplug-volume control messages for volume control keys
