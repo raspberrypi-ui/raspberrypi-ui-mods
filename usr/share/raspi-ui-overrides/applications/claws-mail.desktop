@@ -20,6 +20,7 @@ GenericName[sk]=Poštový klient
 GenericName[sv]=E-postklient
 GenericName[tr]=E-posta istemcisi
 Exec=claws-mail %u
+TryExec=claws-mail
 Icon=mail
 Categories=Network;Email;
 Keywords=lightweight;fast;gui;extensible;plugin;pop;pop3;imap;imap4;nntp;news;
