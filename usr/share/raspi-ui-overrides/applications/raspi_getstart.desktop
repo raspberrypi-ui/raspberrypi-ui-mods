@@ -1,7 +1,7 @@
 [Desktop Entry]
-Name=Projects
+Name=Get Started
 TryExec=/usr/bin/x-www-browser
-Exec=x-www-browser https://rpf.io/raspbian-projects
+Exec=x-www-browser https://rpf.io/raspbian-getstarted
 Icon=rpi
 Terminal=false
 Type=Application
