@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20180706) stretch; urgency=medium
+
+  * Remove pistore desktop file
+
+ -- Simon Long <simon@raspberrypi.org>  Fri, 06 Jul 2018 08:56:30 +0100
+
 raspberrypi-ui-mods (1.20180530) stretch; urgency=medium
 
   * Updates to some desktop files to rejig menu slightly
