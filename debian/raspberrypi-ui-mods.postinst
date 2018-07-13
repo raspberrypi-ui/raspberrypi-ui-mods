@@ -110,7 +110,7 @@ case "${1}" in
               mkdir -p ${CONF_DIR}/autostart
               cat << EOF >> ${CONF_DIR}/autostart/pi-conf-backup.desktop
 [Desktop Entry]
-Exec=sh -c 'zenity --info --no-wrap --text="Your Raspbian system has been upgraded to the latest version.\n\nTo ensure compatibility with the new version, some configuration files have been overwritten -\nif you had customised your system, some of your changes may have been lost.\n\nYour original configuration files have been backed up and put in the directory ~/oldconffiles\n" && rm ~/.config/autostart/pi-conf-backup.desktop'
+Exec=sh -c 'zenity --info --width=400 --text="Raspbian has been updated.\n\nSome configuration files have been overwritten, so your desktop configuration may have changed.\n\nYour original configuration files have been backed up to the directory ~/oldconffiles" && rm ~/.config/autostart/pi-conf-backup.desktop'
 Type=Application
 EOF
               chown ${OWNER} ${CONF_DIR}
