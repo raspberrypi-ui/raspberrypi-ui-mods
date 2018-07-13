@@ -90,7 +90,8 @@ case "${1}" in
               grep -q XKBOPTION $KEYCONF 2>/dev/null && sed -i "s/XKBOPTION=.*/XKBOPTION=$OPTION/" $KEYCONF || echo XKBOPTION=$OPTION >> $KEYCONF
             fi
           fi
-          if [ -n "${CHANGED_FILES}" ]; then
+          LOCK_FILE=${CONF_DIR}/.lock
+          if [ ! -e $LOCK_FILE ] && [ -n "${CHANGED_FILES}" ]; then
             echo "Backing up old config files..."
             rm -rf ${BACKUP_DIR}
             CHANGED=0
