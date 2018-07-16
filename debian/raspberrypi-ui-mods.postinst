@@ -127,7 +127,7 @@ EOF
                 echo "${LOGGED_FILES}" > ${CONF_DIR}/lock.log
                 cat << EOF >> ${CONF_DIR}/autostart/pi-conf-backup.desktop
 [Desktop Entry]
-Exec=sh -c 'zenity --info --width=400 --text="Raspbian has been updated.\n\nYour configuration files are locked, so your configuration was not updated.\n\nA list of the files which would have been changed is at ~/config/lock.log" && rm ~/.config/autostart/pi-conf-backup.desktop'
+Exec=sh -c 'zenity --info --width=400 --text="Raspbian has been updated.\n\nYour configuration files are locked, so your configuration was not updated.\n\nA list of the files which would have been changed is at ~/.config/lock.log" && rm ~/.config/autostart/pi-conf-backup.desktop'
 Type=Application
 EOF
               fi
