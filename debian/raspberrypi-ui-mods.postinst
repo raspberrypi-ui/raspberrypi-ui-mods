@@ -91,32 +91,46 @@ case "${1}" in
             fi
           fi
           LOCK_FILE=${CONF_DIR}/.lock
-          if [ ! -e $LOCK_FILE ] && [ -n "${CHANGED_FILES}" ]; then
-            echo "Backing up old config files..."
-            rm -rf ${BACKUP_DIR}
+          if [ -n "${CHANGED_FILES}" ]; then
+            if [ ! -e $LOCK_FILE ]; then
+              echo "Backing up old config files..."
+              rm -rf ${BACKUP_DIR}
+            fi
             CHANGED=0
             for file in $CHANGED_FILES; do
               if [ -e $file ]; then
                 CHANGED=1
-                NEWLOC=${BACKUP_DIR}/`dirname $file | cut -d / -f 4-`
-                echo $file
-                mkdir -p $NEWLOC
-                mv $file $NEWLOC
+                LOGGED_FILES="${LOGGED_FILES}${file}\n"
+                if [ ! -e $LOCK_FILE ]; then
+                  NEWLOC=${BACKUP_DIR}/`dirname $file | cut -d / -f 4-`
+                  echo $file
+                  mkdir -p $NEWLOC
+                  mv $file $NEWLOC
+                fi
               fi
             done
             if [ "$CHANGED" = "1" ]; then
-              if [ -e $BACKUP_DIR ]; then
-                chown -R ${OWNER} $BACKUP_DIR
-              fi
               mkdir -p ${CONF_DIR}/autostart
-              cat << EOF >> ${CONF_DIR}/autostart/pi-conf-backup.desktop
+              if [ ! -e $LOCK_FILE ]; then
+                if [ -e $BACKUP_DIR ]; then
+                  chown -R ${OWNER} $BACKUP_DIR
+                fi
+                cat << EOF >> ${CONF_DIR}/autostart/pi-conf-backup.desktop
 [Desktop Entry]
 Exec=sh -c 'zenity --info --width=400 --text="Raspbian has been updated.\n\nSome configuration files have been overwritten, so your desktop configuration may have changed.\n\nYour original configuration files have been backed up to the directory ~/oldconffiles" && rm ~/.config/autostart/pi-conf-backup.desktop'
 Type=Application
 EOF
-              chown ${OWNER} ${CONF_DIR}
-              chown ${OWNER} ${CONF_DIR}/autostart
-              chown ${OWNER} ${CONF_DIR}/autostart/pi-conf-backup.desktop
+                chown ${OWNER} ${CONF_DIR}
+                chown ${OWNER} ${CONF_DIR}/autostart
+                chown ${OWNER} ${CONF_DIR}/autostart/pi-conf-backup.desktop
+              else
+                echo "${LOGGED_FILES}" > ${CONF_DIR}/lock.log
+                cat << EOF >> ${CONF_DIR}/autostart/pi-conf-backup.desktop
+[Desktop Entry]
+Exec=sh -c 'zenity --info --width=400 --text="Raspbian has been updated.\n\nYour configuration files are locked, so your configuration was not updated.\n\nA list of the files which would have been changed is at ~/config/lock.log" && rm ~/.config/autostart/pi-conf-backup.desktop'
+Type=Application
+EOF
+              fi
             fi
           fi
         fi
