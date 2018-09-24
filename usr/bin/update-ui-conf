@@ -23,7 +23,7 @@ if [ -e $UPDATE_LIST ] ; then
                     backup_and_copy_new /etc/xdg/pcmanfm/LXDE-pi/pcmanfm.conf pcmanfm/LXDE-pi/pcmanfm.conf
                 ;;
                 *pcmanfm/LXDE-pi/desktop-items-0.conf)
-                    backup_and_copy_new /etc/xdg/pcmanfm/LXDE-pi/pcmanfm.conf pcmanfm/LXDE-pi/desktop-items-0.conf
+                    backup_and_copy_new /etc/xdg/pcmanfm/LXDE-pi/desktop-items-0.conf pcmanfm/LXDE-pi/desktop-items-0.conf
                 ;;
                 *openbox/lxde-pi-rc.xml)
                     backup_and_copy_new /etc/xdg/openbox/lxde-pi-rc.xml openbox/lxde-pi-rc.xml
