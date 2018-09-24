@@ -1,0 +1,75 @@
+#!/bin/sh
+
+CONF_DIR="${HOME}/.config"
+THEME_DIR="${HOME}/.themes"
+BACKUP_DIR="${HOME}/oldconffiles/.config"
+UPDATE_LIST="${CONF_DIR}/.update-list"
+
+backup_and_copy_new()
+{
+    DIRP=`dirname $2`/
+    mkdir -p $CONF_DIR/$DIRP
+    mkdir -p $BACKUP_DIR/$DIRP
+    mv -f $CONF_DIR/$2 $BACKUP_DIR/$2
+    cp $1 $CONF_DIR/$2
+}
+
+if [ -e $UPDATE_LIST ] ; then
+    if zenity --question --width 400 --text "There are new desktop configuration files available.\n\nIf you have made changes to your desktop settings, some of these may be overwritten by the new configuration.\n\nPress 'Yes' to update your configuration or 'No' to keep your current configuration."; then
+        while read line
+        do
+            case $line in
+                *pcmanfm/LXDE-pi/pcmanfm.conf)
+                    backup_and_copy_new /etc/xdg/pcmanfm/LXDE-pi/pcmanfm.conf pcmanfm/LXDE-pi/pcmanfm.conf
+                ;;
+                *pcmanfm/LXDE-pi/desktop-items-0.conf)
+                    backup_and_copy_new /etc/xdg/pcmanfm/LXDE-pi/pcmanfm.conf pcmanfm/LXDE-pi/desktop-items-0.conf
+                ;;
+                *openbox/lxde-pi-rc.xml)
+                    backup_and_copy_new /etc/xdg/openbox/lxde-pi-rc.xml openbox/lxde-pi-rc.xml
+                ;;
+                *lxsession/LXDE-pi/desktop.conf)
+                    backup_and_copy_new /etc/xdg/lxsession/LXDE-pi/desktop.conf lxsession/LXDE-pi/desktop.conf
+                ;;
+                *lxsession/LXDE-pi/autostart)
+                    backup_and_copy_new /etc/xdg/lxsession/LXDE-pi/autostart lxsession/LXDE-pi/autostart
+                ;;
+                *lxsession/LXDE-pi/autokey.sh)
+                    backup_and_copy_new /etc/xdg/lxsession/LXDE-pi/autokey.sh lxsession/LXDE-pi/autokey.sh
+                ;;
+                *lxpanel/launchtaskbar.cfg)
+                    backup_and_copy_new /etc/xdg/lxpanel/launchtaskbar.cfg lxpanel/launchtaskbar.cfg
+                ;;
+                *lxpanel/LXDE-pi/config)
+                    backup_and_copy_new /etc/xdg/lxpanel/profile/LXDE-pi/config lxpanel/LXDE-pi/config
+                ;;
+                *lxpanel/LXDE-pi/panels/panel)
+                    backup_and_copy_new /etc/xdg/lxpanel/profile/LXDE-pi/panels/panel lxpanel/LXDE-pi/panels/panel
+                ;;
+                *Trolltech.conf)
+                    backup_and_copy_new /usr/share/raspi-ui-overrides/Trolltech.conf Trolltech.conf
+                ;;
+                *qt5ct/qt5ct.conf)
+                    backup_and_copy_new /usr/share/raspi-ui-overrides/qt5ct.conf qt5ct/qt5ct.conf
+                ;;
+                *gtk-3.0/gtk.css)
+                    backup_and_copy_new /usr/share/raspi-ui-overrides/gtk.css gtk-3.0/gtk.css
+                ;;
+                *gtk-3.0/settings.ini)
+                    backup_and_copy_new /usr/share/raspi-ui-overrides/settings.ini gtk-3.0/settings.ini
+                ;;
+                *themes/PiX)
+                    mkdir -p $THEME_DIR/
+                    cp -a /usr/share/themes/PiX $THEME_DIR/
+                ;;
+            esac
+        done < $UPDATE_LIST
+        if [ -e $BACKUP_DIR ] ; then
+            chown -R `id -u -n`:`id -g -n` $BACKUP_DIR
+        fi
+        sudo service lightdm restart
+    fi
+    rm $UPDATE_LIST
+fi
+
+

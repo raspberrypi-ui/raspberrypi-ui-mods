@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=Application
+Name=ui-update
+Comment=Check for updated desktop configuration files on startup
+Exec=/usr/bin/update-ui-conf

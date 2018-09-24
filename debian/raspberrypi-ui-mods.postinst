@@ -18,6 +18,7 @@ case "${1}" in
           CONF_DIR=${HOME_DIR}.config
           THEME_DIR=${HOME_DIR}.themes
           OWNER=$USER:$GROUP
+          UPDATE_LIST=$CONF_DIR/.update-list
           if [ -z "${2}" ]; then
             update-alternatives --set libgksu-gconf-defaults /usr/share/libgksu/debian/gconf-defaults.libgksu-sudo || true
             update-gconf-defaults || true
@@ -90,47 +91,16 @@ case "${1}" in
               grep -q XKBOPTION $KEYCONF 2>/dev/null && sed -i "s/XKBOPTION=.*/XKBOPTION=$OPTION/" $KEYCONF || echo XKBOPTION=$OPTION >> $KEYCONF
             fi
           fi
-          LOCK_FILE=${CONF_DIR}/.lock
           if [ -n "${CHANGED_FILES}" ]; then
-            if [ ! -e $LOCK_FILE ]; then
-              echo "Backing up old config files..."
-              rm -rf ${BACKUP_DIR}
-            fi
             CHANGED=0
             for file in $CHANGED_FILES; do
               if [ -e $file ]; then
                 CHANGED=1
                 LOGGED_FILES="${LOGGED_FILES}${file}\n"
-                if [ ! -e $LOCK_FILE ]; then
-                  NEWLOC=${BACKUP_DIR}/`dirname $file | cut -d / -f 4-`
-                  echo $file
-                  mkdir -p $NEWLOC
-                  mv $file $NEWLOC
-                fi
               fi
             done
             if [ "$CHANGED" = "1" ]; then
-              mkdir -p ${CONF_DIR}/autostart
-              if [ ! -e $LOCK_FILE ]; then
-                if [ -e $BACKUP_DIR ]; then
-                  chown -R ${OWNER} $BACKUP_DIR
-                fi
-                cat << EOF >> ${CONF_DIR}/autostart/pi-conf-backup.desktop
-[Desktop Entry]
-Exec=sh -c 'zenity --info --width=400 --text="The desktop has been updated.\n\nSome configuration files have been overwritten, so your desktop settings may have changed.\n\nYour original configuration files have been backed up to the directory ~/oldconffiles" && rm ~/.config/autostart/pi-conf-backup.desktop'
-Type=Application
-EOF
-                chown ${OWNER} ${CONF_DIR}
-                chown ${OWNER} ${CONF_DIR}/autostart
-                chown ${OWNER} ${CONF_DIR}/autostart/pi-conf-backup.desktop
-              else
-                echo "${LOGGED_FILES}" > ${CONF_DIR}/lock.log
-                cat << EOF >> ${CONF_DIR}/autostart/pi-conf-backup.desktop
-[Desktop Entry]
-Exec=sh -c 'zenity --info --width=400 --text="The desktop has been updated.\n\nHowever, your configuration files are locked and so were not changed.\n\nA list of the files which would have been changed is at ~/.config/lock.log" && rm ~/.config/autostart/pi-conf-backup.desktop'
-Type=Application
-EOF
-              fi
+              echo "${LOGGED_FILES}" > ${UPDATE_LIST}
             fi
           fi
         fi
