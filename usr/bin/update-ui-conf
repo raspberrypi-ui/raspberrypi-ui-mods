@@ -1,22 +1,22 @@
 #!/bin/sh
 
-CONF_DIR="${HOME}/.config"
-THEME_DIR="${HOME}/.themes"
-BACKUP_DIR="${HOME}/oldconffiles/.config"
-UPDATE_LIST="${CONF_DIR}/.update-list"
+CONF_DIR=${HOME}/.config/
+THEME_DIR=${HOME}/.themes/
+BACKUP_DIR=${HOME}/oldconffiles/.config/
+UPDATE_LIST=${CONF_DIR}/.update-list
 
 backup_and_copy_new()
 {
-    DIRP=`dirname $2`/
-    mkdir -p $CONF_DIR/$DIRP
-    mkdir -p $BACKUP_DIR/$DIRP
-    mv -f $CONF_DIR/$2 $BACKUP_DIR/$2
-    cp $1 $CONF_DIR/$2
+    DIRP=$(dirname "$2")/
+    mkdir -p "${CONF_DIR}${DIRP}"
+    mkdir -p "${BACKUP_DIR}${DIRP}"
+    mv -f "${CONF_DIR}${2}" "${BACKUP_DIR}${2}"
+    cp "$1" "${CONF_DIR}${2}"
 }
 
-if [ -e $UPDATE_LIST ] ; then
+if [ -e "$UPDATE_LIST" ] ; then
     if zenity --question --width 400 --text "There are new desktop configuration files available.\n\nIf you have made changes to your desktop settings, some of these may be overwritten by the new configuration.\n\nPress 'Yes' to update your configuration or 'No' to keep your current configuration."; then
-        while read line
+        sort -u "$UPDATE_LIST" | while read line
         do
             case $line in
                 *pcmanfm/LXDE-pi/pcmanfm.conf)
@@ -59,17 +59,16 @@ if [ -e $UPDATE_LIST ] ; then
                     backup_and_copy_new /usr/share/raspi-ui-overrides/settings.ini gtk-3.0/settings.ini
                 ;;
                 *themes/PiX)
-                    mkdir -p $THEME_DIR/
-                    cp -a /usr/share/themes/PiX $THEME_DIR/
+                    mkdir -p "$THEME_DIR"
+                    cp -a /usr/share/themes/PiX "$THEME_DIR"
                 ;;
             esac
-        done < $UPDATE_LIST
-        if [ -e $BACKUP_DIR ] ; then
-            chown -R `id -u -n`:`id -g -n` $BACKUP_DIR
-        fi
-        sudo service lightdm restart
+        done
+        openbox --reconfigure
+        pcmanfm --reconfigure
+        lxpanelctl restart
     fi
-    rm $UPDATE_LIST
+    rm "$UPDATE_LIST"
 fi
 
 
