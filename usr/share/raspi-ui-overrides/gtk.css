@@ -11,8 +11,3 @@
 	font-weight:	Normal;
 	font-style:	Normal;
 }
-
-.scrollbar {
-	-GtkScrollbar-has-forward-stepper: true;
-	-GtkScrollbar-has-backward-stepper: true;
-}
