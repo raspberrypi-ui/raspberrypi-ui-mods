@@ -2640,7 +2640,7 @@ scrollbar {
     border-style: none;
     border-radius: 2px;
     border-color: #B0B0B0;
-    background-color: transparent;
+    background-color: white;
     background-image: none;
     -gtk-icon-shadow: none;
     box-shadow: none; }
