@@ -1,7 +1,6 @@
 #!/bin/sh
 
 CONF_DIR=${HOME}/.config/
-THEME_DIR=${HOME}/.themes/
 BACKUP_DIR=${HOME}/oldconffiles/.config/
 UPDATE_LIST=${CONF_DIR}/.update-list
 
@@ -57,10 +56,6 @@ if [ -e "$UPDATE_LIST" ] ; then
                 ;;
                 *gtk-3.0/settings.ini)
                     backup_and_copy_new /usr/share/raspi-ui-overrides/settings.ini gtk-3.0/settings.ini
-                ;;
-                *themes/PiX)
-                    mkdir -p "$THEME_DIR"
-                    cp -a /usr/share/themes/PiX "$THEME_DIR"
                 ;;
             esac
         done

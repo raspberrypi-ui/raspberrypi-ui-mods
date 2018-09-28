@@ -27,10 +27,6 @@ case "${1}" in
           fi
           if dpkg --compare-versions "${2}" lt "1.20180517"; then
             CHANGED_FILES="${CHANGED_FILES} \
-                           ${THEME_DIR}/PiX"
-          fi
-          if dpkg --compare-versions "${2}" lt "1.20180517"; then
-            CHANGED_FILES="${CHANGED_FILES} \
                            ${CONF_DIR}/lxsession/LXDE-pi/desktop.conf"
           fi
           if dpkg --compare-versions "${2}" lt "1.20160718"; then
@@ -65,7 +61,7 @@ case "${1}" in
             CHANGED_FILES="${CHANGED_FILES} \
                            ${CONF_DIR}/lxpanel/LXDE-pi/panels/panel"
           fi
-          if dpkg --compare-versions "${2}" lt "1.20180328"; then
+          if dpkg --compare-versions "${2}" lt "1.20180926"; then
             CHANGED_FILES="${CHANGED_FILES} \
                            ${CONF_DIR}/gtk-3.0/gtk.css"
           fi
@@ -76,6 +72,13 @@ case "${1}" in
           if dpkg --compare-versions "${2}" lt "1.20180328"; then
             CHANGED_FILES="${CHANGED_FILES} \
                            ${CONF_DIR}/qt5ct/qt5ct.conf"
+          fi
+          if dpkg --compare-versions "${2}" lt "1.20180926"; then
+            if [ -d ${THEME_DIR}/PiX/ ] ; then
+                mkdir -p ${HOME_DIR}oldconffiles/.themes/
+                mv -f ${THEME_DIR}/PiX/ ${HOME_DIR}oldconffiles/.themes/PiX/
+                colour_to_obconf ${HOME_DIR}
+            fi
           fi
           if dpkg --compare-versions "${2}" lt "1.20180328"; then
             LXCONF=${CONF_DIR}/lxkeymap.cfg
