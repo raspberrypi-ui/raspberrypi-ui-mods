@@ -4,10 +4,3 @@
 @define-color theme_text_color #1a1a1a;
 @define-color theme_fg_color #000000;
 @define-color theme_selected_fg_color #ffffff;
-
-* {
-	font-family:	PibotoLt;
-	font-size:	12pt;
-	font-weight:	Normal;
-	font-style:	Normal;
-}
