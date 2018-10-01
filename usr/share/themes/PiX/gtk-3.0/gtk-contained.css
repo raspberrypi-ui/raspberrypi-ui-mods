@@ -4607,22 +4607,22 @@ stackswitcher button.text-button.circular {
    use responsibly! */
 /*
 widget text/foreground color */
-@define-color theme_fg_color #2e3436;
+@define-color theme_fg_color #000000;
 /*
 text color for entries, views and content in general */
-@define-color theme_text_color black;
+@define-color theme_text_color #1a1a1a;
 /*
 widget base background color */
-@define-color theme_bg_color #ededed;
+@define-color theme_bg_color #edeceb;
 /*
 text widgets and the like base background color */
 @define-color theme_base_color #ffffff;
 /*
 base background color of selections */
-@define-color theme_selected_bg_color @theme_selected_bg_color;
+@define-color theme_selected_bg_color #4d98f5;
 /*
 text/foreground color of selections */
-@define-color theme_selected_fg_color @theme_selected_fg_color;
+@define-color theme_selected_fg_color #ffffff;
 /*
 base background color of insensitive widgets */
 @define-color insensitive_bg_color #f1f1f1;

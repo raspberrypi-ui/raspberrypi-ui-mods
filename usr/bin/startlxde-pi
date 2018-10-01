@@ -39,16 +39,6 @@ if [ ! -f "$LXSESSION_CONF_DIR/autokey.sh" ]; then
   cp /etc/xdg/lxsession/LXDE-pi/autokey.sh "$LXSESSION_CONF_DIR/autokey.sh"
 fi
 
-# Copy gtk.css and settings.ini (required for GTK3 themes to work correctly)
-if [ ! -f "$XDG_CONFIG_HOME/gtk-3.0/gtk.css" ]; then
-  mkdir -p "$XDG_CONFIG_HOME/gtk-3.0"
-  cp /usr/share/raspi-ui-overrides/gtk.css "$XDG_CONFIG_HOME/gtk-3.0/"
-fi
-if [ ! -f "$XDG_CONFIG_HOME/gtk-3.0/settings.ini" ]; then
-  mkdir -p "$XDG_CONFIG_HOME/gtk-3.0"
-  cp /usr/share/raspi-ui-overrides/settings.ini "$XDG_CONFIG_HOME/gtk-3.0/"
-fi
-
 # Ensure Qt themes are consistent with GTK themes
 if [ ! -f "$XDG_CONFIG_HOME/Trolltech.conf" ]; then
   cp /usr/share/raspi-ui-overrides/Trolltech.conf "$XDG_CONFIG_HOME/"

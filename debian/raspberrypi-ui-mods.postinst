@@ -65,7 +65,7 @@ case "${1}" in
             CHANGED_FILES="${CHANGED_FILES} \
                            ${CONF_DIR}/gtk-3.0/gtk.css"
           fi
-          if dpkg --compare-versions "${2}" lt "1.20161206"; then
+          if dpkg --compare-versions "${2}" lt "1.20180926"; then
             CHANGED_FILES="${CHANGED_FILES} \
                            ${CONF_DIR}/gtk-3.0/settings.ini"
           fi
