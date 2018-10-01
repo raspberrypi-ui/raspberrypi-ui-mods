@@ -1,9 +1,10 @@
 #!/bin/sh
 LXCONF=${1}.config/lxsession/LXDE-pi/desktop.conf
-OBCONF=${1}.config/openbox/lxde-pi-rc.xml
+GTKCONF=${1}.config/gtk-3.0/gtk.css
 
-if [ -e "$LXCONF" ] && [ -e "$OBCONF" ] ; then
+if [ -e "$LXCONF" ] ; then
     COLSCHEME=$(grep ColorScheme "$LXCONF")
+    FONTSIZ=$(grep FontName "$LXCONF" | rev | cut -d ' ' -f 1 | rev)
 
     IFS="\\"
     for COLOR in $COLSCHEME
@@ -21,24 +22,22 @@ if [ -e "$LXCONF" ] && [ -e "$OBCONF" ] ; then
         BG=$(echo "$BG_COL" | cut -c 5-6)
         BB=$(echo "$BG_COL" | cut -c 9-10)
         NEWBG=${BR}${BG}${BB}
-        if grep -q titleColor "$OBCONF" ; then 
-            sed -i "$OBCONF" -e "s:<titleColor>.*</titleColor>:<titleColor>#${NEWBG}</titleColor>:"
-        else
-            sed -i "$OBCONF" -e "s:</theme>:<titleColor>#${NEWBG}</titleColor></theme>:"
+        if [ "$NEWBG" != "4d98f5" ] ; then
+            echo "@define-color theme_selected_bg_color #${NEWBG};" >> "$GTKCONF"
         fi
     fi
-
+    
     if [ "$FG_COL" ] ; then
         FR=$(echo "$FG_COL" | cut -c 1-2)
         FG=$(echo "$FG_COL" | cut -c 5-6)
         FB=$(echo "$FG_COL" | cut -c 9-10)
         NEWFG=${FR}${FG}${FB}
-        if grep -q textColor "$OBCONF" ; then 
-            sed -i "$OBCONF" -e "s:<textColor>.*</textColor>:<textColor>#${NEWFG}</textColor>:"
-        else
-            sed -i "$OBCONF" -e "s:</theme>:<textColor>#${NEWFG}</textColor></theme>:"
+        if [ "$NEWFG" != "ffffff" ] ; then
+            echo "@define-color theme_selected_fg_color #${NEWFG};" >> "$GTKCONF"
         fi
     fi
-
-    openbox --reconfigure
+    
+    if [ $FONTSIZ -gt 12 ] ; then
+        echo "scrollbar slider {\n min-width: 12px;\n min-height: 12px;\n}\n\nscrollbar button {\n min-width: 12px;\n min-height: 12px;\n}\n" >> "$GTKCONF"
+    fi
 fi

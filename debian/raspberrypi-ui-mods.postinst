@@ -61,14 +61,6 @@ case "${1}" in
             CHANGED_FILES="${CHANGED_FILES} \
                            ${CONF_DIR}/lxpanel/LXDE-pi/panels/panel"
           fi
-          if dpkg --compare-versions "${2}" lt "1.20180926"; then
-            CHANGED_FILES="${CHANGED_FILES} \
-                           ${CONF_DIR}/gtk-3.0/gtk.css"
-          fi
-          if dpkg --compare-versions "${2}" lt "1.20180926"; then
-            CHANGED_FILES="${CHANGED_FILES} \
-                           ${CONF_DIR}/gtk-3.0/settings.ini"
-          fi
           if dpkg --compare-versions "${2}" lt "1.20180328"; then
             CHANGED_FILES="${CHANGED_FILES} \
                            ${CONF_DIR}/qt5ct/qt5ct.conf"
@@ -78,6 +70,15 @@ case "${1}" in
                 mkdir -p ${HOME_DIR}oldconffiles/.themes/
                 mv -f ${THEME_DIR}/PiX/ ${HOME_DIR}oldconffiles/.themes/PiX/
                 colour_to_obconf ${HOME_DIR}
+            fi
+            if [ -e ${CONF_DIR}/gtk-3.0/settings.ini ] ; then
+                mkdir -p ${HOME_DIR}oldconffiles/.config/gtk-3.0/
+                mv -f ${CONF_DIR}/gtk-3.0/settings.ini ${HOME_DIR}oldconffiles/.config/gtk-3.0/
+            fi
+            if [ -e ${CONF_DIR}/gtk-3.0/gtk.css ] ; then
+                mkdir -p ${HOME_DIR}oldconffiles/.config/gtk-3.0/
+                mv -f ${CONF_DIR}/gtk-3.0/gtk.css ${HOME_DIR}oldconffiles/.config/gtk-3.0/
+                colour_to_gtk3 ${HOME_DIR}
             fi
           fi
           if dpkg --compare-versions "${2}" lt "1.20180328"; then

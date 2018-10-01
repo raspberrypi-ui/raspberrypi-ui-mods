@@ -51,12 +51,6 @@ if [ -e "$UPDATE_LIST" ] ; then
                 *qt5ct/qt5ct.conf)
                     backup_and_copy_new /usr/share/raspi-ui-overrides/qt5ct.conf qt5ct/qt5ct.conf
                 ;;
-                *gtk-3.0/gtk.css)
-                    backup_and_copy_new /usr/share/raspi-ui-overrides/gtk.css gtk-3.0/gtk.css
-                ;;
-                *gtk-3.0/settings.ini)
-                    backup_and_copy_new /usr/share/raspi-ui-overrides/settings.ini gtk-3.0/settings.ini
-                ;;
             esac
         done
         openbox --reconfigure
