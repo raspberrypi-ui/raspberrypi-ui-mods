@@ -45,9 +45,6 @@ if [ -e "$UPDATE_LIST" ] ; then
                 *lxpanel/LXDE-pi/panels/panel)
                     backup_and_copy_new /etc/xdg/lxpanel/profile/LXDE-pi/panels/panel lxpanel/LXDE-pi/panels/panel
                 ;;
-                *Trolltech.conf)
-                    backup_and_copy_new /usr/share/raspi-ui-overrides/Trolltech.conf Trolltech.conf
-                ;;
                 *qt5ct/qt5ct.conf)
                     backup_and_copy_new /usr/share/raspi-ui-overrides/qt5ct.conf qt5ct/qt5ct.conf
                 ;;

@@ -4,7 +4,6 @@ GTKCONF=${1}.config/gtk-3.0/gtk.css
 
 if [ -e "$LXCONF" ] ; then
     COLSCHEME=$(grep ColorScheme "$LXCONF")
-    FONTSIZ=$(grep FontName "$LXCONF" | rev | cut -d ' ' -f 1 | rev)
 
     IFS="\\"
     for COLOR in $COLSCHEME
@@ -37,7 +36,8 @@ if [ -e "$LXCONF" ] ; then
         fi
     fi
     
-    if [ $FONTSIZ -gt 12 ] ; then
-        echo "scrollbar slider {\n min-width: 12px;\n min-height: 12px;\n}\n\nscrollbar button {\n min-width: 12px;\n min-height: 12px;\n}\n" >> "$GTKCONF"
-    fi
+#    FONTSIZ=$(grep FontName "$LXCONF" | rev | cut -d ' ' -f 1 | rev)
+#    if [ $FONTSIZ -gt 12 ] ; then
+#        echo "scrollbar slider {\n min-width: 12px;\n min-height: 12px;\n}\n\nscrollbar button {\n min-width: 12px;\n min-height: 12px;\n}\n" >> "$GTKCONF"
+#    fi
 fi

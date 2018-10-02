@@ -40,9 +40,6 @@ if [ ! -f "$LXSESSION_CONF_DIR/autokey.sh" ]; then
 fi
 
 # Ensure Qt themes are consistent with GTK themes
-if [ ! -f "$XDG_CONFIG_HOME/Trolltech.conf" ]; then
-  cp /usr/share/raspi-ui-overrides/Trolltech.conf "$XDG_CONFIG_HOME/"
-fi
 if [ ! -f "$XDG_CONFIG_HOME/qt5ct/qt5ct.conf" ]; then
   mkdir -p "$XDG_CONFIG_HOME/qt5ct"
   cp /usr/share/raspi-ui-overrides/qt5ct.conf "$XDG_CONFIG_HOME/qt5ct/"

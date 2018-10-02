@@ -11,6 +11,9 @@ case "${1}" in
     getent passwd | while read line; do
         USHELL=$(echo "$line" | cut -d: -f7)
         if grep -q "$USHELL" /etc/shells ; then
+          USER=$(echo "$line" | cut -d: -f1)
+          GROUP=$(getent group $(getent passwd $USER | cut -d: -f4) | cut -d: -f1)
+          OWNER=${USER}:${GROUP}
           HOME_DIR=$(echo "$line" | cut -d: -f6)/
           CONF_DIR=${HOME_DIR}.config
           THEME_DIR=${HOME_DIR}.themes
@@ -20,10 +23,6 @@ case "${1}" in
           if [ -z "${2}" ]; then
             update-alternatives --set libgksu-gconf-defaults /usr/share/libgksu/debian/gconf-defaults.libgksu-sudo || true
             update-gconf-defaults || true
-          fi
-          if dpkg --compare-versions "${2}" lt "1.20180328"; then
-            CHANGED_FILES="${CHANGED_FILES} \
-                           ${CONF_DIR}/Trolltech.conf"
           fi
           if dpkg --compare-versions "${2}" lt "1.20180517"; then
             CHANGED_FILES="${CHANGED_FILES} \
@@ -79,6 +78,13 @@ case "${1}" in
                 mkdir -p ${HOME_DIR}oldconffiles/.config/gtk-3.0/
                 mv -f ${CONF_DIR}/gtk-3.0/gtk.css ${HOME_DIR}oldconffiles/.config/gtk-3.0/
                 colour_to_gtk3 ${HOME_DIR}
+            fi
+            if [ -e ${CONF_DIR}/Trolltech.conf ]; then
+                mkdir -p ${HOME_DIR}oldconffiles/.config/
+                mv -f ${CONF_DIR}/Trolltech.conf ${HOME_DIR}oldconffiles/.config/
+            fi
+            if [ -d ${HOME_DIR}oldconffiles/ ] ; then
+                chown -R ${OWNER} ${HOME_DIR}oldconffiles/
             fi
           fi
           if dpkg --compare-versions "${2}" lt "1.20180328"; then
