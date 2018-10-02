@@ -78,6 +78,9 @@ case "${1}" in
                 mkdir -p ${HOME_DIR}oldconffiles/.config/gtk-3.0/
                 mv -f ${CONF_DIR}/gtk-3.0/gtk.css ${HOME_DIR}oldconffiles/.config/gtk-3.0/
                 colour_to_gtk3 ${HOME_DIR}
+                if [ -e ${CONF_DIR}/gtk-3.0/gtk.css ]; then
+                    chown ${OWNER} ${CONF_DIR}/gtk-3.0/gtk.css
+                fi
             fi
             if [ -e ${CONF_DIR}/Trolltech.conf ]; then
                 mkdir -p ${HOME_DIR}oldconffiles/.config/
