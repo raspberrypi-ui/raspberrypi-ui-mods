@@ -81,5 +81,7 @@ fi
 
 export XDG_MENU_PREFIX="lxde-pi-"
 
+sync
+
 # Start the LXDE session
 exec /usr/bin/lxsession -s LXDE-pi -e LXDE
