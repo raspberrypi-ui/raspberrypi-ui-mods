@@ -42,3 +42,5 @@ if [ -e "$LXCONF" ] && [ -e "$OBCONF" ] ; then
 
     openbox --reconfigure
 fi
+
+exit 0
