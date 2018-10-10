@@ -18,30 +18,6 @@ if [ -e "$UPDATE_LIST" ] ; then
         sort -u "$UPDATE_LIST" | while read line
         do
             case $line in
-                *pcmanfm/LXDE-pi/pcmanfm.conf)
-                    backup_and_copy_new /etc/xdg/pcmanfm/LXDE-pi/pcmanfm.conf pcmanfm/LXDE-pi/pcmanfm.conf
-                ;;
-                *pcmanfm/LXDE-pi/desktop-items-0.conf)
-                    backup_and_copy_new /etc/xdg/pcmanfm/LXDE-pi/desktop-items-0.conf pcmanfm/LXDE-pi/desktop-items-0.conf
-                ;;
-                *openbox/lxde-pi-rc.xml)
-                    backup_and_copy_new /etc/xdg/openbox/lxde-pi-rc.xml openbox/lxde-pi-rc.xml
-                ;;
-                *lxsession/LXDE-pi/desktop.conf)
-                    backup_and_copy_new /etc/xdg/lxsession/LXDE-pi/desktop.conf lxsession/LXDE-pi/desktop.conf
-                ;;
-                *lxsession/LXDE-pi/autostart)
-                    backup_and_copy_new /etc/xdg/lxsession/LXDE-pi/autostart lxsession/LXDE-pi/autostart
-                ;;
-                *lxsession/LXDE-pi/autokey.sh)
-                    backup_and_copy_new /etc/xdg/lxsession/LXDE-pi/autokey.sh lxsession/LXDE-pi/autokey.sh
-                ;;
-                *lxpanel/launchtaskbar.cfg)
-                    backup_and_copy_new /etc/xdg/lxpanel/launchtaskbar.cfg lxpanel/launchtaskbar.cfg
-                ;;
-                *lxpanel/LXDE-pi/config)
-                    backup_and_copy_new /etc/xdg/lxpanel/profile/LXDE-pi/config lxpanel/LXDE-pi/config
-                ;;
                 *lxpanel/LXDE-pi/panels/panel)
                     backup_and_copy_new /etc/xdg/lxpanel/profile/LXDE-pi/panels/panel lxpanel/LXDE-pi/panels/panel
                 ;;

@@ -6,39 +6,6 @@ if [ -z "$XDG_CONFIG_HOME" ]; then
   export XDG_CONFIG_HOME="$HOME/.config"
 fi
 
-# Ensure the existence of pcmanfm config file
-PCMANFM_CONF_DIR="$XDG_CONFIG_HOME/pcmanfm/LXDE-pi"
-if [ ! -f "$PCMANFM_CONF_DIR/pcmanfm.conf" ]; then
-  mkdir -p "$PCMANFM_CONF_DIR"
-  cp /etc/xdg/pcmanfm/LXDE-pi/pcmanfm.conf "$PCMANFM_CONF_DIR/pcmanfm.conf"
-fi
-if [ ! -f "$PCMANFM_CONF_DIR/desktop-items-0.conf" ]; then
-  mkdir -p "$PCMANFM_CONF_DIR"
-  cp /etc/xdg/pcmanfm/LXDE-pi/desktop-items-0.conf "$PCMANFM_CONF_DIR/desktop-items-0.conf"
-fi
-
-# Ensure the existence of openbox config file
-OPENBOX_CONF_DIR="$XDG_CONFIG_HOME/openbox"
-if [ ! -f "$OPENBOX_CONF_DIR/lxde-pi-rc.xml" ]; then
-  mkdir -p "$OPENBOX_CONF_DIR"
-  cp /etc/xdg/openbox/lxde-pi-rc.xml "$OPENBOX_CONF_DIR/lxde-pi-rc.xml"
-fi
-
-# Ensure the existence of lxsession config file
-LXSESSION_CONF_DIR="$XDG_CONFIG_HOME/lxsession/LXDE-pi"
-if [ ! -f "$LXSESSION_CONF_DIR/desktop.conf" ]; then
-  mkdir -p "$LXSESSION_CONF_DIR"
-  cp /etc/xdg/lxsession/LXDE-pi/desktop.conf "$LXSESSION_CONF_DIR/desktop.conf"
-fi
-if [ ! -f "$LXSESSION_CONF_DIR/autostart" ]; then
-  mkdir -p "$LXSESSION_CONF_DIR"
-  cp /etc/xdg/lxsession/LXDE-pi/autostart "$LXSESSION_CONF_DIR/autostart"
-fi
-if [ ! -f "$LXSESSION_CONF_DIR/autokey.sh" ]; then
-  mkdir -p "$LXSESSION_CONF_DIR"
-  cp /etc/xdg/lxsession/LXDE-pi/autokey.sh "$LXSESSION_CONF_DIR/autokey.sh"
-fi
-
 # Ensure Qt themes are consistent with GTK themes
 if [ ! -f "$XDG_CONFIG_HOME/qt5ct/qt5ct.conf" ]; then
   mkdir -p "$XDG_CONFIG_HOME/qt5ct"
@@ -47,17 +14,9 @@ fi
 
 # Ensure the existence of lxpanel config files
 LXPANEL_CONF_DIR="$XDG_CONFIG_HOME/lxpanel"
-if [ ! -f "$LXPANEL_CONF_DIR/launchtaskbar.cfg" ]; then
-  mkdir -p "$LXPANEL_CONF_DIR"
-  cp /etc/xdg/lxpanel/launchtaskbar.cfg "$LXPANEL_CONF_DIR"
-fi
-if [ ! -f "$LXPANEL_CONF_DIR/LXDE-pi/config" ]; then
-  mkdir -p "$LXPANEL_CONF_DIR/LXDE-pi"
-  cp /etc/xdg/lxpanel/profile/LXDE-pi/config "$LXPANEL_CONF_DIR/LXDE-pi"
-fi
 if [ ! -f "$LXPANEL_CONF_DIR/LXDE-pi/panels/panel" ]; then
   mkdir -p "$LXPANEL_CONF_DIR/LXDE-pi/panels"
-  cp /etc/xdg/lxpanel/profile/LXDE-pi/panels/panel "$LXPANEL_CONF_DIR/LXDE-pi/panels"
+  cp /usr/share/lxpanel/profile/LXDE-pi/panels/panel "$LXPANEL_CONF_DIR/LXDE-pi/panels"
 fi
 
 # Ensure the existence of the 'Desktop' folder

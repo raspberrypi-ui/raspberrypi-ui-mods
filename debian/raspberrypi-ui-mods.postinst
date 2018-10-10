@@ -24,38 +24,6 @@ case "${1}" in
             update-alternatives --set libgksu-gconf-defaults /usr/share/libgksu/debian/gconf-defaults.libgksu-sudo || true
             update-gconf-defaults || true
           fi
-          if dpkg --compare-versions "${2}" lt "1.20180517"; then
-            CHANGED_FILES="${CHANGED_FILES} \
-                           ${CONF_DIR}/lxsession/LXDE-pi/desktop.conf"
-          fi
-          if dpkg --compare-versions "${2}" lt "1.20160718"; then
-            CHANGED_FILES="${CHANGED_FILES} \
-                           ${CONF_DIR}/lxsession/LXDE-pi/autostart"
-          fi
-          if dpkg --compare-versions "${2}" lt "1.20161206"; then
-            CHANGED_FILES="${CHANGED_FILES} \
-                           ${CONF_DIR}/lxsession/LXDE-pi/autokey.sh"
-          fi
-          if dpkg --compare-versions "${2}" lt "1.20180517"; then
-            CHANGED_FILES="${CHANGED_FILES} \
-                           ${CONF_DIR}/openbox/lxde-pi-rc.xml"
-          fi
-          if dpkg --compare-versions "${2}" lt "1.20171115"; then
-            CHANGED_FILES="${CHANGED_FILES} \
-                           ${CONF_DIR}/pcmanfm/LXDE-pi/pcmanfm.conf"
-          fi
-          if dpkg --compare-versions "${2}" lt "1.20180706"; then
-            CHANGED_FILES="${CHANGED_FILES} \
-                           ${CONF_DIR}/pcmanfm/LXDE-pi/desktop-items-0.conf"
-          fi
-          if dpkg --compare-versions "${2}" lt "1.20161018"; then
-            CHANGED_FILES="${CHANGED_FILES} \
-                           ${CONF_DIR}/lxpanel/launchtaskbar.cfg"
-          fi
-          if dpkg --compare-versions "${2}" lt "1.20161018"; then
-            CHANGED_FILES="${CHANGED_FILES} \
-                           ${CONF_DIR}/lxpanel/LXDE-pi/config"
-          fi
           if dpkg --compare-versions "${2}" lt "1.20180125"; then
             CHANGED_FILES="${CHANGED_FILES} \
                            ${CONF_DIR}/lxpanel/LXDE-pi/panels/panel"
@@ -85,6 +53,38 @@ case "${1}" in
             if [ -e ${CONF_DIR}/Trolltech.conf ]; then
                 mkdir -p ${HOME_DIR}oldconffiles/.config/
                 mv -f ${CONF_DIR}/Trolltech.conf ${HOME_DIR}oldconffiles/.config/
+            fi
+            if [ -e ${CONF_DIR}/lxsession/LXDE-pi/autokey.sh ]; then
+                mkdir -p ${HOME_DIR}oldconffiles/.config/lxsession/LXDE-pi/
+                mv -f ${CONF_DIR}/lxsession/LXDE-pi/autokey.sh ${HOME_DIR}oldconffiles/.config/lxsession/LXDE-pi/
+            fi
+            if [ -e ${CONF_DIR}/lxsession/LXDE-pi/autostart ]; then
+                mkdir -p ${HOME_DIR}oldconffiles/.config/lxsession/LXDE-pi/
+                mv -f ${CONF_DIR}/lxsession/LXDE-pi/autostart ${HOME_DIR}oldconffiles/.config/lxsession/LXDE-pi/
+            fi
+            if [ -e ${CONF_DIR}/lxsession/LXDE-pi/desktop.conf ]; then
+                mkdir -p ${HOME_DIR}oldconffiles/.config/lxsession/LXDE-pi/
+                mv -f ${CONF_DIR}/lxsession/LXDE-pi/desktop.conf ${HOME_DIR}oldconffiles/.config/lxsession/LXDE-pi/
+            fi
+            if [ -e ${CONF_DIR}/openbox/lxde-pi-rc.xml ]; then
+                mkdir -p ${HOME_DIR}oldconffiles/.config/openbox/
+                mv -f ${CONF_DIR}/openbox/lxde-pi-rc.xml ${HOME_DIR}oldconffiles/.config/openbox/
+            fi
+            if [ -e ${CONF_DIR}/pcmanfm/LXDE-pi/pcmanfm.conf ]; then
+                mkdir -p ${HOME_DIR}oldconffiles/.config/pcmanfm/LXDE-pi/
+                mv -f ${CONF_DIR}/pcmanfm/LXDE-pi/pcmanfm.conf ${HOME_DIR}oldconffiles/.config/pcmanfm/LXDE-pi/
+            fi
+            if [ -e ${CONF_DIR}/pcmanfm/LXDE-pi/desktop-items-0.conf ]; then
+                mkdir -p ${HOME_DIR}oldconffiles/.config/pcmanfm/LXDE-pi/
+                mv -f ${CONF_DIR}/pcmanfm/LXDE-pi/desktop-items-0.conf ${HOME_DIR}oldconffiles/.config/pcmanfm/LXDE-pi/
+            fi
+            if [ -e ${CONF_DIR}/lxpanel/launchtaskbar.cfg ]; then
+                mkdir -p ${HOME_DIR}oldconffiles/.config/lxpanel/
+                mv -f ${CONF_DIR}/lxpanel/launchtaskbar.cfg ${HOME_DIR}oldconffiles/.config/lxpanel/
+            fi
+            if [ -e ${CONF_DIR}/lxpanel/LXDE-pi/config ]; then
+                mkdir -p ${HOME_DIR}oldconffiles/.config/lxpanel/LXDE-pi/
+                mv -f ${CONF_DIR}/lxpanel/LXDE-pi/config ${HOME_DIR}oldconffiles/.config/lxpanel/LXDE-pi/
             fi
             if [ -d ${HOME_DIR}oldconffiles/ ] ; then
                 chown -R ${OWNER} ${HOME_DIR}oldconffiles/
