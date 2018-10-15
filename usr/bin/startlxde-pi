@@ -12,13 +12,6 @@ if [ ! -f "$XDG_CONFIG_HOME/qt5ct/qt5ct.conf" ]; then
   cp /usr/share/raspi-ui-overrides/qt5ct.conf "$XDG_CONFIG_HOME/qt5ct/"
 fi
 
-# Ensure the existence of lxpanel config files
-LXPANEL_CONF_DIR="$XDG_CONFIG_HOME/lxpanel"
-if [ ! -f "$LXPANEL_CONF_DIR/LXDE-pi/panels/panel" ]; then
-  mkdir -p "$LXPANEL_CONF_DIR/LXDE-pi/panels"
-  cp /usr/share/lxpanel/profile/LXDE-pi/panels/panel "$LXPANEL_CONF_DIR/LXDE-pi/panels"
-fi
-
 # Ensure the existence of the 'Desktop' folder
 if [ -e "$XDG_CONFIG_HOME/user-dirs.dirs" ]; then
   . "$XDG_CONFIG_HOME/user-dirs.dirs"

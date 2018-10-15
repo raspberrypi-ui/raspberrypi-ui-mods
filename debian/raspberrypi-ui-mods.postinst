@@ -38,10 +38,6 @@ case "${1}" in
                 mv -f ${THEME_DIR}/PiX/ ${HOME_DIR}oldconffiles/.themes/PiX/
                 colour_to_obconf ${HOME_DIR}
             fi
-            if [ -e ${CONF_DIR}/gtk-3.0/settings.ini ] ; then
-                mkdir -p ${HOME_DIR}oldconffiles/.config/gtk-3.0/
-                mv -f ${CONF_DIR}/gtk-3.0/settings.ini ${HOME_DIR}oldconffiles/.config/gtk-3.0/
-            fi
             if [ -e ${CONF_DIR}/gtk-3.0/gtk.css ] ; then
                 mkdir -p ${HOME_DIR}oldconffiles/.config/gtk-3.0/
                 mv -f ${CONF_DIR}/gtk-3.0/gtk.css ${HOME_DIR}oldconffiles/.config/gtk-3.0/
@@ -49,6 +45,10 @@ case "${1}" in
                 if [ -e ${CONF_DIR}/gtk-3.0/gtk.css ]; then
                     chown ${OWNER} ${CONF_DIR}/gtk-3.0/gtk.css
                 fi
+            fi
+            if [ -e ${CONF_DIR}/gtk-3.0/settings.ini ] ; then
+                mkdir -p ${HOME_DIR}oldconffiles/.config/gtk-3.0/
+                mv -f ${CONF_DIR}/gtk-3.0/settings.ini ${HOME_DIR}oldconffiles/.config/gtk-3.0/
             fi
             if [ -e ${CONF_DIR}/Trolltech.conf ]; then
                 mkdir -p ${HOME_DIR}oldconffiles/.config/
@@ -62,21 +62,9 @@ case "${1}" in
                 mkdir -p ${HOME_DIR}oldconffiles/.config/lxsession/LXDE-pi/
                 mv -f ${CONF_DIR}/lxsession/LXDE-pi/autostart ${HOME_DIR}oldconffiles/.config/lxsession/LXDE-pi/
             fi
-            if [ -e ${CONF_DIR}/lxsession/LXDE-pi/desktop.conf ]; then
-                mkdir -p ${HOME_DIR}oldconffiles/.config/lxsession/LXDE-pi/
-                mv -f ${CONF_DIR}/lxsession/LXDE-pi/desktop.conf ${HOME_DIR}oldconffiles/.config/lxsession/LXDE-pi/
-            fi
-            if [ -e ${CONF_DIR}/openbox/lxde-pi-rc.xml ]; then
-                mkdir -p ${HOME_DIR}oldconffiles/.config/openbox/
-                mv -f ${CONF_DIR}/openbox/lxde-pi-rc.xml ${HOME_DIR}oldconffiles/.config/openbox/
-            fi
             if [ -e ${CONF_DIR}/pcmanfm/LXDE-pi/pcmanfm.conf ]; then
                 mkdir -p ${HOME_DIR}oldconffiles/.config/pcmanfm/LXDE-pi/
                 mv -f ${CONF_DIR}/pcmanfm/LXDE-pi/pcmanfm.conf ${HOME_DIR}oldconffiles/.config/pcmanfm/LXDE-pi/
-            fi
-            if [ -e ${CONF_DIR}/pcmanfm/LXDE-pi/desktop-items-0.conf ]; then
-                mkdir -p ${HOME_DIR}oldconffiles/.config/pcmanfm/LXDE-pi/
-                mv -f ${CONF_DIR}/pcmanfm/LXDE-pi/desktop-items-0.conf ${HOME_DIR}oldconffiles/.config/pcmanfm/LXDE-pi/
             fi
             if [ -e ${CONF_DIR}/lxpanel/launchtaskbar.cfg ]; then
                 mkdir -p ${HOME_DIR}oldconffiles/.config/lxpanel/

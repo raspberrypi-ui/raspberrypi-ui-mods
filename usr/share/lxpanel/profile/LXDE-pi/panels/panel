@@ -69,12 +69,6 @@ Plugin {
     Button {
       id=lxterminal.desktop
     }
-    Button {
-      id=wolfram-mathematica.desktop
-    }
-    Button {
-      id=wolfram-language.desktop
-    }
   }
 }
 Plugin {
