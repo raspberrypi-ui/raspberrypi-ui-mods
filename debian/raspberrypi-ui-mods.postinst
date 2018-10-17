@@ -58,6 +58,10 @@ case "${1}" in
                 mkdir -p ${HOME_DIR}oldconffiles/.config/lxsession/LXDE-pi/
                 mv -f ${CONF_DIR}/lxsession/LXDE-pi/autokey.sh ${HOME_DIR}oldconffiles/.config/lxsession/LXDE-pi/
             fi
+            if [ -e ${CONF_DIR}/lxsession/LXDE-pi/autostart ]; then
+                mkdir -p ${HOME_DIR}oldconffiles/.config/lxsession/LXDE-pi/
+                mv -f ${CONF_DIR}/lxsession/LXDE-pi/autostart ${HOME_DIR}oldconffiles/.config/lxsession/LXDE-pi/
+            fi
             if [ -e ${CONF_DIR}/pcmanfm/LXDE-pi/pcmanfm.conf ]; then
                 mkdir -p ${HOME_DIR}oldconffiles/.config/pcmanfm/LXDE-pi/
                 mv -f ${CONF_DIR}/pcmanfm/LXDE-pi/pcmanfm.conf ${HOME_DIR}oldconffiles/.config/pcmanfm/LXDE-pi/
