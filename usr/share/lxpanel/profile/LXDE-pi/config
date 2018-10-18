@@ -1,3 +1,2 @@
 [Command]
-Terminal=x-terminal-emulator
 Logout=lxde-pi-shutdown-helper
