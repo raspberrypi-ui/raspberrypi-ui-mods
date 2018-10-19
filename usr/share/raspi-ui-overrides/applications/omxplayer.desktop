@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=OMXPlayer
+Comment=Video player
+Exec=omxplayer %f
+StartupNotify=true
+Terminal=true
+NoDisplay=true
