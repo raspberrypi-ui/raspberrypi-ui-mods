@@ -24,9 +24,25 @@ case "${1}" in
             update-alternatives --set libgksu-gconf-defaults /usr/share/libgksu/debian/gconf-defaults.libgksu-sudo || true
             update-gconf-defaults || true
           fi
+          if dpkg --compare-versions "${2}" lt "1.20180517"; then
+            CHANGED_FILES="${CHANGED_FILES} \
+                           ${CONF_DIR}/lxsession/LXDE-pi/desktop.conf"
+          fi
+          if dpkg --compare-versions "${2}" lt "1.20180517"; then
+            CHANGED_FILES="${CHANGED_FILES} \
+                           ${CONF_DIR}/openbox/lxde-pi-rc.xml"
+          fi
+          if dpkg --compare-versions "${2}" lt "1.20180706"; then
+            CHANGED_FILES="${CHANGED_FILES} \
+                           ${CONF_DIR}/pcmanfm/LXDE-pi/desktop-items-0.conf"
+          fi
           if dpkg --compare-versions "${2}" lt "1.20180125"; then
             CHANGED_FILES="${CHANGED_FILES} \
                            ${CONF_DIR}/lxpanel/LXDE-pi/panels/panel"
+          fi
+          if dpkg --compare-versions "${2}" lt "1.20180328"; then
+            CHANGED_FILES="${CHANGED_FILES} \
+                           ${CONF_DIR}/qt5ct/qt5ct.conf"
           fi
           if dpkg --compare-versions "${2}" lt "1.20180926"; then
             if [ -d ${THEME_DIR}/PiX/ ] ; then
@@ -65,10 +81,6 @@ case "${1}" in
             if [ -e ${CONF_DIR}/lxpanel/LXDE-pi/config ]; then
                 mkdir -p ${HOME_DIR}oldconffiles/.config/lxpanel/LXDE-pi/
                 mv -f ${CONF_DIR}/lxpanel/LXDE-pi/config ${HOME_DIR}oldconffiles/.config/lxpanel/LXDE-pi/
-            fi
-            if [ -e ${CONF_DIR}/qt5ct/qt5ct.conf ]; then
-                mkdir -p ${HOME_DIR}oldconffiles/.config/qt5ct/
-                mv -f ${CONF_DIR}/qt5ct/qt5ct.conf ${HOME_DIR}oldconffiles/.config/qt5ct/
             fi
             if [ -e ${CONF_DIR}/Trolltech.conf ]; then
                 mkdir -p ${HOME_DIR}oldconffiles/.config/
