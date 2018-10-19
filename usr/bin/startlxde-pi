@@ -6,12 +6,6 @@ if [ -z "$XDG_CONFIG_HOME" ]; then
   export XDG_CONFIG_HOME="$HOME/.config"
 fi
 
-# Ensure Qt themes are consistent with GTK themes
-if [ ! -f "$XDG_CONFIG_HOME/qt5ct/qt5ct.conf" ]; then
-  mkdir -p "$XDG_CONFIG_HOME/qt5ct"
-  cp /usr/share/raspi-ui-overrides/qt5ct.conf "$XDG_CONFIG_HOME/qt5ct/"
-fi
-
 # Ensure the existence of the 'Desktop' folder
 if [ -e "$XDG_CONFIG_HOME/user-dirs.dirs" ]; then
   . "$XDG_CONFIG_HOME/user-dirs.dirs"

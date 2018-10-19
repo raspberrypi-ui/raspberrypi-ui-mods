@@ -28,10 +28,6 @@ case "${1}" in
             CHANGED_FILES="${CHANGED_FILES} \
                            ${CONF_DIR}/lxpanel/LXDE-pi/panels/panel"
           fi
-          if dpkg --compare-versions "${2}" lt "1.20180328"; then
-            CHANGED_FILES="${CHANGED_FILES} \
-                           ${CONF_DIR}/qt5ct/qt5ct.conf"
-          fi
           if dpkg --compare-versions "${2}" lt "1.20180926"; then
             if [ -d ${THEME_DIR}/PiX/ ] ; then
                 mkdir -p ${HOME_DIR}oldconffiles/.themes/
@@ -49,10 +45,6 @@ case "${1}" in
             if [ -e ${CONF_DIR}/gtk-3.0/settings.ini ] ; then
                 mkdir -p ${HOME_DIR}oldconffiles/.config/gtk-3.0/
                 mv -f ${CONF_DIR}/gtk-3.0/settings.ini ${HOME_DIR}oldconffiles/.config/gtk-3.0/
-            fi
-            if [ -e ${CONF_DIR}/Trolltech.conf ]; then
-                mkdir -p ${HOME_DIR}oldconffiles/.config/
-                mv -f ${CONF_DIR}/Trolltech.conf ${HOME_DIR}oldconffiles/.config/
             fi
             if [ -e ${CONF_DIR}/lxsession/LXDE-pi/autokey.sh ]; then
                 mkdir -p ${HOME_DIR}oldconffiles/.config/lxsession/LXDE-pi/
@@ -73,6 +65,14 @@ case "${1}" in
             if [ -e ${CONF_DIR}/lxpanel/LXDE-pi/config ]; then
                 mkdir -p ${HOME_DIR}oldconffiles/.config/lxpanel/LXDE-pi/
                 mv -f ${CONF_DIR}/lxpanel/LXDE-pi/config ${HOME_DIR}oldconffiles/.config/lxpanel/LXDE-pi/
+            fi
+            if [ -e ${CONF_DIR}/qt5ct/qt5ct.conf ]; then
+                mkdir -p ${HOME_DIR}oldconffiles/.config/qt5ct/
+                mv -f ${CONF_DIR}/qt5ct/qt5ct.conf ${HOME_DIR}oldconffiles/.config/qt5ct/
+            fi
+            if [ -e ${CONF_DIR}/Trolltech.conf ]; then
+                mkdir -p ${HOME_DIR}oldconffiles/.config/
+                mv -f ${CONF_DIR}/Trolltech.conf ${HOME_DIR}oldconffiles/.config/
             fi
             if [ -d ${HOME_DIR}oldconffiles/ ] ; then
                 chown -R ${OWNER} ${HOME_DIR}oldconffiles/
