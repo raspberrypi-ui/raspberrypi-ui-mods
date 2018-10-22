@@ -17,32 +17,9 @@ case "${1}" in
           HOME_DIR=$(echo "$line" | cut -d: -f6)/
           CONF_DIR=${HOME_DIR}.config
           THEME_DIR=${HOME_DIR}.themes
-          UPDATE_LIST=${CONF_DIR}/.update-list
-          CHANGED_FILES=""
-          LOGGED_FILES=""
           if [ -z "${2}" ]; then
             update-alternatives --set libgksu-gconf-defaults /usr/share/libgksu/debian/gconf-defaults.libgksu-sudo || true
             update-gconf-defaults || true
-          fi
-          if dpkg --compare-versions "${2}" lt "1.20180517"; then
-            CHANGED_FILES="${CHANGED_FILES} \
-                           ${CONF_DIR}/lxsession/LXDE-pi/desktop.conf"
-          fi
-          if dpkg --compare-versions "${2}" lt "1.20180517"; then
-            CHANGED_FILES="${CHANGED_FILES} \
-                           ${CONF_DIR}/openbox/lxde-pi-rc.xml"
-          fi
-          if dpkg --compare-versions "${2}" lt "1.20180706"; then
-            CHANGED_FILES="${CHANGED_FILES} \
-                           ${CONF_DIR}/pcmanfm/LXDE-pi/desktop-items-0.conf"
-          fi
-          if dpkg --compare-versions "${2}" lt "1.20180125"; then
-            CHANGED_FILES="${CHANGED_FILES} \
-                           ${CONF_DIR}/lxpanel/LXDE-pi/panels/panel"
-          fi
-          if dpkg --compare-versions "${2}" lt "1.20180328"; then
-            CHANGED_FILES="${CHANGED_FILES} \
-                           ${CONF_DIR}/qt5ct/qt5ct.conf"
           fi
           if dpkg --compare-versions "${2}" lt "1.20180926"; then
             if [ -d ${THEME_DIR}/PiX/ ] ; then
@@ -103,21 +80,9 @@ case "${1}" in
               grep -q XKBOPTION $KEYCONF 2>/dev/null && sed -i "s/XKBOPTION=.*/XKBOPTION=$OPTION/" $KEYCONF || echo XKBOPTION="$OPTION" >> $KEYCONF
             fi
           fi
-          if [ -n "$CHANGED_FILES" ]; then
-            CHANGED=0
-            for file in $CHANGED_FILES; do
-              if [ -e "$file" ]; then
-                CHANGED=1
-                LOGGED_FILES="${LOGGED_FILES}${file}\n"
-              fi
-            done
-            if [ $CHANGED = "1" ]; then
-              mkdir -p "$CONF_DIR"
-              echo "$LOGGED_FILES" >> "$UPDATE_LIST"
-            fi
-          fi
         fi
     done
+    zenity --info --width=400 --text="The desktop has been updated.\n\nSome unnecessary configuration files have been removed and backed up in ~/oldconffiles.\n\nTo apply the updates, please select one of the options on the Defaults page in Appearance Settings."
     ;;
 
   abort-upgrade|abort-remove|abort-deconfigure)
