@@ -3,3 +3,4 @@ rm_conffile /etc/xdg/autostart/lxkeymap.desktop 1.20180328
 rm_conffile /etc/xdg/lxpanel/profile/LXDE-pi/panels/panel 1.20180926
 rm_conffile /etc/xdg/lxpanel/profile/LXDE-pi/config 1.20180926
 rm_conffile /etc/xdg/lxpanel/launchtaskbar.cfg 1.20180926
+rm_conffile /etc/xdg/lxsession/LXDE-pi/autokey.sh 1.20180926
