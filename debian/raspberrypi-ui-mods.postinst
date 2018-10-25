@@ -81,7 +81,12 @@ case "${1}" in
           fi
         fi
     done
-    zenity --info --width=400 --text="The desktop has been updated.\n\nSome obsolete configuration files have been removed and backed up in ~/oldconffiles.\n\nTo apply the updates, please first reboot your Pi, and then select one of the options on the Defaults page in Appearance Settings."
+    echo "The desktop has been updated."
+    echo "Some obsolete configuration files have been removed and backed up in ~/oldconffiles."
+    echo "To apply the updates, please reboot your Pi, and then select one of the options on the Defaults page in Appearance Settings."
+    if pgrep -x Xorg > /dev/null ; then
+      zenity --info --width=400 --text="The desktop has been updated.\n\nSome obsolete configuration files have been removed and backed up in ~/oldconffiles.\n\nTo apply the updates, please reboot your Pi, and then select one of the options on the Defaults page in Appearance Settings."
+	fi
     ;;
 
   abort-upgrade|abort-remove|abort-deconfigure)
