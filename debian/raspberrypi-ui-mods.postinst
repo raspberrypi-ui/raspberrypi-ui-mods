@@ -8,7 +8,10 @@ case "${1}" in
       x-session-manager /usr/bin/startlxde-pi 90 \
       --slave /usr/share/man/man1/x-session-manager.1.gz \
       x-session-manager.1.gz /usr/share/man/man1/startlxde.1.gz
-    getent passwd | while read line; do
+    CHANGED=False
+    pwdlines=$(getent passwd)
+    while read line
+    do
         USHELL=$(echo "$line" | cut -d: -f7)
         if grep -q "$USHELL" /etc/shells ; then
           USER=$(echo "$line" | cut -d: -f1)
@@ -26,6 +29,7 @@ case "${1}" in
                 mkdir -p ${HOME_DIR}oldconffiles/.themes/
                 mv -f ${THEME_DIR}/PiX/ ${HOME_DIR}oldconffiles/.themes/PiX/
                 colour_to_obconf ${HOME_DIR}
+                CHANGED=True
             fi
             if [ -e ${CONF_DIR}/gtk-3.0/gtk.css ] ; then
                 mkdir -p ${HOME_DIR}oldconffiles/.config/gtk-3.0/
@@ -34,34 +38,42 @@ case "${1}" in
                 if [ -e ${CONF_DIR}/gtk-3.0/gtk.css ]; then
                     chown ${OWNER} ${CONF_DIR}/gtk-3.0/gtk.css
                 fi
+                CHANGED=True
             fi
             if [ -e ${CONF_DIR}/gtk-3.0/settings.ini ] ; then
                 mkdir -p ${HOME_DIR}oldconffiles/.config/gtk-3.0/
                 mv -f ${CONF_DIR}/gtk-3.0/settings.ini ${HOME_DIR}oldconffiles/.config/gtk-3.0/
+                CHANGED=True
             fi
             if [ -e ${CONF_DIR}/lxsession/LXDE-pi/autokey.sh ]; then
                 mkdir -p ${HOME_DIR}oldconffiles/.config/lxsession/LXDE-pi/
                 mv -f ${CONF_DIR}/lxsession/LXDE-pi/autokey.sh ${HOME_DIR}oldconffiles/.config/lxsession/LXDE-pi/
+                CHANGED=True
             fi
             if [ -e ${CONF_DIR}/lxsession/LXDE-pi/autostart ]; then
                 mkdir -p ${HOME_DIR}oldconffiles/.config/lxsession/LXDE-pi/
                 mv -f ${CONF_DIR}/lxsession/LXDE-pi/autostart ${HOME_DIR}oldconffiles/.config/lxsession/LXDE-pi/
+                CHANGED=True
             fi
             if [ -e ${CONF_DIR}/pcmanfm/LXDE-pi/pcmanfm.conf ]; then
                 mkdir -p ${HOME_DIR}oldconffiles/.config/pcmanfm/LXDE-pi/
                 mv -f ${CONF_DIR}/pcmanfm/LXDE-pi/pcmanfm.conf ${HOME_DIR}oldconffiles/.config/pcmanfm/LXDE-pi/
+                CHANGED=True
             fi
             if [ -e ${CONF_DIR}/lxpanel/launchtaskbar.cfg ]; then
                 mkdir -p ${HOME_DIR}oldconffiles/.config/lxpanel/
                 mv -f ${CONF_DIR}/lxpanel/launchtaskbar.cfg ${HOME_DIR}oldconffiles/.config/lxpanel/
+                CHANGED=True
             fi
             if [ -e ${CONF_DIR}/lxpanel/LXDE-pi/config ]; then
                 mkdir -p ${HOME_DIR}oldconffiles/.config/lxpanel/LXDE-pi/
                 mv -f ${CONF_DIR}/lxpanel/LXDE-pi/config ${HOME_DIR}oldconffiles/.config/lxpanel/LXDE-pi/
+                CHANGED=True
             fi
             if [ -e ${CONF_DIR}/Trolltech.conf ]; then
                 mkdir -p ${HOME_DIR}oldconffiles/.config/
                 mv -f ${CONF_DIR}/Trolltech.conf ${HOME_DIR}oldconffiles/.config/
+                CHANGED=True
             fi
             if [ -d ${HOME_DIR}oldconffiles/ ] ; then
                 chown -R ${OWNER} ${HOME_DIR}oldconffiles/
@@ -80,12 +92,20 @@ case "${1}" in
             fi
           fi
         fi
-    done
+    done <<EOF
+    echo $pwdlines
+EOF
     echo "The desktop has been updated."
-    echo "Some obsolete configuration files have been removed and backed up in ~/oldconffiles."
+    if [ "$CHANGED" = True ] ; then
+      echo "Some obsolete configuration files have been removed and backed up in ~/oldconffiles."
+    fi
     echo "To apply the updates, please reboot your Pi, and then select one of the options on the Defaults page in Appearance Settings."
     if pgrep -x Xorg > /dev/null ; then
-      zenity --info --width=400 --text="The desktop has been updated.\n\nSome obsolete configuration files have been removed and backed up in ~/oldconffiles.\n\nTo apply the updates, please reboot your Pi, and then select one of the options on the Defaults page in Appearance Settings."
+      if [ "$CHANGED" = True ] ; then
+        zenity --info --width=400 --text="The desktop has been updated.\n\nSome obsolete configuration files have been removed and backed up in ~/oldconffiles.\n\nTo apply the updates, please reboot your Pi, and then select one of the options on the Defaults page in Appearance Settings."
+      else
+        zenity --info --width=400 --text="The desktop has been updated.\n\nTo apply the updates, please reboot your Pi, and then select one of the options on the Defaults page in Appearance Settings."
+      fi
 	fi
     ;;
 

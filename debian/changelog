@@ -1,3 +1,13 @@
+raspberrypi-ui-mods (1.20180926) stretch; urgency=medium
+
+  * Major modifications to config files to avoid copying local versions where possible
+  * Only use global themes
+  * New scrollbar buttons
+  * Remove Wolfram icons from taskbar
+  * Add initial sync to startlxde script
+
+ -- Simon Long <simon@raspberrypi.org>  Wed, 26 Sep 2018 14:44:26 +0100
+
 raspberrypi-ui-mods (1.20180706) stretch; urgency=medium
 
   * Remove pistore desktop file
