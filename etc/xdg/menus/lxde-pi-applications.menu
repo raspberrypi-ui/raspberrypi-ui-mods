@@ -179,10 +179,14 @@
 
 	<Layout>
 		<Menuname>Development</Menuname>
+		<Menuname>Education</Menuname>
 		<Menuname>Office</Menuname>
 		<Menuname>Internet</Menuname>
+		<Menuname>Multimedia</Menuname>
+		<Menuname>Graphics</Menuname>
 		<Menuname>Games</Menuname>
 		<Menuname>Other</Menuname>
+		<Menuname>System</Menuname>
 		<Menuname>Accessories</Menuname>
 		<Merge type="files"/>
 		<Merge type="menus"/>
