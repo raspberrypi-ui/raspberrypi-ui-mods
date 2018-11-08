@@ -4,6 +4,7 @@ set -e
 
 case "${1}" in
   configure)
+    update-mime-database /usr/share/mime/
     update-desktop-database /usr/share/raspi-ui-overrides/applications/
     update-alternatives --install /usr/bin/x-session-manager \
       x-session-manager /usr/bin/startlxde-pi 90 \
