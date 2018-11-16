@@ -16,7 +16,7 @@ case "${1}" in
         USHELL=$(echo "$line" | cut -d: -f7)
         if grep -q "$USHELL" /etc/shells ; then
           USER=$(echo "$line" | cut -d: -f1)
-          GROUP=$(getent group $(getent passwd $USER | cut -d: -f4) | cut -d: -f1)
+          GROUP=$(getent group $(getent passwd "$USER" | cut -d: -f4) | cut -d: -f1)
           OWNER=${USER}:${GROUP}
           HOME_DIR=$(echo "$line" | cut -d: -f6)/
           CONF_DIR=${HOME_DIR}.config
@@ -26,58 +26,58 @@ case "${1}" in
             update-gconf-defaults || true
           fi
           if dpkg --compare-versions "${2}" lt "1.20180926"; then
-            if [ -d ${THEME_DIR}/PiX/ ] ; then
-                mkdir -p ${HOME_DIR}oldconffiles/.themes/
-                mv -f ${THEME_DIR}/PiX/ ${HOME_DIR}oldconffiles/.themes/PiX/
-                colour_to_obconf ${HOME_DIR}
+            if [ -d "${THEME_DIR}/PiX/" ] ; then
+                mkdir -p "${HOME_DIR}oldconffiles/.themes/"
+                mv -f "${THEME_DIR}/PiX/" "${HOME_DIR}oldconffiles/.themes/PiX/"
+                colour_to_obconf "${HOME_DIR}"
                 CHANGED=True
             fi
-            if [ -e ${CONF_DIR}/gtk-3.0/gtk.css ] ; then
-                mkdir -p ${HOME_DIR}oldconffiles/.config/gtk-3.0/
-                mv -f ${CONF_DIR}/gtk-3.0/gtk.css ${HOME_DIR}oldconffiles/.config/gtk-3.0/
-                colour_to_gtk3 ${HOME_DIR}
-                if [ -e ${CONF_DIR}/gtk-3.0/gtk.css ]; then
-                    chown ${OWNER} ${CONF_DIR}/gtk-3.0/gtk.css
+            if [ -e "${CONF_DIR}/gtk-3.0/gtk.css" ] ; then
+                mkdir -p "${HOME_DIR}oldconffiles/.config/gtk-3.0/"
+                mv -f "${CONF_DIR}/gtk-3.0/gtk.css" "${HOME_DIR}oldconffiles/.config/gtk-3.0/"
+                colour_to_gtk3 "${HOME_DIR}"
+                if [ -e "${CONF_DIR}/gtk-3.0/gtk.css" ]; then
+                    chown "${OWNER}" "${CONF_DIR}/gtk-3.0/gtk.css"
                 fi
                 CHANGED=True
             fi
-            if [ -e ${CONF_DIR}/gtk-3.0/settings.ini ] ; then
-                mkdir -p ${HOME_DIR}oldconffiles/.config/gtk-3.0/
-                mv -f ${CONF_DIR}/gtk-3.0/settings.ini ${HOME_DIR}oldconffiles/.config/gtk-3.0/
+            if [ -e "${CONF_DIR}/gtk-3.0/settings.ini" ] ; then
+                mkdir -p "${HOME_DIR}oldconffiles/.config/gtk-3.0/"
+                mv -f "${CONF_DIR}/gtk-3.0/settings.ini" "${HOME_DIR}oldconffiles/.config/gtk-3.0/"
                 CHANGED=True
             fi
-            if [ -e ${CONF_DIR}/lxsession/LXDE-pi/autokey.sh ]; then
-                mkdir -p ${HOME_DIR}oldconffiles/.config/lxsession/LXDE-pi/
-                mv -f ${CONF_DIR}/lxsession/LXDE-pi/autokey.sh ${HOME_DIR}oldconffiles/.config/lxsession/LXDE-pi/
+            if [ -e "${CONF_DIR}/lxsession/LXDE-pi/autokey.sh" ]; then
+                mkdir -p "${HOME_DIR}oldconffiles/.config/lxsession/LXDE-pi/"
+                mv -f "${CONF_DIR}/lxsession/LXDE-pi/autokey.sh" "${HOME_DIR}oldconffiles/.config/lxsession/LXDE-pi/"
                 CHANGED=True
             fi
-            if [ -e ${CONF_DIR}/lxsession/LXDE-pi/autostart ]; then
-                mkdir -p ${HOME_DIR}oldconffiles/.config/lxsession/LXDE-pi/
-                mv -f ${CONF_DIR}/lxsession/LXDE-pi/autostart ${HOME_DIR}oldconffiles/.config/lxsession/LXDE-pi/
+            if [ -e "${CONF_DIR}/lxsession/LXDE-pi/autostart" ]; then
+                mkdir -p "${HOME_DIR}oldconffiles/.config/lxsession/LXDE-pi/"
+                mv -f "${CONF_DIR}/lxsession/LXDE-pi/autostart" "${HOME_DIR}oldconffiles/.config/lxsession/LXDE-pi/"
                 CHANGED=True
             fi
-            if [ -e ${CONF_DIR}/pcmanfm/LXDE-pi/pcmanfm.conf ]; then
-                mkdir -p ${HOME_DIR}oldconffiles/.config/pcmanfm/LXDE-pi/
-                mv -f ${CONF_DIR}/pcmanfm/LXDE-pi/pcmanfm.conf ${HOME_DIR}oldconffiles/.config/pcmanfm/LXDE-pi/
+            if [ -e "${CONF_DIR}/pcmanfm/LXDE-pi/pcmanfm.conf" ]; then
+                mkdir -p "${HOME_DIR}oldconffiles/.config/pcmanfm/LXDE-pi/"
+                mv -f "${CONF_DIR}/pcmanfm/LXDE-pi/pcmanfm.conf" "${HOME_DIR}oldconffiles/.config/pcmanfm/LXDE-pi/"
                 CHANGED=True
             fi
-            if [ -e ${CONF_DIR}/lxpanel/launchtaskbar.cfg ]; then
-                mkdir -p ${HOME_DIR}oldconffiles/.config/lxpanel/
-                mv -f ${CONF_DIR}/lxpanel/launchtaskbar.cfg ${HOME_DIR}oldconffiles/.config/lxpanel/
+            if [ -e "${CONF_DIR}/lxpanel/launchtaskbar.cfg" ]; then
+                mkdir -p "${HOME_DIR}oldconffiles/.config/lxpanel/"
+                mv -f "${CONF_DIR}/lxpanel/launchtaskbar.cfg" "${HOME_DIR}oldconffiles/.config/lxpanel/"
                 CHANGED=True
             fi
-            if [ -e ${CONF_DIR}/lxpanel/LXDE-pi/config ]; then
-                mkdir -p ${HOME_DIR}oldconffiles/.config/lxpanel/LXDE-pi/
-                mv -f ${CONF_DIR}/lxpanel/LXDE-pi/config ${HOME_DIR}oldconffiles/.config/lxpanel/LXDE-pi/
+            if [ -e "${CONF_DIR}/lxpanel/LXDE-pi/config" ]; then
+                mkdir -p "${HOME_DIR}oldconffiles/.config/lxpanel/LXDE-pi/"
+                mv -f "${CONF_DIR}/lxpanel/LXDE-pi/config" "${HOME_DIR}oldconffiles/.config/lxpanel/LXDE-pi/"
                 CHANGED=True
             fi
-            if [ -e ${CONF_DIR}/Trolltech.conf ]; then
-                mkdir -p ${HOME_DIR}oldconffiles/.config/
-                mv -f ${CONF_DIR}/Trolltech.conf ${HOME_DIR}oldconffiles/.config/
+            if [ -e "${CONF_DIR}/Trolltech.conf" ]; then
+                mkdir -p "${HOME_DIR}oldconffiles/.config/"
+                mv -f "${CONF_DIR}/Trolltech.conf" "${HOME_DIR}oldconffiles/.config/"
                 CHANGED=True
             fi
-            if [ -d ${HOME_DIR}oldconffiles/ ] ; then
-                chown -R ${OWNER} ${HOME_DIR}oldconffiles/
+            if [ -d "${HOME_DIR}oldconffiles/" ] ; then
+                chown -R "${OWNER}" "${HOME_DIR}oldconffiles/"
             fi
           fi
           if dpkg --compare-versions "${2}" lt "1.20180328"; then
@@ -94,7 +94,7 @@ case "${1}" in
           fi
         fi
     done <<EOF
-    echo $pwdlines
+    $pwdlines
 EOF
     echo "The desktop has been updated."
     if [ "$CHANGED" = True ] ; then
