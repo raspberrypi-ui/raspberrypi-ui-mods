@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20181116) stretch; urgency=medium
+
+  * Fix for postinst bug
+
+ -- Simon Long <simon@raspberrypi.org>  Fri, 16 Nov 2018 14:39:29 +0000
+
 raspberrypi-ui-mods (1.20180926) stretch; urgency=medium
 
   * Major modifications to config files to avoid copying local versions where possible
