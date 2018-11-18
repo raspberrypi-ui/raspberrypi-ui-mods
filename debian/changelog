@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20181118) stretch; urgency=medium
+
+  * Retain existing autostart file unless it is the same as global
+
+ -- Simon Long <simon@raspberrypi.org>  Sun, 18 Nov 2018 15:02:22 +0000
+
 raspberrypi-ui-mods (1.20181116) stretch; urgency=medium
 
   * Fix for postinst bug

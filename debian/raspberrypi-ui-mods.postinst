@@ -52,9 +52,11 @@ case "${1}" in
                 CHANGED=True
             fi
             if [ -e "${CONF_DIR}/lxsession/LXDE-pi/autostart" ]; then
-                mkdir -p "${HOME_DIR}oldconffiles/.config/lxsession/LXDE-pi/"
-                mv -f "${CONF_DIR}/lxsession/LXDE-pi/autostart" "${HOME_DIR}oldconffiles/.config/lxsession/LXDE-pi/"
-                CHANGED=True
+                if diff -q "${CONF_DIR}/lxsession/LXDE-pi/autostart" /etc/xdg/lxsession/LXDE-pi/autostart > /dev/null ; then
+                    mkdir -p "${HOME_DIR}oldconffiles/.config/lxsession/LXDE-pi/"
+                    mv -f "${CONF_DIR}/lxsession/LXDE-pi/autostart" "${HOME_DIR}oldconffiles/.config/lxsession/LXDE-pi/"
+                    CHANGED=True
+                fi
             fi
             if [ -e "${CONF_DIR}/pcmanfm/LXDE-pi/pcmanfm.conf" ]; then
                 mkdir -p "${HOME_DIR}oldconffiles/.config/pcmanfm/LXDE-pi/"
