@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20181130) stretch; urgency=medium
+
+  * Add corner radius to openbox conf; add font substitution
+
+ -- Simon Long <simon@raspberrypi.org>  Fri, 30 Nov 2018 13:52:10 +0000
+
 raspberrypi-ui-mods (1.20181118) stretch; urgency=medium
 
   * Retain existing autostart file unless it is the same as global

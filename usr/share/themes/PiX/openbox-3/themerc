@@ -41,6 +41,7 @@ window.inactive.client.color: #EEEFEE
 
 # borders
 border.width: 0
+border.radius: 2
 window.handle.width: 0
 window.client.padding.width: 0
 
