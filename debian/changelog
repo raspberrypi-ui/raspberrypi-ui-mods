@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20181206) stretch; urgency=medium
+
+  * Add custom style to GTK2 theme for non-matched search box in Geany
+
+ -- Simon Long <simon@raspberrypi.org>  Thu, 06 Dec 2018 12:39:02 +0000
+
 raspberrypi-ui-mods (1.20181130) stretch; urgency=medium
 
   * Add corner radius to openbox conf; add font substitution

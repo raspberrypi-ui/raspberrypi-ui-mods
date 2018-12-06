@@ -1124,5 +1124,16 @@ style "treeview"
 
 class "FmDirTreeView"                           style "treeview"
 
+# Geany search box with no match
 
+style "geany-search-entry-no-match-style-pix" {
+	xthickness	= 2
+	ythickness	= 2
+	font_name = "Monospace"
+	base[NORMAL] = "#ffff66666666"
+	text[NORMAL] = "#ffffffffffff"
+	base[SELECTED] = "#777711111111"
 
+    engine "clearlookspix" {}
+}
+widget "*.geany-search-entry-no-match-pix" style "geany-search-entry-no-match-style-pix"
