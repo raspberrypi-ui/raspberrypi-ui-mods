@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Python 3 (IDLE)
+Comment=Integrated development environment for Python 3
+TryExec=/usr/bin/idle-python3.7
+Exec=/usr/bin/idle-python3.7
+Icon=python
+Terminal=false
+Type=Application
+Categories=Application;Development;
+StartupNotify=true

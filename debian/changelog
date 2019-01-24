@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20190124) unstable; urgency=medium
+
+  * Add some new desktop file overrides
+
+ -- Simon Long <simon@raspberrypi.org>  Thu, 24 Jan 2019 13:08:45 +0000
+
 raspberrypi-ui-mods (1.20181206) stretch; urgency=medium
 
   * Add custom style to GTK2 theme for non-matched search box in Geany
