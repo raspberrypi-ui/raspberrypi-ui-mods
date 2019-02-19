@@ -1,8 +1,8 @@
-raspberrypi-ui-mods (1.20190124) unstable; urgency=medium
+raspberrypi-ui-mods (1.20190219) stretch; urgency=medium
 
-  * Add some new desktop file overrides
+  * Set Chromium as default handler for some MIME types; new desktop overrides
 
- -- Simon Long <simon@raspberrypi.org>  Thu, 24 Jan 2019 13:08:45 +0000
+ -- Simon Long <simon@raspberrypi.org>  Tue, 19 Feb 2019 10:28:39 +0000
 
 raspberrypi-ui-mods (1.20181206) stretch; urgency=medium
 
