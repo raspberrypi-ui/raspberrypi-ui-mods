@@ -105,9 +105,9 @@ EOF
     echo "To apply the updates, please reboot your Pi, and then select one of the options on the Defaults page in Appearance Settings."
     if pgrep -x Xorg > /dev/null ; then
       if [ "$CHANGED" = True ] ; then
-        zenity --info --width=400 --text="The desktop has been updated.\n\nSome obsolete configuration files have been removed and backed up in ~/oldconffiles.\n\nTo apply the updates, please reboot your Pi, and then select one of the options on the Defaults page in Appearance Settings." || true
+        zenity --info --width=400 --timeout=30 --text="The desktop has been updated.\n\nSome obsolete configuration files have been removed and backed up in ~/oldconffiles.\n\nTo apply the updates, please reboot your Pi, and then select one of the options on the Defaults page in Appearance Settings." || true
       else
-        zenity --info --width=400 --text="The desktop has been updated.\n\nTo apply the updates, please reboot your Pi, and then select one of the options on the Defaults page in Appearance Settings." || true
+        zenity --info --width=400 --timeout=30 --text="The desktop has been updated.\n\nTo apply the updates, please reboot your Pi, and then select one of the options on the Defaults page in Appearance Settings." || true
       fi
 	fi
     ;;
