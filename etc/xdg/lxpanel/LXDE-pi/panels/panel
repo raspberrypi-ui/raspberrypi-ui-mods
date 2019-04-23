@@ -104,6 +104,18 @@ Plugin {
   }
 }
 Plugin {
+  type=ejecter
+  Config {
+    AutoHide=1
+  }
+}
+Plugin {
+  type=space
+  Config {
+    Size=2
+  }
+}
+Plugin {
   type=bluetooth
   Config {
   }
@@ -137,14 +149,6 @@ Plugin {
   }
 }
 Plugin {
-  type=cpu
-  Config {
-    ShowPercent=1
-    Foreground=#a9a9a9a9a9a9
-    Background=#d3d3d3d3d3d3
-  }
-}
-Plugin {
   type=dclock
   Config {
     ClockFmt=%R
@@ -166,7 +170,8 @@ Plugin {
   }
 }
 Plugin {
-  type=ejecter
+  type=space
   Config {
+    Size=4
   }
 }
