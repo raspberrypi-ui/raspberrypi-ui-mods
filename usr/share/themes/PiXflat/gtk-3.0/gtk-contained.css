@@ -4149,9 +4149,7 @@ paned > separator {
   min-height: 1px;
   -gtk-icon-source: none;
   border-style: none;
-  background-color: transparent;
-  background-image: image(#b6b6b3);
-  background-size: 1px 1px; }
+  background-color: transparent; }
   paned > separator:selected {
     background-image: image(@theme_selected_bg_color); }
   paned > separator:backdrop {
@@ -4166,7 +4164,8 @@ paned > separator {
       background-color: #ededed;
       background-image: image(#c0c0bd), image(#c0c0bd); }
 paned.horizontal > separator {
-  background-repeat: repeat-y; }
+  background-image: image(url("assets/handle-v.png"));
+  background-repeat: no-repeat; }
   paned.horizontal > separator:dir(ltr) {
     margin: 0 -8px 0 0;
     padding: 0 8px 0 0;
@@ -4183,7 +4182,8 @@ paned.horizontal > separator {
 paned.vertical > separator {
   margin: 0 0 -8px 0;
   padding: 0 0 8px 0;
-  background-repeat: repeat-x;
+  background-image: image(url("assets/handle-h.png"));
+  background-repeat: no-repeat;
   background-position: top; }
   paned.vertical > separator.wide {
     margin: 0;
