@@ -2501,6 +2501,11 @@ notebook > header {
     border-style: solid;
     border-radius: 1px;
     background-color: #d5d5d5; }
+  notebook > header.top tab:hover:not(:checked) {       /* unselected tab */
+    border-color: #a6a6a6;
+    border-style: solid;
+    border-radius: 1px;
+    background-color: #c7c7c7; }
   notebook > header.top tab:checked {             /* selected tab */
     border-color: #9e9e9e;
     border-left-style: solid;
@@ -2513,6 +2518,11 @@ notebook > header {
     border-style: solid;
     border-radius: 1px;
     background-color: #d5d5d5; }
+  notebook > header.bottom tab:hover:not(:checked) {       /* unselected tab */
+    border-color: #a6a6a6;
+    border-style: solid;
+    border-radius: 1px;
+    background-color: #c7c7c7; }
   notebook > header.bottom tab:checked {             /* selected tab */
     border-color: #9e9e9e;
     border-left-style: solid;
@@ -2525,6 +2535,11 @@ notebook > header {
     border-style: solid;
     border-radius: 1px;
     background-color: #d5d5d5; }
+  notebook > header.left tab:hover:not(:checked) {       /* unselected tab */
+    border-color: #a6a6a6;
+    border-style: solid;
+    border-radius: 1px;
+    background-color: #c7c7c7; }
   notebook > header.left tab:checked {             /* selected tab */
     border-color: #9e9e9e;
     border-left-style: solid;
@@ -2537,6 +2552,11 @@ notebook > header {
     border-style: solid;
     border-radius: 1px;
     background-color: #d5d5d5; }
+  notebook > header.right tab:hover:not(:checked) {       /* unselected tab */
+    border-color: #a6a6a6;
+    border-style: solid;
+    border-radius: 1px;
+    background-color: #c7c7c7; }
   notebook > header.right tab:checked {             /* selected tab */
     border-color: #9e9e9e;
     border-right-style: solid;
