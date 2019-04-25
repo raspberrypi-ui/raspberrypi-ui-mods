@@ -22,7 +22,6 @@ case "${1}" in
           CONF_DIR=${HOME_DIR}.config
           THEME_DIR=${HOME_DIR}.themes
           if [ -z "${2}" ]; then
-            update-alternatives --set libgksu-gconf-defaults /usr/share/libgksu/debian/gconf-defaults.libgksu-sudo || true
             update-gconf-defaults || true
           fi
           if dpkg --compare-versions "${2}" lt "1.20180926"; then
