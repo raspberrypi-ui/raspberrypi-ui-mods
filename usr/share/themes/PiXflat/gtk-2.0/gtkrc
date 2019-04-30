@@ -89,6 +89,8 @@ style "default"
 
 	GtkHButtonBox::child-min-height             = 0
 
+	GtkNotebook::pix-tabs						= 1
+
 	# Colours
 
 	bg[NORMAL]			= @bg_color
@@ -604,11 +606,11 @@ style "notebook"
 	fg[ACTIVE] = "#a6a6a6"
 	bg[NORMAL] = shade (1.03, @bg_color)
 	bg[ACTIVE] = shade (0.9, @bg_color)
+	bg[PRELIGHT] = "#c7c7c7"
 
 	engine "pixflat"
 	{
 		radius = 1.0
-		no_tab_ext = TRUE
     }
 }
 
