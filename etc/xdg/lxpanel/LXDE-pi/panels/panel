@@ -24,6 +24,12 @@ Global {
   iconsize=36
 }
 Plugin {
+  type=space
+  Config {
+    Size=4
+  }
+}
+Plugin {
   type=menu
   Config {
     image=start-here
