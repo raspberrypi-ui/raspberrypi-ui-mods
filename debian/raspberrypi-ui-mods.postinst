@@ -21,9 +21,6 @@ case "${1}" in
           HOME_DIR=$(echo "$line" | cut -d: -f6)/
           CONF_DIR=${HOME_DIR}.config
           THEME_DIR=${HOME_DIR}.themes
-          if [ -z "${2}" ]; then
-            update-gconf-defaults || true
-          fi
           if dpkg --compare-versions "${2}" lt "1.20180926"; then
             if [ -d "${THEME_DIR}/PiX/" ] ; then
                 mkdir -p "${HOME_DIR}oldconffiles/.themes/"
