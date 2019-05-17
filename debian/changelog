@@ -1,8 +1,8 @@
-raspberrypi-ui-mods (1.20190430) unstable; urgency=medium
+raspberrypi-ui-mods (1.20190517) unstable; urgency=medium
 
   * Buster prototype
 
- -- Simon Long <simon@raspberrypi.org>  Tue, 30 Apr 2019 13:28:11 +0100
+ -- Simon Long <simon@raspberrypi.org>  Fri, 17 May 2019 13:28:11 +0100
 
 raspberrypi-ui-mods (1.20190219) stretch; urgency=medium
 
