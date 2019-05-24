@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=screenblank
+Comment=Disable screen blanking
+NoDisplay=true
+Exec=xset s off s noblank -dpms
