@@ -1,4 +1,10 @@
-raspberrypi-ui-mods (1.20190517) unstable; urgency=medium
+raspberrypi-ui-mods (1.20190626) buster; urgency=medium
+
+  * Change environment variable to select GTK+3 backend for LibreOffice
+
+ -- Simon Long <simon@raspberrypi.org>  Wed, 26 Jun 2019 10:33:32 +0100
+
+raspberrypi-ui-mods (1.20190613) unstable; urgency=medium
 
   * Buster prototype
 
