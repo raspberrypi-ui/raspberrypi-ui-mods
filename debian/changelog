@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20190708) buster; urgency=medium
+
+  * Set lxpanel default monitor to 0
+
+ -- Simon Long <simon@raspberrypi.org>  Mon, 08 Jul 2019 10:57:10 +0100
+
 raspberrypi-ui-mods (1.20190626) buster; urgency=medium
 
   * Change environment variable to select GTK+3 backend for LibreOffice
