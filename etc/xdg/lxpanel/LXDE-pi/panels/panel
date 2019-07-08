@@ -22,6 +22,7 @@ Global {
   background=0
   backgroundfile=/usr/share/lxpanel/images/background.png
   iconsize=36
+  monitor=0
 }
 Plugin {
   type=space
