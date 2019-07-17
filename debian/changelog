@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20190717) buster; urgency=medium
+
+  * Add keybindings for shutdown and lxpanel move
+
+ -- Simon Long <simon@raspberrypi.org>  Wed, 17 Jul 2019 08:01:45 +0100
+
 raspberrypi-ui-mods (1.20190708) buster; urgency=medium
 
   * Set lxpanel default monitor to 0

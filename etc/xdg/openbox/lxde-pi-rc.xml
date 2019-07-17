@@ -273,6 +273,11 @@
         <command>lxpanelctl menu</command>
       </action>
     </keybind>
+    <keybind key="C-A-M">
+      <action name="Execute">
+         <command>lxpanelctl move</command>
+      </action>
+    </keybind>
     <keybind key="A-F11">
       <action name="ToggleFullscreen"/>
     </keybind>
@@ -317,6 +322,11 @@
     <keybind key="0xC9">
       <action name="Execute">
         <command>lxterminal</command>
+      </action>
+    </keybind>
+    <keybind key="C-A-End">
+      <action name="Execute">
+         <command>lxde-pi-shutdown-helper</command>
       </action>
     </keybind>
   </keyboard>
