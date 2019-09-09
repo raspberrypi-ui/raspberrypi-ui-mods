@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20190909) buster; urgency=medium
+
+  * Enable fkms path prefix on non-Pi platforms
+
+ -- Simon Long <simon@raspberrypi.org>  Mon, 09 Sep 2019 09:27:36 +0100
+
 raspberrypi-ui-mods (1.20190717) buster; urgency=medium
 
   * Add keybindings for shutdown and lxpanel move
