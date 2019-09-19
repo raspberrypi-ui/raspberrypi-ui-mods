@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20190919) buster; urgency=medium
+
+  * Add new icon theme to dependencies
+
+ -- Simon Long <simon@raspberrypi.org>  Thu, 19 Sep 2019 08:56:12 +0100
+
 raspberrypi-ui-mods (1.20190918) buster; urgency=medium
 
   * Use new icon theme by default
