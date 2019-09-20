@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20190920) buster; urgency=medium
+
+  * Use new theme for cursor
+
+ -- Simon Long <simon@raspberrypi.org>  Fri, 20 Sep 2019 13:04:34 +0100
+
 raspberrypi-ui-mods (1.20190919) buster; urgency=medium
 
   * Add new icon theme to dependencies
