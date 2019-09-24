@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20190924) buster; urgency=medium
+
+  * Menu override added for mousepad text editor
+
+ -- Simon Long <simon@raspberrypi.org>  Tue, 24 Sep 2019 12:34:57 +0100
+
 raspberrypi-ui-mods (1.20190920) buster; urgency=medium
 
   * Use new theme for cursor
