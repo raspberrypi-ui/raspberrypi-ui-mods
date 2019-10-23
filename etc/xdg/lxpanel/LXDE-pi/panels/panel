@@ -3,7 +3,7 @@
 
 Global {
   edge=top
-  allign=left
+  align=left
   margin=0
   widthtype=percent
   width=100
@@ -23,6 +23,7 @@ Global {
   backgroundfile=/usr/share/lxpanel/images/background.png
   iconsize=36
   monitor=0
+  point_at_menu=1
 }
 Plugin {
   type=space

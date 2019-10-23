@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20191023) buster; urgency=medium
+
+  * Remove point-rpi; pointer warp now built into lxpanel
+
+ -- Simon Long <simon@raspberrypi.org>  Wed, 23 Oct 2019 10:46:51 +0100
+
 raspberrypi-ui-mods (1.20190924) buster; urgency=medium
 
   * Menu override added for mousepad text editor
