@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20191125) buster; urgency=medium
+
+  * Remove pimixer from recommended installs
+
+ -- Simon Long <simon@raspberrypi.org>  Mon, 25 Nov 2019 11:02:49 +0000
+
 raspberrypi-ui-mods (1.20191023) buster; urgency=medium
 
   * Remove point-rpi; pointer warp now built into lxpanel
