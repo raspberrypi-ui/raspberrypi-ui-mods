@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20200115) buster; urgency=medium
+
+  * Make key shortcut for shutdown Ctrl-Alt-Backspace
+
+ -- Simon Long <simon@raspberrypi.org>  Wed, 15 Jan 2020 14:18:46 +0000
+
 raspberrypi-ui-mods (1.20191125) buster; urgency=medium
 
   * Remove pimixer from recommended installs

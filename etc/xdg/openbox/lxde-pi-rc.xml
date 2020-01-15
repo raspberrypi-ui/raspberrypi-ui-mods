@@ -329,6 +329,11 @@
          <command>lxde-pi-shutdown-helper</command>
       </action>
     </keybind>
+    <keybind key="C-A-BackSpace">
+      <action name="Execute">
+         <command>lxde-pi-shutdown-helper</command>
+      </action>
+    </keybind>
   </keyboard>
   <mouse>
     <dragThreshold>8</dragThreshold>
