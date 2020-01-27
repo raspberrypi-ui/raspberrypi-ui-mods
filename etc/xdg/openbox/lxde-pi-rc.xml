@@ -281,8 +281,8 @@
     <keybind key="A-F11">
       <action name="ToggleFullscreen"/>
     </keybind>
-    <!-- Launch Task Manager with Ctrl+Alt+Del -->
-    <keybind key="A-C-Delete">
+    <!-- Launch Task Manager with Ctrl+Shift+Escape -->
+    <keybind key="C-S-Escape">
       <action name="Execute">
         <command>lxtask</command>
       </action>
@@ -329,7 +329,7 @@
          <command>lxde-pi-shutdown-helper</command>
       </action>
     </keybind>
-    <keybind key="C-A-BackSpace">
+    <keybind key="C-A-Delete">
       <action name="Execute">
          <command>lxde-pi-shutdown-helper</command>
       </action>

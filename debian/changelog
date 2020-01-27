@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20200127) buster; urgency=medium
+
+  * Move task manager to Ctr-Shift-Esc and shutdown to Ctrl-Alt-Del
+
+ -- Simon Long <simon@raspberrypi.org>  Mon, 27 Jan 2020 13:51:47 +0000
+
 raspberrypi-ui-mods (1.20200115) buster; urgency=medium
 
   * Make key shortcut for shutdown Ctrl-Alt-Backspace
