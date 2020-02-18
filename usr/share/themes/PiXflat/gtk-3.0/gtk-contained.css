@@ -2034,6 +2034,10 @@ window.csd > .titlebar:not(headerbar) {
 .titlebar:not(headerbar) > separator {
   background-color: #b6b6b3; }
 
+#pixbox {
+  background-color: #ffffff;
+  border: 1px solid #b6b6b3; }
+
 /************
  * Pathbars *
  ************/
