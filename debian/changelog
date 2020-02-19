@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20200218) buster; urgency=medium
+
+  * Add progress box style to GTK+3 theme
+
+ -- Simon Long <simon@raspberrypi.org>  Tue, 18 Feb 2020 13:30:05 +0000
+
 raspberrypi-ui-mods (1.20200127) buster; urgency=medium
 
   * Move task manager to Ctr-Shift-Esc and shutdown to Ctrl-Alt-Del
