@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20200409) buster; urgency=medium
+
+  * Add magnifier plugin; associate PDFs with Chromium
+
+ -- Simon Long <simon@raspberrypi.com>  Thu, 09 Apr 2020 10:49:57 +0100
+
 raspberrypi-ui-mods (1.20200218) buster; urgency=medium
 
   * Add progress box style to GTK+3 theme

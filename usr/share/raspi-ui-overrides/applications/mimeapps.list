@@ -10,3 +10,4 @@ text/plain=leafpad.desktop
 application/x-gtk-builder=glade-3.desktop
 application/deb=pi-gpk-install-local-file.desktop
 application/x-deb=pi-gpk-install-local-file.desktop
+application/pdf=chromium-browser.desktop
