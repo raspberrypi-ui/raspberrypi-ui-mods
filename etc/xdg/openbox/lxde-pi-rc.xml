@@ -276,13 +276,18 @@
         <command>lxpanelctl menu</command>
       </action>
     </keybind>
-    <keybind key="C-A-M">
+    <keybind key="C-A-V">
       <action name="Execute">
          <command>lxpanelctl move</command>
       </action>
     </keybind>
     <keybind key="A-F11">
       <action name="ToggleFullscreen"/>
+    </keybind>
+    <keybind key="C-A-M">
+      <action name="Execute">
+         <command>lxpanelctl command magnifier toggle</command>
+      </action>
     </keybind>
     <!-- Launch Task Manager with Ctrl+Shift+Escape -->
     <keybind key="C-S-Escape">
