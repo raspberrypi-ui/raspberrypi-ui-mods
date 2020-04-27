@@ -23,6 +23,9 @@
     <raiseOnFocus>no</raiseOnFocus>
     <!-- when followMouse is enabled, and a window is given focus by moving the
        mouse into it, also raise the window -->
+    <focusDesktop>yes</focusDesktop>
+    <!-- when no window on screen, focus the desktop to allow Orca keyboard
+       events to happen -->
   </focus>
   <placement>
     <policy>Smart</policy>
