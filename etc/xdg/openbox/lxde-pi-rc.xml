@@ -276,7 +276,7 @@
         <command>lxpanelctl menu</command>
       </action>
     </keybind>
-    <keybind key="C-A-V">
+    <keybind key="C-A-S">
       <action name="Execute">
          <command>lxpanelctl move</command>
       </action>
