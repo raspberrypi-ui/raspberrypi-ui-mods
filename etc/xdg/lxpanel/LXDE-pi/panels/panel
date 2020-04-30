@@ -26,14 +26,9 @@ Global {
   point_at_menu=1
 }
 Plugin {
-  type=space
-  Config {
-    Size=4
-  }
-}
-Plugin {
   type=menu
   Config {
+    padding=4
     image=start-here
     system {
     }
@@ -56,7 +51,7 @@ Plugin {
 Plugin {
   type=space
   Config {
-    Size=8
+    Size=4
   }
 }
 Plugin {
