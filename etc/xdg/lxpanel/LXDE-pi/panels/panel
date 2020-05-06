@@ -23,7 +23,7 @@ Global {
   backgroundfile=/usr/share/lxpanel/images/background.png
   iconsize=36
   monitor=0
-  point_at_menu=1
+  point_at_menu=0
 }
 Plugin {
   type=menu
