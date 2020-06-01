@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20200601) buster; urgency=medium
+
+  * Add test for full KMS on 64-bit to path prepend for screen config
+
+ -- Simon Long <simon@raspberrypi.com>  Mon, 01 Jun 2020 13:25:07 +0100
+
 raspberrypi-ui-mods (1.20200409) buster; urgency=medium
 
   * Add magnifier plugin; associate PDFs with Chromium
