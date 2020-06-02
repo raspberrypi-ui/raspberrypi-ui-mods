@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20200514) buster; urgency=medium
+
+  * Add agnostics as recommended package
+
+ -- Simon Long <simon@raspberrypi.com>  Thu, 14 May 2020 11:36:43 +0100
+
 raspberrypi-ui-mods (1.20200409) buster; urgency=medium
 
   * Add magnifier plugin; associate PDFs with Chromium
