@@ -1,9 +1,3 @@
-raspberrypi-ui-mods (1.20200603) buster; urgency=medium
-
-  * Fix VLC startup bug on 64-bit
-
- -- Simon Long <simon@raspberrypi.com>  Thu, 04 Jun 2020 02:01:46 +0800
-
 raspberrypi-ui-mods (1.20200602) buster; urgency=medium
 
   * Restore agnostics as recommended package
