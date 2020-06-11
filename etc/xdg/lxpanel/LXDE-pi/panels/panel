@@ -35,14 +35,12 @@ Plugin {
     separator {
     }
     item {
-      name=Run...
       image=system-run
       command=run
     }
     separator {
     }
     item {
-      name=Shutdown...
       image=system-shutdown
       command=logout
     }

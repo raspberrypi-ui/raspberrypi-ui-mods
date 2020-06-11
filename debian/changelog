@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20200611) buster; urgency=medium
+
+  * Remove hard-coded names for Run and Shutdown in lxpanel menu
+
+ -- Simon Long <simon@raspberrypi.com>  Thu, 11 Jun 2020 11:26:11 +0100
+
 raspberrypi-ui-mods (1.20200602) buster; urgency=medium
 
   * Restore agnostics as recommended package
