@@ -133,7 +133,7 @@ Plugin {
   }
 }
 Plugin {
-  type=volumealsabt
+  type=volumepulse
   Config {
   }
 }

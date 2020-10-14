@@ -298,17 +298,17 @@
     <!-- Keybindings for audio volume media keys -->
     <keybind key="XF86AudioRaiseVolume">
       <action name="Execute">
-        <command>lxpanelctl command volumealsabt volu</command>
+        <command>sh -c "lxpanelctl command volumepulse volu; lxpanelctl command volumealsabt volu"</command>
       </action>
     </keybind>
     <keybind key="XF86AudioLowerVolume">
       <action name="Execute">
-        <command>lxpanelctl command volumealsabt vold</command>
+        <command>sh -c "lxpanelctl command volumepulse vold; lxpanelctl command volumealsabt vold"</command>
       </action>
     </keybind>
     <keybind key="XF86AudioMute">
       <action name="Execute">
-        <command>lxpanelctl command volumealsabt mute</command>
+        <command>sh -c "lxpanelctl command volumepulse mute; lxpanelctl command volumealsabt mute"</command>
       </action>
     </keybind>
     <!-- Keybindings for pitop -->
@@ -340,6 +340,11 @@
     <keybind key="C-A-Delete">
       <action name="Execute">
          <command>lxde-pi-shutdown-helper</command>
+      </action>
+    </keybind>
+    <keybind key="C-A-space">
+      <action name="Execute">
+         <command>env SUDO_ASKPASS=/usr/lib/gui-pkinst/pwdgpi.sh sudo AE gui-pkinst orca reboot</command>
       </action>
     </keybind>
   </keyboard>
