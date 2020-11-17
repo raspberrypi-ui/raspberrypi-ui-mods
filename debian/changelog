@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20201117) buster; urgency=medium
+
+  * Add CUPS and system-config-printer
+
+ -- Simon Long <simon@raspberrypi.com>  Tue, 17 Nov 2020 16:12:17 +0000
+
 raspberrypi-ui-mods (1.20201014) buster; urgency=medium
 
   * Use Pulseaudio volume control rather than ALSA

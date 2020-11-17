@@ -90,6 +90,12 @@ case "${1}" in
               grep -q XKBOPTION $KEYCONF 2>/dev/null && sed -i "s/XKBOPTION=.*/XKBOPTION=$OPTION/" $KEYCONF || echo XKBOPTION="$OPTION" >> $KEYCONF
             fi
           fi
+          if dpkg --compare-versions "${2}" lt "20201117"; then
+            if [ -z "$(getent group lpadmin)" ] ; then
+              addgroup --system lpadmin
+            fi
+            adduser "$USER" lpadmin
+          fi
         fi
     done <<EOF
     $pwdlines
