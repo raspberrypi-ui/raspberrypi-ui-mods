@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20201126) buster; urgency=medium
+
+  * Add HP printer drivers
+
+ -- Simon Long <simon@raspberrypi.com>  Thu, 26 Nov 2020 14:09:06 +0000
+
 raspberrypi-ui-mods (1.20201117) buster; urgency=medium
 
   * Add CUPS and system-config-printer
