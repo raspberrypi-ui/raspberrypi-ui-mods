@@ -1,3 +1,10 @@
+raspberrypi-ui-mods (1.20201210) buster; urgency=medium
+
+  * Add PDF association with Debian version of Chromium
+  * Install printer support meta-package
+
+ -- Simon Long <simon@raspberrypi.com>  Thu, 10 Dec 2020 14:25:08 +0000
+
 raspberrypi-ui-mods (1.20201126) buster; urgency=medium
 
   * Add HP printer drivers
