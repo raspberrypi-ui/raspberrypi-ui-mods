@@ -90,7 +90,7 @@ case "${1}" in
               grep -q XKBOPTION $KEYCONF 2>/dev/null && sed -i "s/XKBOPTION=.*/XKBOPTION=$OPTION/" $KEYCONF || echo XKBOPTION="$OPTION" >> $KEYCONF
             fi
           fi
-          if dpkg --compare-versions "${2}" lt "20201117"; then
+          if dpkg --compare-versions "${2}" lt "1.20201117"; then
             if [ -z "$(getent group lpadmin)" ] ; then
               addgroup --system lpadmin
             fi
@@ -100,18 +100,20 @@ case "${1}" in
     done <<EOF
     $pwdlines
 EOF
-    echo "The desktop has been updated."
-    if [ "$CHANGED" = True ] ; then
-      echo "Some obsolete configuration files have been removed and backed up in ~/oldconffiles."
-    fi
-    echo "To apply the updates, please reboot your Pi, and then select one of the options on the Defaults page in Appearance Settings."
-    if pgrep -x Xorg > /dev/null ; then
+    if dpkg --compare-versions "${2}" lt "1.20201126"; then
+      echo "The desktop has been updated."
       if [ "$CHANGED" = True ] ; then
-        zenity --info --width=400 --timeout=30 --text="The desktop has been updated.\n\nSome obsolete configuration files have been removed and backed up in ~/oldconffiles.\n\nTo apply the updates, please reboot your Pi, and then select one of the options on the Defaults page in Appearance Settings." || true
-      else
-        zenity --info --width=400 --timeout=30 --text="The desktop has been updated.\n\nTo apply the updates, please reboot your Pi, and then select one of the options on the Defaults page in Appearance Settings." || true
+        echo "Some obsolete configuration files have been removed and backed up in ~/oldconffiles."
       fi
-	fi
+      echo "To apply the updates, please reboot your Pi, and then select one of the options on the Defaults page in Appearance Settings."
+      if pgrep -x Xorg > /dev/null ; then
+        if [ "$CHANGED" = True ] ; then
+          zenity --info --width=400 --timeout=30 --text="The desktop has been updated.\n\nSome obsolete configuration files have been removed and backed up in ~/oldconffiles.\n\nTo apply the updates, please reboot your Pi, and then select one of the options on the Defaults page in Appearance Settings." || true
+        else
+          zenity --info --width=400 --timeout=30 --text="The desktop has been updated.\n\nTo apply the updates, please reboot your Pi, and then select one of the options on the Defaults page in Appearance Settings." || true
+        fi
+	  fi
+    fi
     ;;
 
   abort-upgrade|abort-remove|abort-deconfigure)
