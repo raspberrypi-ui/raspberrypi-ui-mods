@@ -1,3 +1,11 @@
+raspberrypi-ui-mods (1.20201210+nmu1) buster; urgency=medium
+
+  * Non-maintainer upload.
+  * Remove 60-desktop-policy.conf in favour of
+    policykit-1's 51-debian-sudo.conf
+
+ -- Serge Schneider <serge@raspberrypi.com>  Tue, 05 Jan 2021 09:59:33 +0000
+
 raspberrypi-ui-mods (1.20201210) buster; urgency=medium
 
   * Add PDF association with Debian version of Chromium
