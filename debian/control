@@ -1,15 +1,15 @@
 Source: raspberrypi-ui-mods
 Section: x11
-Priority: extra
-Maintainer: Serge Schneider <serge@raspberrypi.org>
-Build-Depends: debhelper (>= 8.1.0~)
-Standards-Version: 3.9.6
+Priority: optional
+Maintainer: Simon Long <simon@raspberrypi.com>
+Build-Depends: debhelper-compat (= 10)
+Standards-Version: 4.3.0
 
 Package: raspberrypi-ui-mods
 Architecture: any
 Depends: ${misc:Depends}, lxpanel, pcmanfm, openbox, xserver-xorg,
  x11-xserver-utils, policykit-1, lightdm, raspberrypi-sys-mods, 
- zenity, libglib2.0-bin, desktop-file-utils, lxsession
+ zenity, libglib2.0-bin, desktop-file-utils, lxsession, adduser
 Recommends: xserver-xorg-video-fbturbo,
  fonts-piboto (>=1.1), pipanel, lxinput, raspberrypi-artwork,
  pi-greeter, rpd-plym-splash, rpd-wallpaper, pishutdown, scrot,
