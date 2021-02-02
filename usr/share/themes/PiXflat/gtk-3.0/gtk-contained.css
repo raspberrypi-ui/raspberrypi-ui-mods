@@ -53,7 +53,7 @@
     color: @theme_selected_fg_color;
     background-color: @theme_selected_bg_color; }
 
-.view, iconview,
+.view, iconview, #exo-icon-view,
 .view text,
 iconview text,
 textview text {
@@ -413,6 +413,12 @@ treeview entry.flat, treeview entry {
     background-image: -gtk-gradient(radial, center center, 0, center center, 0.01, to(@theme_selected_bg_color), to(transparent)); }
   to {
     background-image: -gtk-gradient(radial, center center, 0, center center, 0.5, to(@theme_selected_bg_color), to(transparent)); } }
+#launch-button {
+  padding: 0px 0px;
+}
+#menu-button {
+  padding: 0px 0px;
+}
 notebook > header > tabs > arrow, button.titlebutton,
 button {
   min-height: 16px;
