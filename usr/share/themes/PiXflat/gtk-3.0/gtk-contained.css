@@ -416,6 +416,9 @@ treeview entry.flat, treeview entry {
 #launch-button {
   padding: 0px 0px;
 }
+#task-button {
+  padding: 0px 4px;
+}
 #menu-button {
   padding: 0px 0px;
 }
