@@ -4261,7 +4261,7 @@ stackswitcher button.text-button.circular {
   padding: 0px 4px;
 }
 #menu-button {
-  padding: 0px 0px;
+  padding: 0px 4px;
 }
 
 @define-color bar_bg_color #EDECEB;
