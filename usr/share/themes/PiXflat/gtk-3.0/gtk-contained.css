@@ -85,6 +85,11 @@ textview text {
   textview text:selected {
     border-radius: 3px; }
 
+#exo-icon-view:selected {
+  color: @theme_selected_fg_color;
+  background-color: @theme_selected_bg_color;
+}
+
 textview border {
   background-color: #f4f4f3; }
 
