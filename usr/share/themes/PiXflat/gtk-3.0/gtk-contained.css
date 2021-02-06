@@ -53,7 +53,7 @@
     color: @theme_selected_fg_color;
     background-color: @theme_selected_bg_color; }
 
-.view, iconview, #exo-icon-view,
+.view, iconview,
 .view text,
 iconview text,
 textview text {
@@ -84,16 +84,6 @@ textview text {
   iconview text:selected,
   textview text:selected {
     border-radius: 3px; }
-
-#exo-icon-view:selected {
-  color: @theme_selected_fg_color;
-  background-color: @theme_selected_bg_color;
-}
-
-#exo-icon-view.rubberband:focus {
-  border: 1px solid @theme_selected_bg_color;
-  background-color: alpha (@theme_selected_bg_color, 0.2);
-}
 
 textview border {
   background-color: #f4f4f3; }
@@ -4254,8 +4244,9 @@ stackswitcher button.text-button.circular {
   border: 0px
 }
 #PanelToplevel button {
-  border: 0px;
   color: @bar_fg_color;
+  background-color: @bar_bg_color;
+  border: 0px;
 }
 #PanelToplevel button:hover {
   background-color: lighter ( @bar_bg_color );
@@ -4263,15 +4254,35 @@ stackswitcher button.text-button.circular {
 #PanelToplevel button:checked {
   background-color: darker ( @bar_bg_color );
 }
-#launch-button {
+#PanelToplevel #launch-button {
   padding: 0px 0px;
 }
-#task-button {
-  background-color: @bar_bg_color;
+#PanelToplevel #task-button,
+#PanelToplevel #menu,
+#PanelToplevel #bluetooth,
+#PanelToplevel #dhcpcdui,
+#PanelToplevel #volumepulse,
+#PanelToplevel #volumealsabt,
+#PanelToplevel #ptbatt,
+#PanelToplevel #magnifier,
+#PanelToplevel #ejecter,
+#PanelToplevel #dclock {
   padding: 0px 4px;
 }
-#menu-button {
-  padding: 0px 4px;
+
+/* LibFM / PCManFM themeing */
+
+#exo-icon-view {
+  color: black;
+  background-color: #ffffff;
+}
+#exo-icon-view:selected {
+color: @theme_selected_fg_color;
+background-color: @theme_selected_bg_color;
+}
+#exo-icon-view.rubberband {
+  border: 1px solid @theme_selected_bg_color;
+  background-color: alpha (@theme_selected_bg_color, 0.2);
 }
 
 @define-color bar_bg_color #EDECEB;
