@@ -4247,6 +4247,7 @@ stackswitcher button.text-button.circular {
   color: @bar_fg_color;
   background-color: @bar_bg_color;
   border: 0px;
+  padding: 0px 4px;
 }
 #PanelToplevel button:hover {
   background-color: lighter ( @bar_bg_color );
@@ -4256,18 +4257,6 @@ stackswitcher button.text-button.circular {
 }
 #PanelToplevel #launch-button {
   padding: 0px 0px;
-}
-#PanelToplevel #task-button,
-#PanelToplevel #menu,
-#PanelToplevel #bluetooth,
-#PanelToplevel #dhcpcdui,
-#PanelToplevel #volumepulse,
-#PanelToplevel #volumealsabt,
-#PanelToplevel #ptbatt,
-#PanelToplevel #magnifier,
-#PanelToplevel #ejecter,
-#PanelToplevel #dclock {
-  padding: 0px 4px;
 }
 
 /* LibFM / PCManFM themeing */
