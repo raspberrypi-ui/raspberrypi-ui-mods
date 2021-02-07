@@ -4255,9 +4255,6 @@ stackswitcher button.text-button.circular {
 #PanelToplevel button:checked {
   background-color: darker ( @bar_bg_color );
 }
-#PanelToplevel #launch-button {
-  padding: 0px 0px;
-}
 
 /* LibFM / PCManFM themeing */
 
