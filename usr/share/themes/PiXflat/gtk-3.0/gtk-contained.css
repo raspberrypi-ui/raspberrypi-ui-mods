@@ -4241,7 +4241,7 @@ stackswitcher button.text-button.circular {
 #PanelToplevel {
   color: @bar_fg_color;
   background-color: @bar_bg_color;
-  border: 0px
+  border: 0px;
 }
 #PanelToplevel button {
   color: @bar_fg_color;
@@ -4263,8 +4263,8 @@ stackswitcher button.text-button.circular {
   background-color: #ffffff;
 }
 #exo-icon-view:selected {
-color: @theme_selected_fg_color;
-background-color: @theme_selected_bg_color;
+  color: @theme_selected_fg_color;
+  background-color: @theme_selected_bg_color;
 }
 #exo-icon-view.rubberband {
   border: 1px solid @theme_selected_bg_color;
