@@ -4255,7 +4255,19 @@ stackswitcher button.text-button.circular {
 #PanelToplevel button:checked {
   background-color: darker ( @bar_bg_color );
 }
-#whitewd {
+#sysmenu label {
+  padding-right: 50px;
+}
+#syssubmenu label {
+  padding-right: 50px;
+}
+#syssubmenu arrow:dir(ltr) {
+  min-width: 0px;
+  padding: 0px;
+  margin: 0px;
+  -gtk-icon-source: none;
+}
+#volpopup {
   background-color: @theme_base_color;
   border : 0px;
 }
