@@ -4255,6 +4255,10 @@ stackswitcher button.text-button.circular {
 #PanelToplevel button:checked {
   background-color: darker ( @bar_bg_color );
 }
+#whitewd {
+  background-color: @theme_base_color;
+  border : 0px;
+}
 
 /* LibFM / PCManFM themeing */
 
