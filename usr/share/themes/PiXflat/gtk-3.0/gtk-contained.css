@@ -4271,6 +4271,9 @@ stackswitcher button.text-button.circular {
   background-color: @theme_base_color;
   border : 0px;
 }
+#panelmenuitem label, #panelmenu menuitem label {
+  padding-right: 20px;
+}
 
 /* LibFM / PCManFM themeing */
 
