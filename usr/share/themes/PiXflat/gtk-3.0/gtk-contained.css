@@ -3926,18 +3926,18 @@ infobar {
 /************
  * Tooltips *
  ************/
-tooltip {
+tooltip, .tooltip {
   padding: 4px;
   /* not working */
   border-radius: 5px;
   box-shadow: none; }
-  tooltip.background {
+  tooltip.background, .tooltip.background {
     background-color: rgba(160, 160, 160, 0.8);
     background-clip: padding-box;
     border: none; }
-  tooltip decoration {
+  tooltip decoration, .tooltip decoration {
     background-color: transparent; }
-  tooltip * {
+  tooltip *, .tooltip * {
     padding: 4px;
     background-color: transparent;
     color: white; }
