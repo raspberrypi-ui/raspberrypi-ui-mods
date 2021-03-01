@@ -4247,18 +4247,24 @@ stackswitcher button.text-button.circular {
   color: @bar_fg_color;
   background-color: @bar_bg_color;
   border: 0px;
-  padding: 0px 4px;
+  padding: 0px 3px;
+  -gtk-icon-shadow: none;
+  -gtk-icon-effect: none
 }
-#PanelToplevel button:hover {
-  background-color: lighter ( @bar_bg_color );
+#taskbar button {
+  padding: 0px 2px;
+}
+#launchbar button {
+  padding: 0px 0px;
+}
+#PanelToplevel button:hover, #PanelToplevel button:checked:hover {
+  color: white;
+  background-color: shade ( @bar_bg_color, 0.65 );
 }
 #PanelToplevel button:checked {
-  background-color: darker ( @bar_bg_color );
+  background-color: shade ( @bar_bg_color, 0.9 );
 }
-#sysmenu label {
-  padding-right: 50px;
-}
-#syssubmenu label {
+#sysmenu label, #syssubmenu label {
   padding-right: 50px;
 }
 #syssubmenu arrow:dir(ltr) {
