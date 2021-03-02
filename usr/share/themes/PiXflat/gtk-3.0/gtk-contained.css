@@ -4250,12 +4250,7 @@ stackswitcher button.text-button.circular {
   padding: 0px 3px;
   -gtk-icon-shadow: none;
   -gtk-icon-effect: none
-}
-#taskbar button {
-  padding: 0px 2px;
-}
-#launchbar button {
-  padding: 0px 0px;
+  transition: 200ms ease-out;
 }
 #PanelToplevel button:hover, #PanelToplevel button:checked:hover {
   color: white;
@@ -4263,6 +4258,12 @@ stackswitcher button.text-button.circular {
 }
 #PanelToplevel button:checked {
   background-color: shade ( @bar_bg_color, 0.9 );
+}
+#taskbar button {
+  padding: 0px 2px;
+}
+#launchbar button {
+  padding: 0px 0px;
 }
 #sysmenu label, #syssubmenu label {
   padding-right: 50px;
