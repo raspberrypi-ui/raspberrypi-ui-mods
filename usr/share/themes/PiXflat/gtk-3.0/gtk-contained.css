@@ -1719,12 +1719,11 @@ searchbar,
 headerbar {
   padding: 0 6px;
   min-height: 46px;
-  border-width: 0 0 1px;
-  border-style: solid;
-  border-color: #91918c;
-  border-radius: 0;
-  background: #f4f4f4 linear-gradient(to top, #d4d4d2, #efefef 2px, #f4f4f4 3px);
-  box-shadow: inset 0 1px rgba(255, 255, 255, 0.8); }
+  border-width: 0;
+  border-style: none;
+  color: @theme_selected_fg_color;
+  background: @theme_selected_bg_color;
+  box-shadow: none; }
   .titlebar:backdrop:not(headerbar),
   headerbar:backdrop {
     border-color: #c0c0bd;
@@ -2013,16 +2012,19 @@ headerbar switch {
   margin-bottom: 9px; }
 
 .background:not(.tiled):not(.maximized):not(.solid-csd) .titlebar:backdrop, .background:not(.tiled):not(.maximized):not(.solid-csd) .titlebar {
-  border-top-left-radius: 7px;
-  border-top-right-radius: 7px; }
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px; }
 
 window:not(.tiled):not(.maximized):not(.solid-csd) separator:first-child + headerbar:backdrop, window:not(.tiled):not(.maximized):not(.solid-csd) separator:first-child + headerbar, window:not(.tiled):not(.maximized):not(.solid-csd) headerbar:first-child:backdrop, window:not(.tiled):not(.maximized):not(.solid-csd) headerbar:first-child {
-  border-top-left-radius: 7px; }
+  border-top-left-radius: 3px; }
 window:not(.tiled):not(.maximized):not(.solid-csd) headerbar:last-child:backdrop, window:not(.tiled):not(.maximized):not(.solid-csd) headerbar:last-child {
-  border-top-right-radius: 7px; }
+  border-top-right-radius: 3px; }
 window:not(.tiled):not(.maximized):not(.solid-csd) stack headerbar:first-child:backdrop, window:not(.tiled):not(.maximized):not(.solid-csd) stack headerbar:first-child, window:not(.tiled):not(.maximized):not(.solid-csd) stack headerbar:last-child:backdrop, window:not(.tiled):not(.maximized):not(.solid-csd) stack headerbar:last-child {
   border-top-left-radius: 7px;
   border-top-right-radius: 7px; }
+window {
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px; }
 
 window.csd > .titlebar:not(headerbar) {
   padding: 0;
@@ -4067,7 +4069,7 @@ colorchooser .popover.osd {
  * Window Decorations *
  *********************/
 decoration {
-  border-radius: 7px 7px 0 0;
+  border-radius: 3px;
   border-width: 0px;
   box-shadow: 0 3px 9px 1px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(0, 0, 0, 0.23);
   margin: 10px; }
