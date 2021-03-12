@@ -4251,7 +4251,7 @@ stackswitcher button.text-button.circular {
   border: 0px;
   padding: 0px 3px;
   -gtk-icon-shadow: none;
-  -gtk-icon-effect: none
+  -gtk-icon-effect: none;
   transition: 200ms ease-out;
 }
 #PanelToplevel button:hover, #PanelToplevel button:checked:hover {
