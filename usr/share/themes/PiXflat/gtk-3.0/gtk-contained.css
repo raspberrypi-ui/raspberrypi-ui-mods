@@ -3018,6 +3018,14 @@ menu menuitem check:checked:not(:backdrop),
 menu menuitem check:indeterminate:not(:backdrop) {
   transition: none; }
 
+menu menuitem radio {
+  border: none;
+}
+
+menu menuitem radio:checked {
+  -gtk-icon-source: image(-gtk-recolor(url("assets/check-symbolic.svg")), -gtk-recolor(url("assets/check-symbolic.symbolic.png")));
+}
+
 treeview.view check:selected:focus, treeview.view check:selected,
 treeview.view radio:selected:focus,
 treeview.view radio:selected {
