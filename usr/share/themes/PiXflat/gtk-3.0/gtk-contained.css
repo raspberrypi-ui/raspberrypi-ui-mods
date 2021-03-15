@@ -4260,6 +4260,16 @@ stackswitcher button.text-button.circular {
 #PanelToplevel button:checked, #PanelToplevel button:checked:backdrop box label {
   background-color: shade ( @bar_bg_color, 0.9 );
 }
+/* No, I have no idea why menus under a checked taskbar button display incorrectly...*/
+#PanelToplevel menuitem label, #PanelToplevel menuitem:hover menuitem label {
+  color: black;
+}
+#PanelToplevel menuitem:hover label, #PanelToplevel menuitem:hover menuitem:hover label {
+  color: white;
+}
+#PanelToplevel menuitem:disabled label, #PanelToplevel menuitem:hover menuitem:disabled label {
+  color: #8b8e8f;
+}
 #taskbar button {
   padding: 0px 3px;
 }
