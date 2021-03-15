@@ -4248,6 +4248,10 @@ stackswitcher button.text-button.circular {
   -gtk-icon-effect: none;
   transition: 200ms ease-out;
 }
+#PanelToplevel {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
 #PanelToplevel button {
   padding: 0px 3px;
   background-image: none;
