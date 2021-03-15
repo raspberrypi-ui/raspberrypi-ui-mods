@@ -4240,29 +4240,28 @@ stackswitcher button.text-button.circular {
 
 /* LXPanel themeing */
 
-#PanelToplevel {
+#PanelToplevel, #PanelToplevel box button, #PanelToplevel:backdrop box button box > label {
   color: @bar_fg_color;
   background-color: @bar_bg_color;
   border: 0px;
-}
-#PanelToplevel button {
-  color: @bar_fg_color;
-  background-color: @bar_bg_color;
-  border: 0px;
-  padding: 0px 3px;
   -gtk-icon-shadow: none;
   -gtk-icon-effect: none;
   transition: 200ms ease-out;
 }
-#PanelToplevel button:hover, #PanelToplevel button:checked:hover {
+#PanelToplevel button {
+  padding: 0px 3px;
+  background-image: none;
+}
+#PanelToplevel button:hover, #PanelToplevel button:checked:hover,
+#PanelToplevel button:hover:backdrop box label , #PanelToplevel button:checked:hover:backdrop box label {
   color: white;
   background-color: shade ( @bar_bg_color, 0.65 );
 }
-#PanelToplevel button:checked {
+#PanelToplevel button:checked, #PanelToplevel button:checked:backdrop box label {
   background-color: shade ( @bar_bg_color, 0.9 );
 }
 #taskbar button {
-  padding: 0px 2px;
+  padding: 0px 3px;
 }
 #launchbar button {
   padding: 0px 0px;
