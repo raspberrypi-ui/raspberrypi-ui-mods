@@ -4248,29 +4248,42 @@ stackswitcher button.text-button.circular {
 
 /* LXPanel themeing */
 
-#PanelToplevel, #PanelToplevel box button, #PanelToplevel:backdrop box button box > label {
+#PanelToplevel {
   color: @bar_fg_color;
   background-color: @bar_bg_color;
-  border: 0px;
-  -gtk-icon-shadow: none;
-  -gtk-icon-effect: none;
-  transition: 200ms ease-out;
-}
-#PanelToplevel {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
 #PanelToplevel button {
   padding: 0px 3px;
   background-image: none;
+  border: 0px;
 }
-#PanelToplevel button:hover, #PanelToplevel button:checked:hover,
-#PanelToplevel button:hover:backdrop box label , #PanelToplevel button:checked:hover:backdrop box label {
+#PanelToplevel button,
+#PanelToplevel:backdrop button > box > label {
+  color: @bar_fg_color;
+  background-color: @bar_bg_color;
+  -gtk-icon-shadow: none;
+  -gtk-icon-effect: none;
+  transition: 200ms ease-out;
+}
+#PanelToplevel button:hover,
+#PanelToplevel button:checked:hover,
+#PanelToplevel:backdrop button:hover > box > label,
+#PanelToplevel:backdrop button:checked:hover > box > label {
   color: @theme_selected_fg_color;
   background-color: @theme_selected_bg_color;
+  -gtk-icon-shadow: none;
+  -gtk-icon-effect: none;
+  transition: 200ms ease-out;
 }
-#PanelToplevel button:checked, #PanelToplevel button:checked:backdrop box label {
-  background-color: shade ( @bar_bg_color, 0.9 );
+#PanelToplevel button:checked,
+#PanelToplevel:backdrop button:checked > box > label {
+  color: @bar_fg_color;
+  background-color: shade (@bar_bg_color, 0.9);
+  -gtk-icon-shadow: none;
+  -gtk-icon-effect: none;
+  transition: 200ms ease-out;
 }
 /* No, I have no idea why menus under a checked taskbar button display incorrectly...*/
 #PanelToplevel menuitem label, #PanelToplevel menuitem:hover menuitem label {
@@ -4281,9 +4294,6 @@ stackswitcher button.text-button.circular {
 }
 #PanelToplevel menuitem:disabled label, #PanelToplevel menuitem:hover menuitem:disabled label {
   color: #8b8e8f;
-}
-#taskbar button {
-  padding: 0px 3px;
 }
 #launchbar button {
   padding: 0px 0px;
