@@ -4307,9 +4307,16 @@ stackswitcher button.text-button.circular {
   margin: 0px;
   -gtk-icon-source: none;
 }
-#volpopup {
+#volpopup, #volpopup label {
+  color: black;
   background-color: @theme_base_color;
   border : 0px;
+}
+#volpopup check {
+  border: 1px solid;
+  color: #2e3436;
+  border-color: #bfbfbf;
+  background-color: #ffffff;
 }
 #panelmenuitem label, #panelmenu menuitem label {
   padding-right: 20px;
