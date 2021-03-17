@@ -4307,12 +4307,14 @@ stackswitcher button.text-button.circular {
   margin: 0px;
   -gtk-icon-source: none;
 }
-#volpopup, #volpopup label {
+#panelpopup, #panelpopup scrolledwindow, #panelpopup label {
   color: black;
   background-color: @theme_base_color;
   border : 0px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
-#volpopup check {
+#panelpopup check {
   border: 1px solid;
   color: #2e3436;
   border-color: #bfbfbf;
