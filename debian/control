@@ -9,7 +9,7 @@ Package: raspberrypi-ui-mods
 Architecture: any
 Depends: ${misc:Depends}, lxpanel, pcmanfm, openbox, xserver-xorg,
  x11-xserver-utils, policykit-1, lightdm, raspberrypi-sys-mods, 
- zenity, libglib2.0-bin, desktop-file-utils, lxsession, adduser
+ zenity, libglib2.0-bin, desktop-file-utils, lxsession, adduser, mutter
 Recommends: xserver-xorg-video-fbturbo,
  fonts-piboto (>=1.1), pipanel, lxinput, raspberrypi-artwork,
  pi-greeter, rpd-plym-splash, rpd-wallpaper, pishutdown, scrot,
