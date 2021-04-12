@@ -1,4 +1,4 @@
-raspberrypi-ui-mods (1.20210326) buster; urgency=medium
+raspberrypi-ui-mods (1.20210326) bullseye; urgency=medium
 
   * GTK+3 and mutter test version
 
