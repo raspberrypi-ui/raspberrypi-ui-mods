@@ -4033,17 +4033,23 @@ decoration {
       box-shadow: inset 0 0 0 3px #ededed, inset 0 1px rgba(255, 255, 255, 0.8); }
 
 button.titlebutton {
-  text-shadow: none;
+  color: @theme_selected_fg_color;
+  background-color: @theme_selected_bg_color;
+  border: none;
   -gtk-icon-shadow: none;
   -gtk-icon-effect: none;}
- button.titlebutton:hover, button.titlebutton:active {
-    color: @theme_selected_fg_color;
-    background-color: @theme_selected_bg_color;
-    border: none;
-    -gtk-icon-shadow: none;
-    -gtk-icon-effect: none; }
-  button.titlebutton:backdrop {
-    -gtk-icon-shadow: none; }
+button.titlebutton:hover, button.titlebutton:active {
+  color: @theme_selected_fg_color;
+  background-color: @theme_selected_bg_color;
+  border: none;
+  -gtk-icon-shadow: none;
+  -gtk-icon-effect: none; }
+button.titlebutton:backdrop, button.titlebutton:backdrop:hover {
+  color: #2e3436;
+  background-color: #ededed;
+  border: none;
+  -gtk-icon-shadow: none;
+  -gtk-icon-effect: none; }
 
 headerbar.selection-mode button.titlebutton,
 .titlebar.selection-mode button.titlebutton {
