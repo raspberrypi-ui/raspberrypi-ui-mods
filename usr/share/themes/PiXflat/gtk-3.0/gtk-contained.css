@@ -4045,7 +4045,7 @@ button.titlebutton:hover, button.titlebutton:active {
   -gtk-icon-shadow: none;
   -gtk-icon-effect: none; }
 button.titlebutton:backdrop, button.titlebutton:backdrop:hover {
-  color: #2e3436;
+  color: #8b8e8f;
   background-color: #ededed;
   border: none;
   -gtk-icon-shadow: none;
