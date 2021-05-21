@@ -2277,12 +2277,12 @@ menu,
       menu menuitem arrow:dir(ltr),
       .menu menuitem arrow:dir(ltr),
       .context-menu menuitem arrow:dir(ltr) {
-        -gtk-icon-source: -gtk-icontheme("pan-end-symbolic");
+        -gtk-icon-source: -gtk-icontheme("menu-arrow-symbolic-ltr");
         margin-left: 10px; }
       menu menuitem arrow:dir(rtl),
       .menu menuitem arrow:dir(rtl),
       .context-menu menuitem arrow:dir(rtl) {
-        -gtk-icon-source: -gtk-icontheme("pan-end-symbolic-rtl");
+        -gtk-icon-source: -gtk-icontheme("menu-arrow-symbolic-rtl");
         margin-right: 10px; }
     menu menuitem label:dir(rtl), menu menuitem label:dir(ltr),
     .menu menuitem label:dir(rtl),
