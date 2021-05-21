@@ -422,7 +422,7 @@ button {
   border-radius: 2px;
   border-color: #c7c7c7;
   background-color: #dedede;
-  -gtk-icon-shadow: 0 1px rgba(255, 255, 255, 0.76923);}
+  -gtk-icon-shadow: none;}
   notebook > header > tabs > arrow, button.sidebar-button, button.titlebutton,
   button.flat {
     border-color: transparent;
@@ -444,7 +444,7 @@ button {
     color: #2e3436;
     background-color: #cfcfcf;
     border-color: #bfbfbf;
-    -gtk-icon-shadow: 0 1px rgba(255, 255, 255, 0.76923);
+    -gtk-icon-shadow: none;
     -gtk-icon-effect: highlight; }
   notebook > header > tabs > arrow:active, button.titlebutton:active, notebook > header > tabs > arrow:checked, button.titlebutton:checked,
   button:active,
@@ -453,13 +453,13 @@ button {
     color: #2e3436;
     background-color: #c7c7c7;
     border-color: #b3b3b3;
-    -gtk-icon-shadow: 0 1px rgba(255, 255, 255, 0.76923);
+    -gtk-icon-shadow: none;
     -gtk-icon-effect: highlight; }
   button:hover:checked {
     color: #2e3436;
     background-color: #dedede;
     border-color: #c7c7c7;
-    -gtk-icon-shadow: 0 1px rgba(255, 255, 255, 0.76923);
+    -gtk-icon-shadow: none;
     -gtk-icon-effect: highlight; }
   notebook > header > tabs > arrow:backdrop, button.sidebar-button:backdrop, button.titlebutton:backdrop, notebook > header > tabs > arrow:backdrop, button.titlebutton:backdrop,
   button:backdrop.flat,
