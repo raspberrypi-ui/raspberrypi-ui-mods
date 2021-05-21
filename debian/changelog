@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20210521) bullseye; urgency=medium
+
+  * Various theme tweaks
+
+ -- Simon Long <simon@raspberrypi.com>  Fri, 21 May 2021 15:20:59 +0100
+
 raspberrypi-ui-mods (1.20210326) bullseye; urgency=medium
 
   * GTK+3 and mutter test version
