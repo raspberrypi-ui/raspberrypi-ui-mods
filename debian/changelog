@@ -1,6 +1,6 @@
 raspberrypi-ui-mods (1.20210602) bullseye; urgency=medium
 
-  * Add import of theme override file
+  * Set window manager in startlxde-pi and customise GTK+3 theme accordingly
 
  -- Simon Long <simon@raspberrypi.com>  Wed, 02 Jun 2021 16:27:41 +0100
 
