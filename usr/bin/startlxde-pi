@@ -31,7 +31,19 @@ fi
 
 export XDG_MENU_PREFIX="lxde-pi-"
 
-sync
-
-# Start the LXDE session
-exec /usr/bin/lxsession -s LXDE-pi -e LXDE
+if grep -q "^Revision\s*:\s*[ 123][0-9a-fA-F][0-9a-fA-F]3[0-9a-fA-F][0-9a-fA-F][0-9a-fA-F]$" /proc/cpuinfo && [ -f /usr/bin/mutter ] ; then
+  if [ -f "$XDG_CONFIG_HOME/gtk-3.0/gtk.css" ] ; then
+    rm "$XDG_CONFIG_HOME/gtk-3.0/gtk.css"
+  fi
+  sync
+  exec /usr/bin/lxsession -s LXDE-pi -e LXDE
+else
+  if [ ! -f "$XDG_CONFIG_HOME/gtk-3.0/gtk.css" ] ; then
+    mkdir -p "$XDG_CONFIG_HOME/gtk-3.0"
+    cat > "$XDG_CONFIG_HOME/gtk-3.0/gtk.css" << EOF
+tooltip, .tooltip { border-radius: 0px; }
+EOF
+  fi
+  sync
+  exec /usr/bin/lxsession -s LXDE-pi -e LXDE -w openbox-lxde-pi
+fi
