@@ -38,7 +38,7 @@ if grep -q "^Revision\s*:\s*[ 123][0-9a-fA-F][0-9a-fA-F]3[0-9a-fA-F][0-9a-fA-F][
   sync
   exec /usr/bin/lxsession -s LXDE-pi -e LXDE
 else
-  if [ ! -f "$XDG_CONFIG_HOME/gtk-3.0/gtk.css" ] ; then
+  if [ ! -f "$XDG_CONFIG_HOME/gtk-3.0/gtk.css" ] || ! grep -s -q tooltip "$XDG_CONFIG_HOME/gtk-3.0/gtk.css" ; then
     mkdir -p "$XDG_CONFIG_HOME/gtk-3.0"
     cat > "$XDG_CONFIG_HOME/gtk-3.0/gtk.css" << EOF
 tooltip, .tooltip { border-radius: 0px; }
