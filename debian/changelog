@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20210604) bullseye; urgency=medium
+
+  * Include artwork in this package
+
+ -- Simon Long <simon@raspberrypi.com>  Fri, 04 Jun 2021 13:03:40 +0100
+
 raspberrypi-ui-mods (1.20210602) bullseye; urgency=medium
 
   * Set window manager in startlxde-pi and customise GTK+3 theme accordingly
