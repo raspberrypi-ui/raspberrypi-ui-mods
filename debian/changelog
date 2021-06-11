@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20210611) bullseye; urgency=medium
+
+  * Tidy theme colours for new GNOME syle dialog headers
+
+ -- Simon Long <simon@raspberrypi.com>  Fri, 11 Jun 2021 17:02:28 +0100
+
 raspberrypi-ui-mods (1.20210604) bullseye; urgency=medium
 
   * Include artwork in this package
