@@ -3541,8 +3541,7 @@ row {
   row.activatable:selected.has-open-popup, row.activatable:selected:hover {
     background-color: @theme_selected_bg_color; }
   row.activatable:selected:backdrop {
-    color: #8b8e8f;
-    background-color: transparent; }
+    background-color: @theme_selected_bg_color; }
 
 /*********************
  * App Notifications *
@@ -4093,7 +4092,7 @@ entry selection, modelbutton.flat:selected,
     textview text selection:disabled, flowbox flowboxchild:disabled:selected, label:disabled selection, spinbutton:not(.vertical) selection:disabled,
     entry selection:disabled, modelbutton.flat:disabled:selected,
     .menuitem.button.flat:disabled:selected, row:disabled:selected, calendar:disabled:selected {
-      color: #a5c8ec; }
+      color: @theme_selected_bg_color; }
     row:selected label:backdrop, label:backdrop:selected, .selection-mode button.titlebutton:backdrop, iconview:backdrop:selected:focus, .view:backdrop:selected, iconview:backdrop:selected,
     iconview text:backdrop:selected:focus,
     textview text:backdrop:selected:focus,
@@ -4103,7 +4102,7 @@ entry selection, modelbutton.flat:selected,
     textview text selection:backdrop, flowbox flowboxchild:backdrop:selected, label:backdrop selection, spinbutton:not(.vertical) selection:backdrop,
     entry selection:backdrop, modelbutton.flat:backdrop:selected,
     .menuitem.button.flat:backdrop:selected, row:backdrop:selected, calendar:backdrop:selected {
-      color: #8b8e8f; }
+      color: @theme_selected_fg_color; }
       row:selected label:backdrop:disabled, label:backdrop:disabled:selected, .selection-mode button.titlebutton:backdrop:disabled, .view:backdrop:disabled:selected, iconview:backdrop:disabled:selected,
       .view text:backdrop:disabled:selected,
       iconview text:backdrop:disabled:selected,
@@ -4111,7 +4110,7 @@ entry selection, modelbutton.flat:selected,
       textview text selection:backdrop:disabled, flowbox flowboxchild:backdrop:disabled:selected, label:disabled selection:backdrop, label:backdrop selection:disabled, spinbutton:not(.vertical) selection:backdrop:disabled,
       entry selection:backdrop:disabled, modelbutton.flat:backdrop:disabled:selected,
       .menuitem.button.flat:backdrop:disabled:selected, row:backdrop:disabled:selected, calendar:backdrop:disabled:selected {
-        color: #7fb0e4; }
+        color: @theme_selected_bg_color; }
 
 .monospace {
   font-family: monospace; }
