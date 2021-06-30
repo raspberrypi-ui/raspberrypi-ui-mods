@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20210625) bullseye; urgency=medium
+
+  * Add updater plugin to lxpanel
+
+ -- Simon Long <simon@raspberrypi.com>  Fri, 25 Jun 2021 14:27:30 +0100
+
 raspberrypi-ui-mods (1.20210616) bullseye; urgency=medium
 
   * More theme colour tweaks

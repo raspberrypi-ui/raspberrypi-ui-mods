@@ -99,6 +99,11 @@ Plugin {
   }
 }
 Plugin {
+  type=updater
+  Config {
+  }
+}
+Plugin {
   type=ejecter
   Config {
     AutoHide=1
