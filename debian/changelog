@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20210706) buster; urgency=medium
+
+  * PolicyKit configuration file moved to raspberrypi-sys-mods
+
+ -- Simon Long <simon@raspberrypi.com>  Tue, 06 Jul 2021 13:56:04 +0100
+
 raspberrypi-ui-mods (1.20201210+nmu1) buster; urgency=medium
 
   * Non-maintainer upload.
