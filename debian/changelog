@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20210707) bullseye; urgency=medium
+
+  * PolicyKit config file moved to sys-mods
+
+ -- Simon Long <simon@raspberrypi.com>  Tue, 06 Jul 2021 14:15:49 +0100
+
 raspberrypi-ui-mods (1.20210625) bullseye; urgency=medium
 
   * Add updater plugin to lxpanel
