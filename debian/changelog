@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20210708) bullseye; urgency=medium
+
+  * Enable GLES2 backend for mutter
+
+ -- Simon Long <simon@raspberrypi.com>  Thu, 08 Jul 2021 11:56:41 +0100
+
 raspberrypi-ui-mods (1.20210707) bullseye; urgency=medium
 
   * PolicyKit config file moved to sys-mods

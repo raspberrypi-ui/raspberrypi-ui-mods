@@ -36,6 +36,7 @@ if grep -q "^Revision\s*:\s*[ 123][0-9a-fA-F][0-9a-fA-F]3[0-9a-fA-F][0-9a-fA-F][
     rm "$XDG_CONFIG_HOME/gtk-3.0/gtk.css"
   fi
   sync
+  export CLUTTER_DRIVER="gles2"
   exec /usr/bin/lxsession -s LXDE-pi -e LXDE
 else
   if [ ! -f "$XDG_CONFIG_HOME/gtk-3.0/gtk.css" ] || ! grep -s -q tooltip "$XDG_CONFIG_HOME/gtk-3.0/gtk.css" ; then
