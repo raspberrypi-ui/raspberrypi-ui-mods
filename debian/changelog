@@ -1,4 +1,4 @@
-raspberrypi-ui-mods (1.20210730) UNRELEASED; urgency=medium
+raspberrypi-ui-mods (1.20210730) bullseye; urgency=medium
 
   * Preserve XDG_DATA_DIRS
 
