@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20210730) UNRELEASED; urgency=medium
+
+  * Preserve XDG_DATA_DIRS
+
+ -- Simon Long <simon@raspberrypi.com>  Fri, 30 Jul 2021 09:36:36 +0100
+
 raspberrypi-ui-mods (1.20210708) bullseye; urgency=medium
 
   * Enable GLES2 backend for mutter
