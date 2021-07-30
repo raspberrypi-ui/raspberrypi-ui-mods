@@ -31,7 +31,8 @@ fi
 
 export XDG_MENU_PREFIX="lxde-pi-"
 
-if grep -q "^Revision\s*:\s*[ 123][0-9a-fA-F][0-9a-fA-F]3[0-9a-fA-F][0-9a-fA-F][0-9a-fA-F]$" /proc/cpuinfo && [ -f /usr/bin/mutter ] ; then
+TOTAL_MEM=$(vcgencmd get_config total_mem | cut -d= -f2)
+if [ $TOTAL_MEM -ge 2048 ] && [ -f /usr/bin/mutter ] ; then
   if [ -f "$XDG_CONFIG_HOME/gtk-3.0/gtk.css" ] ; then
     rm "$XDG_CONFIG_HOME/gtk-3.0/gtk.css"
   fi

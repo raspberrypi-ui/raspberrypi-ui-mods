@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20210731) bullseye; urgency=medium
+
+  * Only use mutter if platform has at least 2GB of RAM
+
+ -- Simon Long <simon@raspberrypi.com>  Fri, 30 Jul 2021 17:13:12 +0100
+
 raspberrypi-ui-mods (1.20210730) bullseye; urgency=medium
 
   * Preserve XDG_DATA_DIRS
