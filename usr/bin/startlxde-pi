@@ -37,6 +37,7 @@ if [ $TOTAL_MEM -ge 2048 ] && [ -f /usr/bin/mutter ] ; then
     rm "$XDG_CONFIG_HOME/gtk-3.0/gtk.css"
   fi
   sync
+  export V3D_IGNORE_SCANOUT_USAGES=1
   export CLUTTER_DRIVER="gles2"
   export COGL_DRIVER="gles2"
   exec /usr/bin/lxsession -s LXDE-pi -e LXDE

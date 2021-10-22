@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20211022) UNRELEASED; urgency=medium
+
+  * Add hint for Mesa
+
+ -- Simon Long <simon@raspberrypi.com>  Fri, 22 Oct 2021 11:26:21 +0100
+
 raspberrypi-ui-mods (1.20210906) bullseye; urgency=medium
 
   * Update Qt5ct to theme as GTK+3
