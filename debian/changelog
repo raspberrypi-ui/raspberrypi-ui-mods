@@ -1,4 +1,4 @@
-raspberrypi-ui-mods (1.20211022) UNRELEASED; urgency=medium
+raspberrypi-ui-mods (1.20211022) bullseye; urgency=medium
 
   * Add hint for Mesa
 
