@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20211027) bullseye; urgency=medium
+
+  * Add dependency on xdg-user-dirs
+
+ -- Simon Long <simon@raspberrypi.com>  Wed, 27 Oct 2021 15:31:49 +0100
+
 raspberrypi-ui-mods (1.20211022) bullseye; urgency=medium
 
   * Add hint for Mesa
