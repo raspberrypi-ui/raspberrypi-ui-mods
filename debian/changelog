@@ -1,8 +1,92 @@
-raspberrypi-ui-mods (1.20210706) buster; urgency=medium
+raspberrypi-ui-mods (1.20211027) bullseye; urgency=medium
 
-  * PolicyKit configuration file moved to raspberrypi-sys-mods
+  * Add dependency on xdg-user-dirs
 
- -- Simon Long <simon@raspberrypi.com>  Tue, 06 Jul 2021 13:56:04 +0100
+ -- Simon Long <simon@raspberrypi.com>  Wed, 27 Oct 2021 15:31:49 +0100
+
+raspberrypi-ui-mods (1.20211022) bullseye; urgency=medium
+
+  * Add hint for Mesa
+
+ -- Simon Long <simon@raspberrypi.com>  Fri, 22 Oct 2021 11:26:21 +0100
+
+raspberrypi-ui-mods (1.20210906) bullseye; urgency=medium
+
+  * Update Qt5ct to theme as GTK+3
+
+ -- Simon Long <simon@raspberrypi.com>  Mon, 06 Sep 2021 16:01:16 +0100
+
+raspberrypi-ui-mods (1.20210811) bullseye; urgency=medium
+
+  * Add Conflicts entry for raspberrypi-artwork
+
+ -- Simon Long <simon@raspberrypi.com>  Wed, 11 Aug 2021 14:04:27 +0100
+
+raspberrypi-ui-mods (1.20210731) bullseye; urgency=medium
+
+  * Only use mutter if platform has at least 2GB of RAM
+
+ -- Simon Long <simon@raspberrypi.com>  Fri, 30 Jul 2021 17:13:12 +0100
+
+raspberrypi-ui-mods (1.20210730) bullseye; urgency=medium
+
+  * Preserve XDG_DATA_DIRS
+
+ -- Simon Long <simon@raspberrypi.com>  Fri, 30 Jul 2021 09:36:36 +0100
+
+raspberrypi-ui-mods (1.20210708) bullseye; urgency=medium
+
+  * Enable GLES2 backend for mutter
+
+ -- Simon Long <simon@raspberrypi.com>  Thu, 08 Jul 2021 11:56:41 +0100
+
+raspberrypi-ui-mods (1.20210707) bullseye; urgency=medium
+
+  * PolicyKit config file moved to sys-mods
+
+ -- Simon Long <simon@raspberrypi.com>  Tue, 06 Jul 2021 14:15:49 +0100
+
+raspberrypi-ui-mods (1.20210625) bullseye; urgency=medium
+
+  * Add updater plugin to lxpanel
+
+ -- Simon Long <simon@raspberrypi.com>  Fri, 25 Jun 2021 14:27:30 +0100
+
+raspberrypi-ui-mods (1.20210616) bullseye; urgency=medium
+
+  * More theme colour tweaks
+
+ -- Simon Long <simon@raspberrypi.com>  Wed, 16 Jun 2021 14:59:54 +0100
+
+raspberrypi-ui-mods (1.20210611) bullseye; urgency=medium
+
+  * Tidy theme colours for new GNOME syle dialog headers
+
+ -- Simon Long <simon@raspberrypi.com>  Fri, 11 Jun 2021 17:02:28 +0100
+
+raspberrypi-ui-mods (1.20210604) bullseye; urgency=medium
+
+  * Include artwork in this package
+
+ -- Simon Long <simon@raspberrypi.com>  Fri, 04 Jun 2021 13:03:40 +0100
+
+raspberrypi-ui-mods (1.20210602) bullseye; urgency=medium
+
+  * Set window manager in startlxde-pi and customise GTK+3 theme accordingly
+
+ -- Simon Long <simon@raspberrypi.com>  Wed, 02 Jun 2021 16:27:41 +0100
+
+raspberrypi-ui-mods (1.20210521) bullseye; urgency=medium
+
+  * Various theme tweaks
+
+ -- Simon Long <simon@raspberrypi.com>  Fri, 21 May 2021 15:20:59 +0100
+
+raspberrypi-ui-mods (1.20210326) bullseye; urgency=medium
+
+  * GTK+3 and mutter test version
+
+ -- Simon Long <simon@raspberrypi.com>  Fri, 26 Mar 2021 14:23:11 +0000
 
 raspberrypi-ui-mods (1.20201210+nmu1) buster; urgency=medium
 
