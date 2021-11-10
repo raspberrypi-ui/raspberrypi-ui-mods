@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20211110) bullseye; urgency=medium
+
+  * Disable mutter when VNC server is running
+
+ -- Simon Long <simon@raspberrypi.com>  Wed, 10 Nov 2021 11:30:20 +0000
+
 raspberrypi-ui-mods (1.20211027) bullseye; urgency=medium
 
   * Add dependency on xdg-user-dirs
