@@ -4241,7 +4241,7 @@ headerbar button:disabled {
 #PanelToplevel:backdrop button:hover > box > label,
 #PanelToplevel:backdrop button:checked:hover > box > label {
   color: @theme_selected_fg_color;
-  background-color: @theme_selected_bg_color;
+  background-color: shade(@bar_bg_color, 0.75);
   -gtk-icon-shadow: none;
   -gtk-icon-effect: none;
   transition: 200ms ease-out;

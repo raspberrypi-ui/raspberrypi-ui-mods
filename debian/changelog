@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20211123) bullseye; urgency=medium
+
+  * Set hover colour for taskbar items correctly
+
+ -- Simon Long <simon@raspberrypi.com>  Tue, 23 Nov 2021 10:58:27 +0000
+
 raspberrypi-ui-mods (1.20211110) bullseye; urgency=medium
 
   * Disable mutter when VNC server is running
