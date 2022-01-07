@@ -2642,86 +2642,91 @@ treeview ~ scrollbar.vertical {
  * Switch *
  **********/
 switch {
+  margin: 4px;
   font-weight: bold;
   font-size: smaller;
   outline-offset: -4px;
-  border: 1px solid #b6b6b3;
-  border-radius: 1px;
-  color: #2e3436;
-  background-color: #cfcfcd;
-  text-shadow: 0 1px rgba(0, 0, 0, 0.1); }
+  border: 1px solid ;
+  border-radius: 15px;
+  color: #f4f4f4;
+  background-color: #f4f4f4;
+  border-color: #a0a0a0; }
   switch:checked {
-    color: @theme_selected_fg_color;
-    border-color: @theme_sel_bg_shaded;
+    /*color: #30a030;*/
+    color: @theme_selected_bg_color;
     background-color: @theme_selected_bg_color;
-    text-shadow: 0 1px rgba(24, 68, 114, 0.5), 0 0 2px rgba(255, 255, 255, 0.6); }
+    border-color: #707070; }
   switch:disabled {
-    color: #8b8e8f;
-    border-color: #b6b6b3;
-    background-color: #f1f1f1;
-    text-shadow: none; }
+    color: #f4f4f4;
+    background-color: #f4f4f4;
+    border-color: #e0e0e0; }
+    switch:disabled:checked {
+      /*color: #a0d0a0;*/
+      color: shade(@theme_selected_bg_color, 1.5);
+      background-color: shade(@theme_selected_bg_color, 1.5);
+      border-color: #c0c0c0; }
   switch:backdrop {
-    color: #8b8e8f;
-    border-color: #c0c0bd;
-    background-color: #dadad8;
-    text-shadow: none;
+    color: #f4f4f4;
+    background-color: #f4f4f4;
+    border-color: #c8c8c8;
     transition: 200ms ease-out; }
     switch:backdrop:checked {
-      color: #ededed;
-      border-color: @theme_selected_bg_color;
-      background-color: @theme_selected_bg_color; }
+      color: shade(@theme_selected_bg_color, 1.4);
+      background-color: shade(@theme_selected_bg_color, 1.4);
+      border-color: #b0b0b0; }
     switch:backdrop:disabled {
-      color: #c3c3c0;
-      border-color: #c0c0bd;
-      background-color: #f1f1f1; }
+      color: #f1f1f1;
+      background-color: #f1f1f1;
+      border-color: #e8e8e8; }
+      switch:backdrop:disabled:checked {
+        color: shade(@theme_selected_bg_color, 1.6);
+        background-color: shade(@theme_selected_bg_color, 1.6);
+        border-color: #d0d0d0; }
   switch slider {
-    margin: -1px;
-    min-width: 44px;
-    min-height: 26px;
+    margin: 1px;
+    min-width: 22px;
+    min-height: 10px;
     border: 1px solid;
-    border-radius: 1px;
+    border-radius: 15px;
     transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    color: #2e3436;
-    outline-color: rgba(46, 52, 54, 0.3);
-    border-color: #91918c;
-    text-shadow: 0 1px rgba(255, 255, 255, 0.76923);
-    -gtk-icon-shadow: 0 1px rgba(255, 255, 255, 0.76923);
-    background-image: linear-gradient(to bottom, #f4f4f4 20%, #ededed 90%);
-    box-shadow: inset 0 1px white, inset 0 -2px #ededec, inset 0 -1px #cacac8, 0 1px rgba(0, 0, 0, 0.1); }
-  switch:hover slider {
-    color: #2e3436;
-    outline-color: rgba(46, 52, 54, 0.3);
-    border-color: #91918c;
-    box-shadow: inset 0 1px white, inset 0 -2px #f4f4f4, inset 0 -1px #cfcfcd, 0 1px rgba(0, 0, 0, 0.1);
-    background-image: linear-gradient(to bottom, #fefefe 10%, #f2f2f1 90%); }
+    border-color: #c0c0c0;
+    background-image: image(#dedede); }
   switch:checked slider {
-    border: 1px solid @theme_sel_bg_shaded; }
+    border-color: #707070;
+    background-image: image(#dedede); }
+  switch:hover slider {
+    border-color: #b0b0b0;
+    background-image: image(#cfcfcf); }
+  switch:hover:checked slider {
+    border-color: #707070;
+    background-image: image(#cfcfcf); }
   switch:disabled slider {
-    border-color: #b6b6b3;
+    border-color: #e0e0e0;
     background-image: image(#f1f1f1);
     text-shadow: none;
     -gtk-icon-shadow: none;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0); }
+  switch:disabled:checked slider {
+    border-color: #c0c0c0;
+    background-image: image(#f1f1f1); }
     switch:disabled slider label, switch:disabled slider {
       color: #8b8e8f; }
   switch:backdrop slider {
     transition: 200ms ease-out;
-    border-color: #c0c0bd;
-    background-image: image(#ededed);
-    text-shadow: none;
-    -gtk-icon-shadow: none;
-    box-shadow: inset 0 1px rgba(255, 255, 255, 0); }
-    switch:backdrop slider label, switch:backdrop slider {
+    border-color: #d0d0d0;
+    background-image: image(#f1f1f1); }
+    switch:backdrop slider label {
       color: #8b8e8f; }
   switch:backdrop:checked slider {
-    border-color: @theme_selected_bg_color; }
+    border-color: #d0d0d0;
+    background-image: image(#f1f1f1); }
   switch:backdrop:disabled slider {
-    border-color: #c0c0bd;
-    background-image: image(#f1f1f1);
-    text-shadow: none;
-    -gtk-icon-shadow: none;
-    box-shadow: inset 0 1px rgba(255, 255, 255, 0); }
-    switch:backdrop:disabled slider label, switch:backdrop:disabled slider {
+    border-color: #e0e0e0;
+    background-image: image(#f1f1f1); }
+  switch:backdrop:disabled:checked slider {
+    border-color: #d0d0d0;
+    background-image: image(#f1f1f1); }
+    switch:backdrop:disabled slider label {
       color: #c3c3c0; }
   row:selected switch {
     box-shadow: none;
@@ -3799,9 +3804,12 @@ infobar {
   border-style: none; }
   infobar.info, infobar.question, infobar.warning, infobar.error {
     text-shadow: 0 1px @theme_sel_bg_shaded; }
-    infobar.info:backdrop, infobar.info, infobar.question:backdrop, infobar.question, infobar.warning:backdrop, infobar.warning, infobar.error:backdrop, infobar.error {
+    infobar.info:backdrop, infobar.info, infobar.question:backdrop, infobar.question, infobar.warning:backdrop, infobar.warning {
       background-color: @theme_selected_bg_color;
       border-color: @theme_sel_bg_shaded; }
+    infobar.error:backdrop, infobar.error {
+      background-color: rgba(128,0,0,1);
+      border-color: rgba(192,0,0,1); }
       infobar.info:backdrop label, infobar.info:backdrop, infobar.info label, infobar.info, infobar.question:backdrop label, infobar.question:backdrop, infobar.question label, infobar.question, infobar.warning:backdrop label, infobar.warning:backdrop, infobar.warning label, infobar.warning, infobar.error:backdrop label, infobar.error:backdrop, infobar.error label, infobar.error {
         color: #ffffff; }
     infobar.info:backdrop, infobar.question:backdrop, infobar.warning:backdrop, infobar.error:backdrop {
