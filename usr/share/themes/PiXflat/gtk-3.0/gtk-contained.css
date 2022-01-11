@@ -2685,7 +2685,7 @@ switch {
   switch slider {
     margin: 1px;
     min-width: 22px;
-    min-height: 10px;
+    min-height: 18px;
     border: 1px solid;
     border-radius: 15px;
     transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
