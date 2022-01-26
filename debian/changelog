@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20220126) bullseye; urgency=medium
+
+  * New switch design in theme
+
+ -- Simon Long <simon@raspberrypi.com>  Wed, 26 Jan 2022 14:57:02 +0000
+
 raspberrypi-ui-mods (1.20211123) bullseye; urgency=medium
 
   * Set hover colour for taskbar items correctly
