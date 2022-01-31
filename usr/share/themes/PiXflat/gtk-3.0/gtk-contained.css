@@ -2659,7 +2659,7 @@ switch {
   switch:disabled {
     color: #f4f4f4;
     background-color: #f4f4f4;
-    border-color: #e0e0e0; }
+    border-color: #d0d0d0; }
     switch:disabled:checked {
       /*color: #a0d0a0;*/
       color: shade(@theme_selected_bg_color, 1.4);
@@ -2677,7 +2677,7 @@ switch {
     switch:backdrop:disabled {
       color: #f1f1f1;
       background-color: #f1f1f1;
-      border-color: #e8e8e8; }
+      border-color: #e0e0e0; }
       switch:backdrop:disabled:checked {
         color: shade(@theme_selected_bg_color, 1.6);
         background-color: shade(@theme_selected_bg_color, 1.6);
@@ -2689,19 +2689,19 @@ switch {
     border: 1px solid;
     border-radius: 15px;
     transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    border-color: #c0c0c0;
+    border-color: #a0a0a0;
     background-image: image(#dedede); }
   switch:checked slider {
     border-color: #707070;
     background-image: image(#dedede); }
   switch:hover slider {
-    border-color: #b0b0b0;
+    border-color: #a0a0a0;
     background-image: image(#cfcfcf); }
   switch:hover:checked slider {
     border-color: #707070;
     background-image: image(#cfcfcf); }
   switch:disabled slider {
-    border-color: #e0e0e0;
+    border-color: #d0d0d0;
     background-image: image(#f1f1f1);
     text-shadow: none;
     -gtk-icon-shadow: none;
@@ -2713,12 +2713,12 @@ switch {
       color: #8b8e8f; }
   switch:backdrop slider {
     transition: 200ms ease-out;
-    border-color: #d0d0d0;
+    border-color: #c8c8c8;
     background-image: image(#f1f1f1); }
     switch:backdrop slider label {
       color: #8b8e8f; }
   switch:backdrop:checked slider {
-    border-color: #d0d0d0;
+    border-color: #b0b0b0;
     background-image: image(#f1f1f1); }
   switch:backdrop:disabled slider {
     border-color: #e0e0e0;
