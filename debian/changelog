@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20220301) bullseye; urgency=medium
+
+  * Use standard tests in raspi-config for hardware and KMS detection
+
+ -- Simon Long <simon@raspberrypi.com>  Tue, 01 Mar 2022 11:37:08 +0000
+
 raspberrypi-ui-mods (1.20220126) bullseye; urgency=medium
 
   * New switch design in theme
