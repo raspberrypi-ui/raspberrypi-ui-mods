@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20220302) bullseye; urgency=medium
+
+  * Add wizard configuration files
+
+ -- Simon Long <simon@raspberrypi.com>  Wed, 02 Mar 2022 12:00:50 +0000
+
 raspberrypi-ui-mods (1.20220301) bullseye; urgency=medium
 
   * Use standard tests in raspi-config for hardware and KMS detection
