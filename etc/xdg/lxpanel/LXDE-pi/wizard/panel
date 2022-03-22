@@ -28,6 +28,7 @@ Global {
 Plugin {
   type=bluetooth
   Config {
+    autopair=1
   }
 }
 Plugin {
