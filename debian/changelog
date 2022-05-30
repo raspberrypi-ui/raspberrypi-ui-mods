@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20220530) bullseye; urgency=medium
+
+  * Ignore check for memory size when determining WM on x86
+
+ -- Simon Long <simon@raspberrypi.com>  Mon, 30 May 2022 11:15:46 +0100
+
 raspberrypi-ui-mods (1.20220302) bullseye; urgency=medium
 
   * Add wizard configuration files
