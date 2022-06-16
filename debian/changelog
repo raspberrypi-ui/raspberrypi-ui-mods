@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20220616) bullseye; urgency=medium
+
+  * Enable dynamic menu resizing under GTK3
+
+ -- Simon Long <simon@raspberrypi.com>  Thu, 16 Jun 2022 09:07:11 +0100
+
 raspberrypi-ui-mods (1.20220530) bullseye; urgency=medium
 
   * Ignore check for memory size when determining WM on x86

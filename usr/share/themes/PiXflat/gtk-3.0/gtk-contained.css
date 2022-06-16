@@ -2226,6 +2226,7 @@ menubar,
 menu,
 .menu,
 .context-menu {
+  -GtkMenu-dynamic-resize : true;
   margin: 4px;
   padding: 0px 0px;
   background-color: #ffffff;
