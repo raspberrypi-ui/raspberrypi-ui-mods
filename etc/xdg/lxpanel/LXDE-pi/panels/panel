@@ -127,6 +127,11 @@ Plugin {
   }
 }
 Plugin {
+  type=netman
+  Config {
+  }
+}
+Plugin {
   type=dhcpcdui
   Config {
   }
