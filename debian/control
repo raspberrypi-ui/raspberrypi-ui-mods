@@ -19,7 +19,7 @@ Recommends: xserver-xorg-video-fbturbo,
  lxplug-bluetooth, lxplug-ejecter, lxplug-ptbatt, rc-gui (>=1.18),
  gtk2-engines-pixflat, lxplug-cputemp, lxplug-magnifier, rp-bookshelf,
  agnostics [armhf arm64], gui-pkinst, cups, system-config-printer,
- pi-printer-support, lxplug-updater, lxplug-netman
+ pi-printer-support, lxplug-updater, lxplug-netman, lxplug-menu
 Conflicts: raspberrypi-artwork
 Replaces: raspberrypi-artwork
 Description: Config to customise the LXDE UI for the Raspberry Pi

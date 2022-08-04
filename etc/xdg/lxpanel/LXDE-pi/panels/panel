@@ -26,7 +26,7 @@ Global {
   point_at_menu=0
 }
 Plugin {
-  type=menu
+  type=smenu
   Config {
     padding=4
     image=start-here
