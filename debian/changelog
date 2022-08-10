@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20220810) bullseye; urgency=medium
+
+  * Add new plugins for menu, network manager and microphone level
+
+ -- Simon Long <simon@raspberrypi.com>  Wed, 10 Aug 2022 14:22:32 +0100
+
 raspberrypi-ui-mods (1.20220616) bullseye; urgency=medium
 
   * Enable dynamic menu resizing under GTK3

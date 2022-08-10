@@ -281,6 +281,16 @@
          <command>lxpanelctl move</command>
       </action>
     </keybind>
+    <keybind key="C-A-B">
+      <action name="Execute">
+         <command>lxpanelctl command bluetooth menu</command>
+      </action>
+    </keybind>
+    <keybind key="C-A-W">
+      <action name="Execute">
+         <command>lxpanelctl command netman menu</command>
+      </action>
+    </keybind>
     <keybind key="A-F11">
       <action name="ToggleFullscreen"/>
     </keybind>
