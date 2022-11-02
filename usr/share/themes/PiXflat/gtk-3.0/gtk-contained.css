@@ -4237,7 +4237,7 @@ headerbar button:disabled {
   border-bottom-right-radius: 0;
 }
 #PanelToplevel button {
-  padding: 0px 3px;
+  padding: 2px 3px;
   background-image: none;
   border: 0px;
 }

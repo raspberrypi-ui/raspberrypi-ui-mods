@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20221102) bullseye; urgency=medium
+
+  * Adjust padding on panel button icons
+
+ -- Simon Long <simon@raspberrypi.com>  Wed, 02 Nov 2022 13:20:25 +0000
+
 raspberrypi-ui-mods (1.20220923) bullseye; urgency=medium
 
   * Set padding for button boxes in message dialogs
