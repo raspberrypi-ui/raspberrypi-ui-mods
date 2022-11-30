@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20221130) bullseye; urgency=medium
+
+  * Fix appearance of GtkMessageDialogs under some WMs
+
+ -- Simon Long <simon@raspberrypi.com>  Wed, 30 Nov 2022 10:11:46 +0000
+
 raspberrypi-ui-mods (1.20221102) bullseye; urgency=medium
 
   * Adjust padding on panel button icons

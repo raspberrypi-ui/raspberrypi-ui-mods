@@ -3614,31 +3614,7 @@ calendar {
 /***********
  * Dialogs *
  ***********/
-messagedialog .titlebar {
-  min-height: 20px;
-  background-image: none;
-  background-color: #ededed;
-  border-style: none;
-  border-top-left-radius: 7px;
-  border-top-right-radius: 7px; }
-messagedialog.csd.background {
-  border-bottom-left-radius: 9px;
-  border-bottom-right-radius: 9px; }
-messagedialog.csd .dialog-action-area button {
-  padding: 10px 14px;
-  border-radius: 0;
-  border-left-style: solid;
-  border-right-style: none;
-  border-bottom-style: none; }
-  messagedialog.csd .dialog-action-area button:first-child {
-    border-left-style: none;
-    border-bottom-left-radius: 7px;
-    -gtk-outline-bottom-left-radius: 5px; }
-  messagedialog.csd .dialog-action-area button:last-child {
-    border-bottom-right-radius: 7px;
-    -gtk-outline-bottom-right-radius: 5px; }
-
-messagedialog buttonbox {
+dialog buttonbox, messagedialog buttonbox {
   padding: 5px 5px;
 }
 
@@ -4031,9 +4007,6 @@ decoration {
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.23); }
   .csd.popup decoration {
     border-radius: 0;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.13); }
-  messagedialog.csd decoration {
-    border-radius: 7px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.13); }
   .solid-csd decoration {
     margin: 0;
