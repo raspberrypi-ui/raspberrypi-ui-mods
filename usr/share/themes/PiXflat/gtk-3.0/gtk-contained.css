@@ -2652,6 +2652,10 @@ switch {
   color: #f4f4f4;
   background-color: #f4f4f4;
   border-color: #a0a0a0; }
+switch:focus {
+  outline-offset: 4px;
+  outline-color: alpha(#000000,0.3);
+}
   switch:checked {
     /*color: #30a030;*/
     color: @theme_selected_bg_color;
