@@ -4041,6 +4041,50 @@ button.titlebutton:backdrop, button.titlebutton:backdrop:hover {
   -gtk-icon-shadow: none;
   -gtk-icon-effect: none; }
 
+button.close.titlebutton image {
+  background-image: -gtk-recolor(url("assets/window-close-symbolic.symbolic.png"), success @theme_selected_fg_color); }
+button.close.titlebutton:hover image {
+  background-image: -gtk-recolor(url("assets/window-close-hover-symbolic.symbolic.png"), success @theme_selected_fg_color); }
+button.close.titlebutton:active image {
+  background-image: -gtk-recolor(url("assets/window-close-hover-symbolic.symbolic.png"), success @theme_selected_fg_color); }
+button.close.titlebutton:backdrop image {
+  background-image: -gtk-recolor(url("assets/window-close-symbolic.symbolic.png"), success #8b8e8f); }
+button.close.titlebutton:backdrop:hover image {
+  background-image: -gtk-recolor(url("assets/window-close-hover-symbolic.symbolic.png"), success #8b8e8f); }
+
+button.minimize.titlebutton image {
+  background-image: -gtk-recolor(url("assets/window-minimize-symbolic.symbolic.png"), success @theme_selected_fg_color); }
+button.minimize.titlebutton:hover image {
+  background-image: -gtk-recolor(url("assets/window-minimize-hover-symbolic.symbolic.png"), success @theme_selected_fg_color); }
+button.minimize.titlebutton:active image {
+  background-image: -gtk-recolor(url("assets/window-minimize-hover-symbolic.symbolic.png"), success @theme_selected_fg_color); }
+button.minimize.titlebutton:backdrop image {
+  background-image: -gtk-recolor(url("assets/window-minimize-symbolic.symbolic.png"), success #8b8e8f); }
+button.minimize.titlebutton:backdrop:hover image {
+  background-image: -gtk-recolor(url("assets/window-minimize-hover-symbolic.symbolic.png"), success #8b8e8f); }
+
+button.maximize.titlebutton image {
+  background-image: -gtk-recolor(url("assets/window-maximize-symbolic.symbolic.png"), success @theme_selected_fg_color); }
+button.maximize.titlebutton:hover image {
+  background-image: -gtk-recolor(url("assets/window-maximize-hover-symbolic.symbolic.png"), success @theme_selected_fg_color); }
+button.maximize.titlebutton:active image {
+  background-image: -gtk-recolor(url("assets/window-maximize-hover-symbolic.symbolic.png"), success @theme_selected_fg_color); }
+button.maximize.titlebutton:backdrop image {
+  background-image: -gtk-recolor(url("assets/window-maximize-symbolic.symbolic.png"), success #8b8e8f); }
+button.maximize.titlebutton:backdrop:hover image {
+  background-image: -gtk-recolor(url("assets/window-maximize-hover-symbolic.symbolic.png"), success #8b8e8f); }
+
+button.restore.titlebutton image {
+  background-image: -gtk-recolor(url("assets/window-restore-symbolic.symbolic.png"), success @theme_selected_fg_color); }
+button.restore.titlebutton:hover image {
+  background-image: -gtk-recolor(url("assets/window-restore-hover-symbolic.symbolic.png"), success @theme_selected_fg_color); }
+button.restore.titlebutton:active image {
+  background-image: -gtk-recolor(url("assets/window-restore-hover-symbolic.symbolic.png"), success @theme_selected_fg_color); }
+button.restore.titlebutton:backdrop image {
+  background-image: -gtk-recolor(url("assets/window-restore-symbolic.symbolic.png"), success #8b8e8f); }
+button.restore.titlebutton:backdrop:hover image {
+  background-image: -gtk-recolor(url("assets/window-restore-hover-symbolic.symbolic.png"), success #8b8e8f); }
+
 headerbar.selection-mode button.titlebutton,
 .titlebar.selection-mode button.titlebutton {
   text-shadow: 0 -1px rgba(0, 0, 0, 0.54353);
