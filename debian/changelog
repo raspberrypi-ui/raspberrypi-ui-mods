@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20230228) bookworm; urgency=medium
+
+  * Add themeing for headerbar buttons
+
+ -- Simon Long <simon@raspberrypi.com>  Tue, 28 Feb 2023 09:03:43 +0000
+
 raspberrypi-ui-mods (1.20230215) bookworm; urgency=medium
 
   * Changes for new mousepad desktop files

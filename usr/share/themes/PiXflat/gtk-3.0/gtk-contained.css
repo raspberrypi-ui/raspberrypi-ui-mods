@@ -4022,68 +4022,50 @@ decoration {
     .solid-csd decoration:backdrop {
       box-shadow: inset 0 0 0 3px #ededed, inset 0 1px rgba(255, 255, 255, 0.8); }
 
-button.titlebutton {
+button.titlebutton, button.titlebutton:hover {
   color: @theme_selected_fg_color;
   background-color: @theme_selected_bg_color;
   border: none;
   -gtk-icon-shadow: none;
   -gtk-icon-effect: none;}
-button.titlebutton:hover, button.titlebutton:active {
-  color: @theme_selected_fg_color;
+button.titlebutton:disabled {
+  color: shade(@theme_selected_fg_color, 0.4);
   background-color: @theme_selected_bg_color;
   border: none;
   -gtk-icon-shadow: none;
-  -gtk-icon-effect: none; }
+  -gtk-icon-effect: none;}
 button.titlebutton:backdrop, button.titlebutton:backdrop:hover {
   color: #8b8e8f;
   background-color: #ededed;
   border: none;
   -gtk-icon-shadow: none;
-  -gtk-icon-effect: none; }
+  -gtk-icon-effect: none;}
+button.titlebutton:backdrop:disabled {
+  color: #c0c0c0;
+  background-color: #ededed;
+  border: none;
+  -gtk-icon-shadow: none;
+  -gtk-icon-effect: none;}
 
-button.close.titlebutton image {
-  background-image: -gtk-recolor(url("assets/window-close-symbolic.symbolic.png"), success @theme_selected_fg_color); }
-button.close.titlebutton:hover image {
-  background-image: -gtk-recolor(url("assets/window-close-hover-symbolic.symbolic.png"), success @theme_selected_fg_color); }
-button.close.titlebutton:active image {
-  background-image: -gtk-recolor(url("assets/window-close-hover-symbolic.symbolic.png"), success @theme_selected_fg_color); }
-button.close.titlebutton:backdrop image {
-  background-image: -gtk-recolor(url("assets/window-close-symbolic.symbolic.png"), success #8b8e8f); }
-button.close.titlebutton:backdrop:hover image {
-  background-image: -gtk-recolor(url("assets/window-close-hover-symbolic.symbolic.png"), success #8b8e8f); }
+button.close.titlebutton image, button.close.titlebutton:disabled image, button.close.titlebutton:backdrop image {
+  background-image: -gtk-recolor(url("assets/window-close.symbolic.png")); }
+button.close.titlebutton:hover image, button.close.titlebutton:backdrop:hover image {
+  background-image: -gtk-recolor(url("assets/window-close-hover.symbolic.png")); }
 
-button.minimize.titlebutton image {
-  background-image: -gtk-recolor(url("assets/window-minimize-symbolic.symbolic.png"), success @theme_selected_fg_color); }
-button.minimize.titlebutton:hover image {
-  background-image: -gtk-recolor(url("assets/window-minimize-hover-symbolic.symbolic.png"), success @theme_selected_fg_color); }
-button.minimize.titlebutton:active image {
-  background-image: -gtk-recolor(url("assets/window-minimize-hover-symbolic.symbolic.png"), success @theme_selected_fg_color); }
-button.minimize.titlebutton:backdrop image {
-  background-image: -gtk-recolor(url("assets/window-minimize-symbolic.symbolic.png"), success #8b8e8f); }
-button.minimize.titlebutton:backdrop:hover image {
-  background-image: -gtk-recolor(url("assets/window-minimize-hover-symbolic.symbolic.png"), success #8b8e8f); }
+button.minimize.titlebutton image, button.minimize.titlebutton:disabled image, button.minimize.titlebutton:backdrop image {
+  background-image: -gtk-recolor(url("assets/window-minimize.symbolic.png")); }
+button.minimize.titlebutton:hover image, button.minimize.titlebutton:backdrop:hover image {
+  background-image: -gtk-recolor(url("assets/window-minimize-hover.symbolic.png")); }
 
-button.maximize.titlebutton image {
-  background-image: -gtk-recolor(url("assets/window-maximize-symbolic.symbolic.png"), success @theme_selected_fg_color); }
-button.maximize.titlebutton:hover image {
-  background-image: -gtk-recolor(url("assets/window-maximize-hover-symbolic.symbolic.png"), success @theme_selected_fg_color); }
-button.maximize.titlebutton:active image {
-  background-image: -gtk-recolor(url("assets/window-maximize-hover-symbolic.symbolic.png"), success @theme_selected_fg_color); }
-button.maximize.titlebutton:backdrop image {
-  background-image: -gtk-recolor(url("assets/window-maximize-symbolic.symbolic.png"), success #8b8e8f); }
-button.maximize.titlebutton:backdrop:hover image {
-  background-image: -gtk-recolor(url("assets/window-maximize-hover-symbolic.symbolic.png"), success #8b8e8f); }
+button.maximize.titlebutton image, button.maximize.titlebutton:disabled image, button.maximize.titlebutton:backdrop image {
+  background-image: -gtk-recolor(url("assets/window-maximize.symbolic.png")); }
+button.maximize.titlebutton:hover image, button.maximize.titlebutton:backdrop:hover image {
+  background-image: -gtk-recolor(url("assets/window-maximize-hover.symbolic.png")); }
 
-button.restore.titlebutton image {
-  background-image: -gtk-recolor(url("assets/window-restore-symbolic.symbolic.png"), success @theme_selected_fg_color); }
-button.restore.titlebutton:hover image {
-  background-image: -gtk-recolor(url("assets/window-restore-hover-symbolic.symbolic.png"), success @theme_selected_fg_color); }
-button.restore.titlebutton:active image {
-  background-image: -gtk-recolor(url("assets/window-restore-hover-symbolic.symbolic.png"), success @theme_selected_fg_color); }
-button.restore.titlebutton:backdrop image {
-  background-image: -gtk-recolor(url("assets/window-restore-symbolic.symbolic.png"), success #8b8e8f); }
-button.restore.titlebutton:backdrop:hover image {
-  background-image: -gtk-recolor(url("assets/window-restore-hover-symbolic.symbolic.png"), success #8b8e8f); }
+button.restore.titlebutton image, button.restore.titlebutton:disabled image, button.restore.titlebutton:backdrop image {
+  background-image: -gtk-recolor(url("assets/window-restore.symbolic.png")); }
+button.restore.titlebutton:hover image, button.restore.titlebutton:backdrop:hover image {
+  background-image: -gtk-recolor(url("assets/window-restore-hover.symbolic.png")); }
 
 headerbar.selection-mode button.titlebutton,
 .titlebar.selection-mode button.titlebutton {
