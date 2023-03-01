@@ -4051,21 +4051,37 @@ button.close.titlebutton image, button.close.titlebutton:disabled image, button.
   background-image: -gtk-recolor(url("assets/window-close.symbolic.png")); }
 button.close.titlebutton:hover image, button.close.titlebutton:backdrop:hover image {
   background-image: -gtk-recolor(url("assets/window-close-hover.symbolic.png")); }
+button.close.titlebutton.largeicons image, button.close.titlebutton.largeicons:disabled image, button.close.titlebutton.largeicons:backdrop image {
+  background-image: -gtk-recolor(url("assets/window-close-large.symbolic.png")); }
+button.close.titlebutton.largeicons:hover image, button.close.titlebutton.largeicons:backdrop:hover image {
+  background-image: -gtk-recolor(url("assets/window-close-hover-large.symbolic.png")); }
 
 button.minimize.titlebutton image, button.minimize.titlebutton:disabled image, button.minimize.titlebutton:backdrop image {
   background-image: -gtk-recolor(url("assets/window-minimize.symbolic.png")); }
 button.minimize.titlebutton:hover image, button.minimize.titlebutton:backdrop:hover image {
   background-image: -gtk-recolor(url("assets/window-minimize-hover.symbolic.png")); }
+button.minimize.titlebutton.largeicons image, button.minimize.titlebutton.largeicons:disabled image, button.minimize.titlebutton.largeicons:backdrop image {
+  background-image: -gtk-recolor(url("assets/window-minimize-large.symbolic.png")); }
+button.minimize.titlebutton.largeicons:hover image, button.minimize.titlebutton.largeicons:backdrop:hover image {
+  background-image: -gtk-recolor(url("assets/window-minimize-hover-large.symbolic.png")); }
 
 button.maximize.titlebutton image, button.maximize.titlebutton:disabled image, button.maximize.titlebutton:backdrop image {
   background-image: -gtk-recolor(url("assets/window-maximize.symbolic.png")); }
 button.maximize.titlebutton:hover image, button.maximize.titlebutton:backdrop:hover image {
   background-image: -gtk-recolor(url("assets/window-maximize-hover.symbolic.png")); }
+button.maximize.titlebutton.largeicons image, button.maximize.titlebutton.largeicons:disabled image, button.maximize.titlebutton.largeicons:backdrop image {
+  background-image: -gtk-recolor(url("assets/window-maximize-large.symbolic.png")); }
+button.maximize.titlebutton.largeicons:hover image, button.maximize.titlebutton.largeicons:backdrop:hover image {
+  background-image: -gtk-recolor(url("assets/window-maximize-hover-large.symbolic.png")); }
 
 button.restore.titlebutton image, button.restore.titlebutton:disabled image, button.restore.titlebutton:backdrop image {
   background-image: -gtk-recolor(url("assets/window-restore.symbolic.png")); }
 button.restore.titlebutton:hover image, button.restore.titlebutton:backdrop:hover image {
   background-image: -gtk-recolor(url("assets/window-restore-hover.symbolic.png")); }
+button.restore.titlebutton.largeicons image, button.restore.titlebutton.largeicons:disabled image, button.restore.titlebutton.largeicons:backdrop image {
+  background-image: -gtk-recolor(url("assets/window-restore-large.symbolic.png")); }
+button.restore.titlebutton.largeicons:hover image, button.restore.titlebutton.largeicons:backdrop:hover image {
+  background-image: -gtk-recolor(url("assets/window-restore-hover-large.symbolic.png")); }
 
 headerbar.selection-mode button.titlebutton,
 .titlebar.selection-mode button.titlebutton {
