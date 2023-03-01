@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20230301) bookworm; urgency=medium
+
+  * Version bump
+
+ -- Simon Long <simon@raspberrypi.com>  Wed, 01 Mar 2023 13:39:39 +0000
+
 raspberrypi-ui-mods (1.20230228) bookworm; urgency=medium
 
   * Add themeing for headerbar buttons
