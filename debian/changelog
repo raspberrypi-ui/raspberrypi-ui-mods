@@ -1,6 +1,6 @@
 raspberrypi-ui-mods (1.20230403) bookworm; urgency=medium
 
-  * Remove wishful thinking...
+  * Fix Qt GTK themeing
 
  -- Simon Long <simon@raspberrypi.com>  Mon, 03 Apr 2023 09:12:00 +0100
 
