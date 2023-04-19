@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20230419) bookworm; urgency=medium
+
+  * Use eom instead of gpicview
+
+ -- Simon Long <simon@raspberrypi.com>  Wed, 19 Apr 2023 12:49:33 +0100
+
 raspberrypi-ui-mods (1.20230403) bookworm; urgency=medium
 
   * Fix Qt GTK themeing
