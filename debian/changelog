@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20230425) bookworm; urgency=medium
+
+  * Update gpicview and eom desktop files
+
+ -- Simon Long <simon@raspberrypi.com>  Tue, 25 Apr 2023 14:52:00 +0100
+
 raspberrypi-ui-mods (1.20230419) bookworm; urgency=medium
 
   * Use eom instead of gpicview
