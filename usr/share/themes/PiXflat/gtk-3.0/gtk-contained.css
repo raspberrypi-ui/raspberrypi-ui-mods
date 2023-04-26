@@ -3590,7 +3590,7 @@ expander arrow {
  ***********/
 calendar {
   color: black;
-  border: 1px solid #b6b6b3; }
+  border: none; }
   calendar:selected {
     border-radius: 3px; }
   calendar.header {
@@ -4312,6 +4312,8 @@ headerbar button:disabled {
   color: black;
   background-color: @theme_base_color;
   border : 0px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
