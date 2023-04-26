@@ -4312,6 +4312,7 @@ headerbar button:disabled {
   color: black;
   background-color: @theme_base_color;
   border : 0px;
+  padding : 0px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
   border-bottom-left-radius: 0;
