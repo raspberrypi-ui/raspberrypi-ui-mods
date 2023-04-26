@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20230426) bookworm; urgency=medium
+
+  * Adjust themeing for popovers
+
+ -- Simon Long <simon@raspberrypi.com>  Wed, 26 Apr 2023 14:53:06 +0100
+
 raspberrypi-ui-mods (1.20230425) bookworm; urgency=medium
 
   * Update gpicview and eom desktop files
