@@ -1,0 +1,12 @@
+#!/bin/sh
+
+. /usr/bin/setup_env
+
+export QT_WAYLAND_DISABLE_WINDOWDECORATION=1
+
+if [ -f "$XDG_CONFIG_HOME/gtk-3.0/gtk.css" ] ; then
+  rm "$XDG_CONFIG_HOME/gtk-3.0/gtk.css"
+  sync
+fi
+
+exec /usr/bin/wayfire $@

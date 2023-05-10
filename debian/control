@@ -10,7 +10,8 @@ Architecture: any
 Depends: ${misc:Depends}, lxpanel, pcmanfm, openbox, xserver-xorg,
  x11-xserver-utils, policykit-1, lightdm, raspberrypi-sys-mods (>= 20210706),
  zenity, libglib2.0-bin, desktop-file-utils, lxsession, adduser,
- xdg-user-dirs, raspi-config (>= 20220301)
+ xdg-user-dirs, raspi-config (>= 20220301), wayfire, wf-panel-pi,
+ qtwayland5, wfplug-winshadows, wfplug-pixdecor
 Recommends: xserver-xorg-video-fbturbo,
  fonts-piboto (>=1.1), pipanel, lxinput,
  pi-greeter, rpd-plym-splash, rpd-wallpaper, pishutdown, scrot,
@@ -20,7 +21,7 @@ Recommends: xserver-xorg-video-fbturbo,
  gtk2-engines-pixflat, lxplug-cputemp, lxplug-magnifier, rp-bookshelf,
  agnostics [armhf arm64], gui-pkinst, cups, system-config-printer,
  pi-printer-support, lxplug-updater, lxplug-netman, lxplug-menu,
- qt5ct, qt5-style-plugins
+ qt5ct, qt5-style-plugins, xwayland, grim, wayvnc
 Conflicts: raspberrypi-artwork
 Replaces: raspberrypi-artwork
 Description: Config to customise the LXDE UI for the Raspberry Pi

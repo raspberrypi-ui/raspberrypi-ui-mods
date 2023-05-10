@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20230510) bookworm; urgency=medium
+
+  * Merge in rpi-wayland
+
+ -- Simon Long <simon@raspberrypi.com>  Wed, 10 May 2023 08:13:57 +0100
+
 raspberrypi-ui-mods (1.20230509) bookworm; urgency=medium
 
   * Split out environment configuration into separate file; remove mutter
