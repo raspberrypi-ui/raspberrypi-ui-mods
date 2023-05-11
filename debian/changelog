@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20230511) bookworm; urgency=medium
+
+  * Update MIME associations
+
+ -- Simon Long <simon@raspberrypi.com>  Thu, 11 May 2023 15:12:43 +0100
+
 raspberrypi-ui-mods (1.20230510) bookworm; urgency=medium
 
   * Merge in rpi-wayland
