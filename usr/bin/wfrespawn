@@ -1,0 +1,5 @@
+#!/bin/sh
+while pgrep wayfire > /dev/null ; do
+  $@
+  sleep 1
+done

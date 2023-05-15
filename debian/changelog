@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20230515) bookworm; urgency=medium
+
+  * Update some wayfire default config
+
+ -- Simon Long <simon@raspberrypi.com>  Mon, 15 May 2023 14:23:26 +0100
+
 raspberrypi-ui-mods (1.20230511) bookworm; urgency=medium
 
   * Update MIME associations
