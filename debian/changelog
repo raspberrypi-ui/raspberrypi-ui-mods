@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20230516) bookworm; urgency=medium
+
+  * Include gsettings overrides from mutter
+
+ -- Simon Long <simon@raspberrypi.com>  Tue, 16 May 2023 08:49:47 +0100
+
 raspberrypi-ui-mods (1.20230515) bookworm; urgency=medium
 
   * Update some wayfire default config

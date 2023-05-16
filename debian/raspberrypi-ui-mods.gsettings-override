@@ -3,3 +3,7 @@ cursor-theme='PiXflat'
 font-name='PibotoLt 12'
 gtk-theme='PiXflat'
 icon-theme='PiXflat'
+
+[org.gnome.desktop.wm.preferences]
+auto-raise=true
+button-layout='appmenu:minimize,maximize,close'
