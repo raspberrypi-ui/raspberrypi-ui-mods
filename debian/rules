@@ -18,6 +18,8 @@ override_dh_strip:
 override_dh_shlibdeps:
 	true
 
+override_dh_usrlocal:
+
 #override_dh_installdeb:
 #	dh_installdeb
 #	rm debian/raspberrypi-ui-mods/DEBIAN/conffiles
