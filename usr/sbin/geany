@@ -9,4 +9,4 @@ if ! ps ax | grep /usr/bin/geany | grep -qv grep ; then
   rm -f $DIR/.config/geany/geany_socket*
 fi
 
-/usr/bin/geany $@
+/usr/bin/geany "$@"
