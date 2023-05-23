@@ -1,0 +1,12 @@
+#!/bin/sh
+
+if ! ps ax | grep /usr/bin/geany | grep -qv grep ; then
+  if [ -z $SUDO_USER ] ; then
+	DIR=$(getent passwd $USER | cut -d: -f6)
+  else
+	DIR=$(getent passwd $SUDO_USER | cut -d: -f6)
+  fi
+  rm -f $DIR/.config/geany/geany_socket*
+fi
+
+/usr/bin/geany $@
