@@ -4,8 +4,8 @@
 
 export QT_WAYLAND_DISABLE_WINDOWDECORATION=1
 
-if [ -f "$XDG_CONFIG_HOME/gtk-3.0/gtk.css" ] ; then
-  rm "$XDG_CONFIG_HOME/gtk-3.0/gtk.css"
+if [ -f "$HOME/.config/gtk-3.0/gtk.css" ] ; then
+  rm "$HOME/.config/gtk-3.0/gtk.css"
   sync
 fi
 

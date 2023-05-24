@@ -3,13 +3,9 @@
 export XDG_DATA_DIRS="/usr/share/fkms:/usr/local/share:/usr/share/raspi-ui-overrides:/usr/share:/usr/share/gdm:/var/lib/menu-xdg${XDG_DATA_DIRS:+:$XDG_DATA_DIRS}"
 export XDG_MENU_PREFIX="lxde-pi-"
 
-if [ -z "$XDG_CONFIG_HOME" ]; then
-  export XDG_CONFIG_HOME="$HOME/.config"
-fi
-
 # Ensure the existence of the 'Desktop' folder
-if [ -e "$XDG_CONFIG_HOME/user-dirs.dirs" ]; then
-  . "$XDG_CONFIG_HOME/user-dirs.dirs"
+if [ -e "$HOME/.config/user-dirs.dirs" ]; then
+  . "$HOME/.config/user-dirs.dirs"
 else
   XDG_DESKTOP_DIR="$HOME/Desktop"
 fi

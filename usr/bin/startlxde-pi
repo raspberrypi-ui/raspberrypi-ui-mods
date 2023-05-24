@@ -10,9 +10,9 @@ if which dbus-launch >/dev/null && test -z "$DBUS_SESSION_BUS_ADDRESS"; then
   eval "$(dbus-launch --sh-syntax --exit-with-session)"
 fi
 
-if [ ! -f "$XDG_CONFIG_HOME/gtk-3.0/gtk.css" ] || ! grep -s -q tooltip "$XDG_CONFIG_HOME/gtk-3.0/gtk.css" ; then
-  mkdir -p "$XDG_CONFIG_HOME/gtk-3.0"
-  cat > "$XDG_CONFIG_HOME/gtk-3.0/gtk.css" << EOF
+if [ ! -f "$HOME/.config/gtk-3.0/gtk.css" ] || ! grep -s -q tooltip "$HOME/.config/gtk-3.0/gtk.css" ; then
+  mkdir -p "$HOME/.config/gtk-3.0"
+  cat > "$HOME/.config/gtk-3.0/gtk.css" << EOF
 tooltip, .tooltip { border-radius: 0px; }
 EOF
   sync
