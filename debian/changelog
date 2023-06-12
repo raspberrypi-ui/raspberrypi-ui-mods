@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20230612) bookworm; urgency=medium
+
+  * Remove some unnecessary sudo
+
+ -- Simon Long <simon@raspberrypi.com>  Mon, 12 Jun 2023 12:51:39 +0100
+
 raspberrypi-ui-mods (1.20230524) bookworm; urgency=medium
 
   * Better fix for geany problem; add mate-polkit
