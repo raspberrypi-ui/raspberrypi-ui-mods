@@ -1,4 +1,7 @@
 #!/bin/sh
+if pgrep $@ > /dev/null ; then
+  exit 0
+fi
 while pgrep wayfire > /dev/null ; do
   $@
   sleep 1
