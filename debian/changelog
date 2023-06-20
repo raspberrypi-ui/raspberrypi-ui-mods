@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20230620) bookworm; urgency=medium
+
+  * Prevent multiple respawns
+
+ -- Simon Long <simon@raspberrypi.com>  Tue, 20 Jun 2023 14:34:00 +0100
+
 raspberrypi-ui-mods (1.20230612) bookworm; urgency=medium
 
   * Remove some unnecessary sudo
