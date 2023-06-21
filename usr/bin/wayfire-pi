@@ -9,4 +9,8 @@ if [ -f "$HOME/.config/gtk-3.0/gtk.css" ] ; then
   sync
 fi
 
-exec /usr/bin/wayfire $@
+if raspi-config nonint is_pifour ; then 
+  exec /usr/bin/wayfire $@
+else
+  exec /usr/bin/wayfire -p $@
+fi
