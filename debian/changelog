@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20230623) bookworm; urgency=medium
+
+  * Set DESKTOP_SESSION when Wayfire started manually
+
+ -- Simon Long <simon@raspberrypi.com>  Thu, 22 Jun 2023 18:24:22 +0100
+
 raspberrypi-ui-mods (1.20230622) bookworm; urgency=medium
 
   * Add support for running Wayfire without OpenGL
