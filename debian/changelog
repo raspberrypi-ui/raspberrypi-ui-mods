@@ -4,6 +4,12 @@ raspberrypi-ui-mods (1.20230628) bookworm; urgency=medium
 
  -- Simon Long <simon@raspberrypi.com>  Wed, 28 Jun 2023 07:52:18 +0100
 
+raspberrypi-ui-mods (1.20230627) bookworm; urgency=medium
+
+  * Use gpu_has_mmu test to determine whether to use pixbuf for wayfire
+
+ -- Simon Long <simon@raspberrypi.com>  Thu, 29 Jun 2023 12:28:56 +0100
+
 raspberrypi-ui-mods (1.20230623) bookworm; urgency=medium
 
   * Set DESKTOP_SESSION when Wayfire started manually
