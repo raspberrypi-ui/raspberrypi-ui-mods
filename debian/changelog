@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20230703) bookworm; urgency=medium
+
+  * Modify for autostart_static wayfire plugin
+
+ -- Simon Long <simon@raspberrypi.com>  Mon, 03 Jul 2023 08:13:09 +0100
+
 raspberrypi-ui-mods (1.20230628) bookworm; urgency=medium
 
   * Split system and user wayfire config files
