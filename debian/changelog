@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20230710) bookworm; urgency=medium
+
+  * Add wayland display environment autostart
+
+ -- Simon Long <simon@raspberrypi.com>  Mon, 10 Jul 2023 10:48:47 +0100
+
 raspberrypi-ui-mods (1.20230703+1) bookworm; urgency=medium
 
   * Cursor theme added to wayfire config
