@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20230712) bookworm; urgency=medium
+
+  * Put env-desktop file in correct directory
+
+ -- Simon Long <simon@raspberrypi.com>  Tue, 11 Jul 2023 13:06:31 +0100
+
 raspberrypi-ui-mods (1.20230711) bookworm; urgency=medium
 
   * Add fallback session detect script
