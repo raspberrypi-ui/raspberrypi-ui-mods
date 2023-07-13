@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Projects
 TryExec=/usr/bin/x-www-browser
-Exec=x-www-browser https://rpf.io/raspbian-projects
+Exec=x-www-browser https://rptl.io/tutorials
 Icon=rpi
 Terminal=false
 Type=Application

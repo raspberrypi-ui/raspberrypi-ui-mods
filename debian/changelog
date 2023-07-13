@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20230714) bookworm; urgency=medium
+
+  * Update URLs
+
+ -- Simon Long <simon@raspberrypi.com>  Thu, 13 Jul 2023 15:52:30 +0100
+
 raspberrypi-ui-mods (1.20230713) bookworm; urgency=medium
 
   * Add sudoers override to pass display environment
