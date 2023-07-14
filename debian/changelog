@@ -1,6 +1,8 @@
 raspberrypi-ui-mods (1.20230714) bookworm; urgency=medium
 
-  * Update URLs
+  * Add xauthority forwarding for Xwayland
+  * Remove sudoers override
+  * Update RPi URLs
 
  -- Simon Long <simon@raspberrypi.com>  Thu, 13 Jul 2023 15:52:30 +0100
 

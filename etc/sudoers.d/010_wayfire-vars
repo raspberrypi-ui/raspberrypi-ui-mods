@@ -1,2 +1,0 @@
-Defaults env_keep += "WAYLAND_DISPLAY"
-Defaults env_keep += "XDG_RUNTIME_DIR"
