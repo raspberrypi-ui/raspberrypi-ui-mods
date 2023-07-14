@@ -1,0 +1,2 @@
+#!/bin/sh
+exec /usr/bin/Xwayland -auth /home/$USER/.Xauthority "$@"
