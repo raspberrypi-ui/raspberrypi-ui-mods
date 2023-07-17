@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Xsettings daemon for Xwayland
+Exec=wfrespawn xsettingsd
+Terminal=false
+Type=Application
+NoDisplay=true
+OnlyShowIn=wayfire

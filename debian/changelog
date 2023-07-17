@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20230717) bookworm; urgency=medium
+
+  * Add xsettingsd for Xwayland
+
+ -- Simon Long <simon@raspberrypi.com>  Mon, 17 Jul 2023 09:42:47 +0100
+
 raspberrypi-ui-mods (1.20230714) bookworm; urgency=medium
 
   * Add xauthority forwarding for Xwayland
