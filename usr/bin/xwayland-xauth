@@ -1,2 +1,12 @@
 #!/bin/sh
+
+# create a new .Xauthority file - $1 is the display
+rm /home/$USER/.Xauthority
+touch /home/$USER/.Xauthority
+xauth add ${HOST}"$1" . $(openssl rand -hex 16)
+
+# start xsettingsd for the supplied display after Xwayland is running
+(sleep 1 && DISPLAY="$1" xsettingsd ) &
+
+# start Xwayland itself with the .Xauthority file
 exec /usr/bin/Xwayland -auth /home/$USER/.Xauthority "$@"
