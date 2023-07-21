@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20230720) bookworm; urgency=medium
+
+  * Export XAUTHORITY in Wayland sessions for use by Xwayland 
+
+ -- Simon Long <simon@raspberrypi.com>  Fri, 21 Jul 2023 17:04:03 +0100
+
 raspberrypi-ui-mods (1.20230717) bookworm; urgency=medium
 
   * Add xsettingsd for Xwayland
