@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20230726) bookworm; urgency=medium
+
+  * Remove sudo from orca installer shortcut
+
+ -- Simon Long <simon@raspberrypi.com>  Wed, 26 Jul 2023 14:41:54 +0100
+
 raspberrypi-ui-mods (1.20230720) bookworm; urgency=medium
 
   * Export XAUTHORITY in Wayland sessions for use by Xwayland 

@@ -354,7 +354,7 @@
     </keybind>
     <keybind key="C-A-space">
       <action name="Execute">
-         <command>env SUDO_ASKPASS=/usr/lib/gui-pkinst/pwdgpi.sh sudo -AE gui-pkinst orca reboot</command>
+         <command>gui-pkinst orca reboot</command>
       </action>
     </keybind>
   </keyboard>
