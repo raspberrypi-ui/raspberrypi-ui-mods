@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20230729) bookworm; urgency=medium
+
+  * Remove redundant override file
+
+ -- Simon Long <simon@raspberrypi.com>  Sat, 29 Jul 2023 14:23:18 +0100
+
 raspberrypi-ui-mods (1.20230726) bookworm; urgency=medium
 
   * Remove sudo from orca installer shortcut
