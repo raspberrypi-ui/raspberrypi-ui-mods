@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20230815) bookworm; urgency=medium
+
+  * Update override file for qjackctl
+
+ -- Simon Long <simon@raspberrypi.com>  Tue, 15 Aug 2023 15:16:04 +0100
+
 raspberrypi-ui-mods (1.20230729) bookworm; urgency=medium
 
   * Remove redundant override file
