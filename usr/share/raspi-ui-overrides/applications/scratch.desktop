@@ -2,11 +2,10 @@
 Encoding=UTF-8
 Version=1.0
 Type=Application
-TryExec=scratch
-Exec=scratch
+Exec=scratch %f
 Icon=scratch
 Terminal=false
 Name=Scratch
 Comment= Programming system and content development tool
-Categories=Application;Development;
+Categories=Application;Development;ComputerScience;
 MimeType=application/x-scratch-project

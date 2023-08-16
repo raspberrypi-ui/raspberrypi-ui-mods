@@ -1,10 +1,9 @@
 [Desktop Entry]
 Type=Application
-Version=1.0
 Name=Help
-Comment=Link to help pages
 TryExec=/usr/bin/x-www-browser
 Exec=x-www-browser https://rptl.io/help
 Icon=rpi
 Terminal=false
 Categories=Help;
+StartupNotify=true
