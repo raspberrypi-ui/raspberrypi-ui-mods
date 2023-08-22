@@ -3,6 +3,7 @@ Encoding=UTF-8
 Version=1.0
 Type=Application
 Exec=scratch %f
+TryExec=scratch
 Icon=scratch
 Terminal=false
 Name=Scratch
