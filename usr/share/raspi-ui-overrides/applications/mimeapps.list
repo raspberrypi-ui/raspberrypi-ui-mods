@@ -1,11 +1,10 @@
 [Default Applications]
-text/html=chromium-browser.desktop
-text/xml=chromium-browser.desktop
-application/xml=chromium-browser.desktop
-application/xhtml+xml=chromium-browser.desktop
-x-scheme-handler/http=chromium-browser.desktop
-x-scheme-handler/https=chromium-browser.desktop
+text/html=x-www-browser.desktop
+text/xml=x-www-browser.desktop
+application/xml=x-www-browser.desktop
+application/xhtml+xml=x-www-browser.desktop
+application/xhtml_xml=x-www-browser.desktop
+x-scheme-handler/http=x-www-browser.desktop
+x-scheme-handler/https=x-www-browser.desktop
 text/x-python=Thonny.desktop
 application/x-gtk-builder=glade.desktop
-application/deb=pi-gpk-install-local-file.desktop
-application/x-deb=pi-gpk-install-local-file.desktop
