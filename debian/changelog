@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20230825) bookworm; urgency=medium
+
+  * Add browser alternatives files for GUI
+
+ -- Simon Long <simon@raspberrypi.com>  Fri, 25 Aug 2023 10:29:24 +0100
+
 raspberrypi-ui-mods (1.20230822) bookworm; urgency=medium
 
   * Disable screensaver by default
