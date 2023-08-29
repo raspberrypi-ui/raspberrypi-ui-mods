@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20230829) bookworm; urgency=medium
+
+  * Remove rounded corners for windows
+
+ -- Simon Long <simon@raspberrypi.com>  Tue, 29 Aug 2023 15:15:27 +0100
+
 raspberrypi-ui-mods (1.20230825) bookworm; urgency=medium
 
   * Add browser alternatives files for GUI

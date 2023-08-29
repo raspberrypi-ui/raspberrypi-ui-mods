@@ -2012,8 +2012,8 @@ headerbar switch {
   margin-bottom: 9px; }
 
 .background:not(.tiled):not(.maximized):not(.solid-csd) .titlebar:backdrop, .background:not(.tiled):not(.maximized):not(.solid-csd) .titlebar {
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px; }
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px; }
 
 window:not(.tiled):not(.maximized):not(.solid-csd) separator:first-child + headerbar:backdrop, window:not(.tiled):not(.maximized):not(.solid-csd) separator:first-child + headerbar, window:not(.tiled):not(.maximized):not(.solid-csd) headerbar:first-child:backdrop, window:not(.tiled):not(.maximized):not(.solid-csd) headerbar:first-child {
   border-top-left-radius: 3px; }
@@ -3996,7 +3996,7 @@ colorchooser .popover.osd {
  * Window Decorations *
  *********************/
 decoration {
-  border-radius: 3px;
+  border-radius: 0px;
   border-width: 0px;
   box-shadow: 0 3px 9px 1px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(0, 0, 0, 0.23);
   margin: 10px; }
