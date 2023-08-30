@@ -2023,8 +2023,8 @@ window:not(.tiled):not(.maximized):not(.solid-csd) stack headerbar:first-child:b
   border-top-left-radius: 7px;
   border-top-right-radius: 7px; }
 window {
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px; }
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px; }
 
 window.csd > .titlebar:not(headerbar) {
   padding: 0;
