@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20230914) bookworm; urgency=medium
+
+  * Add power key support
+
+ -- Simon Long <simon@raspberrypi.com>  Thu, 14 Sep 2023 11:04:43 +0100
+
 raspberrypi-ui-mods (1.20230830) bookworm; urgency=medium
 
   * Remove bottom rounded corners as well as top...

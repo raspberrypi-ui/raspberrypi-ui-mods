@@ -1,0 +1,7 @@
+#!/bin/sh
+if pgrep -f lxde-pi-shutdown-helper ; then
+  /usr/bin/pkill orca
+  /sbin/shutdown -h now
+else
+  /usr/bin/lxde-pi-shutdown-helper
+fi
