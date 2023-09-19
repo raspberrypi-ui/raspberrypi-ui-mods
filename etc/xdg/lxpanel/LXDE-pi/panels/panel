@@ -148,11 +148,6 @@ Plugin {
   }
 }
 Plugin {
-  type=micpulse
-  Config {
-  }
-}
-Plugin {
   type=space
   Config {
     Size=2
