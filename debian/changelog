@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20230920) bookworm; urgency=medium
+
+  * Remove micpulse plugin
+
+ -- Simon Long <simon@raspberrypi.com>  Wed, 20 Sep 2023 11:55:36 +0100
+
 raspberrypi-ui-mods (1.20230914) bookworm; urgency=medium
 
   * Add power key support
