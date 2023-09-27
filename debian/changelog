@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20230927) bookworm; urgency=medium
+
+  * Enable screen blanking by default
+
+ -- Simon Long <simon@raspberrypi.com>  Wed, 27 Sep 2023 11:05:23 +0100
+
 raspberrypi-ui-mods (1.20230920) bookworm; urgency=medium
 
   * Remove micpulse plugin
