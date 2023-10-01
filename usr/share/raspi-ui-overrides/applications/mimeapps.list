@@ -8,3 +8,4 @@ x-scheme-handler/http=x-www-browser.desktop
 x-scheme-handler/https=x-www-browser.desktop
 text/x-python=Thonny.desktop
 application/x-gtk-builder=glade.desktop
+application/pdf=org.gnome.Evince.desktop
