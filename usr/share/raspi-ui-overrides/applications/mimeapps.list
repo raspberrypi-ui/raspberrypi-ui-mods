@@ -9,3 +9,4 @@ x-scheme-handler/https=x-www-browser.desktop
 text/x-python=Thonny.desktop
 application/x-gtk-builder=glade.desktop
 application/pdf=org.gnome.Evince.desktop
+text/plain=org.xfce.mousepad.desktop
