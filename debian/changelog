@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20231003) bookworm; urgency=medium
+
+  * Add fix for DSI displays
+
+ -- Simon Long <simon@raspberrypi.com>  Tue, 03 Oct 2023 11:51:13 +0100
+
 raspberrypi-ui-mods (1.20230927) bookworm; urgency=medium
 
   * Enable screen blanking by default
