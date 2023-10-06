@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20231006) bookworm; urgency=medium
+
+  * Remove fix for DSI displays, because it breaks other displays...
+
+ -- Simon Long <simon@raspberrypi.com>  Fri, 06 Oct 2023 09:49:49 +0100
+
 raspberrypi-ui-mods (1.20231003) bookworm; urgency=medium
 
   * Add fix for DSI displays
