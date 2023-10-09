@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20231009) bookworm; urgency=medium
+
+  * Fix X desktop on Raspberry Pi 5
+
+ -- Simon Long <simon@raspberrypi.com>  Mon, 09 Oct 2023 17:39:03 +0100
+
 raspberrypi-ui-mods (1.20231006+1) bookworm; urgency=medium
 
   * Disable screen blanking by default
