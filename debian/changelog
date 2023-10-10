@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20230926) bullseye; urgency=medium
+
+  * Compatibility tweaks
+
+ -- Simon Long <simon@raspberrypi.com>  Tue, 26 Sep 2023 13:46:38 +0100
+
 raspberrypi-ui-mods (1.20230127) bullseye; urgency=medium
 
   * Set keyboard focus appearance for switch control
