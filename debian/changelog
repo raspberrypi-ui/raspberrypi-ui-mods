@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20231017) bookworm; urgency=medium
+
+  * Revert previous change to browser select
+
+ -- Simon Long <simon@raspberrypi.com>  Tue, 17 Oct 2023 14:31:03 +0100
+
 raspberrypi-ui-mods (1.20231016) bookworm; urgency=medium
 
   * Change browser shortcuts to use xdg-open

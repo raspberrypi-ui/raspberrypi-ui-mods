@@ -2,7 +2,7 @@
 Type=Application
 Name=Preferred Browser
 TryExec=/usr/bin/x-www-browser
-Exec=xdg-open %U
+Exec=x-www-browser %U
 Terminal=false
 StartupNotify=true
 NoDisplay=true
