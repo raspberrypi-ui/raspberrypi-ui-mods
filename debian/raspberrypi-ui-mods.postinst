@@ -114,6 +114,9 @@ EOF
         fi
 	  fi
     fi
+    if [ -e /etc/X11/xorg.conf.d/99-vc4.conf ] ; then
+	    rm /etc/X11/xorg.conf.d/99-vc4.conf
+    fi
     ;;
 
   abort-upgrade|abort-remove|abort-deconfigure)
