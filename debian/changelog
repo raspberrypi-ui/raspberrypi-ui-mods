@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20231023) bookworm; urgency=medium
+
+  * Remove X desktop config file - now installed by gldriver-test
+
+ -- Simon Long <simon@raspberrypi.com>  Mon, 23 Oct 2023 13:01:14 +0100
+
 raspberrypi-ui-mods (1.20231017) bookworm; urgency=medium
 
   * Revert previous change to browser select
