@@ -12,10 +12,10 @@ text color for entries, views and content in general */
 @define-color theme_text_color #e5e5e5;
 /*
 widget base background color */
-@define-color theme_bg_color #121314;
+@define-color theme_bg_color #323334;
 /*
 text widgets and the like base background color */
-@define-color theme_base_color black;
+@define-color theme_base_color #28292a;
 /*
 base background color of selections */
 @define-color theme_selected_bg_color #786e64;
@@ -67,7 +67,7 @@ these are pretty self explicative */
 @define-color default_bg_color #d1cbc9;
 @define-color osd_button_color #111113;
 @define-color disabled_button_color @insensitive_fg_color;
-@define-color backdrop_bg_color #030303;
+@define-color backdrop_bg_color #212223;
 @define-color disabled_bg_color #0e0e0e;
 @define-color button_bg_color #212121;
 @define-color button_border_color #383838;
