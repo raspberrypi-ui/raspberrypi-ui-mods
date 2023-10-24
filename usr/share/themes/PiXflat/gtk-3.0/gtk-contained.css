@@ -1153,23 +1153,23 @@ button.circular {
     color: @default_bg_color;
     outline-color: rgba(46, 52, 54, 0.3);
     border-color: @borders;
-    border-bottom-color: @button_bottom_border_color;
+    border-bottom-color: shade(@borders,0.8);
     background-image: linear-gradient(to bottom, @theme_unfocused_bg_color, #dededd 60%, #cfcfcd);
     text-shadow: 0 1px rgba(255, 255, 255, 0.76923);
     -gtk-icon-shadow: 0 1px rgba(255, 255, 255, 0.76923);
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.8);
-    background-image: linear-gradient(to bottom, @theme_unfocused_bg_color, #dededd 60%, #cfcfcd), linear-gradient(to top, @button_bottom_border_color 25%, @borders 50%);
+    background-image: linear-gradient(to bottom, @theme_unfocused_bg_color, #dededd 60%, #cfcfcd), linear-gradient(to top, shade(@borders,0.8) 25%, @borders 50%);
     border-color: transparent; }
   button.circular:hover:not(:checked):not(:active):not(:disabled):not(:backdrop) {
     color: @default_bg_color;
     outline-color: rgba(46, 52, 54, 0.3);
     border-color: @borders;
-    border-bottom-color: @button_bottom_border_color;
+    border-bottom-color: shade(@borders,0.8);
     text-shadow: 0 1px rgba(255, 255, 255, 0.76923);
     -gtk-icon-shadow: 0 1px rgba(255, 255, 255, 0.76923);
     box-shadow: inset 0 1px white;
     background-image: linear-gradient(to bottom, #f7f7f7, @theme_unfocused_bg_color 60%, #dededd);
-    background-image: linear-gradient(to bottom, #f7f7f7, @theme_unfocused_bg_color 60%, #dededd), linear-gradient(to top, @button_bottom_border_color 25%, @borders 50%);
+    background-image: linear-gradient(to bottom, #f7f7f7, @theme_unfocused_bg_color 60%, #dededd), linear-gradient(to top, shade(@borders,0.8) 25%, @borders 50%);
     border-color: transparent; }
 
 .stack-switcher >
@@ -1196,7 +1196,7 @@ button.needs-attention > image, stacksidebar row.needs-attention > label {
   color: @default_bg_color;
   outline-color: rgba(46, 52, 54, 0.3);
   border-color: @borders;
-  border-bottom-color: @button_bottom_border_color;
+  border-bottom-color: shade(@borders,0.8);
   background-image: linear-gradient(to bottom, @theme_unfocused_bg_color, #dededd 60%, #cfcfcd);
   text-shadow: 0 1px rgba(255, 255, 255, 0.76923);
   -gtk-icon-shadow: 0 1px rgba(255, 255, 255, 0.76923);
@@ -1205,7 +1205,7 @@ button.needs-attention > image, stacksidebar row.needs-attention > label {
     color: @default_bg_color;
     outline-color: rgba(46, 52, 54, 0.3);
     border-color: @borders;
-    border-bottom-color: @button_bottom_border_color;
+    border-bottom-color: shade(@borders,0.8);
     text-shadow: 0 1px rgba(255, 255, 255, 0.76923);
     -gtk-icon-shadow: 0 1px rgba(255, 255, 255, 0.76923);
     box-shadow: inset 0 1px white;
@@ -1892,7 +1892,7 @@ headerbar {
         color: @default_bg_color;
         outline-color: rgba(46, 52, 54, 0.3);
         border-color: @borders;
-        border-bottom-color: @button_bottom_border_color;
+        border-bottom-color: shade(@borders,0.8);
         background-image: linear-gradient(to bottom, @theme_unfocused_bg_color, #dededd 60%, #cfcfcd);
         text-shadow: 0 1px rgba(255, 255, 255, 0.76923);
         -gtk-icon-shadow: 0 1px rgba(255, 255, 255, 0.76923);
@@ -1903,7 +1903,7 @@ headerbar {
           color: @default_bg_color;
           outline-color: rgba(46, 52, 54, 0.3);
           border-color: @borders;
-          border-bottom-color: @button_bottom_border_color;
+          border-bottom-color: shade(@borders,0.8);
           text-shadow: 0 1px rgba(255, 255, 255, 0.76923);
           -gtk-icon-shadow: 0 1px rgba(255, 255, 255, 0.76923);
           box-shadow: inset 0 1px white;
@@ -3938,7 +3938,7 @@ colorswatch#add-color-button {
     color: @default_bg_color;
     outline-color: rgba(46, 52, 54, 0.3);
     border-color: @borders;
-    border-bottom-color: @button_bottom_border_color;
+    border-bottom-color: shade(@borders,0.8);
     background-image: linear-gradient(to bottom, @theme_unfocused_bg_color, #dededd 60%, #cfcfcd);
     text-shadow: 0 1px rgba(255, 255, 255, 0.76923);
     -gtk-icon-shadow: 0 1px rgba(255, 255, 255, 0.76923);
@@ -3947,7 +3947,7 @@ colorswatch#add-color-button {
       color: @default_bg_color;
       outline-color: rgba(46, 52, 54, 0.3);
       border-color: @borders;
-      border-bottom-color: @button_bottom_border_color;
+      border-bottom-color: shade(@borders,0.8);
       text-shadow: 0 1px rgba(255, 255, 255, 0.76923);
       -gtk-icon-shadow: 0 1px rgba(255, 255, 255, 0.76923);
       box-shadow: inset 0 1px white;
@@ -4424,7 +4424,6 @@ these are pretty self explicative */
 @define-color disabled_button_color #858786;
 @define-color backdrop_bg_color #fcfcfc;
 @define-color disabled_bg_color #f1f1f1;
-@define-color button_bottom_border_color #91918c;
 @define-color button_bg_color #dedede;
 @define-color button_border_color #c7c7c7;
 
