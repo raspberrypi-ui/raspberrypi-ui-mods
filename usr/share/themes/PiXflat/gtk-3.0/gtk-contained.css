@@ -420,8 +420,8 @@ button {
   padding: 4px 8px;
   border: 1px solid;
   border-radius: 2px;
-  border-color: #c7c7c7;
-  background-color: #dedede;
+  border-color: @button_border_color;
+  background-color: @button_bg_color;
   -gtk-icon-shadow: none;}
   notebook > header > tabs > arrow, button.sidebar-button, button.titlebutton,
   button.flat {
@@ -451,14 +451,14 @@ button {
   button:checked,
   button:hover:active:checked {
     color: @default_bg_color;
-    background-color: #c7c7c7;
+    background-color: @button_border_color;
     border-color: #b3b3b3;
     -gtk-icon-shadow: none;
     -gtk-icon-effect: highlight; }
   button:hover:checked {
     color: @default_bg_color;
-    background-color: #dedede;
-    border-color: #c7c7c7;
+    background-color: @button_bg_color;
+    border-color: @button_border_color;
     -gtk-icon-shadow: none;
     -gtk-icon-effect: highlight; }
   notebook > header > tabs > arrow:backdrop, button.sidebar-button:backdrop, button.titlebutton:backdrop, notebook > header > tabs > arrow:backdrop, button.titlebutton:backdrop,
@@ -2695,10 +2695,10 @@ switch:focus {
     border-radius: 15px;
     transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
     border-color: #a0a0a0;
-    background-image: image(#dedede); }
+    background-image: image(@button_bg_color); }
   switch:checked slider {
     border-color: #707070;
-    background-image: image(#dedede); }
+    background-image: image(@button_bg_color); }
   switch:hover slider {
     border-color: #a0a0a0;
     background-image: image(#cfcfcf); }
@@ -3069,11 +3069,11 @@ scale {
       background-color: transparent; }
   scale slider {
     color: @default_bg_color;
-    border-color: #c7c7c7;
-    background-color: #dedede;
+    border-color: @button_border_color;
+    background-color: @button_bg_color;
     text-shadow: 0 1px rgba(255, 255, 255, 0.76923);
     -gtk-icon-shadow: 0 1px rgba(255, 255, 255, 0.76923);
-    border: 1px solid #c7c7c7;
+    border: 1px solid @button_border_color;
     transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
     transition-property: background, border, box-shadow; }
     scale slider:hover, scale slider:active {
@@ -4325,9 +4325,9 @@ headerbar button:disabled {
   background-color: @insensitive_base_color;
 }
 #panelpopup scale slider {
-  border-color: #c7c7c7;
-  background-color: #dedede;
-  border: 1px solid #c7c7c7; }
+  border-color: @button_border_color;
+  background-color: @button_bg_color;
+  border: 1px solid @button_border_color; }
 #panelpopup scale slider:hover, #panelpopup scale slider:active {
   border-color: #bfbfbf;
   background-color: #cfcfcf; }
@@ -4425,6 +4425,8 @@ these are pretty self explicative */
 @define-color backdrop_bg_color #fcfcfc;
 @define-color disabled_bg_color #f1f1f1;
 @define-color button_bottom_border_color #91918c;
+@define-color button_bg_color #dedede;
+@define-color button_border_color #c7c7c7;
 
 /*
 these colors are exported for the window manager and shouldn't be used in applications,
