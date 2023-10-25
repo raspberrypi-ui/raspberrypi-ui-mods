@@ -1,5 +1,7 @@
-@define-color bar_bg_color @theme_bg_color;
-@define-color bar_fg_color @theme_fg_color;
+@define-color bar_bg_color #3D3846;
+@define-color bar_fg_color #DEDDDA;
+@define-color theme_selected_bg_color #5E5C64;
+@define-color theme_selected_fg_color #F6F5F4;
 
 /* GTK NAMED COLORS
    ----------------
@@ -16,12 +18,6 @@ widget base background color */
 /*
 text widgets and the like base background color */
 @define-color theme_base_color #28292a;
-/*
-base background color of selections */
-@define-color theme_selected_bg_color #786e64;
-/*
-text/foreground color of selections */
-@define-color theme_selected_fg_color #0f0f0f;
 /*
 base background color of insensitive widgets */
 @define-color insensitive_bg_color @disabled_bg_color;

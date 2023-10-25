@@ -4289,7 +4289,7 @@ headerbar button:disabled {
 }
 /* No, I have no idea why menus under a checked taskbar button display incorrectly...*/
 #PanelToplevel menuitem label, #PanelToplevel menuitem:hover menuitem label {
-  color: black;
+  color: @theme_text_color;
 }
 #PanelToplevel menuitem:hover label, #PanelToplevel menuitem:hover menuitem:hover label {
   color: @theme_selected_fg_color;
@@ -4310,7 +4310,7 @@ headerbar button:disabled {
   -gtk-icon-source: none;
 }
 #panelpopup, #panelpopup scrolledwindow, #panelpopup label {
-  color: black;
+  color: @theme_text_color;
   background-color: @theme_base_color;
   border : 0px;
   padding : 0px;
