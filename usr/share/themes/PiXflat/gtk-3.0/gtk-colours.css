@@ -1,41 +1,38 @@
-@define-color bar_bg_color #3D3846;
-@define-color bar_fg_color #DEDDDA;
-@define-color theme_selected_bg_color #5E5C64;
-@define-color theme_selected_fg_color #F6F5F4;
+@define-color bar_bg_color #edeceb;
+@define-color bar_fg_color #000000;
+@define-color theme_selected_bg_color #87919b;
+@define-color theme_selected_fg_color #f0f0f0;
 
 /* GTK NAMED COLORS
    ----------------
    use responsibly! */
 /*
 widget text/foreground color */
-@define-color theme_fg_color #ffffff;
+@define-color theme_fg_color #000000;
 /*
 text color for entries, views and content in general */
-@define-color theme_text_color #e5e5e5;
+@define-color theme_text_color #1a1a1a;
 /*
 widget base background color */
-@define-color theme_bg_color #323334;
+@define-color theme_bg_color #edeceb;
 /*
 text widgets and the like base background color */
-@define-color theme_base_color #28292a;
+@define-color theme_base_color white;
 /*
 base background color of insensitive widgets */
 @define-color insensitive_bg_color @disabled_bg_color;
 /*
 text foreground color of insensitive widgets */
-@define-color insensitive_fg_color #747170;
+@define-color insensitive_fg_color #8b8e8f;
 /*
 insensitive text widgets and the like base background color */
 @define-color insensitive_base_color @theme_base_color;
 /*
 widget text/foreground color on backdrop windows */
-@define-color theme_unfocused_fg_color @insensitive_fg_color;
-/*
-text color for entries, views and content in general on backdrop windows */
-@define-color theme_unfocused_text_color white;
+@define-color theme_unfocused_fg_color #8b8e8f;
 /*
 widget base background color on backdrop windows */
-@define-color theme_unfocused_bg_color @theme_bg_color;
+@define-color theme_unfocused_bg_color #edeceb;
 /*
 text widgets and the like base background color on backdrop windows */
 @define-color theme_unfocused_base_color @theme_base_color;
@@ -47,10 +44,10 @@ text/foreground color of selections on backdrop windows */
 @define-color theme_unfocused_selected_fg_color @theme_selected_fg_color;
 /*
 insensitive color on backdrop windows*/
-@define-color unfocused_insensitive_color #3c3c3f;
+@define-color unfocused_insensitive_color #c3c3c0;
 /*
 widgets main borders color */
-@define-color borders #49494c;
+@define-color borders #b6b6b3;
 /*
 widgets main borders color on backdrop windows */
 @define-color unfocused_borders @unfocused_insensitive_color;
@@ -60,19 +57,20 @@ these are pretty self explicative */
 @define-color error_color #cc0000;
 @define-color success_color #73d216;
 
-@define-color default_bg_color #d1cbc9;
-@define-color osd_button_color #111113;
+@define-color default_bg_color #2e3436;
+@define-color osd_button_color #eeeeec;
 @define-color disabled_button_color @insensitive_fg_color;
-@define-color backdrop_bg_color #212223;
-@define-color disabled_bg_color #0e0e0e;
-@define-color button_bg_color #212121;
-@define-color button_border_color #383838;
-@define-color notebook_tab_color #6d6a6a;
-@define-color button_hover_bg #303030;
-@define-color button_hover_border #404040;
-@define-color button_active_border #4c4c4c;
-@define-color button_inactive_bg #1a1a1a;
-@define-color scrollbar_color #1f1f1f;
+@define-color backdrop_bg_color #fcfcfc;
+@define-color disabled_bg_color #f1f1f1;
+@define-color button_bg_color #dedede;
+@define-color button_border_color #c7c7c7;
+@define-color notebook_tab_color #929595;
+@define-color notebook_header_color #e1dedb;
+@define-color button_hover_bg #cfcfcf;
+@define-color button_hover_border #bfbfbf;
+@define-color button_active_border #b3b3b3;
+@define-color button_inactive_bg #e5e5e5;
+@define-color scrollbar_color #e0e0e0;
 
 /*
 these colors are exported for the window manager and shouldn't be used in applications,
