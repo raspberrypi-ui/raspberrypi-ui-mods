@@ -2218,8 +2218,8 @@ menubar,
     padding: 4px 8px; }
     menubar > menuitem:hover,
     .menubar > menuitem:hover {
-      background-color: white;
-      color: black; }
+      background-color: @theme_base_color;
+      color: @theme_fg_color; }
     menubar > menuitem:disabled,
     .menubar > menuitem:disabled {
       color: @theme_unfocused_fg_color;
