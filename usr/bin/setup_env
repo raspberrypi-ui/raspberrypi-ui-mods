@@ -14,3 +14,6 @@ mkdir -p "$XDG_DESKTOP_DIR"
 # Enable GTK+3 integration for OpenOffice.org, if available.
 export SAL_USE_VCLPLUGIN=gtk3
 
+# Make sure Qt themeing loads
+export QT_QPA_PLATFORMTHEME=qt5ct
+
