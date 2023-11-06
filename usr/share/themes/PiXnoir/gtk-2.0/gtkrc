@@ -33,9 +33,9 @@ style "default"
 
 	GtkToolButton::icon-spacing		            = 4
 
-	GtkSeparatorMenuItem::horizontal-padding    = 3
-	GtkSeparatorMenuItem::wide-separators       = 1
-	GtkSeparatorMenuItem::separator-height      = 1
+	GtkSeparatorMenuItem::horizontal-padding    = 0
+	GtkSeparatorMenuItem::wide-separators       = 0
+	GtkSeparatorMenuItem::separator-height      = 0
 
 	GtkButton::child-displacement-y             = 0
 	GtkButton::default-border	                = { 0, 0, 0, 0 }
@@ -396,29 +396,13 @@ style "menubar"
 {
 	xthickness	= 0
 	ythickness	= 0
-
-	bg[PRELIGHT]	= "#FFF"
-	fg[SELECTED]	= @text_color
-
-	engine "pixmap"
-	{
-		image
-		{
-			function				= BOX
-			recolorable				= TRUE
-			state					= PRELIGHT
-			file					= "Menu-Menubar/menubar_button.png"
-			border					= { 4, 4, 4, 4 }
-			stretch					= TRUE
-		}
-	}
 }
 
 style "menubar_item"
 {
 	xthickness	= 2
 	ythickness	= 3
-	bg[PRELIGHT]	= @selected_fg_color
+	bg[PRELIGHT]	= @base_color
 	fg[PRELIGHT]	= @text_color
 }
 
@@ -449,15 +433,13 @@ style "handlebox"
 
 style "separator_menu_item" 
 {
-	engine "pixmap"
+	fg[NORMAL]			= @selected_bg_color
+
+	xthickness = 1
+	ythickness = 1
+
+	engine "clearlookspix"
 	{
-		image
-		{
-			function			= BOX
-			file				= "Lines/menu_line_h.png"
-			border				= { 0, 0, 1, 0 }
-			stretch				= TRUE
-		}
 	}
 }
 
