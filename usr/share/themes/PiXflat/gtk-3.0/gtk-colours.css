@@ -62,15 +62,24 @@ these are pretty self explicative */
 @define-color disabled_button_color @insensitive_fg_color;
 @define-color backdrop_bg_color #fcfcfc;
 @define-color disabled_bg_color #f1f1f1;
-@define-color button_bg_color #dedede;
-@define-color button_border_color #c7c7c7;
 @define-color notebook_tab_color #929595;
 @define-color notebook_header_color #e1dedb;
-@define-color button_hover_bg #cfcfcf;
-@define-color button_hover_border #bfbfbf;
-@define-color button_active_border #b3b3b3;
-@define-color button_inactive_bg #e5e5e5;
 @define-color scrollbar_color #e0e0e0;
+
+@define-color button_bg_color shade (@theme_bg_color, 0.941);
+@define-color button_border_color shade (@theme_bg_color, 0.843);
+
+@define-color button_bg_hover shade (@theme_bg_color, 0.877);
+@define-color button_border_hover shade (@theme_bg_color, 0.809);
+
+@define-color button_bg_checked shade (@theme_bg_color, 0.843);
+@define-color button_border_checked shade (@theme_bg_color, 0.758);
+
+@define-color button_bg_inactive shade (@theme_bg_color, 0.970);
+@define-color button_border_inactive shade (@theme_bg_color, 0.877);
+
+@define-color button_bg_checked_inactive shade (@theme_bg_color, 0.941);
+@define-color button_border_checked_inactive shade (@theme_bg_color, 0.877);
 
 /*
 these colors are exported for the window manager and shouldn't be used in applications,

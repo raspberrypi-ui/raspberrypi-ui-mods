@@ -47,7 +47,7 @@ insensitive color on backdrop windows*/
 @define-color unfocused_insensitive_color #3c3c3f;
 /*
 widgets main borders color */
-@define-color borders #49494c;
+@define-color borders #5f5f5f;
 /*
 widgets main borders color on backdrop windows */
 @define-color unfocused_borders @unfocused_insensitive_color;
@@ -62,14 +62,24 @@ these are pretty self explicative */
 @define-color disabled_button_color @insensitive_fg_color;
 @define-color backdrop_bg_color #212223;
 @define-color disabled_bg_color #0e0e0e;
-@define-color button_bg_color #212121;
-@define-color button_border_color #383838;
 @define-color notebook_tab_color #6d6a6a;
-@define-color button_hover_bg #303030;
-@define-color button_hover_border #404040;
-@define-color button_active_border #4c4c4c;
-@define-color button_inactive_bg #1a1a1a;
+@define-color notebook_header_color #1e2124;
 @define-color scrollbar_color #1f1f1f;
+
+@define-color button_bg_color shade (@theme_bg_color, 1.595);
+@define-color button_border_color shade (@theme_bg_color, 1.779);
+
+@define-color button_bg_hover shade (@theme_bg_color, 1.824);
+@define-color button_border_hover shade (@theme_bg_color, 1.978);
+
+@define-color button_bg_checked shade (@theme_bg_color, 2.016);
+@define-color button_border_checked shade (@theme_bg_color, 2.242);
+
+@define-color button_bg_inactive shade (@theme_bg_color, 1.340);
+@define-color button_border_inactive shade (@theme_bg_color, 1.482);
+
+@define-color button_bg_checked_inactive shade (@theme_bg_color, 1.382);
+@define-color button_border_checked_inactive shade (@theme_bg_color, 1.482);
 
 /*
 these colors are exported for the window manager and shouldn't be used in applications,
