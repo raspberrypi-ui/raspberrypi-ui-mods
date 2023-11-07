@@ -81,6 +81,8 @@ these are pretty self explicative */
 @define-color button_bg_checked_inactive shade (@theme_bg_color, 1.382);
 @define-color button_border_checked_inactive shade (@theme_bg_color, 1.482);
 
+@define-color menu_bg_color #484848;
+
 /*
 these colors are exported for the window manager and shouldn't be used in applications,
 read if you used those and something break with a version upgrade you're on your own... */
