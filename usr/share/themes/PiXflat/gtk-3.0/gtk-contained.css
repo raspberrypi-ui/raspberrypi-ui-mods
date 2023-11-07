@@ -20,8 +20,8 @@
  * Base States *
  ***************/
 .background {
-  color: @default_bg_color;
-  background-color: @theme_unfocused_bg_color; }
+  color: @theme_fg_color;
+  background-color: @theme_bg_color; }
   .background:backdrop {
     color: @theme_unfocused_fg_color;
     background-color: @theme_unfocused_bg_color;
@@ -4274,8 +4274,8 @@ headerbar button:disabled {
 #PanelToplevel button:checked:hover,
 #PanelToplevel:backdrop button:hover > box > label,
 #PanelToplevel:backdrop button:checked:hover > box > label {
-  color: @theme_selected_fg_color;
-  background-color: shade(@bar_bg_color, 0.75);
+  color: @bar_fg_color;
+  background-color: @bar_hover_color;
   -gtk-icon-shadow: none;
   -gtk-icon-effect: none;
   transition: 200ms ease-out;
@@ -4283,7 +4283,7 @@ headerbar button:disabled {
 #PanelToplevel button:checked,
 #PanelToplevel:backdrop button:checked > box > label {
   color: @bar_fg_color;
-  background-color: shade (@bar_bg_color, 0.9);
+  background-color: @bar_checked_color;
   -gtk-icon-shadow: none;
   -gtk-icon-effect: none;
   transition: 200ms ease-out;

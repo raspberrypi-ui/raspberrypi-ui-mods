@@ -83,6 +83,9 @@ these are pretty self explicative */
 
 @define-color menu_bg_color @insensitive_base_color;
 
+@define-color bar_hover_color shade (@bar_bg_color, 0.877);
+@define-color bar_checked_color shade (@bar_bg_color, 0.843);
+
 /*
 these colors are exported for the window manager and shouldn't be used in applications,
 read if you used those and something break with a version upgrade you're on your own... */

@@ -1,6 +1,6 @@
-@define-color bar_bg_color #3D3846;
+@define-color bar_bg_color #3D3E3F;
 @define-color bar_fg_color #DEDDDA;
-@define-color theme_selected_bg_color #5E5C64;
+@define-color theme_selected_bg_color #76747C;
 @define-color theme_selected_fg_color #F6F5F4;
 
 /* GTK NAMED COLORS
@@ -14,7 +14,7 @@ text color for entries, views and content in general */
 @define-color theme_text_color #e5e5e5;
 /*
 widget base background color */
-@define-color theme_bg_color #323334;
+@define-color theme_bg_color #424344;
 /*
 text widgets and the like base background color */
 @define-color theme_base_color #28292a;
@@ -32,7 +32,7 @@ widget text/foreground color on backdrop windows */
 @define-color theme_unfocused_fg_color #747170;
 /*
 widget base background color on backdrop windows */
-@define-color theme_unfocused_bg_color #323334;
+@define-color theme_unfocused_bg_color #424344;
 /*
 text widgets and the like base background color on backdrop windows */
 @define-color theme_unfocused_base_color @theme_base_color;
@@ -44,7 +44,7 @@ text/foreground color of selections on backdrop windows */
 @define-color theme_unfocused_selected_fg_color @theme_selected_fg_color;
 /*
 insensitive color on backdrop windows*/
-@define-color unfocused_insensitive_color #3c3c3f;
+@define-color unfocused_insensitive_color #4c4c4f;
 /*
 widgets main borders color */
 @define-color borders #5f5f5f;
@@ -81,7 +81,10 @@ these are pretty self explicative */
 @define-color button_bg_checked_inactive shade (@theme_bg_color, 1.382);
 @define-color button_border_checked_inactive shade (@theme_bg_color, 1.482);
 
-@define-color menu_bg_color #484848;
+@define-color menu_bg_color #505152;
+
+@define-color bar_hover_color shade (@bar_bg_color, 1.6);
+@define-color bar_checked_color shade (@bar_bg_color, 1.4);
 
 /*
 these colors are exported for the window manager and shouldn't be used in applications,
