@@ -88,6 +88,13 @@ these are pretty self explicative */
 @define-color notebook_header_color #e1dedb;
 @define-color notebook_bg_color @disabled_bg_color;
 
+@define-color switch_bg_color #f4f4f4;
+@define-color switch_border_color #a0a0a0;
+@define-color switch_border_checked #707070;
+@define-color switch_border_disabled #d0d0d0;
+@define-color switch_border_checked_disabled #b0b0b0;
+@define-color switch_bg_checked_disabled shade(@theme_selected_bg_color, 1.6);
+
 /*
 these colors are exported for the window manager and shouldn't be used in applications,
 read if you used those and something break with a version upgrade you're on your own... */
