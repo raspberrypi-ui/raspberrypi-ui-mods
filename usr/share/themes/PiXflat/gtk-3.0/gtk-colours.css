@@ -95,6 +95,8 @@ these are pretty self explicative */
 @define-color switch_border_checked_disabled #b0b0b0;
 @define-color switch_bg_checked_disabled shade(@theme_selected_bg_color, 1.6);
 
+@define-color check_bg_color white;
+
 /*
 these colors are exported for the window manager and shouldn't be used in applications,
 read if you used those and something break with a version upgrade you're on your own... */

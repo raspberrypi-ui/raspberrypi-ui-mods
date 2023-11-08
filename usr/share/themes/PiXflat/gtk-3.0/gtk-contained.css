@@ -115,7 +115,7 @@ label {
   label:disabled {
     color: @theme_unfocused_fg_color; }
     label:disabled:backdrop {
-      color: @unfocused_insensitive_color; }
+      color: @theme_unfocused_fg_color; }
   label:backdrop {
     color: @theme_unfocused_fg_color; }
 
@@ -2805,7 +2805,7 @@ radio {
   -gtk-icon-source: none;
   color: @default_bg_color;
   border-color: #bfbfbf;
-  background-color: @insensitive_base_color;
+  background-color: @check_bg_color;
   text-shadow: 0 1px rgba(255, 255, 255, 0.76923);
   -gtk-icon-shadow: 0 1px rgba(255, 255, 255, 0.76923); }
   check:only-child,
@@ -2837,13 +2837,12 @@ radio {
     check:backdrop:disabled,
     radio:backdrop:disabled {
       border-color: @unfocused_borders;
-      background-image: image(@disabled_bg_color);
+      background-color: @disabled_bg_color;
       text-shadow: none;
       -gtk-icon-shadow: none;
       box-shadow: inset 0 1px rgba(255, 255, 255, 0); }
       check:backdrop:disabled label, check:backdrop:disabled,
-      radio:backdrop:disabled label,
-      radio:backdrop:disabled {
+      radio:backdrop:disabled label, radio:backdrop:disabled {
         color: @unfocused_insensitive_color; }
   row:selected check, row:selected
   radio {

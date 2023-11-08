@@ -8,7 +8,7 @@
    use responsibly! */
 /*
 widget text/foreground color */
-@define-color theme_fg_color #ffffff;
+@define-color theme_fg_color #e0e0e0;
 /*
 text color for entries, views and content in general */
 @define-color theme_text_color #e5e5e5;
@@ -17,7 +17,7 @@ widget base background color */
 @define-color theme_bg_color #424344;
 /*
 text widgets and the like base background color */
-@define-color theme_base_color #303030;
+@define-color theme_base_color #505050;
 /*
 base background color of insensitive widgets */
 @define-color insensitive_bg_color @disabled_bg_color;
@@ -60,7 +60,7 @@ these are pretty self explicative */
 @define-color default_bg_color #d1cbc9;
 @define-color osd_button_color #111113;
 @define-color disabled_button_color @insensitive_fg_color;
-@define-color backdrop_bg_color #212223;
+@define-color backdrop_bg_color #404142;
 @define-color disabled_bg_color #404142;
 @define-color scrollbar_color #1f1f1f;
 
@@ -93,7 +93,9 @@ these are pretty self explicative */
 @define-color switch_border_checked #505050;
 @define-color switch_border_disabled #606060;
 @define-color switch_border_checked_disabled #707070;
-@define-color switch_bg_checked_disabled shade(@theme_selected_bg_color, 0.7);
+@define-color switch_bg_checked_disabled shade (@theme_selected_bg_color, 0.7);
+
+@define-color check_bg_color #404142
 
 /*
 these colors are exported for the window manager and shouldn't be used in applications,
