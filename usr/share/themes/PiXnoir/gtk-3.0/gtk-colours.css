@@ -95,7 +95,7 @@ these are pretty self explicative */
 @define-color switch_border_checked_disabled #707070;
 @define-color switch_bg_checked_disabled shade (@theme_selected_bg_color, 0.7);
 
-@define-color check_bg_color #404142
+@define-color check_bg_color #404142;
 
 /*
 these colors are exported for the window manager and shouldn't be used in applications,
