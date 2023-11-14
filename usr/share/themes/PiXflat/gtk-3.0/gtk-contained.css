@@ -2559,83 +2559,40 @@ scrollbar {
   scrollbar.vertical slider {
     min-height: 40px; }
   scrollbar button {
-    min-width: 7px;
-    min-height: 7px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    min-width: 13px;
+    min-height: 13px;
     border-style: none;
     border-radius: 2px;
     border-color: #b0b0b0;
     background-color: transparent;
     background-image: none;
     -gtk-icon-shadow: none;
+    -gtk-icon-source: none;
     box-shadow: none; }
   scrollbar button:disabled {
-    min-width: 7px;
-    min-height: 7px;
-    border-style: none;
-    border-radius: 2px;
-    border-color: #b0b0b0;
-    background-color: transparent;
-    background-image: none;
-    -gtk-icon-shadow: none;
-    box-shadow: none; }
+    background-color: transparent; }
   scrollbar button:hover {
-    min-width: 7px;
-    min-height: 7px;
-    border-style: none;
-    border-radius: 2px;
-    border-color: #b0b0b0;
-    background-color: white;
-    background-image: none;
-    -gtk-icon-shadow: none;
-    box-shadow: none; }
+    background-color: white; }
   scrollbar.vertical button.down {
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    -gtk-icon-source: -gtk-icontheme("scroll_d"); }
+    background-image: url("assets/scroll_d.png"); }
   scrollbar.vertical button:disabled.down {
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    -gtk-icon-source: -gtk-icontheme("scroll_d_d"); }
+    background-image: url("assets/scroll_d_d.png"); }
   scrollbar.vertical button.up {
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    -gtk-icon-source: -gtk-icontheme("scroll_u"); }
+    background-image: url("assets/scroll_u.png"); }
   scrollbar.vertical button:disabled.up {
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    -gtk-icon-source: -gtk-icontheme("scroll_u_d"); }
+    background-image: url("assets/scroll_u_d.png"); }
   scrollbar.horizontal button.down {
-    padding-left: 2px;
-    padding-right: 2px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    -gtk-icon-source: -gtk-icontheme("scroll_r"); }
+    background-image: url("assets/scroll_r.png"); }
   scrollbar.horizontal button:disabled.down {
-    padding-left: 2px;
-    padding-right: 2px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    -gtk-icon-source: -gtk-icontheme("scroll_r_d"); }
+    background-image: url("assets/scroll_r_d.png"); }
   scrollbar.horizontal button.up {
-    padding-left: 2px;
-    padding-right: 2px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    -gtk-icon-source: -gtk-icontheme("scroll_l"); }
+    background-image: url("assets/scroll_l.png"); }
   scrollbar.horizontal button:disabled.up {
-    padding-left: 2px;
-    padding-right: 2px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    -gtk-icon-source: -gtk-icontheme("scroll_l_d"); }
+    background-image: url("assets/scroll_l_d.png"); }
 
 treeview ~ scrollbar.vertical {
   border-top: 1px solid @borders;
