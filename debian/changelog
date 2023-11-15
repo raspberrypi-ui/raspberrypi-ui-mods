@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20231115) bookworm; urgency=medium
+
+  * New touchscreen ident strings	
+
+ -- Simon Long <simon@raspberrypi.com>  Wed, 15 Nov 2023 13:10:41 +0000
+
 raspberrypi-ui-mods (1.20231023) bookworm; urgency=medium
 
   * Remove X desktop config file - now installed by gldriver-test
