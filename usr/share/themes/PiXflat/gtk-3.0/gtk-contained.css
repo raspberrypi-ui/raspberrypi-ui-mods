@@ -2578,13 +2578,13 @@ scrollbar {
   scrollbar button:hover {
     background-color: white; }
   scrollbar.vertical button.down {
-    background-image: image(-gtk-recolor(url("assets/scroll_d.symbolic.png"))); }
+    -gtk-icon-source: -gtk-icontheme("scroll_d"); }
   scrollbar.vertical button.up {
-    background-image: image(-gtk-recolor(url("assets/scroll_u.symbolic.png"))); }
+    -gtk-icon-source: -gtk-icontheme("scroll_u"); }
   scrollbar.horizontal button.down {
-    background-image: image(-gtk-recolor(url("assets/scroll_r.symbolic.png"))); }
+    -gtk-icon-source: -gtk-icontheme("scroll_r"); }
   scrollbar.horizontal button.up {
-    background-image: image(-gtk-recolor(url("assets/scroll_l.symbolic.png"))); }
+    -gtk-icon-source: -gtk-icontheme("scroll_l"); }
 
 treeview ~ scrollbar.vertical {
   border-top: 1px solid @borders;
