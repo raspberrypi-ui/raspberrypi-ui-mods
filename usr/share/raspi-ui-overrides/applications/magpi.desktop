@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=The MagPi
+Comment=Link to downloads of The MagPi magazine
+TryExec=/usr/bin/x-www-browser
+Exec=x-www-browser http://www.raspberrypi.org/magpi
+Icon=magpi
+Terminal=false
+Categories=Help;
