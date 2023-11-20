@@ -60,7 +60,7 @@ these are pretty self explicative */
 @define-color default_bg_color #2e3436;
 @define-color osd_button_color #eeeeec;
 @define-color disabled_button_color @insensitive_fg_color;
-@define-color backdrop_bg_color #fcfcfc;
+@define-color backdrop_bg_color #f1f1f1;
 @define-color disabled_bg_color #f1f1f1;
 
 @define-color scrollbar_color #e0e0e0;
