@@ -109,6 +109,10 @@ these are pretty self explicative */
 @define-color draggable_tab_checked #ebeae7;
 @define-color draggable_tab_checked_hover #efedec;
 
+@define-color text_entry_color @insensitive_base_color;
+@define-color text_entry_border @borders;
+@define-color text_entry_shadow #dde1e4;
+
 /*
 these colors are exported for the window manager and shouldn't be used in applications,
 read if you used those and something break with a version upgrade you're on your own... */

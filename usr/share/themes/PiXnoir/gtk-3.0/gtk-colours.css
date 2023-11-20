@@ -65,20 +65,20 @@ these are pretty self explicative */
 @define-color scrollbar_color #404142;
 @define-color scrollbar_button_hover #76747C;
 
-@define-color button_bg_color shade (@theme_bg_color, 1.595);
-@define-color button_border_color shade (@theme_bg_color, 1.779);
+@define-color button_bg_color shade (@theme_bg_color, 1.45);
+@define-color button_border_color shade (@theme_bg_color, 1.65);
 
-@define-color button_bg_hover shade (@theme_bg_color, 1.824);
-@define-color button_border_hover shade (@theme_bg_color, 1.978);
+@define-color button_bg_hover shade (@theme_bg_color, 1.7);
+@define-color button_border_hover shade (@theme_bg_color, 1.85);
 
-@define-color button_bg_checked shade (@theme_bg_color, 2.016);
-@define-color button_border_checked shade (@theme_bg_color, 2.242);
+@define-color button_bg_checked shade (@theme_bg_color, 1.9);
+@define-color button_border_checked shade (@theme_bg_color, 2.0);
 
-@define-color button_bg_inactive shade (@theme_bg_color, 1.340);
-@define-color button_border_inactive shade (@theme_bg_color, 1.482);
+@define-color button_bg_inactive shade (@theme_bg_color, 1.2);
+@define-color button_border_inactive shade (@theme_bg_color, 1.35);
 
-@define-color button_bg_checked_inactive shade (@theme_bg_color, 1.382);
-@define-color button_border_checked_inactive shade (@theme_bg_color, 1.482);
+@define-color button_bg_checked_inactive shade (@theme_bg_color, 1.35);
+@define-color button_border_checked_inactive shade (@theme_bg_color, 1.35);
 
 @define-color menu_bg_color #505152;
 
@@ -108,6 +108,10 @@ these are pretty self explicative */
 @define-color draggable_tab_hover #424242;
 @define-color draggable_tab_checked #383838;
 @define-color draggable_tab_checked_hover #303030;
+
+@define-color text_entry_color #585858;
+@define-color text_entry_border #707070;
+@define-color text_entry_shadow #484848;
 
 /*
 these colors are exported for the window manager and shouldn't be used in applications,
