@@ -62,7 +62,9 @@ these are pretty self explicative */
 @define-color disabled_button_color @insensitive_fg_color;
 @define-color backdrop_bg_color #404142;
 @define-color disabled_bg_color #404142;
-@define-color scrollbar_color #1f1f1f;
+
+@define-color scrollbar_color #404142;
+@define-color scrollbar_button_hover #76747C;
 
 @define-color button_bg_color shade (@theme_bg_color, 1.595);
 @define-color button_border_color shade (@theme_bg_color, 1.779);

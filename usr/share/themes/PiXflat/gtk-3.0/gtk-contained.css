@@ -2576,7 +2576,7 @@ scrollbar {
   scrollbar button:disabled {
     background-color: transparent; }
   scrollbar button:hover {
-    background-color: white; }
+    background-color: @scrollbar_button_hover; }
   scrollbar.vertical button.down {
     -gtk-icon-source: -gtk-icontheme("scroll_d"); }
   scrollbar.vertical button.up {
