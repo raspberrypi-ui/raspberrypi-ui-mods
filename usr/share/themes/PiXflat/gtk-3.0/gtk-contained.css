@@ -2107,15 +2107,15 @@ treeview.view {
       border-bottom-style: none; }
   treeview.view.expander {
     -gtk-icon-source: -gtk-icontheme("pan-end-symbolic");
-    color: #4d4d4d; }
+    color: @expander_color; }
     treeview.view.expander:dir(rtl) {
       -gtk-icon-source: -gtk-icontheme("pan-end-symbolic-rtl"); }
     treeview.view.expander:hover {
-      color: black; }
+      color: @expander_hover; }
     treeview.view.expander:selected {
-      color: #c9def4; }
+      color: @expander_selected; }
       treeview.view.expander:selected:hover {
-        color: @insensitive_base_color; }
+        color: @expander_sel_hover; }
       treeview.view.expander:selected:backdrop {
         color: #c7dcf2; }
     treeview.view.expander:checked {
@@ -2932,11 +2932,11 @@ treeview.view radio:backdrop {
 scale trough, scale fill, progressbar trough {
   border: 1px solid @borders;
   border-radius: 1px;
-  background-color: #cfcfcd; }
+  background-color: @trough_color }
   scale trough:disabled, scale fill:disabled, progressbar trough:disabled {
     background-color: @disabled_bg_color; }
   scale trough:backdrop, scale fill:backdrop, progressbar trough:backdrop, progressbar:backdrop trough {
-    background-color: #dadad8;
+    background-color: @trough_color;
     border-color: @unfocused_borders;
     transition: 200ms ease-out; }
     scale trough:backdrop:disabled, scale fill:backdrop:disabled, progressbar trough:backdrop:disabled, progressbar:backdrop trough:disabled {

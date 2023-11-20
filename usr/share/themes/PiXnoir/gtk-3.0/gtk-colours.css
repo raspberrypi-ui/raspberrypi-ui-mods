@@ -99,6 +99,13 @@ these are pretty self explicative */
 
 @define-color check_bg_color #404142;
 
+@define-color trough_color #a0a0a0;
+
+@define-color expander_color #909090;
+@define-color expander_hover #707070;
+@define-color expander_selected @theme_selected_fg_color;
+@define-color expander_sel_hover shade(@expander_selected, 0.7);
+
 /*
 these colors are exported for the window manager and shouldn't be used in applications,
 read if you used those and something break with a version upgrade you're on your own... */
