@@ -105,6 +105,10 @@ these are pretty self explicative */
 @define-color expander_selected @theme_selected_fg_color;
 @define-color expander_sel_hover shade(@expander_selected, 1.4);
 
+@define-color draggable_tab_hover #e5e3e0;
+@define-color draggable_tab_checked #ebeae7;
+@define-color draggable_tab_checked_hover #efedec;
+
 /*
 these colors are exported for the window manager and shouldn't be used in applications,
 read if you used those and something break with a version upgrade you're on your own... */

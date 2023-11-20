@@ -2453,21 +2453,11 @@ notebook > header tab { min-height: 30px; min-width: 30px; padding: 3px 12px; ou
 
 notebook > header tab:hover { color: #606566; }
 
-notebook > header tab:hover.reorderable-page { border-color: rgba(205, 199, 194, 0.3); background-color: rgba(246, 245, 244, 0.2); }
-
 notebook > header tab:backdrop { color: #babbbb; }
-
-notebook > header tab:backdrop.reorderable-page { border-color: transparent; background-color: transparent; }
 
 notebook > header tab:checked { color: @default_bg_color; }
 
-notebook > header tab:checked.reorderable-page { border-color: rgba(205, 199, 194, 0.5); background-color: rgba(246, 245, 244, 0.5); }
-
-notebook > header tab:checked.reorderable-page:hover { background-color: rgba(246, 245, 244, 0.7); }
-
 notebook > header tab:backdrop:checked { color: @notebook_tab_color; }
-
-notebook > header tab:backdrop:checked.reorderable-page { border-color: #d5d0cc; background-color: #f6f5f4; }
 
 notebook > header tab button.flat { padding: 0; margin-top: 4px; margin-bottom: 4px; min-width: 20px; min-height: 20px; }
 
@@ -2489,8 +2479,6 @@ notebook > header.top tabs:not(:only-child):last-child, notebook > header.bottom
 
 notebook > header.top tabs tab, notebook > header.bottom tabs tab { margin-left: 4px; margin-right: 4px; }
 
-notebook > header.top tabs tab.reorderable-page, notebook > header.bottom tabs tab.reorderable-page { border-style: none solid; }
-
 notebook > header.left tabs, notebook > header.right tabs { padding-top: 4px; padding-bottom: 4px; }
 
 notebook > header.left tabs:not(:only-child), notebook > header.right tabs:not(:only-child) { margin-top: 3px; margin-bottom: 3px; }
@@ -2501,8 +2489,6 @@ notebook > header.left tabs:not(:only-child):last-child, notebook > header.right
 
 notebook > header.left tabs tab, notebook > header.right tabs tab { margin-top: 4px; margin-bottom: 4px; }
 
-notebook > header.left tabs tab.reorderable-page, notebook > header.right tabs tab.reorderable-page { border-style: solid none; }
-
 notebook > header.top tab { padding-bottom: 4px; }
 
 notebook > header.bottom tab { padding-top: 4px; }
@@ -2510,6 +2496,16 @@ notebook > header.bottom tab { padding-top: 4px; }
 notebook > stack:not(:only-child) { background-color: @notebook_bg_color; }
 
 notebook > stack:not(:only-child):backdrop { background-color: @disabled_bg_color; }
+
+notebook > header tab:hover:not(:backdrop).reorderable-page { border-color: @draggable_tab_hover; background-color: @draggable_tab_hover; }
+
+notebook > header tab:checked.reorderable-page { border-color: @draggable_tab_checked; background-color: @draggable_tab_checked; }
+
+notebook > header tab:checked:not(:backdrop).reorderable-page:hover { border-color: @draggable_tab_checked_hover; background-color: @draggable_tab_checked_hover; }
+
+notebook > header.top tabs tab.reorderable-page, notebook > header.bottom tabs tab.reorderable-page { border-style: none solid; }
+
+notebook > header.left tabs tab.reorderable-page, notebook > header.right tabs tab.reorderable-page { border-style: solid none; }
 
 /**************
  * Scrollbars *
