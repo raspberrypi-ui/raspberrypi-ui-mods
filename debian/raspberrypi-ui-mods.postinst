@@ -17,8 +17,11 @@ case "${1}" in
         if grep -q "$USHELL" /etc/shells ; then
           HOME_DIR=$(echo "$line" | cut -d: -f6)/
           if [ -e "$HOME_DIR/.local/share/themes/PiXflat/gtk-3.0/gtk.css" ] ; then
-            sed "$HOME_DIR/.local/share/themes/PiXflat/gtk-3.0/gtk.css" -i -e "s/-gtk-icon-source/d"
+            sed "$HOME_DIR/.local/share/themes/PiXflat/gtk-3.0/gtk.css" -i -e '/scrollbar\.[a-z]*al/,/}/d'
+            sed "$HOME_DIR/.local/share/themes/PiXflat/gtk-3.0/gtk.css" -i -e '/scrollbar button/,/}/{s/12/17/g}'
+            sed "$HOME_DIR/.local/share/themes/PiXflat/gtk-3.0/gtk.css" -i -e '/scrollbar slider/,/}/{s/12/11/g}'
           fi
+        fi
     done <<EOF
     $pwdlines
 EOF
