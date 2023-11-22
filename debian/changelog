@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20231122) bookworm; urgency=medium
+
+  * Modify for dark theme
+
+ -- Simon Long <simon@raspberrypi.com>  Wed, 22 Nov 2023 07:58:46 +0000
+
 raspberrypi-ui-mods (1.20231115) bookworm; urgency=medium
 
   * New touchscreen ident strings	
