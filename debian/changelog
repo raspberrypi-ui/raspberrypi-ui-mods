@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20231125) bookworm; urgency=medium
+
+  * Add geany dark colour scheme
+
+ -- Simon Long <simon@raspberrypi.com>  Sat, 25 Nov 2023 14:09:01 +0000
+
 raspberrypi-ui-mods (1.20231122) bookworm; urgency=medium
 
   * Modify for dark theme
