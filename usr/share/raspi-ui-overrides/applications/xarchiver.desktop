@@ -93,6 +93,7 @@ Comment[zh_CN]=只使用 GTK+ 的归档文件管理器
 Comment[zh_TW]=GTK+ 介面的封存檔管理程式
 Icon=xarchiver
 Exec=xarchiver %f
+TryExec=xarchiver
 StartupNotify=true
 Terminal=false
 Categories=GTK;Archiving;Compression;Utility;

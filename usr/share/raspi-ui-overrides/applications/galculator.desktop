@@ -39,6 +39,7 @@ Comment[uk]=Виконання простих і наукових розраху
 Comment[zh_CN]=执行简单和科学级别的计算
 Comment[zh_TW]=進行簡單和科學的計算
 Exec=galculator
+TryExec=galculator
 Icon=galculator
 Terminal=false
 Type=Application

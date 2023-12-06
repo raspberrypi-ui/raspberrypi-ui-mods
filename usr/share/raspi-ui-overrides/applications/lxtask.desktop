@@ -199,6 +199,7 @@ Keywords[tr]=görev;öldür;durdur;işlemci;hafıza;gözlemek;performans;
 Keywords[uk]=процес;задача;програма;вбити;зупинити;процесор;пам'ять;слідкувати;продуктивність;швидкодія;
 Keywords[zh_CN]=task;kill;suspend;processor;memory;monitoring;performance;任务;终止;杀死;挂起;进程;内存;监视;性能;
 Exec=lxtask
+TryExec=lxtask
 Icon=utilities-system-monitor
 Terminal=false
 StartupNotify=true

@@ -142,6 +142,7 @@ Comment[vi]=Một IDE nhanh và nhẹ nhàng dùng GTK+
 Comment[zh_CN]=GTK+ 编写的轻快的 IDE
 Comment[zh_TW]=一個快速且輕巧的 GTK+ 整合開發環境
 Exec=geany %F
+TryExec=geany
 Icon=geany
 Terminal=false
 Categories=GTK;Development;IDE;TextEditor;

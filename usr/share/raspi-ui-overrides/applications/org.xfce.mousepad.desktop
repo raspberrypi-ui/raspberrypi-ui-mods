@@ -162,6 +162,7 @@ GenericName[uk]=Текстовий редактор
 GenericName[zh_CN]=文本编辑器
 GenericName[zh_TW]=文字編輯器
 Exec=mousepad %U
+TryExec=mousepad
 Icon=org.xfce.mousepad
 Terminal=false
 StartupNotify=true

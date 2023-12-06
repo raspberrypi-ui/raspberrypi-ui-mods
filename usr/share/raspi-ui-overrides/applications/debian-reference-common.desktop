@@ -18,6 +18,7 @@ Name[ru_RU]=Справочник по Debian
 Name[fi_FI]=Debian-referenssi
 Keywords=user;shell;command;documentation;manual;help;guide;debian;
 Exec=debian-reference
+TryExec=debian-reference
 Icon=debian-reference
 Terminal=false
 Categories=Help;
