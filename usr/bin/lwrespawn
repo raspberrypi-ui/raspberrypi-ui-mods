@@ -3,7 +3,7 @@ if pgrep $1 > /dev/null ; then
   exit 0
 fi
 WPID=$(pidof labwc)
-while [ $(pidof labwc) = $WPID ] ; do
+while [ "$(pidof labwc)" = "$WPID" ] ; do
   $@
   sleep 1
 done
