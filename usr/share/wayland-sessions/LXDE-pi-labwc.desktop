@@ -1,4 +1,4 @@
 [Desktop Entry]
 Type=Application
 Name=Labwc Desktop on Wayland
-Exec=/usr/bin/labwc-pi -s /usr/bin/labwc-startup
+Exec=/usr/bin/labwc-pi
