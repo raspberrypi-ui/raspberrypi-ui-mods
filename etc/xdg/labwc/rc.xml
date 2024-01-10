@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <openbox_config xmlns="http://openbox.org/3.4/rc">
+
   <theme>
     <name>PiXflat</name>
     <cornerRadius>0</cornerRadius>
@@ -19,7 +20,7 @@
   </theme>
 
   <keyboard>
-	<default />
+    <default />
     <keybind key="XF86AudioRaiseVolume">
       <action name="Execute">
         <command>wfpanelctl volumepulse volu</command>
@@ -73,7 +74,7 @@
   </keyboard>
 
   <mouse>
-	<default />
+    <default />
     <context name="Title">
       <mousebind button="Right" action="Click">
       </mousebind>
