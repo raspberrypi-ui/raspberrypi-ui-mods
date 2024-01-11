@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20240111) bookworm; urgency=medium
+
+  * Add labwc configuration
+
+ -- Simon Long <simon@raspberrypi.com>  Thu, 11 Jan 2024 14:41:45 +0000
+
 raspberrypi-ui-mods (1.20231206) bookworm; urgency=medium
 
   * Add TryExec lines to desktop files
