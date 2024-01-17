@@ -1,5 +1,4 @@
 #!/bin/sh
 lwrespawn pcmanfm --desktop --profile LXDE-pi &
 lwrespawn wf-panel-pi &
-lxsession-xdg-autostart &
-wlr-randr --output HDMI-A-1 --mode 1920x1080@60.000 --pos 0,0 --transform normal
+lxsession-xdg-autostart

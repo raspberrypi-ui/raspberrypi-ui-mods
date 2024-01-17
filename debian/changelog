@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20240117) bookworm; urgency=medium
+
+  * Remove initial screen resolution setting
+
+ -- Simon Long <simon@raspberrypi.com>  Wed, 17 Jan 2024 08:12:54 +0000
+
 raspberrypi-ui-mods (1.20240111) bookworm; urgency=medium
 
   * Add labwc configuration
