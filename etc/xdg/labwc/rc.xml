@@ -85,7 +85,11 @@
       <mousebind button="Right" action="Click">
       </mousebind>
     </context>
-  </mouse>  
-  
+  </mouse>
+
+  <windowRules>
+    <windowRule identifier=“Kodi" serverDecoration=“yes" />
+  </windowRules>
+
 </openbox_config>
 
