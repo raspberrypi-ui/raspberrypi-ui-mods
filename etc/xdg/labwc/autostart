@@ -1,4 +1,3 @@
-#!/bin/sh
 lwrespawn pcmanfm --desktop --profile LXDE-pi &
 lwrespawn wf-panel-pi &
 lxsession-xdg-autostart

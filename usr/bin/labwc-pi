@@ -1,23 +1,18 @@
 #!/bin/sh
 
-if ! [ -f "$HOME/.config/labwc/rc.xml" ] ; then
-  mkdir -p "$HOME/.config/labwc/"
-  cp /etc/xdg/labwc/* "$HOME/.config/labwc/"
+# Ensure the existence of the 'Desktop' folder
+if [ -e "$HOME/.config/user-dirs.dirs" ]; then
+  . "$HOME/.config/user-dirs.dirs"
+else
+  XDG_DESKTOP_DIR="$HOME/Desktop"
 fi
-
-. /usr/bin/setup_env
-
-export QT_WAYLAND_DISABLE_WINDOWDECORATION=1
-export DESKTOP_SESSION=LXDE-pi-wayfire
-export WLR_XWAYLAND=/usr/bin/xwayland-xauth
-export XAUTHORITY=~/.Xauthority
-export XCURSOR_THEME=PiXflat
+mkdir -p "$XDG_DESKTOP_DIR"
 
 if [ -f "$HOME/.config/gtk-3.0/gtk.css" ] ; then
   rm "$HOME/.config/gtk-3.0/gtk.css"
   sync
 fi
 
-exec /usr/bin/labwc -s /usr/bin/labwc-startup $@
+exec /usr/bin/labwc -m $@
 
 
