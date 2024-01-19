@@ -88,7 +88,7 @@
   </mouse>
 
   <windowRules>
-    <windowRule identifier=“Kodi" serverDecoration=“yes" />
+    <windowRule identifier="Kodi" serverDecoration="yes" />
   </windowRules>
 
 </openbox_config>
