@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20240122) bookworm; urgency=medium
+
+  * Disable numlock by default
+
+ -- Simon Long <simon@raspberrypi.com>  Mon, 22 Jan 2024 12:48:08 +0000
+
 raspberrypi-ui-mods (1.20240119) bookworm; urgency=medium
 
   * Modify labwc config for compatibility with config merge
