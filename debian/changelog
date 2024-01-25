@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20240125) bookworm; urgency=medium
+
+  * Modify greeter initial config for labwc
+
+ -- Simon Long <simon@raspberrypi.com>  Thu, 25 Jan 2024 10:10:00 +0000
+
 raspberrypi-ui-mods (1.20240122) bookworm; urgency=medium
 
   * Disable numlock by default
