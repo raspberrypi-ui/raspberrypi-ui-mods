@@ -13,6 +13,6 @@ if [ -f "$HOME/.config/gtk-3.0/gtk.css" ] ; then
   sync
 fi
 
-exec /usr/bin/labwc -m $@
+exec systemd-inhibit --what=handle-power-key /usr/bin/labwc -m $@
 
 

@@ -13,7 +13,7 @@ if [ -f "$HOME/.config/gtk-3.0/gtk.css" ] ; then
 fi
 
 if raspi-config nonint gpu_has_mmu ; then
-  exec /usr/bin/wayfire $@
+  exec systemd-inhibit --what=handle-power-key /usr/bin/wayfire $@
 else
-  exec /usr/bin/wayfire -p $@
+  exec systemd-inhibit --what=handle-power-key /usr/bin/wayfire -p $@
 fi
