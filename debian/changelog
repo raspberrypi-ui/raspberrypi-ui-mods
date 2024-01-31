@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20240131) bookworm; urgency=medium
+
+  * Add power key bindings
+
+ -- Simon Long <simon@raspberrypi.com>  Wed, 31 Jan 2024 08:43:06 +0000
+
 raspberrypi-ui-mods (1.20240125) bookworm; urgency=medium
 
   * Modify greeter initial config for labwc
