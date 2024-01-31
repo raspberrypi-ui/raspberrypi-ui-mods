@@ -352,6 +352,11 @@
          <command>lxde-pi-shutdown-helper</command>
       </action>
     </keybind>
+    <keybind key="XF86PowerOff">
+      <action name="Execute">
+        <command>pwrkey</command>
+      </action>
+    </keybind>
     <keybind key="C-A-space">
       <action name="Execute">
          <command>gui-pkinst orca reboot</command>
