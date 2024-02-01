@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20240201) bookworm; urgency=medium
+
+  * Fixes for power key in greeter and xwayland
+
+ -- Simon Long <simon@raspberrypi.com>  Thu, 01 Feb 2024 13:36:32 +0000
+
 raspberrypi-ui-mods (1.20240131) bookworm; urgency=medium
 
   * Add power key bindings
