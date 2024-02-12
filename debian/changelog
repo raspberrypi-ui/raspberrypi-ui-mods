@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20240212) bookworm; urgency=medium
+
+  * Various labwc tweaks
+
+ -- Simon Long <simon@raspberrypi.com>  Mon, 12 Feb 2024 14:51:04 +0000
+
 raspberrypi-ui-mods (1.20240201) bookworm; urgency=medium
 
   * Fixes for power key in greeter and xwayland
