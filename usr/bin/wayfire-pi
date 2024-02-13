@@ -12,7 +12,11 @@ if [ -f "$HOME/.config/gtk-3.0/gtk.css" ] ; then
   sync
 fi
 
-if raspi-config nonint gpu_has_mmu ; then
+if ! raspi-config nonint is_pi ; then
+  export WLR_NO_HARDWARE_CURSORS=1
+fi
+
+if raspi-config nonint gpu_has_mmu || ! raspi-config nonint is_pi ; then
   if [ -z "$1" ] ; then
     exec systemd-inhibit --what=handle-power-key /usr/bin/wayfire
   else

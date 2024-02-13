@@ -1,5 +1,12 @@
 #!/bin/sh
-if raspi-config nonint is_pizero ; then
+
+if grep -q 'wayland=on' /proc/cmdline ; then
+    return 1
+elif grep -q 'wayland=off' /proc/cmdline ; then
+    return 0
+elif grep -q '^flags[[:space:]]*:.*hypervisor' /proc/cpuinfo ; then
+    return 0
+elif raspi-config nonint is_pizero ; then
     return 0
 elif raspi-config nonint is_pione ; then
     return 0
