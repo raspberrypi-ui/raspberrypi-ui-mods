@@ -13,6 +13,11 @@ if [ -f "$HOME/.config/gtk-3.0/gtk.css" ] ; then
   sync
 fi
 
+if [ ! -f "$HOME/.config/kanshi/config" ] ; then
+  mkdir -p "$HOME/.config/kanshi"
+  touch "$HOME/.config/kanshi/config"
+fi
+
 exec systemd-inhibit --what=handle-power-key /usr/bin/labwc -m $@
 
 
