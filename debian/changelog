@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20240305) bookworm; urgency=medium
+
+  * Configure for default labwc headless output
+
+ -- Simon Long <simon@raspberrypi.com>  Tue, 05 Mar 2024 10:13:31 +0000
+
 raspberrypi-ui-mods (1.20240212) bookworm; urgency=medium
 
   * Various labwc tweaks
