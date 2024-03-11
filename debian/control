@@ -12,7 +12,7 @@ Depends: ${misc:Depends}, lxpanel, pcmanfm, openbox, xserver-xorg,
  zenity, libglib2.0-bin, desktop-file-utils, lxsession, adduser,
  xdg-user-dirs, raspi-config (>= 20220301), wayfire, wf-panel-pi,
  qtwayland5, mate-polkit-bin, xsettingsd
-Recommends: xserver-xorg-video-fbturbo, fonts-piboto (>=1.1), pipanel,
+Recommends: fonts-piboto (>=1.1), pipanel,
  lxinput, pi-greeter, rpd-plym-splash, rpd-wallpaper, pishutdown, scrot,
  pixflat-theme, gnome-icon-theme, pixflat-icons, lxplug-volumepulse,
  lxplug-network, lxplug-bluetooth, lxplug-ejecter, lxplug-ptbatt,
