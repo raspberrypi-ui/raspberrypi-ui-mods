@@ -1,0 +1,8 @@
+// Allow the xdrp user to inhibit the handle-power-key operation
+polkit.addRule(function(action, subject) {
+    if (action.id == "org.freedesktop.login1.inhibit-handle-power-key" &&
+         subject.isInGroup("sudo")) {
+        return polkit.Result.YES;
+    }
+});
+
