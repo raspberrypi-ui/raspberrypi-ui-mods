@@ -18,4 +18,4 @@ EOF
   sync
 fi
 
-exec systemd-inhibit --what=handle-power-key /usr/bin/lxsession -s LXDE-pi -e LXDE
+exec /usr/bin/lxsession -s LXDE-pi -e LXDE

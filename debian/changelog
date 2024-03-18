@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20240318) bookworm; urgency=medium
+
+  * Apply power key inhibit as an autostart
+
+ -- Simon Long <simon@raspberrypi.com>  Mon, 18 Mar 2024 15:05:26 +0000
+
 raspberrypi-ui-mods (1.20240315) bookworm; urgency=medium
 
   * Add polkit rule to allow rdp connections with systemd-inhibit

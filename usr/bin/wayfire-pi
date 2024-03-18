@@ -17,15 +17,7 @@ if ! raspi-config nonint is_pi ; then
 fi
 
 if raspi-config nonint gpu_has_mmu || ! raspi-config nonint is_pi ; then
-  if [ -z "$1" ] ; then
-    exec systemd-inhibit --what=handle-power-key /usr/bin/wayfire
-  else
     exec /usr/bin/wayfire $@
-  fi
 else
-  if [ -z "$1" ] ; then
-    exec systemd-inhibit --what=handle-power-key /usr/bin/wayfire -p
-  else
     exec /usr/bin/wayfire -p $@
-  fi
 fi

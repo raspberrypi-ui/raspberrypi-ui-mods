@@ -18,6 +18,6 @@ if [ ! -f "$HOME/.config/kanshi/config" ] ; then
   touch "$HOME/.config/kanshi/config"
 fi
 
-exec systemd-inhibit --what=handle-power-key /usr/bin/labwc -m $@
+exec /usr/bin/labwc -m $@
 
 
