@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20240319) bookworm; urgency=medium
+
+  * Use dummy GTK program as target for power key inhibit
+
+ -- Simon Long <simon@raspberrypi.com>  Tue, 19 Mar 2024 08:51:39 +0000
+
 raspberrypi-ui-mods (1.20240318) bookworm; urgency=medium
 
   * Apply power key inhibit as an autostart
