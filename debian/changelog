@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20240425) bookmark; urgency=medium
+
+  * Enable window shadows by default
+
+ -- Simon Long <simon@raspberrypi.com>  Thu, 25 Apr 2024 14:59:09 +0100
+
 raspberrypi-ui-mods (1.20240319) bookworm; urgency=medium
 
   * Use dummy GTK program as target for power key inhibit
