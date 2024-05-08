@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20240426) bookworm; urgency=medium
+
+  * Add magnifier control keybindings
+
+ -- Simon Long <simon@raspberrypi.com>  Wed, 08 May 2024 09:59:47 +0100
+
 raspberrypi-ui-mods (1.20240425) bookmark; urgency=medium
 
   * Enable window shadows by default

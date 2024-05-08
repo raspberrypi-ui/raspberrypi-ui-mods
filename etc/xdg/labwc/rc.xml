@@ -78,6 +78,9 @@
         <command>grim</command>
       </action>
     </keybind>
+    <keybind key="C-A-m">
+      <action name="ToggleMagnify" />
+    </keybind>
   </keyboard>
 
   <mouse>
@@ -92,6 +95,14 @@
       <mousebind button="Right" action="Click">
       </mousebind>
     </context>
+    <context name="All">
+      <mousebind direction="W-Up" action="Scroll">
+        <action name="ZoomIn" />
+      </mousebind>
+      <mousebind direction="W-Down" action="Scroll">
+        <action name="ZoomOut" />
+      </mousebind>
+     </context>
   </mouse>
 
   <windowRules>
