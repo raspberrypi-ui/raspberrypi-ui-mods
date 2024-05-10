@@ -18,6 +18,10 @@ if [ ! -f "$HOME/.config/kanshi/config" ] ; then
   touch "$HOME/.config/kanshi/config"
 fi
 
+if raspi-config nonint is_pi && ! raspi-config nonint gpu_has_mmu ; then
+    export WLR_RENDERER=pixman
+fi
+
 exec /usr/bin/labwc -m $@
 
 
