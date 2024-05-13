@@ -109,5 +109,10 @@
     <windowRule identifier="Kodi" serverDecoration="yes" />
   </windowRules>
 
+  <snapping>
+    <range>0</range>
+    <topMaximize>no</topMaximize>
+  </snapping>
+
 </openbox_config>
 
