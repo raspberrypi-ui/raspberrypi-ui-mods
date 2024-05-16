@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20240516) bookworm; urgency=medium
+
+  * Add magnifier settings
+
+ -- Simon Long <simon@raspberrypi.com>  Thu, 16 May 2024 10:05:03 +0100
+
 raspberrypi-ui-mods (1.20240513) bookworm; urgency=medium
 
   * Disable mouse snaps in labwc

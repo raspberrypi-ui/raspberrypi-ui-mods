@@ -114,5 +114,13 @@
     <topMaximize>no</topMaximize>
   </snapping>
 
+  <magnifier>
+    <width>-1</width>
+    <height>-1</height>
+    <initScale>2.0</initScale>
+    <increment>0.2</increment>
+    <useFilter>false</useFilter>
+  </magnifier>
+
 </openbox_config>
 
