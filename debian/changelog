@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20240517) bookworm; urgency=medium
+
+  * Window switcher settings for labwc; new touchscreen associations
+
+ -- Simon Long <simon@raspberrypi.com>  Fri, 17 May 2024 17:12:19 +0100
+
 raspberrypi-ui-mods (1.20240516) bookworm; urgency=medium
 
   * Add magnifier settings
