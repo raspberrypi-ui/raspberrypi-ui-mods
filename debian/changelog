@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20240610) bookworm; urgency=medium
+
+  * Add explicit onRelease keybinding for Windows key in labwc
+
+ -- Simon Long <simon@raspberrypi.com>  Mon, 10 Jun 2024 07:44:44 +0100
+
 raspberrypi-ui-mods (1.20240517) bookworm; urgency=medium
 
   * Window switcher settings for labwc; new touchscreen associations
