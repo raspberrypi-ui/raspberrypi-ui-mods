@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20240612) bookworm; urgency=medium
+
+  * Hide RealVNC menu entry 
+
+ -- Simon Long <simon@raspberrypi.com>  Wed, 12 Jun 2024 07:48:41 +0100
+
 raspberrypi-ui-mods (1.20240610) bookworm; urgency=medium
 
   * Add explicit onRelease keybinding for Windows key in labwc
