@@ -13,43 +13,9 @@ if [ -f "$HOME/.config/gtk-3.0/gtk.css" ] ; then
   sync
 fi
 
-TOTAL_MEM=$(vcgencmd get_config total_mem | cut -d = -f 2)
 if [ ! -f "$HOME/.config/kanshi/config" ] ; then
   mkdir -p "$HOME/.config/kanshi"
-  if [ $TOTAL_MEM -ge 1024 ] ; then
-    touch "$HOME/.config/kanshi/config"
-  else
-    FIX='no'
-    HDMI_PROFILE='profile {\n'
-    HDMI1_RES=$(wlr-randr | sed -n '/^HDMI-A-1/,/Position/{/preferred/p}' | cut -d' ' -f5 | cut -dx -f2)
-    if ! [ -z $HDMI1_RES ] ; then
-      if [ $HDMI1_RES -gt 1080 ] ; then
-        FIX='yes'
-        PREF_RES1=$(wlr-randr | sed -n '/^HDMI-A-1/,/Position/{/1080/p}' | head -1 | sed 's/ //g' | sed 's/px,/@/' | sed 's/Hz.*/Hz/' )
-      else
-        PREF_RES1=$(wlr-randr | sed -n '/^HDMI-A-1/,/Position/{/current/p}' | sed 's/ //g' | sed 's/px,/@/' | sed 's/Hz.*/Hz/' )
-      fi
-      HDMI_PROFILE=$HDMI_PROFILE"\toutput HDMI-A-1 mode "$PREF_RES1" position 0,0 transform normal\n"
-      HDMI2_POS=$(echo $PREF_RES1 | sed 's/x/,/' | sed 's/@.*//')
-
-      HDMI2_RES=$(wlr-randr | sed -n '/^HDMI-A-2/,/Position/{/preferred/p}' | cut -d' ' -f5 | cut -dx -f2)
-      if ! [ -z $HDMI2_RES ] ; then
-        if [ $HDMI2_RES -gt 1080 ] ; then
-          FIX='yes'
-          PREF_RES2=$(wlr-randr | sed -n '/^HDMI-A-2/,/Position/{/1080/p}' | head -1 | sed 's/ //g'| sed 's/px,/@/' | sed 's/Hz.*/Hz/')
-        else
-          PREF_RES2=$(wlr-randr | sed -n '/^HDMI-A-2/,/Position/{/current/p}' |  sed 's/ //g'| sed 's/px,/@/' | sed 's/Hz.*/Hz/')
-        fi
-        HDMI_PROFILE=$HDMI_PROFILE"\toutput HDMI-A-2 mode "$PREF_RES2" position "$HDMI2_POS" transform normal\n"
-      fi
-      HDMI_PROFILE=$HDMI_PROFILE"}"
-    fi
-    if [ "$FIX" = "yes" ] ; then
-      echo $HDMI_PROFILE > "$HOME/.config/kanshi/config"
-    else
-      touch "$HOME/.config/kanshi/config"
-    fi
-  fi
+  touch "$HOME/.config/kanshi/config"
 fi
 
 if raspi-config nonint is_pi && ! raspi-config nonint gpu_has_mmu ; then
