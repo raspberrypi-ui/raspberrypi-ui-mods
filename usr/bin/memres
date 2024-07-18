@@ -2,7 +2,7 @@
 
 TOTAL_MEM=$(vcgencmd get_config total_mem | cut -d = -f 2)
 if ! grep -q profile "$HOME/.config/kanshi/config" ; then
-  if [ $TOTAL_MEM -le 10024 ] ; then
+  if [ $TOTAL_MEM -le 1024 ] ; then
     FIX='no'
     HDMI_PROFILE='profile {\n'
     HDMI1_RES=$(wlr-randr | sed -n '/^HDMI-A-1/,/Position/{/preferred/p}' | cut -d' ' -f5 | cut -dx -f2)
