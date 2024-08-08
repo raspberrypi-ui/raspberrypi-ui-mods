@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20240808) bookworm; urgency=medium
+
+  * Remove alpha channel from wallpaper
+
+ -- Simon Long <simon@raspberrypi.com>  Thu, 08 Aug 2024 17:06:17 +0100
+
 raspberrypi-ui-mods (1.20240612) bookworm; urgency=medium
 
   * Hide RealVNC menu entry 
