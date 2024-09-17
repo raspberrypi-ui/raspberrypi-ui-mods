@@ -1,6 +1,7 @@
 raspberrypi-ui-mods (1.20240917) bookworm; urgency=medium
 
   * Add labwc-prompt
+  * Add additional power key handling
 
  -- Simon Long <simon@raspberrypi.com>  Tue, 17 Sep 2024 08:51:00 +0100
 
