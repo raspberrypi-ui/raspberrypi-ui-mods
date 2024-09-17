@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20240917) bookworm; urgency=medium
+
+  * Add labwc-prompt
+
+ -- Simon Long <simon@raspberrypi.com>  Tue, 17 Sep 2024 08:51:00 +0100
+
 raspberrypi-ui-mods (1.20240914) bookworm; urgency=medium
 
   * Add safety info URL
