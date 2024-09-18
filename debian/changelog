@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20240918) bookworm; urgency=medium
+
+  * Handle power key on release
+
+ -- Simon Long <simon@raspberrypi.com>  Wed, 18 Sep 2024 07:27:35 +0100
+
 raspberrypi-ui-mods (1.20240917) bookworm; urgency=medium
 
   * Add labwc-prompt

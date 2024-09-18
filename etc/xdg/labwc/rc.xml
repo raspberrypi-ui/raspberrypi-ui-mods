@@ -74,7 +74,7 @@
          <command>lxde-pi-shutdown-helper</command>
       </action>
     </keybind>
-    <keybind key="XF86PowerOff">
+    <keybind key="XF86PowerOff" onRelease="yes">
       <action name="Execute">
         <command>pwrkey</command>
       </action>
