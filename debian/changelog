@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20240923) bookworm; urgency=medium
+
+  * Rename desktop session for labwc
+
+ -- Simon Long <simon@raspberrypi.com>  Mon, 23 Sep 2024 13:28:43 +0100
+
 raspberrypi-ui-mods (1.20240918) bookworm; urgency=medium
 
   * Handle power key on release
