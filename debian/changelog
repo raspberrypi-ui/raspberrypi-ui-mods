@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20241004) bookworm; urgency=medium
+
+  * Add additional environment settings to labwc greeter config
+
+ -- Simon Long <simon@raspberrypi.com>  Fri, 04 Oct 2024 07:09:27 +0100
+
 raspberrypi-ui-mods (1.20240923) bookworm; urgency=medium
 
   * Rename desktop session for labwc
