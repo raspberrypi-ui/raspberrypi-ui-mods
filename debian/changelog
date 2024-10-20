@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20241020) bookworm; urgency=medium
+
+  * Add mouseEmulation parameter to default touchscreen configs
+
+ -- Simon Long <simon@raspberrypi.com>  Sun, 20 Oct 2024 12:32:29 +0100
+
 raspberrypi-ui-mods (1.20241004) bookworm; urgency=medium
 
   * Add additional environment settings to labwc greeter config
