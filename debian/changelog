@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20241029) bookworm; urgency=medium
+
+  * Reinstate upgrade prompt
+
+ -- Simon Long <simon@raspberrypi.com>  Tue, 29 Oct 2024 07:32:01 +0000
+
 raspberrypi-ui-mods (1.20241028+1) bookworm; urgency=medium
 
   * Add labwc as Depends

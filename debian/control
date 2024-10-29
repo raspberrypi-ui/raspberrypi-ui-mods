@@ -19,7 +19,7 @@ Recommends: fonts-piboto (>=1.1), pipanel,
  rc-gui (>=1.18), lxplug-cputemp, lxplug-magnifier, rp-bookshelf,
  agnostics [armhf arm64], gui-pkinst, cups, system-config-printer,
  pi-printer-support, lxplug-updater, lxplug-netman, lxplug-menu,
- qt5ct, qt5-style-plugins, xwayland, grim, wayvnc
+ qt5ct, qt5-style-plugins, xwayland, grim, wayvnc, labwc-prompt
 Conflicts: raspberrypi-artwork, rpi-wayland
 Replaces: raspberrypi-artwork, rpi-wayland
 Description: Config to customise the LXDE UI for the Raspberry Pi
