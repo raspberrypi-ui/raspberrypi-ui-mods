@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20241104) bookworm; urgency=medium
+
+  * New labwc window position keybindings
+
+ -- Simon Long <simon@raspberrypi.com>  Mon, 04 Nov 2024 11:43:34 +0000
+
 raspberrypi-ui-mods (1.20241029) bookworm; urgency=medium
 
   * Reinstate upgrade prompt
