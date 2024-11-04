@@ -29,6 +29,22 @@
   <keyboard>
     <numlock>off</numlock>
     <default />
+    <keybind key="A-Left" />
+    <keybind key="A-Right" />
+    <keybind key="A-Up" />
+    <keybind key="A-Down" />
+    <keybind key="C-A-Left">
+      <action name="SnapToEdge" direction="left"></action>
+    </keybind>
+    <keybind key="C-A-Right">
+      <action name="SnapToEdge" direction="right"></action>
+    </keybind>
+    <keybind key="C-A-Up">
+      <action name="Maximize"></action>
+    </keybind>
+    <keybind key="C-A-Down">
+      <action name="UnMaximize"></action>
+    </keybind>
     <keybind key="XF86AudioRaiseVolume">
       <action name="Execute">
         <command>wfpanelctl volumepulse volu</command>
