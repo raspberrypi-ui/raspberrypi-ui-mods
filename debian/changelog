@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20241107) bookworm; urgency=medium
+
+  * Remove recursive setting of XDG_DATA_DIRS from labwc config
+
+ -- Simon Long <simon@raspberrypi.com>  Thu, 07 Nov 2024 15:47:04 +0000
+
 raspberrypi-ui-mods (1.20241104) bookworm; urgency=medium
 
   * New labwc window position keybindings
