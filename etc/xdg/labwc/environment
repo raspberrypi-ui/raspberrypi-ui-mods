@@ -1,8 +1,3 @@
-XDG_DATA_DIRS=/usr/local/share:/usr/share/raspi-ui-overrides:/usr/share:/usr/share/gdm:/var/lib/menu-xdg
-XDG_MENU_PREFIX=lxde-pi-
-SAL_USE_VCLPLUGIN=gtk3
-
-QT_QPA_PLATFORMTHEME=qt5ct
 QT_WAYLAND_DISABLE_WINDOWDECORATION=1
 
 DESKTOP_SESSION=LXDE-pi-labwc

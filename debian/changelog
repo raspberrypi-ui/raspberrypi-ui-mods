@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20241108) bookworm; urgency=medium
+
+  * Use setup_env in labwc-pi
+
+ -- Simon Long <simon@raspberrypi.com>  Fri, 08 Nov 2024 20:22:12 +0000
+
 raspberrypi-ui-mods (1.20241107) bookworm; urgency=medium
 
   * Remove recursive setting of XDG_DATA_DIRS from labwc config
