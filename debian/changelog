@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20241111) bookworm; urgency=medium
+
+  * Add some labwc dependencies
+
+ -- Simon Long <simon@raspberrypi.com>  Mon, 11 Nov 2024 10:43:41 +0000
+
 raspberrypi-ui-mods (1.20241108) bookworm; urgency=medium
 
   * Use setup_env in labwc-pi
