@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20241112) bookworm; urgency=medium
+
+  * Add autotouch
+
+ -- Simon Long <simon@raspberrypi.com>  Tue, 12 Nov 2024 11:24:33 +0000
+
 raspberrypi-ui-mods (1.20241111) bookworm; urgency=medium
 
   * Add some labwc dependencies
