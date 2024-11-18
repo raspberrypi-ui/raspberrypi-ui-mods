@@ -16,6 +16,10 @@ if raspi-config nonint is_pi && ! raspi-config nonint gpu_has_mmu ; then
     export WLR_RENDERER=pixman
 fi
 
+if raspi-config nonint is_pifive ; then
+    export WLR_DRM_NO_SCANOUT_BG=1
+fi
+
 exec /usr/bin/labwc -m $@
 
 
