@@ -1,0 +1,22 @@
+#! /bin/sh
+
+set -e
+
+case "${1}" in
+  upgrade)
+	    UFILE="/etc/xdg/labwc/environment"
+	    if [ -e $UFILE ] ; then
+	      if grep -q XKB_DEFAULT_MODEL $UFILE ; then sed -i s/XKB_DEFAULT_MODEL.*/XKB_DEFAULT_MODEL=pc105/ $UFILE ; fi
+	      if grep -q XKB_DEFAULT_LAYOUT $UFILE ; then sed -i s/XKB_DEFAULT_LAYOUT.*/XKB_DEFAULT_LAYOUT=gb/ $UFILE ; fi
+	      if grep -q XKB_DEFAULT_VARIANT $UFILE ; then sed -i /XKB_DEFAULT_VARIANT/d $UFILE ; else echo XKB_DEFAULT_VARIANT=$VARIANT >> $UFILE ; fi
+	      if grep -q XKB_DEFAULT_OPTIONS $UFILE ; then sed -i /XKB_DEFAULT_OPTIONS/d $UFILE ; else echo XKB_DEFAULT_OPTIONS=$OPTIONS >> $UFILE ; fi
+	    fi
+    ;;
+
+  *)
+    ;;
+esac
+
+#DEBHELPER#
+
+exit 0

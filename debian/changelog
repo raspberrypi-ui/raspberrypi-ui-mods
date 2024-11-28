@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20241129) bookworm; urgency=medium
+
+  * Revert labwc global file before upgrade
+
+ -- Simon Long <simon@raspberrypi.com>  Thu, 28 Nov 2024 18:00:27 +0000
+
 raspberrypi-ui-mods (1.20241128) bookworm; urgency=medium
 
   * Update labwc keyboard file on update
