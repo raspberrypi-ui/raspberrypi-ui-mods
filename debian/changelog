@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20241130) bookworm; urgency=medium
+
+  * Set ownership of labwc file correctly; replace arandr and lxinput
+
+ -- Simon Long <simon@raspberrypi.com>  Fri, 29 Nov 2024 10:20:38 +0000
+
 raspberrypi-ui-mods (1.20241129) bookworm; urgency=medium
 
   * Revert labwc global file before upgrade
