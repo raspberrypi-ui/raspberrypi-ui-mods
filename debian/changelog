@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20241209) bookworm; urgency=medium
+
+  * Don't set group to user name
+
+ -- Simon Long <simon@raspberrypi.com>  Mon, 09 Dec 2024 12:02:41 +0000
+
 raspberrypi-ui-mods (1.20241130) bookworm; urgency=medium
 
   * Set ownership of labwc file correctly; replace arandr and lxinput
