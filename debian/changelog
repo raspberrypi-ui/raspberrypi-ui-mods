@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20241211) bookworm; urgency=medium
+
+  * Temporarily set xwayland persistence for labwc
+
+ -- Simon Long <simon@raspberrypi.com>  Wed, 11 Dec 2024 11:05:05 +0000
+
 raspberrypi-ui-mods (1.20241209) bookworm; urgency=medium
 
   * Don't set group to user name
