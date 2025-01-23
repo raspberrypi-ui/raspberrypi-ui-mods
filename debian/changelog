@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20250121) bookworm; urgency=medium
+
+  * Add wf-panel plugins
+
+ -- Simon Long <simon@raspberrypi.com>  Tue, 21 Jan 2025 08:51:38 +0000
+
 raspberrypi-ui-mods (1.20241211) bookworm; urgency=medium
 
   * Temporarily set xwayland persistence for labwc
