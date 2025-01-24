@@ -132,11 +132,6 @@ Plugin {
   }
 }
 Plugin {
-  type=dhcpcdui
-  Config {
-  }
-}
-Plugin {
   type=space
   Config {
     Size=2

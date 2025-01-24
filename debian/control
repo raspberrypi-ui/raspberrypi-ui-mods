@@ -22,7 +22,7 @@ Recommends: fonts-piboto (>=1.1), pipanel, rasputin, pi-greeter,
  wayvnc, labwc-prompt, kanshi, swayidle, wlopm, autotouch, raindrop,
  wfplug-menu, wfplug-bluetooth, wfplug-cputemp, wfplug-ejecter,
  wfplug-netman, wfplug-updater, wfplug-ptbatt, wfplug-volumepulse,
- wfplug-cpu, wfplug-gpu, wfplug-power
+ wfplug-cpu, wfplug-gpu, wfplug-power, lxplug-cpu
 Conflicts: raspberrypi-artwork, rpi-wayland
 Replaces: raspberrypi-artwork, rpi-wayland
 Description: Config to customise the LXDE UI for the Raspberry Pi
