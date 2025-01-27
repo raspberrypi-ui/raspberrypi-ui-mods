@@ -15,13 +15,13 @@ Depends: ${misc:Depends}, lxpanel, pcmanfm, openbox, xserver-xorg,
 Recommends: fonts-piboto (>=1.1), pipanel, rasputin, pi-greeter,
  rpd-plym-splash, rpd-wallpaper, pishutdown, scrot, pixflat-theme,
  gnome-icon-theme, pixflat-icons, lxplug-volumepulse, lxplug-bluetooth,
- lxplug-ejecter, lxplug-ptbatt, rc-gui (>=1.18), lxplug-cputemp,
+ lxplug-ejecter, lxplug-batt, rc-gui (>=1.18), lxplug-cputemp,
  lxplug-magnifier, rp-bookshelf, agnostics [armhf arm64], gui-pkinst,
  cups, system-config-printer, pi-printer-support, lxplug-updater,
  lxplug-netman, lxplug-menu, qt5ct, qt5-style-plugins, xwayland, grim,
  wayvnc, labwc-prompt, kanshi, swayidle, wlopm, autotouch, raindrop,
  wfplug-menu, wfplug-bluetooth, wfplug-cputemp, wfplug-ejecter,
- wfplug-netman, wfplug-updater, wfplug-ptbatt, wfplug-volumepulse,
+ wfplug-netman, wfplug-updater, wfplug-batt, wfplug-volumepulse,
  wfplug-cpu, wfplug-gpu, wfplug-power, lxplug-cpu
 Conflicts: raspberrypi-artwork, rpi-wayland
 Replaces: raspberrypi-artwork, rpi-wayland
