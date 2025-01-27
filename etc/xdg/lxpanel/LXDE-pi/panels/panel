@@ -165,7 +165,7 @@ Plugin {
   }
 }
 Plugin {
-  type=ptbatt
+  type=batt
   Config {
   }
 }
