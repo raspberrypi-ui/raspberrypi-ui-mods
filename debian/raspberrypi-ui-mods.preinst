@@ -13,8 +13,7 @@ case "${1}" in
 	    fi
 	    if [ -e /usr/share/labwc/environment ] ; then
 	      mkdir -p /etc/xdg/labwc-greeter/
-	      mv /usr/share/labwc/environment /etc/xdg/labwc-greeter/environment
-	      mv /usr/share/labwc/autostart /etc/xdg/labwc-greeter/autostart
+	      mv /usr/share/labwc/* /etc/xdg/labwc-greeter/
 	    fi
     ;;
 
