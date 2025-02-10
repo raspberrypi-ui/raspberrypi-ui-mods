@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20250210) bookworm; urgency=medium
+
+  * Move labwc greeter config files to etc
+
+ -- Simon Long <simon@raspberrypi.com>  Mon, 10 Feb 2025 09:41:40 +0000
+
 raspberrypi-ui-mods (1.20250121) bookworm; urgency=medium
 
   * Add wf-panel plugins

@@ -11,6 +11,10 @@ case "${1}" in
 	      if grep -q XKB_DEFAULT_VARIANT $UFILE ; then sed -i /XKB_DEFAULT_VARIANT/d $UFILE ; fi
 	      if grep -q XKB_DEFAULT_OPTIONS $UFILE ; then sed -i /XKB_DEFAULT_OPTIONS/d $UFILE ; fi
 	    fi
+	    if [ -e /usr/share/labwc/environment ] ; then
+	      mkdir -p /etc/xdg/labwc-greeter/
+	      mv /usr/share/labwc/environment /etc/xdg/labwc-greeter/environment
+	    fi
     ;;
 
   *)
