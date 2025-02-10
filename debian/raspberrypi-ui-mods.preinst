@@ -14,6 +14,7 @@ case "${1}" in
 	    if [ -e /usr/share/labwc/environment ] ; then
 	      mkdir -p /etc/xdg/labwc-greeter/
 	      mv /usr/share/labwc/environment /etc/xdg/labwc-greeter/environment
+	      mv /usr/share/labwc/autostart /etc/xdg/labwc-greeter/autostart
 	    fi
     ;;
 
