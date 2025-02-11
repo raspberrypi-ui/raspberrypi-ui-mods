@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20250211) bookworm; urgency=medium
+
+  * Set icon for shutdown helper
+
+ -- Simon Long <simon@raspberrypi.com>  Tue, 11 Feb 2025 13:27:48 +0000
+
 raspberrypi-ui-mods (1.20250210) bookworm; urgency=medium
 
   * Move labwc greeter config files to etc
