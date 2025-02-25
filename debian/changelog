@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20250225) bookworm; urgency=medium
+
+  * Remove MagPi menu shortcut
+
+ -- Simon Long <simon@raspberrypi.com>  Tue, 25 Feb 2025 14:01:43 +0000
+
 raspberrypi-ui-mods (1.20250211) bookworm; urgency=medium
 
   * Set icon for shutdown helper
