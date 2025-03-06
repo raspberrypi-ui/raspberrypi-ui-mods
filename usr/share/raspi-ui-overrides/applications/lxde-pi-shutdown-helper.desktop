@@ -1,8 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Name=Shutdown
-Exec=lxde-pi-shutdown-helper
-Icon=system-shutdown
-Terminal=false
-Type=Application
-NoDisplay=true

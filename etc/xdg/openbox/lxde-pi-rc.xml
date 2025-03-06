@@ -344,12 +344,12 @@
     </keybind>
     <keybind key="C-A-End">
       <action name="Execute">
-         <command>lxde-pi-shutdown-helper</command>
+         <command>pishutdown</command>
       </action>
     </keybind>
     <keybind key="C-A-Delete">
       <action name="Execute">
-         <command>lxde-pi-shutdown-helper</command>
+         <command>pishutdown</command>
       </action>
     </keybind>
     <keybind key="XF86PowerOff">
