@@ -13,16 +13,16 @@ Depends: ${misc:Depends}, lxpanel, pcmanfm, openbox, xserver-xorg,
  xdg-user-dirs, raspi-config (>= 20220301), wayfire, wf-panel-pi,
  qtwayland5, mate-polkit-bin, xsettingsd, gtk-nop, labwc
 Recommends: fonts-piboto (>=1.1), pipanel, rasputin, pi-greeter,
- rpd-plym-splash, rpd-wallpaper, pishutdown, scrot, pixflat-theme,
+ rpd-plym-splash, rpd-wallpaper, pishutdown (>=0.31), scrot, pixflat-theme,
  gnome-icon-theme, pixflat-icons, lxplug-volumepulse, lxplug-bluetooth,
  lxplug-ejecter, lxplug-batt, rc-gui (>=1.18), lxplug-cputemp,
  lxplug-magnifier, rp-bookshelf, agnostics [armhf arm64], gui-pkinst,
- cups, system-config-printer, pi-printer-support, lxplug-updater,
+ cups, rpinters, pi-printer-support, lxplug-updater,
  lxplug-netman, lxplug-menu, qt5ct, qt5-style-plugins, xwayland, grim,
  wayvnc, labwc-prompt, kanshi, swayidle, wlopm, autotouch, raindrop,
  wfplug-menu, wfplug-bluetooth, wfplug-cputemp, wfplug-ejecter,
  wfplug-netman, wfplug-updater, wfplug-batt, wfplug-volumepulse,
- wfplug-cpu, wfplug-gpu, wfplug-power, lxplug-cpu
+ wfplug-cpu, wfplug-gpu, wfplug-power, lxplug-cpu, swaylock
 Conflicts: raspberrypi-artwork, rpi-wayland
 Replaces: raspberrypi-artwork, rpi-wayland
 Description: Config to customise the LXDE UI for the Raspberry Pi
