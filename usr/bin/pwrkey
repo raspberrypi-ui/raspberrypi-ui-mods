@@ -1,7 +1,11 @@
 #!/bin/sh
 if ! pgrep -f pishutdown ; then
-  /usr/bin/pishutdown
+  /usr/bin/pishutdown &
+  sleep 0 # sets the delay before a second push will shutdown
 else
+  if [ $(pgrep -c pwrkey) -gt 1 ] ; then
+    exit 0
+  fi
   /usr/bin/pkill orca
   /sbin/shutdown -h now
 fi
