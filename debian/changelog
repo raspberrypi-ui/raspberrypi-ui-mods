@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20250312) bookworm; urgency=medium
+
+  * New power button behaviour for Pi 500
+
+ -- Simon Long <simon@raspberrypi.com>  Wed, 12 Mar 2025 07:39:08 +0000
+
 raspberrypi-ui-mods (1.20250306) bookworm; urgency=medium
 
   * Use new pishutdown instead of lxde-pi-shutdown-helper
