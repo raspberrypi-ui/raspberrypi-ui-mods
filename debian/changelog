@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20250313) bookworm; urgency=medium
+
+  * Separate policykit dependencies
+
+ -- Simon Long <simon@raspberrypi.com>  Thu, 13 Mar 2025 13:41:51 +0000
+
 raspberrypi-ui-mods (1.20250312) bookworm; urgency=medium
 
   * New power button behaviour for Pi 500
