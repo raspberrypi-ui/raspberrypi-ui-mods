@@ -28,6 +28,9 @@
       <slant>Normal</slant>
     </font>
     <dropShadows>yes</dropShadows>
+    <titlebar>
+      <layout>:iconify,max,close</layout>
+    </titlebar>
   </theme>
 
   <keyboard>
