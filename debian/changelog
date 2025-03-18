@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20250318) bookworm; urgency=medium
+
+  * Explicitly set labwc icons
+
+ -- Simon Long <simon@raspberrypi.com>  Tue, 18 Mar 2025 11:55:58 +0000
+
 raspberrypi-ui-mods (1.20250313) bookworm; urgency=medium
 
   * Separate policykit dependencies
