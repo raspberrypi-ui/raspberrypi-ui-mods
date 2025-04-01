@@ -23,10 +23,10 @@ case "${1}" in
           fi
 
 	  if pgrep labwc > /dev/null ; then
-	    MODEL=$(grep XKBMODEL /etc/default/keyboard | cut -d= -f2 | tr -d '"')
-	    LAYOUT=$(grep XKBLAYOUT /etc/default/keyboard | cut -d= -f2 | tr -d '"')
-	    VARIANT=$(grep XKBVARIANT /etc/default/keyboard | cut -d= -f2 | tr -d '"')
-	    OPTIONS=$(grep XKBOPTIONS /etc/default/keyboard | cut -d= -f2 | tr -d '"')
+	    MODEL=$(grep ^XKBMODEL= /etc/default/keyboard | tail -1 | cut -d= -f2 | tr -d '"')
+	    LAYOUT=$(grep ^XKBLAYOUT= /etc/default/keyboard | tail -1 | cut -d= -f2 | tr -d '"')
+	    VARIANT=$(grep ^XKBVARIANT= /etc/default/keyboard | tail -1 | cut -d= -f2 | tr -d '"')
+	    OPTIONS=$(grep ^XKBOPTIONS= /etc/default/keyboard | tail -1 | cut -d= -f2 | tr -d '"')
 	    mkdir -p "$HOME_DIR/.config/labwc/"
 	    chown -R $USER: "$HOME_DIR/.config/labwc/"
 	    UFILE="$HOME_DIR/.config/labwc/environment"
