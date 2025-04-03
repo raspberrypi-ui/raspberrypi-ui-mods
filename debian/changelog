@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20250403) bookworm; urgency=medium
+
+  * Make grep for keyboard settings update more strict
+
+ -- Simon Long <simon@raspberrypi.com>  Thu, 03 Apr 2025 11:31:31 +0100
+
 raspberrypi-ui-mods (1.20250318) bookworm; urgency=medium
 
   * Explicitly set labwc icons
