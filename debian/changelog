@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20250408) bookworm; urgency=medium
+
+  * Disable xwayland persistence
+
+ -- Simon Long <simon@raspberrypi.com>  Tue, 08 Apr 2025 09:08:33 +0100
+
 raspberrypi-ui-mods (1.20250403) bookworm; urgency=medium
 
   * Make grep for keyboard settings update more strict

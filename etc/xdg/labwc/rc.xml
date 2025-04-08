@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <openbox_config xmlns="http://openbox.org/3.4/rc">
 
-  <core>
-    <xwaylandPersistence>yes</xwaylandPersistence>
-  </core>
-
   <theme>
     <name>PiXflat</name>
     <cornerRadius>0</cornerRadius>
