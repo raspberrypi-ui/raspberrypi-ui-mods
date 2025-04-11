@@ -9,7 +9,7 @@ Package: raspberrypi-ui-mods
 Architecture: any
 Depends: ${misc:Depends}, lxpanel, pcmanfm, openbox, xserver-xorg,
  x11-xserver-utils, polkitd, pkexec, lightdm, raspberrypi-sys-mods (>= 20210706),
- zenity, libglib2.0-bin, desktop-file-utils, lxsession, adduser,
+ libglib2.0-bin, desktop-file-utils, lxsession, adduser,
  xdg-user-dirs, raspi-config (>= 20250312), wayfire, wf-panel-pi,
  qtwayland5, mate-polkit-bin, xsettingsd, gtk-nop, labwc
 Recommends: fonts-piboto (>=1.1), pipanel, rasputin, pi-greeter,
@@ -17,7 +17,7 @@ Recommends: fonts-piboto (>=1.1), pipanel, rasputin, pi-greeter,
  gnome-icon-theme, pixflat-icons, lxplug-volumepulse, lxplug-bluetooth,
  lxplug-ejecter, lxplug-batt, rc-gui (>=1.18), lxplug-cputemp,
  lxplug-magnifier, rp-bookshelf, agnostics [armhf arm64], gui-pkinst,
- cups, rpinters, pi-printer-support, lxplug-updater,
+ cups, rpinters, pi-printer-support, lxplug-updater, pprompt,
  lxplug-netman, lxplug-menu, qt5ct, qt5-style-plugins, xwayland, grim,
  wayvnc, labwc-prompt, kanshi, swayidle, wlopm, autotouch, raindrop,
  wfplug-menu, wfplug-bluetooth, wfplug-cputemp, wfplug-ejecter,

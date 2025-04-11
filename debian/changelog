@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20250411) bookworm; urgency=medium
+
+  * Add CUPS polkit rule; remove dependency on zenity
+
+ -- Simon Long <simon@raspberrypi.com>  Fri, 11 Apr 2025 11:58:04 +0100
+
 raspberrypi-ui-mods (1.20250408) bookworm; urgency=medium
 
   * Disable xwayland persistence
