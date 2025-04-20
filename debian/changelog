@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20250420) bookworm; urgency=medium
+
+  * Add some missing touchscreen default associations
+
+ -- Simon Long <simon@raspberrypi.com>  Sun, 20 Apr 2025 20:23:44 +0100
+
 raspberrypi-ui-mods (1.20250411) bookworm; urgency=medium
 
   * Add CUPS polkit rule; remove dependency on zenity
