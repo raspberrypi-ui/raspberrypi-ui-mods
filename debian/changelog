@@ -1,3 +1,9 @@
+raspberrypi-ui-mods (1.20250506) bookworm; urgency=medium
+
+  * Fix touchscreen config for greeter
+
+ -- Simon Long <simon@raspberrypi.com>  Tue, 06 May 2025 09:55:08 +0100
+
 raspberrypi-ui-mods (1.20250420) bookworm; urgency=medium
 
   * Add some missing touchscreen default associations
